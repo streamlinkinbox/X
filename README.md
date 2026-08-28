@@ -440,6 +440,17 @@ See [§27](docs/27-abolishing-debt-and-subscription-systems.md).
 
 See [§28](docs/28-public-clothing-standards-and-exposure-thresholds.md).
 
+## Pluralism, the modernized millet system & state gap audit
+
+§29 resolves the religious pluralism and personal status challenge through a modernized Millet architecture, paired with an honest ten-domain state governance gap audit:
+- **The Modernized Millet Model:** The state maintains exclusive uniform jurisdiction over criminal law, currency, defense, and public order; recognized faith communities govern internal family and personal status law (marriage, divorce, custody, inheritance).
+- **The Civil Millet (Guaranteed Exit):** State-administered personal status jurisdiction offering civil marriage, no-fault divorce, and equal inheritance, protecting the unaffiliated, non-believers, and dissenting individuals from caste entrapment.
+- **Non-Negotiable Human Rights Floor:** Minimum marriage age 18, verifiable state consent, criminal ban on forced marriage, domestic violence under exclusive state criminal jurisdiction (§26), and appellate court review.
+- **Anti-Lebanon Political Lock:** Absolute prohibition on confessional quotas in parliament, cabinet ministries, or civil service. Millets govern personal status only — never the distribution of state power.
+- **Ten-Domain State Gap Audit:** Rigorous institutional register classifying what is solved vs. what remains **genuinely untouched** (Constitutional Entrenchment & Amendment Supermajorities, Reclaimed Float Investment Board, Comprehensive Land Tenure, and Multi-Domain Cross-Cadre Sequencing).
+
+See [§29](docs/29-pluralism-millet-system-and-state-gap-audit.md).
+
 ## Honest positioning
 
 **Genuinely novel:**

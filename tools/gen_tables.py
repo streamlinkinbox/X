@@ -175,6 +175,16 @@ from model.rcu.clothing_standards import (  # noqa: E402
     UniformProcurementPolicy,
     WorkforceSeparationTier,
 )
+from model.rcu.millet_system import (  # noqa: E402
+    AntiLebanonLock,
+    AuthorityLayer,
+    GapStatus,
+    GovernanceGapRecord,
+    HumanRightsFloor,
+    JurisdictionalDomain,
+    MILLET_JURISDICTION_DOMAINS,
+    STATE_GAP_AUDIT_REGISTER,
+)
 from model.rcu.security import (  # noqa: E402
     ArmouryPolicy,
     audit_effort_curve,
@@ -1538,6 +1548,40 @@ def table_clothing_standards() -> None:
     W("\n")
 
 
+def table_millet_and_gap_audit() -> None:
+    W("## A.25 Pluralism, Modernized Millet Architecture, and State Gap Audit\n\n")
+
+    W("### Sovereign jurisdictional domain separation matrix\n\n")
+    W("| Governance domain | Authority layer | Responsible institution | Scope & statutory override |\n|---|---|---|---|\n")
+    for d in MILLET_JURISDICTION_DOMAINS:
+        layer_str = d.authority_layer.value.replace("_", " ").upper()
+        W(f"| **{d.domain_name}** | `{layer_str}` | {d.responsible_body[:35]}... | {d.override_rule[:45]}... |\n")
+    W("\n")
+
+    hr = HumanRightsFloor()
+    lock = AntiLebanonLock()
+    W("### Modernized Millet safeguards & human rights floor\n\n")
+    W(
+        f"| Structural safeguard | Statutory mandate | Systemic protection |\n|---|---|---|\n"
+        f"| Marriage Age Floor | **Minimum {hr.minimum_marriage_age} years** | 100% Ban on child marriage across all millets |\n"
+        f"| Verifiable Consent | **Mandatory state verification** | Absolute criminal prohibition on forced marriage |\n"
+        f"| Domestic Violence | **Exclusive state criminal jurisdiction** | Millets barred from privatizing or shielding abuse |\n"
+        f"| Right of Exit | **Unrestricted access to Civil Millet** | Eliminates historical caste entrapment by birth |\n"
+        f"| Appellate Review | **Decisions appealable to state courts** | Guarantees judicial due process oversight |\n"
+        f"| Anti-Lebanon Lock | **Zero confessional quotas in office** | Millets strictly barred from allocating state power |\n\n"
+    )
+
+    W("### Comprehensive 10-domain state gap audit register\n\n")
+    W("| # | Governance domain | Framework status | Existing coverage summary | Critical unresolved frontier |\n|---|---|---|---|---|\n")
+    for g in STATE_GAP_AUDIT_REGISTER:
+        status_badge = f"**{g.status.value.replace('_', ' ').upper()}**"
+        W(
+            f"| {g.domain_number} | **{g.domain_title}** | {status_badge} | "
+            f"{g.existing_coverage_summary[:40]}... | {g.unresolved_crucial_elements[:45]}... |\n"
+        )
+    W("\n")
+
+
 def main() -> None:
     header()
     table_classes()
@@ -1564,6 +1608,7 @@ def main() -> None:
     table_penalties()
     table_debt_subscriptions()
     table_clothing_standards()
+    table_millet_and_gap_audit()
 
 
 if __name__ == "__main__":

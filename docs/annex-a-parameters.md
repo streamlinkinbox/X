@@ -1231,3 +1231,43 @@ Dual-use plants (everyday demand keeps them alive until needed):
 | **Specialist expertise halved** | Drift into under-resourcing/caste | Tier 2 as default — separate working space, shared depth and specialist equipment |
 | **Uniform procurement capture** | Drift into under-resourcing/caste | Open contracting, domestic manufacture, published contracts, beneficial ownership disclosure |
 
+## A.25 Pluralism, Modernized Millet Architecture, and State Gap Audit
+
+### Sovereign jurisdictional domain separation matrix
+
+| Governance domain | Authority layer | Responsible institution | Scope & statutory override |
+|---|---|---|---|
+| **Criminal Law & Public Order** | `STATE UNIFORM` | Sovereign Courts & Public Police (§... | 100% Uniform State jurisdiction; Zero religio... |
+| **Economy, Money & Taxation** | `STATE UNIFORM` | Commodity Currency Board & Guild As... | 100% Uniform State jurisdiction; Zero commerc... |
+| **Public Dress Threshold (Part X / §28)** | `STATE UNIFORM` | Female Guard Service & Municipal Ve... | State sets civil floor; Millets free to requi... |
+| **Family & Personal Status** | `MILLET AUTO` | Recognized Religious & Customary Mi... | Autonomous within community, subject to Non-N... |
+| **Fundamental Human Rights Floor** | `STATE FLOOR` | Constitutional Judiciary & Ordinary... | State floor overrides any contrary millet rul... |
+| **Civil Personal Status (The Civil Millet)** | `CIVIL DEFAULT` | Civil Registry & State Family Magis... | Universal guaranteed right of exit; accessibl... |
+| **Political Representation & Governance** | `STATE UNIFORM` | Civic Sortition Juries & Competence... | Anti-Lebanon Lock: Zero confessional seats or... |
+
+### Modernized Millet safeguards & human rights floor
+
+| Structural safeguard | Statutory mandate | Systemic protection |
+|---|---|---|
+| Marriage Age Floor | **Minimum 18 years** | 100% Ban on child marriage across all millets |
+| Verifiable Consent | **Mandatory state verification** | Absolute criminal prohibition on forced marriage |
+| Domestic Violence | **Exclusive state criminal jurisdiction** | Millets barred from privatizing or shielding abuse |
+| Right of Exit | **Unrestricted access to Civil Millet** | Eliminates historical caste entrapment by birth |
+| Appellate Review | **Decisions appealable to state courts** | Guarantees judicial due process oversight |
+| Anti-Lebanon Lock | **Zero confessional quotas in office** | Millets strictly barred from allocating state power |
+
+### Comprehensive 10-domain state gap audit register
+
+| # | Governance domain | Framework status | Existing coverage summary | Critical unresolved frontier |
+|---|---|---|---|---|
+| 1 | **Macro-Economy, Sovereign Float & Land** | **PARTIALLY ADDRESSED** | Abolished usurious debt/insurance (§27),... | Reclaimed sovereign savings float investment ... |
+| 2 | **Education & Cultural Transmission** | **PARTIALLY ADDRESSED** | Master-apprentice guild pipelines (§14, ... | National core curriculum standards; language ... |
+| 3 | **Family, Personal Status & Domestic Rights** | **BUILT AND FORMALIZED** | Modernized Millet architecture (§29) del... | Inter-millet mixed marriage property reconcil... |
+| 4 | **General Criminal Justice & Penal Philosophy** | **PARTIALLY ADDRESSED** | Restorative civic labor (§26), community... | General penal code for violent felonies; pris... |
+| 5 | **Constitutional Entrenchment & Supremacy** | **GENUINELY UNTOUCHED** | Sortition juries (§06, §20), 5-year stat... | Formal written constitution with rigid amendm... |
+| 6 | **Religion, Pluralism & Confessional Order** | **BUILT AND FORMALIZED** | Modernized Millet System (§29): State pu... | Registration dispute appeals for fringe/emerg... |
+| 7 | **Physical Healthcare Infrastructure & Pharmaceuticals** | **PARTIALLY ADDRESSED** | Direct guild healthcare provisioning (§2... | Physical clinic capacity expansion plan; medi... |
+| 8 | **Digital & Physical Infrastructure (Energy, Telecom, ID)** | **PARTIALLY ADDRESSED** | Local energy/biofuel production (§17), L... | National grid/water management; biometric/dig... |
+| 9 | **External Relations, Treaties & Capital Controls** | **PARTIALLY ADDRESSED** | Trade window buffer stocks (§16), import... | Formal capital controls for repatriated float... |
+| 10 | **Macro-Capacity Allocation & Sequencing Synthesis** | **GENUINELY UNTOUCHED** | Individual 3-year timelines (§10, §25, §... | Unified cross-domain fiscal and administrativ... |
+

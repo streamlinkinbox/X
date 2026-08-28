@@ -686,6 +686,32 @@ operational vulnerabilities persist at the boundary of public space:
 
 ---
 
+### P25: Millet jurisdictional friction, opportunistic forum shopping, and exit disputes
+
+**Severity: medium-high. Jurisdictional and legal administration vulnerability.**
+
+While §29 resolves the national pluralism challenge by delegating personal status to recognized
+faith communities and establishing a Civil Millet for exit, multiple operational edge cases emerge:
+1. **Opportunistic Forum Shopping in Divorce & Custody:** Spouses facing unfavorable custody or
+   inheritance outcomes in their traditional millet may attempt tactical conversion or sudden exit
+   to the Civil Millet mid-proceedings to obtain a more favorable division of assets.
+2. **Inter-Millet & Mixed-Tradition Marital Property Disputes:** Marriages between individuals
+   from different registered millets (or between a millet member and an unaffiliated civil registrant)
+   can generate contradictory jurisdictional claims over marital estates and child guardianship.
+3. **Fringe & Cult Group Registration Demands:** Emerging sectarian or extremist groups may demand
+   statutory recognition as official millets to establish insulated family tribunals and escape
+   state scrutiny.
+
+**Mitigation:**
+- **Irrevocable Term Exit Locks (§29):** Transition into the Civil Millet during active matrimonial
+  proceedings applies prospectively only, preventing mid-trial forum shopping.
+- **State Human Rights Floor Supremacy (§29):** All inter-millet jurisdictional deadlocks are
+  automatically routed to ordinary civil magistrates under standard state conflict-of-laws principles.
+- **Strict Objective Statutory Recognition Criteria (§29):** Recognition requires verified multi-generational
+  codified tradition, minimum membership thresholds, and certified compliance with the Human Rights Floor.
+
+---
+
 ## Summary
 
 | # | Problem | Severity | Status |
@@ -714,6 +740,7 @@ operational vulnerabilities persist at the boundary of public space:
 | P22 | Community labor evasion and exile border friction | **Medium-High (new)** | Healer audits + auto-escalation + CIS border alerts & extradition compacts |
 | P23 | Zero-interest capital allocation queues & rationing | **Medium-High (new)** | Readiness audits + public sortition queues + utilization clocks |
 | P24 | Bright-line boundary edge cases & harassment arbitrage | **Medium (new)** | Daylight opacity rule + bad-faith penalty + guild loaner logistics |
+| P25 | Millet jurisdictional friction & forum shopping | **Medium-High (new)** | Irrevocable exit locks + civil conflict laws + objective recognition rules |
 
 **The three at the top are not reasons to abandon the design.** They are the
 reasons a pilot exists — and a pilot that is not explicitly built to test
