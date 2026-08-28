@@ -131,7 +131,29 @@ the legal characterisation argued in Section 8.
 
 ---
 
-## 6.6 Capture resistance: honest assessment
+## 6.6 On secrecy
+
+A recurring proposal in organising literature is that the core group should
+keep plans, membership and resources confidential. **For this project that is
+incompatible with the design**, and the incompatibility is structural rather
+than a matter of taste.
+
+A warehouse is a building full of grain that people must be able to walk to
+and inspect. A currency must be recognised on sight by strangers. The
+published member roll, the published inspector variance statistics, the
+quarterly read-aloud accounts and the externally-held checkpoints are not
+optional transparency — each one is a named control against a named capture
+risk elsewhere in this section.
+
+**The security model is legitimacy, not concealment.** A system nobody can
+audit is a system nobody should trust, including its own members. See §14.2.
+
+Operational security still applies to specific, narrow things: individual key
+material, the timing of cash-equivalent movements, and personal details of
+members at risk. That is compartmentalisation of secrets, not secrecy as a
+posture.
+
+## 6.7 Capture resistance: honest assessment
 
 ### What the design resists well
 

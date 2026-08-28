@@ -17,6 +17,15 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from model.rcu.classes import REGISTER, TIER_A, TIER_B, Tier  # noqa: E402
 from model.rcu.hoarding import simulate  # noqa: E402
+from model.rcu.people import (  # noqa: E402
+    ApprenticeshipParams,
+    Village,
+    apprenticeship,
+    coverage_gap,
+    minimum_village_for_cadre_sufficiency,
+    screening_bias,
+    years_to_replace_masters,
+)
 from model.rcu.units import (  # noqa: E402
     PHYSICAL_HAIRCUT,
     UNIT_DEFINITION,
@@ -322,6 +331,79 @@ def table_weight() -> None:
     )
 
 
+def table_people() -> None:
+    W("## A.10 People: cadre size, screening bias, apprenticeship\n\n")
+    W("### Can a small cadre supply the acceptance requirement?\n\n")
+    W(
+        "Phase 1 requires at least 60% of pilot-market traders accepting RCU. "
+        "A 10-15 person cadre is measured against that requirement below.\n\n"
+    )
+    W("| Market | Adults | Traders | Accepting needed | Cadre of 15 covers | Shortfall |\n")
+    W("|---|---|---|---|---|---|\n")
+    for adults, traders, label in (
+        (800, 60, "Small village"),
+        (3000, 240, "Large village"),
+        (12000, 900, "Small town"),
+    ):
+        g = coverage_gap(Village(adults=adults, traders=traders), cadre_size=15)
+        W(
+            f"| {label} | {adults:,} | {traders} | {g.traders_needed} | "
+            f"{float(g.cadre_covers) * 100:.0f}% | {g.shortfall} |\n"
+        )
+    W(
+        f"\n**A 15-person cadre is 60% of the traders only in a market of about "
+        f"{minimum_village_for_cadre_sufficiency()} adults** -- too small to "
+        "sustain a warehouse or an inspector rotation. The cadre cannot be the "
+        "network; it can only build it. See section 14.2.\n\n"
+    )
+
+    W("### Screening bias: the same test, different circumstances\n\n")
+    W(
+        "Identical population size and identical underlying reliability (5%). "
+        "The only difference is the chance that a reliable person fails for "
+        "reasons unrelated to character -- no fare, a sick child, piecework.\n\n"
+    )
+    W("| Pool | Reliable found | Recall | Precision | Wrongly rejected |\n")
+    W("|---|---|---|---|---|\n")
+    sb = screening_bias()
+    for name in ("comfortable", "destitute"):
+        o = sb[name]
+        W(
+            f"| {name.title()} | {o.true_positives} of {o.truly_reliable} | "
+            f"{float(o.recall) * 100:.0f}% | {float(o.precision) * 100:.0f}% | "
+            f"{o.wrongly_excluded} |\n"
+        )
+    extra = sb["destitute"].wrongly_excluded - sb["comfortable"].wrongly_excluded
+    W(
+        f"\n**The same test discards {extra} additional reliable people purely "
+        "because they are poor.** It measures slack, not commitment. Note also "
+        "that precision is below 40% even in the best case: a single test "
+        "cannot be a gate, because at a 5% base rate most passers are false "
+        "positives.\n\n"
+    )
+
+    W("### Apprenticeship: practitioners over time\n\n")
+    p = ApprenticeshipParams()
+    rows = apprenticeship(p, horizon=20)
+    W("| Year | Masters remaining | Supervisors | In training | Practitioners |\n")
+    W("|---|---|---|---|---|\n")
+    for r in rows:
+        if r["year"] in (1, 5, 10, 15, 20):
+            W(
+                f"| {r['year']} | {r['masters']} | {r['supervisors']} | "
+                f"{r['in_training']} | **{r['practitioners']}** |\n"
+            )
+    yr10 = rows[9]["practitioners"]
+    W(
+        f"\nStarting from {p.masters} masters, year 10 yields "
+        f"{yr10} practitioners -- **{yr10 / p.masters:.1f}x, not 20x.** The "
+        "binding constraint is supervision capacity, not willing apprentices. "
+        f"The community first holds more practitioners than it started with in "
+        f"**year {years_to_replace_masters()}**, which is the honest success "
+        "criterion: knowledge outliving its holders.\n\n"
+    )
+
+
 def main() -> None:
     header()
     table_classes()
@@ -333,6 +415,7 @@ def main() -> None:
     table_harvest()
     table_bundles()
     table_weight()
+    table_people()
 
 
 if __name__ == "__main__":

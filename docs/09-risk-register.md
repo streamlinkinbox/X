@@ -28,6 +28,10 @@ project-threatening and must have an owner and a mitigation before launch.
 | R19 | **Partial bundle-pricing adoption** | 3 | 4 | 12 | Universal launch default; anchor acceptors commit; app quotes bundles by default | 6 |
 | R20 | **No numéraire → cognitive load → users prefer shillings** | 4 | 4 | **16** | Let iron emerge as reference; app + printed rate boards; measure negotiation time in Ph1 | 9 |
 | R21 | **Grading is now the sole discretionary input** | 3 | 4 | 12 | Rotation, published variance, illustrated manuals | 6 |
+| R22 | **Cadre mistakes itself for the network** | 4 | 5 | **20** | Acceptor count is a Phase 1 exit gate; cadre is the engine, network is the product (§14.2) | 8 |
+| R23 | **Secrecy doctrine adopted; system unauditable** | 3 | 5 | **15** | §6 transparency is non-negotiable; a warehouse cannot be clandestine | 6 |
+| R24 | **Screening selects the comfortable** | 4 | 3 | 12 | Cost-free tests, multiple pass routes, monitor participant wealth profile (§14.4) | 6 |
+| R25 | **Half-trained practitioner causes harm** | 3 | 5 | **15** | Scope-of-practice limits; written referral protocol; clinician oversight (§14.6) | 6 |
 
 ---
 

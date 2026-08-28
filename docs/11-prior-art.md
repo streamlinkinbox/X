@@ -182,7 +182,39 @@ dependency is entirely unavoidable and should be stated rather than ignored.
 
 ---
 
-## 11.6 Honest novelty assessment
+## 11.6 Disaster sociology — Quarantelli, Tierney (1950s–present)
+
+Relevant because the project's human doctrine depends on what people actually
+do in a crisis, and the popular assumption is wrong.
+
+More than half a century of field research by E.L. Quarantelli and the
+Disaster Research Center establishes that **panic is rare** and that the
+normal response to catastrophe is **prosocial**: cooperation, mutual aid, and
+the spontaneous emergence of new groups to meet needs. Crime frequently
+falls. Kathleen Tierney's work on Hurricane Katrina documents the inverse
+failure — authorities acting on imagined disorder while communities
+self-organised — a pattern the literature calls **elite panic**.
+
+The Siege of Sarajevo is often cited as evidence that survival requires
+excluding outsiders. The record suggests the opposite: improvised inclusive
+mutual aid across ethnic lines, communal kitchens, apartment blocks
+allocating tasks, and organisations such as *La Benevolencija* running a
+public kitchen, pharmacy and clinics for everyone regardless of background.
+
+**Implication for RCU:** design for cooperation, not for defence against
+neighbours. A currency built by people expecting their neighbours to turn
+feral will be designed as a fortress, and fortresses do not circulate. See
+§14.3.
+
+## 11.7 Apprenticeship and dual training
+
+The guild system, and the surviving German and Swiss dual-training models,
+demonstrate that supervised practice transfers skills effectively without
+tuition. Relevant to §14.6, with the caveat modelled there: growth is limited
+by supervision capacity, so realistic projections are far below the
+enthusiastic ones.
+
+## 11.8 Honest novelty assessment
 
 | Component | Prior art | Novel here? |
 |---|---|---|
@@ -209,7 +241,7 @@ idea, and it is worth writing up on its own.**
 
 ---
 
-## 11.7 Reading list
+## 11.9 Reading list
 
 **Essential:**
 - Graham, B. (1937) *Storage and Stability*
@@ -220,6 +252,11 @@ idea, and it is worth writing up on its own.**
 - Ruddick, W. et al. on Sarafu; Mqamelo (2022) RCT results
 
 **Also relevant:**
+- Quarantelli, E.L. (2008) "Conventional Beliefs and Counterintuitive
+  Realities", *Social Research* 75(3)
+- Tierney, Bevc & Kuligowski (2006) "Metaphors Matter: Disaster Myths, Media
+  Frames, and Their Consequences in Hurricane Katrina"
+- Solnit, R. (2009) *A Paradise Built in Hell*
 - Cooper, R. (1988) "Toward an International Commodity Standard?", *Cato
   Journal* 8(2)
 - FAO (2016) *Designing warehouse receipt legislation*

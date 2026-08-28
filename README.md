@@ -50,6 +50,7 @@ the five model findings that change the original design.
 | [11 Prior art](docs/11-prior-art.md) | Graham, Gesell, Wörgl, Sarafu, WRS |
 | [12 Bundle pricing & receipts](docs/12-bundle-pricing-and-receipts.md) | Bundle prices, dual-price receipts, hoarding |
 | [13 Weight denomination](docs/13-weight-denomination.md) | **Physical units, grading, provenance — supersedes §1.1** |
+| [14 People & recruitment](docs/14-people-and-recruitment.md) | Cadre vs. network, screening bias, apprenticeship |
 | [Annex A](docs/annex-a-parameters.md) | **Generated** parameter and stress tables |
 | [Annex B](docs/annex-b-open-problems.md) | Unsolved problems, ranked by severity |
 
@@ -168,6 +169,27 @@ produce a bit-identical answer to "what is this note worth today?"; floating
 point drift between a phone and a POS terminal is a settlement dispute.
 
 ---
+
+## People: the cadre is the engine, the network is the product
+
+A tight core of 10–15 is right for holding keys and risk — but it cannot be
+the currency. Acceptance is what gives money value:
+
+| Market | Traders | Accepting needed | Cadre of 15 covers |
+|---|---|---|---|
+| Small village (800) | 60 | 36 | 42% |
+| Large village (3,000) | 240 | 144 | **10%** |
+| Small town (12,000) | 900 | 540 | **3%** |
+
+So the common organising doctrine — small core, secrecy, ignore the rest — is
+fatal here. **A warehouse cannot be clandestine.** Security comes from
+legitimacy and auditability.
+
+Two more findings: screening tests measure **slack, not commitment** (the same
+test wrongly rejects 23 reliable people from a destitute pool versus 3 from a
+comfortable one), and apprenticeship yields **~1.9× in a decade, not 20×** —
+supervision capacity is the bottleneck. See
+[§14](docs/14-people-and-recruitment.md).
 
 ## Honest positioning
 

@@ -264,3 +264,40 @@ Under weight denomination a note claims a physical quantity, so the haircut no l
 
 Iron is the realistic winner for a rural market: stable, universally wanted, cheap to store, divisible, and verifiable with a scale and a magnet. Precious metals scores higher but is too valuable per gram for daily use. The system should not mandate a numeraire -- that would recreate the price-setting authority weight denomination abolishes -- but should ensure the likely winner is exceptionally well run.
 
+## A.10 People: cadre size, screening bias, apprenticeship
+
+### Can a small cadre supply the acceptance requirement?
+
+Phase 1 requires at least 60% of pilot-market traders accepting RCU. A 10-15 person cadre is measured against that requirement below.
+
+| Market | Adults | Traders | Accepting needed | Cadre of 15 covers | Shortfall |
+|---|---|---|---|---|---|
+| Small village | 800 | 60 | 36 | 42% | 21 |
+| Large village | 3,000 | 240 | 144 | 10% | 129 |
+| Small town | 12,000 | 900 | 540 | 3% | 525 |
+
+**A 15-person cadre is 60% of the traders only in a market of about 312 adults** -- too small to sustain a warehouse or an inspector rotation. The cadre cannot be the network; it can only build it. See section 14.2.
+
+### Screening bias: the same test, different circumstances
+
+Identical population size and identical underlying reliability (5%). The only difference is the chance that a reliable person fails for reasons unrelated to character -- no fare, a sick child, piecework.
+
+| Pool | Reliable found | Recall | Precision | Wrongly rejected |
+|---|---|---|---|---|
+| Comfortable | 47 of 50 | 94% | 33% | 3 |
+| Destitute | 27 of 50 | 54% | 22% | 23 |
+
+**The same test discards 20 additional reliable people purely because they are poor.** It measures slack, not commitment. Note also that precision is below 40% even in the best case: a single test cannot be a gate, because at a 5% base rate most passers are false positives.
+
+### Apprenticeship: practitioners over time
+
+| Year | Masters remaining | Supervisors | In training | Practitioners |
+|---|---|---|---|---|
+| 1 | 11.0 | 11.0 | 33.1 | **0.0** |
+| 5 | 7.9 | 7.9 | 33.1 | **13.9** |
+| 10 | 5.2 | 19.1 | 60.2 | **23.1** |
+| 15 | 3.4 | 42.6 | 127.9 | **46.6** |
+| 20 | 2.3 | 75.7 | 227.0 | **100.0** |
+
+Starting from 12 masters, year 10 yields 23.1 practitioners -- **1.9x, not 20x.** The binding constraint is supervision capacity, not willing apprentices. The community first holds more practitioners than it started with in **year 5**, which is the honest success criterion: knowledge outliving its holders.
+

@@ -182,6 +182,31 @@ settlement added to a maize-for-timber swap — rather than a rival currency.
 That is both an accurate description and the basis of the legal strategy in
 §8.
 
+## The constraint that binds first: people
+
+Thirteen sections model grain, iron and ledgers. §14 models the thing that
+actually limits the project.
+
+**The cadre is the engine; the acceptor network is the product.** A tight core
+of 10–15 trusted people is the right structure for holding keys and taking
+risk — but it cannot *be* the currency. A 15-person cadre is 60% of the
+traders only in a market of about **312 adults**, too small to sustain a
+warehouse. In a village of 3,000 it covers **10%** of the acceptance
+requirement.
+
+This matters because the common organising instinct — build a tight core,
+keep it secret, ignore everyone else — is **actively fatal here.** A
+warehouse cannot be clandestine; a currency must be recognised by strangers.
+The security model is legitimacy and auditability, not concealment.
+
+Two further corrections come out of the model. Small-commitment screening
+tests measure **slack, not commitment**: applied to a destitute pool, the
+same test wrongly rejects 23 reliable people versus 3 in a comfortable pool.
+And apprenticeship — the right model for skills — yields about **1.9× in a
+decade, not 20×**, because supervision capacity, not enthusiasm, is the
+bottleneck. The honest win is that the community holds more practitioners
+than it started with by roughly year 5: knowledge outliving its holders.
+
 ## What this system cannot do
 
 Stated plainly, because a blueprint that only lists strengths is marketing:
@@ -219,6 +244,7 @@ Stated plainly, because a blueprint that only lists strengths is marketing:
 | [`11-prior-art.md`](11-prior-art.md) | Graham, Gesell, Wörgl, Sarafu, WRS — what each teaches |
 | [`12-bundle-pricing-and-receipts.md`](12-bundle-pricing-and-receipts.md) | Bundle prices, dual-price receipts, the hoarding question |
 | [`13-weight-denomination.md`](13-weight-denomination.md) | **Weight-denominated units, grading, provenance — supersedes §1.1** |
+| [`14-people-and-recruitment.md`](14-people-and-recruitment.md) | Recruitment, screening, trust, apprenticeship — the human constraint |
 | [`annex-a-parameters.md`](annex-a-parameters.md) | Generated tables: all parameters and stress results |
 | [`annex-b-open-problems.md`](annex-b-open-problems.md) | Unsolved problems, ranked by how badly they hurt |
 

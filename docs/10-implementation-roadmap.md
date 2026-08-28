@@ -19,6 +19,7 @@ skipping it is the most common way projects of this kind fail.
 | Governance | Cooperative registered; board elected; dispute council seated; **wind-down plan adopted** |
 | Technical | Signing library, ledger node, Android app, USSD gateway — all tested offline |
 | Adoption | **≥25 anchor acceptors signed in writing, committed to bundle quoting** |
+| People | Cadre of 10-15 built by referral and repeated observation; **acceptor recruitment plan** distinct from cadre building (§14.8); elder knowledge capture begun (recorded curricula) |
 | Metrology | **No price committee.** Certified scales and moisture meters at every deposit point; illustrated grading manuals; trade-observation book and printed rate boards |
 | Baseline | Household survey: income, prices, post-harvest loss, seasonal cash access |
 
@@ -190,6 +191,8 @@ and a holder losing value.
 | Share of quotes made as bundles | Whether the P1 fix is actually live | Monthly |
 | Negotiation time vs. shillings | Whether life without a unit of account is usable (P11) | Monthly |
 | Whether a reference good has emerged | Numéraire formation (§13.6) | Quarterly |
+| Acceptor count vs. cadre size | Guards against R22: cadre mistaking itself for the network | Monthly |
+| Wealth profile of participants vs. community | Guards against R24: screening selecting the comfortable | Quarterly |
 | Median receipt markup by class | Whether transparency constrains prices | Monthly |
 | Land & cattle prices vs. reference basket | Capital flight into real assets (§12.4) | Quarterly |
 | Post-harvest loss vs. baseline | The actual development outcome | Annual |

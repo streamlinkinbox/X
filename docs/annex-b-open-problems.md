@@ -107,6 +107,13 @@ acceptance for fees, density over breadth. Wörgl's evidence says the single
 most important element is that **the issuer accepts its own currency for
 obligations people already owe.**
 
+**Sharpened by §14.2.** A common organising instinct is to build a tight core
+of 10-15 committed people and treat that as the movement. For a currency this
+is arithmetically insufficient: a 15-person cadre is 60% of the traders only
+in a market of roughly 312 adults, too small to sustain a warehouse. The cadre
+is the engine; the acceptor network is the product. Effort must be split
+accordingly, and the acceptor count tracked separately from cadre size.
+
 **The unresolved part:** RCU's issuer is a cooperative, not a municipality.
 Cooperative fees are a much smaller and more avoidable obligation than
 taxes. The demand anchor is correspondingly weaker than Wörgl's, and Wörgl
@@ -317,6 +324,28 @@ iron.
 
 ---
 
+## P12. Building an acceptor network, not just a cadre
+
+**Severity: high. Introduced by §14. Playbook partial.**
+
+Organising method is well understood for building a small trusted core:
+referral, observed action, graduated tests. It is much less understood for
+the thing a currency actually needs, which is **several hundred traders who
+find the money useful.**
+
+Those require different things. A cadre member needs to be trustworthy with
+keys and risk. A trader needs only to believe the note is verifiable and that
+her customers will take it. **The second is a product problem, not a loyalty
+problem** — and the blueprint's technical apparatus exists precisely so that
+strangers can transact without trusting each other.
+
+Unresolved: nobody has demonstrated a reliable method for moving from a
+15-person core to a 200-trader acceptance base in a low-trust rural market.
+Sarafu's network analysis suggests the answer involves **closed transaction
+cycles** rather than raw counts, which is measurable but not yet a recipe.
+
+---
+
 ## Summary
 
 | # | Problem | Severity | Status |
@@ -332,6 +361,7 @@ iron.
 | P9 | No positive yield | Medium | Possibly inherent |
 | P10 | Impact measurement | Medium | Methodologically hard |
 | P11 | No common unit of account | **High (new)** | Mitigations untested; Phase 1 must measure |
+| P12 | Recruiting the acceptor network, not just a cadre | **High (new)** | §14.2 gives the arithmetic; no proven playbook at scale |
 
 **The three at the top are not reasons to abandon the design.** They are the
 reasons a pilot exists — and a pilot that is not explicitly built to test
