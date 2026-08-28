@@ -75,6 +75,22 @@ quantity of graded commodity**, and:
 word "currency" in a founder's public statement is admissible evidence about
 what the instrument is.
 
+### The barter framing
+
+The strongest available public description is **"barter with the frictions
+removed"** (§12.5). A farmer swapping maize for timber requires no licence
+anywhere. This system does exactly that, with a receipt standing in for the
+sack so the parties need not meet, want each other's goods simultaneously,
+or move anything.
+
+**Bundle pricing makes this framing substantively true rather than
+rhetorical.** When a seller quotes "100 iron + 500 wood" they are stating
+which real goods they want in exchange — a barter proposition. A system that
+quoted single fungible amounts would look far more like a currency, because
+fungibility is most of what distinguishes money from goods. The pricing
+convention chosen for economic reasons in §12.3 therefore also strengthens
+the legal characterisation, and the two should be defended together.
+
 ---
 
 ## 8.3 What triggers a banking licence

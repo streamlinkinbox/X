@@ -9,7 +9,23 @@ people who are trying to break the system rather than defend it.
 
 ## P1. Demurrage arbitrage inverts the design's purpose
 
-**Severity: potentially fatal. No clean solution known.**
+**Severity: was potentially fatal. SOLVED by bundle pricing (§12.3),
+conditional on near-universal adoption.**
+
+> **Resolution.** Quoting prices as bundles of specific commodity classes
+> rather than as a single fungible amount removes the payer's ability to
+> choose which notes to part with. Modelled over 24 months, the burden ratio
+> between a sophisticated and a naive holder falls from **2.16 to 1.00**.
+>
+> **The condition is strict and non-obvious: partial adoption is worse than
+> none.** At 25% of sellers insisting on exact bundles the ratio rises to
+> **2.41**, because hoarders route around the minority of strict sellers and
+> concentrate their decayed notes on the flexible majority. Bundle pricing
+> must be the launch default and near-universal, or it must not be
+> introduced. See §12.3.
+>
+> The original analysis is retained below because the failure mode returns
+> immediately if bundle pricing lapses.
 
 The system offers two tiers and lets people choose which to pay with.
 Anyone who understands the difference will hold Tier B and spend Tier A.
@@ -37,7 +53,7 @@ bear all of it, because the rich simply hold the other tier.
 | Educate everyone | Optimistic; and asymmetric information is the normal state of markets |
 | Price Tier A at a market discount | This already happens implicitly — and the discount is borne by whoever is least able to negotiate |
 
-### The least-bad option
+### The least-bad option *without* bundle pricing
 
 Accept the arbitrage but **compress the gap**: keep Tier A demurrage low
 (1–2%/month, not 5%) and charge Tier B a custody fee that is genuinely
@@ -45,9 +61,10 @@ material (2–4%/year, not 1%). If holding Tier B costs 3%/year and Tier A
 costs 12%/year, the arbitrage exists but is worth less than the effort of
 exploiting it for small traders.
 
-**This is mitigation, not solution.** It should be stated as such, and
-measured directly in Phase 2 by tracking the Tier A/B holdings split against
-wealth quintile.
+This remains the correct fallback if bundle pricing fails to become the
+market convention. It should still be measured directly in Phase 2 by
+tracking the Tier A/B holdings split against wealth quintile — that metric
+is now the early warning that bundle adoption is slipping.
 
 ---
 
@@ -120,6 +137,19 @@ quote; use rolling averages of actual redemption transactions; publish
 prices weekly and openly so that manipulation is visible; and over time let
 the system's own redemption prices become the reference. The last is a
 bootstrapping problem — it works only once there is enough volume.
+
+**Severity raised by the dual-price receipt (§12.2).** Reference prices were
+previously used only to set issuance, where a haircut absorbs error. They are
+now printed on every receipt as the buyer's fairness benchmark, which makes
+them load-bearing for consumer protection and a much richer target for
+capture. A committee that inflates reference prices makes every seller look
+honest; one that deflates them makes every seller look like a thief.
+
+Two additional requirements follow: reference prices must carry a
+**confidence grade** (high / medium / low) so that unique goods such as
+houses are not given false precision, and the **method must be published**
+alongside the numbers so that manipulation is detectable by anyone who cares
+to check.
 
 ---
 
@@ -239,10 +269,10 @@ only credible route.
 
 | # | Problem | Severity | Status |
 |---|---|---|---|
-| P1 | Demurrage arbitrage | Potentially fatal | Mitigation only |
+| P1 | Demurrage arbitrage | ~~Potentially fatal~~ | **Solved** by bundle pricing (§12.3), if adoption is near-universal |
 | P2 | Seasonal money supply | Potentially fatal | Partial, untested |
 | P3 | Adoption bootstrap | Most likely killer | Playbook exists |
-| P4 | Price discovery | High | Solvable |
+| P4 | Price discovery | **Raised: high** | Solvable; now load-bearing for receipts |
 | P5 | Cost of carry vs. value density | High | Needs modelling |
 | P6 | Cooperative failure | High | Underspecified |
 | P7 | Offline limit enforcement | Medium | Bounded, needs sizing |

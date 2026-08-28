@@ -18,7 +18,8 @@ skipping it is the most common way projects of this kind fail.
 | Grading | Manuals for 4 classes, illustrated, translated; 6 inspectors trained and certified |
 | Governance | Cooperative registered; board elected; dispute council seated; **wind-down plan adopted** |
 | Technical | Signing library, ledger node, Android app, USSD gateway — all tested offline |
-| Adoption | **≥25 anchor acceptors signed in writing** |
+| Adoption | **≥25 anchor acceptors signed in writing, committed to bundle quoting** |
+| Pricing | Reference price index published weekly, with confidence grades, for ≥8 weeks before issuance |
 | Baseline | Household survey: income, prices, post-harvest loss, seasonal cash access |
 
 The baseline survey is not bureaucracy. Without it, there is no way to know
@@ -29,8 +30,9 @@ it comes out.
 **Exit gate:**
 - Warehouse licensed under the Warehouse Receipts Act
 - Legal opinion states the instrument is *not* deposit-taking
-- 25+ written acceptor commitments
+- 25+ written acceptor commitments, **including to bundle quoting**
 - Inspector grading variance <10% on a blind test set
+- Reference price index running and publicly checkable
 - Wind-down plan funded and adopted
 
 ---
@@ -68,6 +70,10 @@ entangled and neither is diagnosable.
 - ≥100 successful physical redemptions
 - Fraud loss <1% of outstanding
 - Gate invoked ≤ once, resolved within its own rules
+- **≥80% of quoted prices expressed as bundles.** Below ~50% the design is
+  in the region where bundle pricing makes arbitrage *worse* than not having
+  it (§12.3); treat sustained sub-50% adoption as a kill criterion, not a
+  disappointment
 
 ---
 
@@ -181,6 +187,9 @@ and a holder losing value.
 | Redemption gate invocations | Liquidity stress | Continuous |
 | Grading variance by inspector | Corruption early warning | Monthly |
 | Tier A/B split by wealth quintile | Arbitrage inversion | Quarterly |
+| Share of quotes made as bundles | Whether the P1 fix is actually live | Monthly |
+| Median receipt markup by class | Whether transparency constrains prices | Monthly |
+| Land & cattle prices vs. reference basket | Capital flight into real assets (§12.4) | Quarterly |
 | Post-harvest loss vs. baseline | The actual development outcome | Annual |
 | Harvest-to-lean price gap | Whether producers are better off | Annual |
 | Household cash access in lean season | Whether the seasonal problem is solved | Annual |

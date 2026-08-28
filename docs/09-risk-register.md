@@ -25,6 +25,7 @@ project-threatening and must have an owner and a mitigation before launch.
 | R16 | **Environmental harm (deforestation)** | 3 | 4 | 12 | Exclude charcoal, certified timber only | 5 |
 | R17 | **Currency of the poor stigma** | 3 | 4 | 12 | Elite participation early; accepted for prestige goods | 8 |
 | R18 | **Conflict-mineral / sanctions exposure** | 2 | 5 | 10 | Exclude artisanal gold and strategic minerals in Ph1–2 | 4 |
+| R19 | **Partial bundle-pricing adoption** | 3 | 4 | 12 | Universal launch default; anchor acceptors commit; app quotes bundles by default | 6 |
 
 ---
 
@@ -105,16 +106,17 @@ useful. Every complementary currency faces this. Mitigation: recruit
 prosperous, high-status participants first, and ensure desirable goods —
 not only staples — are purchasable in RCU.
 
-**3. Demurrage arbitrage.** Sophisticated actors hold Tier B and pay in Tier
-A, systematically transferring decay losses to less sophisticated
+**3. Demurrage arbitrage — now addressed.** Sophisticated actors hold Tier B
+and pay in Tier A, transferring decay losses to less sophisticated
 counterparties. Over time the poor hold the decaying notes and the wealthy
-hold the stable ones — **an exact inversion of the design intent.** This is
-not hypothetical; it is the predictable outcome of a two-tier system with a
-free choice of payment medium.
-*Partial mitigation:* mandate a minimum Tier A share in large transactions,
-and cap individual Tier B holdings. Both are intrusive. **There is no clean
-fix, and this deserves to be flagged as a first-order design flaw rather
-than a minor risk.**
+hold the stable ones — **an exact inversion of the design intent.**
+
+**Bundle pricing (§12) resolves this**, taking the modelled burden ratio from
+2.16 to 1.00. The residual risk is no longer the arbitrage itself but
+**incomplete adoption of bundle quoting**: at 25% adoption the ratio worsens
+to 2.41, since hoarders route around strict sellers. The risk therefore
+changes character — from an unsolvable design flaw to an adoption-discipline
+problem, tracked as R19 below.
 
 **4. Warehouse becomes the bottleneck.** Every issuance and redemption
 requires a physical visit. In a district with one warehouse and poor roads,
@@ -140,6 +142,7 @@ conditions never stop.
 | Month 9 | ≥60% of pilot-market traders accepting | Stop; redesign adoption |
 | Month 12 | Collateral coverage ≥1.15× every month | Stop issuance; audit |
 | Month 12 | Zero unresolved series impairments | Stop; investigate |
+| Month 12 | ≥50% of quotes as bundles | **Halt bundle rollout** — below this it worsens arbitrage |
 | Month 18 | Median note velocity ≥4 turns/year | Redesign demurrage |
 | Month 18 | Inspector variance within 1.5× peer band | Replace inspection regime |
 | Month 24 | Regulatory status resolved or credibly in progress | Wind down orderly |

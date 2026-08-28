@@ -100,6 +100,19 @@ note has always cost** — vaults charge rent. The original blueprint's
 promise that Tier B "holds value indefinitely at no cost" is the one claim
 in it that is physically impossible.
 
+### What makes the two-tier split safe
+
+A two-tier system with a free choice of payment medium is dangerous: anyone
+who understands the difference holds Tier B and spends Tier A, so demurrage
+lands on the unsophisticated. This is Annex B's problem P1, and it was
+originally rated potentially fatal.
+
+**Bundle pricing (§12) is what makes the split safe.** When sellers quote in
+specific classes rather than a single fungible amount, the payer cannot
+choose which notes to part with, and the burden equalises. The two-tier
+design should be understood as depending on that convention — it is not an
+optional refinement bolted on afterwards.
+
 ### The consequence nobody likes
 
 Tier A decays at 11–46%/year. Tier B costs 1–5%/year. **Both tiers lose

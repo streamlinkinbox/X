@@ -16,6 +16,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from model.rcu.classes import REGISTER, TIER_A, TIER_B, Tier  # noqa: E402
+from model.rcu.hoarding import simulate  # noqa: E402
 from model.rcu.stress import (  # noqa: E402
     LIQUIDITY_DEPTH,
     harvest_cycle,
@@ -232,6 +233,38 @@ def table_harvest() -> None:
     )
 
 
+def table_bundles() -> None:
+    W("## A.8 Bundle pricing versus demurrage arbitrage\n\n")
+    W(
+        "Two agents with identical holdings and identical payment demands over "
+        "24 months. The sophisticated agent chooses which notes to part with "
+        "wherever the rules allow. The burden ratio is naive loss divided by "
+        "sophisticated loss: **1.00 means demurrage is borne equally**, and "
+        "higher values mean the unsophisticated are carrying it.\n\n"
+    )
+    W("| Payment rule | Sophisticated loss | Naive loss | Burden ratio |\n")
+    W("|---|---|---|---|\n")
+    for strict, label in ((False, "Free substitution"), (True, "Strict bundles")):
+        r = simulate(strict=strict, months=24, tier_a_demand_share=0.5)
+        W(
+            f"| {label} | {r.sophisticated_loss:.1f} | {r.naive_loss:.1f} | "
+            f"**{r.loss_ratio:.2f}** |\n"
+        )
+    W("\n### Sensitivity to the Tier A share of quoted bundles\n\n")
+    W("| Tier A share of demand | Strict bundles | Free substitution |\n")
+    W("|---|---|---|\n")
+    for pct in (30, 40, 50, 60, 70):
+        s = simulate(strict=True, months=24, tier_a_demand_share=pct / 100)
+        f = simulate(strict=False, months=24, tier_a_demand_share=pct / 100)
+        fr = "n/a" if f.loss_ratio == float("inf") else f"{f.loss_ratio:.2f}"
+        W(f"| {pct}% | {s.loss_ratio:.2f} | {fr} |\n")
+    W(
+        "\nStrict bundle pricing equalises the burden across every demand mix "
+        "tested. See section 12.3 for the partial-adoption result, which is "
+        "non-monotonic and is the binding operational constraint.\n\n"
+    )
+
+
 def main() -> None:
     header()
     table_classes()
@@ -241,6 +274,7 @@ def main() -> None:
     table_liquidity()
     table_schedule()
     table_harvest()
+    table_bundles()
 
 
 if __name__ == "__main__":

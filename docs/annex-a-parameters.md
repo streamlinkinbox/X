@@ -193,3 +193,24 @@ A grain cooperative issuing once a year at harvest, 100,000 RCU of assessed depo
 
 Minimum coverage over 48 months: **1.38×**. Coverage never falls below 1.0, so the design is solvent under a pure harvest cycle with no price shock. The money supply, however, swings from 0 to 132,009 RCU and back within each year — a single-crop cooperative cannot supply a stable medium of exchange on its own. **Classes must be pooled across differently-timed harvests, or the region will have a liquidity drought every lean season.**
 
+## A.8 Bundle pricing versus demurrage arbitrage
+
+Two agents with identical holdings and identical payment demands over 24 months. The sophisticated agent chooses which notes to part with wherever the rules allow. The burden ratio is naive loss divided by sophisticated loss: **1.00 means demurrage is borne equally**, and higher values mean the unsophisticated are carrying it.
+
+| Payment rule | Sophisticated loss | Naive loss | Burden ratio |
+|---|---|---|---|
+| Free substitution | 8.3 | 17.9 | **2.16** |
+| Strict bundles | 17.2 | 17.2 | **1.00** |
+
+### Sensitivity to the Tier A share of quoted bundles
+
+| Tier A share of demand | Strict bundles | Free substitution |
+|---|---|---|
+| 30% | 1.00 | 1.53 |
+| 40% | 1.00 | 2.19 |
+| 50% | 1.00 | 2.16 |
+| 60% | 1.00 | 2.34 |
+| 70% | 1.00 | 2.24 |
+
+Strict bundle pricing equalises the burden across every demand mix tested. See section 12.3 for the partial-adoption result, which is non-monotonic and is the binding operational constraint.
+

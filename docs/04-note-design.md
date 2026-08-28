@@ -161,7 +161,24 @@ is the correct one.
 
 ---
 
-## 4.5 The counterfeit economics
+## 4.5 The transaction receipt
+
+Separate from the note itself, every quote and settlement produces a
+**dual-price receipt** (§12.2) showing the asked bundle, the assessed
+reference bundle, and the markup per class. It is printable on a thermal
+printer, renderable in abbreviated form over USSD, and is the buyer's
+protection against being overcharged.
+
+Two display rules follow from §12 and matter more than they appear to:
+
+- **The wallet shows holdings by class, never as a single total.** A single
+  total silently reintroduces the fungibility that bundle pricing exists to
+  remove, and would quietly undo the fix for demurrage arbitrage.
+- **Settlement screens show face required against current value tendered**,
+  so the cost of paying with aged notes is visible at the moment it is
+  incurred rather than discovered later.
+
+## 4.6 The counterfeit economics
 
 Counterfeiting is deterred by making it unprofitable, not impossible.
 

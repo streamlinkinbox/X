@@ -126,6 +126,33 @@ most. **Issuance must be pooled across commodities with differently-timed
 harvests**, or the currency will fail at exactly the moment it is most
 needed.
 
+## The refinement that solves the worst problem
+
+Prices are quoted as **bundles of specific commodity classes** — "100 iron +
+500 wood + 40 plastic" — not as a single fungible amount, and every quote
+carries an independently assessed **reference bundle** so the buyer can see
+the markup.
+
+This was added after the first draft and it resolves what Annex B rated the
+design's most dangerous flaw. With a free choice of payment medium,
+sophisticated holders keep stable notes and spend decaying ones, so demurrage
+falls on the poor — an exact inversion of the purpose. Requiring payment in
+*specific classes* removes that choice: modelled over 24 months, the burden
+ratio between a sophisticated and a naive holder falls from **2.16 to 1.00**.
+
+**One condition, and it is severe: partial adoption is worse than none.** At
+25% of sellers insisting on exact bundles the ratio rises to **2.41**,
+because hoarders route around the strict minority and dump decayed notes on
+the flexible majority. Bundle pricing must be the launch default and
+near-universal, or it must not be introduced at all. A gradual rollout passes
+directly through the region where it does harm. See §12.
+
+The receipt also reframes the whole system usefully: this is
+**barter with the frictions removed** — divisibility, portability and delayed
+settlement added to a maize-for-timber swap — rather than a rival currency.
+That is both an accurate description and the basis of the legal strategy in
+§8.
+
 ## What this system cannot do
 
 Stated plainly, because a blueprint that only lists strengths is marketing:
@@ -161,6 +188,7 @@ Stated plainly, because a blueprint that only lists strengths is marketing:
 | [`09-risk-register.md`](09-risk-register.md) | Scored risks, kill criteria, what makes us stop |
 | [`10-implementation-roadmap.md`](10-implementation-roadmap.md) | Phased plan with falsifiable gates |
 | [`11-prior-art.md`](11-prior-art.md) | Graham, Gesell, Wörgl, Sarafu, WRS — what each teaches |
+| [`12-bundle-pricing-and-receipts.md`](12-bundle-pricing-and-receipts.md) | Bundle prices, dual-price receipts, the hoarding question |
 | [`annex-a-parameters.md`](annex-a-parameters.md) | Generated tables: all parameters and stress results |
 | [`annex-b-open-problems.md`](annex-b-open-problems.md) | Unsolved problems, ranked by how badly they hurt |
 

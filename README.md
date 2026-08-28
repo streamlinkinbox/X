@@ -48,6 +48,7 @@ the five model findings that change the original design.
 | [09 Risk register](docs/09-risk-register.md) | Scored risks and kill criteria |
 | [10 Roadmap](docs/10-implementation-roadmap.md) | Phased plan with falsifiable gates |
 | [11 Prior art](docs/11-prior-art.md) | Graham, Gesell, Wörgl, Sarafu, WRS |
+| [12 Bundle pricing & receipts](docs/12-bundle-pricing-and-receipts.md) | Bundle prices, dual-price receipts, hoarding |
 | [Annex A](docs/annex-a-parameters.md) | **Generated** parameter and stress tables |
 | [Annex B](docs/annex-b-open-problems.md) | Unsolved problems, ranked by severity |
 
@@ -83,6 +84,30 @@ Produced by the model in `model/rcu/`, not by opinion.
 Full detail, including three findings the original concept missed entirely
 (demurrage arbitrage, the stigma trap, and the success-to-capture pipeline),
 is in [Annex B](docs/annex-b-open-problems.md).
+
+## Bundle pricing: the fix for the worst flaw
+
+Prices are quoted as **bundles of specific classes** — "100 iron + 500 wood +
+40 plastic" — with an assessed reference bundle beside them so a buyer can
+see the markup per class:
+
+```
+| ASKED         ASSESSED        DIFFERENCE           |
+|    100 FE stable     20 FE           +400%         |
+|     40 PL decays      5 PL           +700%         |
+|    500 WD decays    200 WD           +150%         |
+| MARKUP                 +184.4%                     |
+| VERY HIGH MARGIN — CHECK OTHER SELLERS             |
+```
+
+Demanding *specific classes* removes the payer's ability to hoard stable
+notes and spend only decaying ones. The burden ratio between a sophisticated
+and a naive holder drops from **2.16 to 1.00** — resolving Annex B's P1.
+
+**But partial adoption is worse than none:** at 25% of sellers insisting, the
+ratio rises to **2.41**, because hoarders route around them. This must launch
+as a universal default or not at all. See
+[§12](docs/12-bundle-pricing-and-receipts.md).
 
 ---
 
