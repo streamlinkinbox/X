@@ -345,6 +345,26 @@ Key mechanisms:
   audits with full subpoena power, zero legal immunity, and strictly equal living
   standards (1.0 : 1.0 ratio).
 
+## Anti-corruption: difficulty diagnostics and resource curse eradication
+
+§21 formalizes structural protections against systemic looting, false incompetence
+accusations, and single-commodity Dutch Disease:
+
+- **Difficulty-Adjusted Diagnostics:** Evaluates leaders not against impossible
+  perfection, but through comparative benchmarking against neighboring districts
+  under identical climate/blockade shocks.
+- **Shadow Leader System:** Every domain steward trains an active managing
+  Deputy who must pass a **90-day quantitative probation ($\ge 80\%$ target
+  completion)** upon assuming office.
+- **Eliminating Phantom Jobs & Looting:** Production-based payroll eliminates
+  zero-value patronage jobs (e.g., SA light-switching); decentralized commodity
+  treasuries and a **$5\times$ personal wealth ceiling** eliminate Nigerian-style
+  governor looting.
+- **Eradicating Dutch Disease:** Bounded by a **20-commodity basket (HHI $< 1,200$)**,
+  the economy cannot become addicted to single-resource windfalls.
+- **Anti-Monopoly Caps:** Outlaws exclusive import charters (e.g., car import
+  monopolies) and enforces a strict **20% single-entity market cap**.
+
 ## What this system cannot do
 
 Stated plainly, because a blueprint that only lists strengths is marketing:
@@ -391,6 +411,7 @@ Stated plainly, because a blueprint that only lists strengths is marketing:
 | [`18-community-security.md`](18-community-security.md) | Mediation, fraud forensics, rotation, armoury, capture resistance |
 | [`19-military-doctrine.md`](19-military-doctrine.md) | **Citizen militia, asymmetric defense, asset neutralization** |
 | [`20-competence-council-and-departmental-policing.md`](20-competence-council-and-departmental-policing.md) | **Competence Council governance, departmental policing, measurement** |
+| [`21-anti-corruption-and-resource-curse-prevention.md`](21-anti-corruption-and-resource-curse-prevention.md) | **Anti-corruption, difficulty diagnostics, resource curse prevention** |
 | [`annex-a-parameters.md`](annex-a-parameters.md) | Generated tables: all parameters and stress results |
 | [`annex-b-open-problems.md`](annex-b-open-problems.md) | Unsolved problems, ranked by how badly they hurt |
 

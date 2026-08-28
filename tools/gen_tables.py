@@ -76,6 +76,19 @@ from model.rcu.governance import (  # noqa: E402
     SuccessionTrigger,
     TermLimitPolicy,
 )
+from model.rcu.integrity import (  # noqa: E402
+    EnvironmentalStress,
+    EvaluationVerdict,
+    LeadershipDiagnostic,
+    MarketConcentrationPolicy,
+    MarketParticipant,
+    ObservedOutcome,
+    PersonalWealthAudit,
+    PositionAudit,
+    ProbationTarget,
+    RevenueDiversification,
+    ShadowLeaderProbation,
+)
 from model.rcu.security import (  # noqa: E402
     ArmouryPolicy,
     audit_effort_curve,
@@ -942,6 +955,62 @@ def table_governance() -> None:
     )
 
 
+def table_integrity() -> None:
+    W("## A.17 Anti-corruption, difficulty-adjusted evaluation, and resource curse resilience\n\n")
+
+    W("### Difficulty-adjusted leadership diagnostics\n\n")
+    W("| Environmental stress | Observed outcome | Verdict | Diagnostic rule |\n|---|---|---|---|\n")
+    W("| Mild / Normal | Good / Acceptable | Competent (Untested) | Standard baseline performance |\n")
+    W("| Mild / Normal | Poor / Catastrophic | **Incompetent (Remove)** | Failure during favorable conditions |\n")
+    W("| Severe / Shock | Good / Acceptable | **Exceptional (Retain)** | Overperformed adverse climate/blockade |\n")
+    W("| Severe / Shock | Poor (Neighbor parity) | Peer Review Required | Deep audit of decisions, storage, and honesty |\n")
+    W("| Severe / Shock | Poor (15%+ worse than peers) | **Incompetent (Remove)** | Failure relative to regional benchmark |\n")
+    W("| Any | Personal wealth divergence | **Incompetent / Corrupt (Remove)** | Leader enriched while community starved |\n\n")
+
+    W("### Shadow Leader System & 90-day probation\n\n")
+    sp = ShadowLeaderProbation(
+        deputy_id="DEMO-DEP-01",
+        domain="Reserves & Agriculture",
+        probation_days=90,
+        targets=(
+            ProbationTarget("Reduce grain spoilage", 15.0, 10.0, 8.5, higher_is_better=False),
+            ProbationTarget("Expand buffer reserve kg", 1000.0, 1500.0, 1550.0, higher_is_better=True),
+            ProbationTarget("Resolve silo maintenance issues", 5.0, 0.0, 0.0, higher_is_better=False),
+            ProbationTarget("Complete apprentice certifications", 0.0, 10.0, 10.0, higher_is_better=True),
+        ),
+    )
+    W(
+        f"| Probation parameter | Value | Rule |\n|---|---|---|\n"
+        f"| Shadow Deputy training | Continuous | Active sub-domain management before transition |\n"
+        f"| Probation duration | **{sp.probation_days} days** | Rapid confirmation window during crises |\n"
+        f"| Target confirmation benchmark | **80% pass rate** | Quantitative target verification (Sample: {sp.pass_rate * 100:.0f}% pass) |\n"
+        f"| Failure fallback | Qualified Pool | Domain practitioners select next qualified candidate |\n\n"
+    )
+
+    W("### Resource curse & economic concentration (HHI comparison)\n\n")
+    oil_econ = RevenueDiversification(revenue_shares={"Petroleum Extraction": 0.85, "Farming": 0.08, "Services": 0.07})
+    rcu_econ = RevenueDiversification(revenue_shares={
+        "Maize & Grains": 0.15, "Legumes": 0.10, "Timber": 0.12, "Iron": 0.10,
+        "Biofuel": 0.08, "Textiles": 0.08, "Livestock": 0.12, "Oils & Soap": 0.09,
+        "Medical Oxygen/ORS": 0.08, "Services": 0.08
+    })
+    W(
+        f"| Economic model | Primary share | Herfindahl Index (HHI) | Resource cursed? | Resilience verdict |\n|---|---|---|---|---|\n"
+        f"| Single-Commodity (e.g. Oil State) | {oil_econ.primary_commodity_share * 100:.1f}% | **{oil_econ.hhi_score:,}** | **YES (Severe)** | Extreme Dutch Disease collapse risk |\n"
+        f"| **RCU 20-Commodity Basket** | **{rcu_econ.primary_commodity_share * 100:.1f}%** | **{rcu_econ.hhi_score:,}** | **NO (Resilient)** | Multi-sector production stability |\n\n"
+    )
+
+    W("### Market anti-monopoly caps & personal wealth ceilings\n\n")
+    pwa = PersonalWealthAudit("DEMO-STW", 4500.0, 1500.0, 5.0)
+    W(
+        f"| Integrity safeguard | Legal limit | Systemic mechanism |\n|---|---|---|\n"
+        f"| Single-entity market share | **20% max share** | Automatic divestiture or invited competitor entry |\n"
+        f"| Personal currency accumulation | **{pwa.max_allowed_multiplier:.1f}× community average** | Automatic audit, flagging, and excess confiscation |\n"
+        f"| Exclusive import licensing | **Strictly prohibited (0%)** | Open market competition default across all goods |\n"
+        f"| Family separation rule | Zero close relatives in domain | Prevents nepotistic procurement and grant looting |\n\n"
+    )
+
+
 def main() -> None:
     header()
     table_classes()
@@ -960,6 +1029,7 @@ def main() -> None:
     table_security()
     table_military()
     table_governance()
+    table_integrity()
 
 
 if __name__ == "__main__":

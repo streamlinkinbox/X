@@ -464,6 +464,28 @@ innovations, or form quiet non-aggression pacts during peer evaluations.
 
 ---
 
+## P17. Cross-regional comparative benchmarking data reliability
+
+**Severity: medium. Diagnostic vulnerability.**
+
+The difficulty-adjusted evaluation framework (§21.1) relies on comparing a
+community's harvest, public health, or storage losses against neighboring
+districts under identical climatic/blockade stress. However, in low-trust or
+adversarial regional environments, neighboring authorities may falsify their
+loss figures, conceal epidemics, or manipulate grain yields, distorting the
+comparative baseline.
+
+**Mitigation:**
+- **Physical satellite & weather telemetry:** Rely on objective precipitation,
+  soil moisture, and vegetation index (NDVI) data rather than self-reported
+  foreign claims.
+- **Cross-district forensic inspectors:** Independent federation auditors (§6.4)
+  verify physical stock levels across federated regions.
+- **Internal multi-year historical baseline:** Evaluate performance against
+  multi-decade historical local performance during past climate shocks.
+
+---
+
 ## Summary
 
 | # | Problem | Severity | Status |
@@ -484,6 +506,7 @@ innovations, or form quiet non-aggression pacts during peer evaluations.
 | P14 | Irreducible import floor | **High** | Reduced from ~49% to ~40% by §17 production ladder; APIs and vaccines permanent |
 | P15 | Asymmetric defense escalation and adaptation | **High (new)** | Subterranean hardening + Ghost doctrine; political exhaustion is required |
 | P16 | Peer selection cartels and guild conservatism | **Medium-High (new)** | Mitigated by objective ledger filters, 1-yr probation, and sortition juries |
+| P17 | Cross-regional comparative benchmarking data reliability | **Medium (new)** | Satellite/NDVI telemetry + multi-year local baseline calibration |
 
 **The three at the top are not reasons to abandon the design.** They are the
 reasons a pilot exists — and a pilot that is not explicitly built to test

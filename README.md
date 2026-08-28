@@ -57,6 +57,7 @@ the five model findings that change the original design.
 | [18 Community security](docs/18-community-security.md) | Mediation, fraud forensics, rotation, armoury |
 | [19 Military doctrine](docs/19-military-doctrine.md) | **Citizen militia, asymmetric defense, asset neutralization** |
 | [20 Competence Council](docs/20-competence-council-and-departmental-policing.md) | **Merit governance, departmental policing, measurement bureaus** |
+| [21 Anti-corruption](docs/21-anti-corruption-and-resource-curse-prevention.md) | **Difficulty diagnostics, shadow succession, resource curse** |
 | [Annex A](docs/annex-a-parameters.md) | **Generated** parameter and stress tables |
 | [Annex B](docs/annex-b-open-problems.md) | Unsolved problems, ranked by severity |
 
@@ -309,6 +310,22 @@ leadership selected on demonstrated competence rather than politics, voting, or 
 | **Accountability**| Annual 20-citizen sortition jury audit + zero legal immunity | Ensures equal living standards (1.0 : 1.0) and prevents oligarchic capture |
 
 See [§20](docs/20-competence-council-and-departmental-policing.md).
+
+## Anti-corruption: difficulty diagnostics and resource curse eradication
+
+§21 provides mathematical and structural controls against looting, false incompetence
+accusations, and Dutch Disease:
+
+| Threat | Systemic failure mode | RCU systemic safeguard |
+|---|---|---|
+| **Incompetence diagnosis** | Scapegoating leaders during droughts/shocks | **Difficulty-adjusted benchmarking:** compares outcomes against neighboring communities facing identical climate/blockade |
+| **Succession failure** | Unprepared replacements failing in crises | **Shadow Leader System:** pre-trained Deputy undergoes 90-day quantitative probation ($\ge 80\%$ target pass rate) |
+| **Phantom employment** | Bribes disguised as salaries (e.g. SA light-switcher) | **Production-based payroll & open books:** positions with zero measurable output are automatically eliminated |
+| **Centralized looting** | Governors stealing federal grants (Nigeria) | **Decentralized treasuries & $5\times$ wealth ceiling:** value stays in producing domain warehouses; personal accumulation capped |
+| **Resource Curse** | Single-commodity dependency crash (Oil boom/bust) | **20-commodity backing basket (HHI $< 1,200$):** prevents Dutch Disease; zero debt-financed vanity monuments |
+| **Import monopolies** | Exclusive licensing charters (Cars, cement) | **Zero exclusive licensing & 20% market cap:** competition is mandatory default |
+
+See [§21](docs/21-anti-corruption-and-resource-curse-prevention.md).
 
 ## Honest positioning
 

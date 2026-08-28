@@ -743,3 +743,41 @@ Dual-use plants (everyday demand keeps them alive until needed):
 | Legal immunity | **Zero immunity** | Leaders face identical courts as ordinary citizens |
 | Living conditions | **1.00 : 1.00 ratio** | Leaders receive identical food, housing, and RCU as guild masters |
 
+## A.17 Anti-corruption, difficulty-adjusted evaluation, and resource curse resilience
+
+### Difficulty-adjusted leadership diagnostics
+
+| Environmental stress | Observed outcome | Verdict | Diagnostic rule |
+|---|---|---|---|
+| Mild / Normal | Good / Acceptable | Competent (Untested) | Standard baseline performance |
+| Mild / Normal | Poor / Catastrophic | **Incompetent (Remove)** | Failure during favorable conditions |
+| Severe / Shock | Good / Acceptable | **Exceptional (Retain)** | Overperformed adverse climate/blockade |
+| Severe / Shock | Poor (Neighbor parity) | Peer Review Required | Deep audit of decisions, storage, and honesty |
+| Severe / Shock | Poor (15%+ worse than peers) | **Incompetent (Remove)** | Failure relative to regional benchmark |
+| Any | Personal wealth divergence | **Incompetent / Corrupt (Remove)** | Leader enriched while community starved |
+
+### Shadow Leader System & 90-day probation
+
+| Probation parameter | Value | Rule |
+|---|---|---|
+| Shadow Deputy training | Continuous | Active sub-domain management before transition |
+| Probation duration | **90 days** | Rapid confirmation window during crises |
+| Target confirmation benchmark | **80% pass rate** | Quantitative target verification (Sample: 100% pass) |
+| Failure fallback | Qualified Pool | Domain practitioners select next qualified candidate |
+
+### Resource curse & economic concentration (HHI comparison)
+
+| Economic model | Primary share | Herfindahl Index (HHI) | Resource cursed? | Resilience verdict |
+|---|---|---|---|---|
+| Single-Commodity (e.g. Oil State) | 85.0% | **7,338** | **YES (Severe)** | Extreme Dutch Disease collapse risk |
+| **RCU 20-Commodity Basket** | **15.0%** | **1,050** | **NO (Resilient)** | Multi-sector production stability |
+
+### Market anti-monopoly caps & personal wealth ceilings
+
+| Integrity safeguard | Legal limit | Systemic mechanism |
+|---|---|---|
+| Single-entity market share | **20% max share** | Automatic divestiture or invited competitor entry |
+| Personal currency accumulation | **5.0× community average** | Automatic audit, flagging, and excess confiscation |
+| Exclusive import licensing | **Strictly prohibited (0%)** | Open market competition default across all goods |
+| Family separation rule | Zero close relatives in domain | Prevents nepotistic procurement and grant looting |
+
