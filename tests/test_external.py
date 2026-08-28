@@ -13,6 +13,7 @@ from model.rcu.external import (  # noqa: E402
     TIME_TO_HARM_DAYS,
     DependencyTrend,
     Import,
+    SovereignReserveDefense,
     Withdrawal,
     achievable_independence,
     buffer_plan,
@@ -208,3 +209,30 @@ def test_empty_trend_is_safe():
     d = DependencyTrend()
     assert not d.worsening()
     assert not d.alarm()
+
+
+# --------------------------------------------------------------------------
+# Sovereign Reserve Defense & Extortion Neutralization
+# --------------------------------------------------------------------------
+
+
+def test_sovereign_reserve_defense_counter_offensive():
+    defense = SovereignReserveDefense(
+        frozen_foreign_reserves_rcu=1_000_000_000.0,
+        hostile_foreign_corporate_assets_inside_borders_rcu=1_200_000_000.0,
+        sovereign_debt_owed_to_hostile_jurisdiction_rcu=800_000_000.0,
+        bilateral_commodity_clearing_share_pct=0.95,
+        onshore_physical_gold_and_commodity_share_pct=1.0,
+        sovereign_payment_switch_active=True,
+    )
+    res = defense.execute_counter_offensive()
+
+    assert res["frozen_foreign_reserves_rcu"] == 1_000_000_000.0
+    assert res["sovereign_debt_cancelled_rcu"] == 800_000_000.0
+    assert res["corporate_assets_seized_into_escrow_rcu"] == 200_000_000.0
+    assert res["total_sovereign_recovery_value_rcu"] == 1_000_000_000.0
+    assert res["net_leverage_ratio"] == 1.0
+    assert res["bilateral_clearing_sanctions_immune"] is True
+    assert res["domestic_payment_switch_immune"] is True
+    assert res["financial_blackmail_neutralized"] is True
+

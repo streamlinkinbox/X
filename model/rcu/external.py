@@ -427,3 +427,50 @@ class DependencyTrend:
     def alarm(self, floor: Decimal = Decimal("1.0")) -> bool:
         r = self.self_reliance()
         return bool(r) and r[-1] < floor
+
+
+# --------------------------------------------------------------------------
+# 6. Sovereign Reserve Defense & Financial Extortion Counter-Offensive
+# --------------------------------------------------------------------------
+
+
+@dataclass(frozen=True)
+class SovereignReserveDefense:
+    """Models the 5-step sovereign response to foreign reserve freezes and financial blackmail."""
+
+    frozen_foreign_reserves_rcu: float = 1_000_000_000.0
+    hostile_foreign_corporate_assets_inside_borders_rcu: float = 1_200_000_000.0
+    sovereign_debt_owed_to_hostile_jurisdiction_rcu: float = 800_000_000.0
+    bilateral_commodity_clearing_share_pct: float = 0.95
+    onshore_physical_gold_and_commodity_share_pct: float = 1.0
+    sovereign_payment_switch_active: bool = True
+
+    def execute_counter_offensive(self) -> dict[str, str | bool | float]:
+        # Step 1: 1-to-1 Debt Cancellation against hostile jurisdiction
+        debt_cancelled = min(
+            self.frozen_foreign_reserves_rcu,
+            self.sovereign_debt_owed_to_hostile_jurisdiction_rcu,
+        )
+        remaining_uncovered_freeze = self.frozen_foreign_reserves_rcu - debt_cancelled
+
+        # Step 2: Reciprocal Domestic Asset Seizure into Sovereign Escrow
+        corporate_assets_placed_in_escrow = min(
+            self.hostile_foreign_corporate_assets_inside_borders_rcu,
+            max(remaining_uncovered_freeze, 0.0),
+        )
+
+        # Net leverage: Hostage assets held vs Frozen paper
+        total_sovereign_offsets = debt_cancelled + corporate_assets_placed_in_escrow
+        net_leverage_ratio = total_sovereign_offsets / max(self.frozen_foreign_reserves_rcu, 1.0)
+
+        return {
+            "frozen_foreign_reserves_rcu": self.frozen_foreign_reserves_rcu,
+            "sovereign_debt_cancelled_rcu": debt_cancelled,
+            "corporate_assets_seized_into_escrow_rcu": corporate_assets_placed_in_escrow,
+            "total_sovereign_recovery_value_rcu": total_sovereign_offsets,
+            "net_leverage_ratio": round(net_leverage_ratio, 2),
+            "bilateral_clearing_sanctions_immune": self.bilateral_commodity_clearing_share_pct >= 0.90,
+            "domestic_payment_switch_immune": self.sovereign_payment_switch_active,
+            "financial_blackmail_neutralized": net_leverage_ratio >= 1.0,
+        }
+

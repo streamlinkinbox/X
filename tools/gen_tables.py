@@ -29,6 +29,7 @@ from model.rcu.people import (  # noqa: E402
 from model.rcu.external import (  # noqa: E402
     BASKET,
     DependencyTrend,
+    SovereignReserveDefense,
     Withdrawal,
     achievable_independence,
     buffer_plan,
@@ -758,6 +759,22 @@ def table_external() -> None:
         "\nNothing dramatic happens in any single year. Dependency forms by "
         "drift, not by decision -- which is why the ratio must be published "
         "quarterly.\n\n"
+    )
+
+    srd = SovereignReserveDefense(
+        frozen_foreign_reserves_rcu=1_000_000_000.0,
+        hostile_foreign_corporate_assets_inside_borders_rcu=1_200_000_000.0,
+        sovereign_debt_owed_to_hostile_jurisdiction_rcu=800_000_000.0,
+    )
+    srd_res = srd.execute_counter_offensive()
+    W("### Sovereign reserve defense & financial extortion neutralization ($1B freeze scenario)\n\n")
+    W(
+        f"| Defense layer | Hostile blackmail action | Sovereign counter-offensive | Recovery / leverage outcome |\n|---|---|---|---|\n"
+        f"| Paper Reserve Freeze | Foreign bank locks **${srd.frozen_foreign_reserves_rcu:,.0f}** | Unilateral 1-to-1 foreign debt cancellation | **${srd_res['sovereign_debt_cancelled_rcu']:,.0f}** debt wiped out overnight |\n"
+        f"| Corporate Asset Escrow | Threatens political conditions | Seize hostile corporate concessions/mines | **${srd_res['corporate_assets_seized_into_escrow_rcu']:,.0f}** placed into Sovereign Escrow |\n"
+        f"| Net Leverage Balance | Expected capitulation | Total recovery offset ($800M debt + $200M escrow) | **{srd_res['net_leverage_ratio']:.2f}x (100% Value Neutralized)** |\n"
+        f"| Export Redirection | Blockade of Western clearing | Reroute mineral/grain exports to BRICS / mBridge | **95% Bilateral non-SWIFT clearing** |\n"
+        f"| Domestic Payment Rails | Visa / Mastercard kill-switch | Offline cryptographic mesh & sovereign switch (§05) | **100% Domestic economy uninterrupted** |\n\n"
     )
 
 

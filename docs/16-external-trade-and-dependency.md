@@ -276,7 +276,68 @@ more than any amount of import substitution.
 
 ---
 
-## 16.6 Monitoring
+## 16.6 The Sovereign Counter-Offensive: Defeating Foreign Reserve Freezes and Extortion
+
+When a hostile foreign power or international banking hub attempts to freeze sovereign reserves
+(e.g., locking $1 billion of national funds until political/economic terms are met), the nation faces
+the **Sovereign Extortion Trap**.
+
+Attempting to negotiate from weakness or sue in foreign courts guarantees defeat, because the sanctioning
+power controls the courts, the currency, and the SWIFT messaging nodes. The sovereign framework executes
+a **five-step counter-offensive**:
+
+```
+                       ┌────────────────────────────────────────┐
+                       │     THE SOVEREIGN COUNTER-OFFENSIVE    │
+                       │    "They froze $1B of paper numbers.   │
+                       │     You seize their real assets."      │
+                       └───────────────────┬────────────────────┘
+                                           │
+         ┌─────────────────────────────────┼─────────────────────────────────┐
+         ▼                                 ▼                                 ▼
+┌──────────────────┐             ┌───────────────────┐             ┌──────────────────┐
+│ 1. RECIPROCAL    │             │ 2. CANCEL FOREIGN │             │ 3. COMMODITY     │
+│ DOMESTIC SEIZURE │             │ DEBT 1-TO-1       │             │ CLEARING SWITCH  │
+│ Seize their mines│             │ Stop paying their │             │ Trade physical   │
+│ & corporations   │             │ bonds immediately │             │ goods via BRICS  │
+└──────────────────┘             └───────────────────┘             └──────────────────┘
+```
+
+### 1. Reciprocal Domestic Asset Seizure (The Hostage Exchange)
+- While the $1 billion reserve is an electronic number on a foreign server, corporations and
+  conglomerates from the sanctioning nation operate **real physical assets inside your borders**
+  (mineral concessions, oil infrastructure, commercial real estate, factories).
+- The state conducts an immediate forensic asset inventory and places these corporate holdings into
+  a **Sovereign Restitution Escrow Trust**, halting all outgoing profit remittances, dividends, and
+  royalties until national reserves are unfrozen.
+
+### 2. Unilateral 1-to-1 Sovereign Debt Cancellation
+- Symmetrically cancel $1 billion of sovereign bonds and commercial debt owed to banks, funds, and
+  institutions based in the hostile jurisdiction.
+- The debt is removed from the national balance sheet overnight, stopping interest outflows and
+  retaining liquidity inside the domestic economy.
+
+### 3. Bilateral Commodity Clearing Switch (De-Dollarized Channels)
+- Reroute all critical physical exports (copper, platinum, grains, energy) away from Western clearinghouses
+  into direct bilateral trading mechanisms (Project mBridge, CIPS, local-currency swaps, and physical
+  commodity-for-commodity barters).
+- Trade clears directly with non-aligned and BRICS partners (China, Russia, India, Middle East) with
+  zero exposure to SWIFT or Western correspondent banks.
+
+### 4. Physicalization of All Sovereign Reserves Onshore
+- The fundamental rule of sovereign security: **"If you do not hold it physically in your own vault
+  inside your borders, you do not own it."**
+- All remaining foreign balances are converted into physical gold bars stored in subterranean vaults
+  (§19) and physical strategic commodity buffer silos (grains, fuel, APIs §02, §17).
+
+### 5. Sanctions-Proof Domestic Payment Rails
+- Domestic retail and interbank transactions operate exclusively on the independent national payment
+  switch and offline cryptographic mesh protocol (§05), completely immune to Visa, Mastercard, or
+  foreign kill-switch disconnection.
+
+---
+
+## 16.7 Monitoring
 
 Dependency must be a published number or the ratchet operates unseen.
 
@@ -295,7 +356,7 @@ bad happens until suddenly it does.
 
 ---
 
-## 16.7 New risks
+## 16.8 New risks
 
 | Risk | L | I | Score | Mitigation |
 |---|---|---|---|---|
@@ -308,7 +369,7 @@ bad happens until suddenly it does.
 
 ---
 
-## 16.8 Summary
+## 16.9 Summary
 
 **Your analogy is right and it gives the correct policy — which is not
 abstinence.**

@@ -429,6 +429,16 @@ Classified by what happens if supply stops abruptly, not by cost. See section 16
 
 Nothing dramatic happens in any single year. Dependency forms by drift, not by decision -- which is why the ratio must be published quarterly.
 
+### Sovereign reserve defense & financial extortion neutralization ($1B freeze scenario)
+
+| Defense layer | Hostile blackmail action | Sovereign counter-offensive | Recovery / leverage outcome |
+|---|---|---|---|
+| Paper Reserve Freeze | Foreign bank locks **$1,000,000,000** | Unilateral 1-to-1 foreign debt cancellation | **$800,000,000** debt wiped out overnight |
+| Corporate Asset Escrow | Threatens political conditions | Seize hostile corporate concessions/mines | **$200,000,000** placed into Sovereign Escrow |
+| Net Leverage Balance | Expected capitulation | Total recovery offset ($800M debt + $200M escrow) | **1.00x (100% Value Neutralized)** |
+| Export Redirection | Blockade of Western clearing | Reroute mineral/grain exports to BRICS / mBridge | **95% Bilateral non-SWIFT clearing** |
+| Domestic Payment Rails | Visa / Mastercard kill-switch | Offline cryptographic mesh & sovereign switch (§05) | **100% Domestic economy uninterrupted** |
+
 ## A.13 The local production ladder
 
 Candidates ranked by technical difficulty rather than importance. Rungs cannot be skipped: precision synthesis requires the metalwork, power and quality systems of every rung below it. See section 17.
