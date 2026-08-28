@@ -113,6 +113,7 @@ from model.rcu.rab import (  # noqa: E402
     SiloDataPoint,
 )
 from model.rcu.war_council import (  # noqa: E402
+    DOCTRINE_PRINCIPLES,
     SCENARIO_LIBRARY,
     SPECIALIZED_UNITS_ROSTER,
     WAR_COUNCIL_ROSTER,
@@ -1154,10 +1155,17 @@ def table_intel_env() -> None:
 def table_war_council() -> None:
     W("## A.20 War Council, Scenario Planning, and Specialized Strike Units\n\n")
 
-    W("### War Council collective command composition (8 seats)\n\n")
-    W("| Role | Rotation | Primary deliberative focus |\n|---|---|---|\n")
-    for m in WAR_COUNCIL_ROSTER:
-        W(f"| **{m.title}** | {m.rotation_months} months | {m.primary_perspective} |\n")
+    W("### The Seven Seats of the War Council\n\n")
+    W("| Seat # | Title | Rotation | Operational mandate & primary perspective | Special veto authority |\n|---|---|---|---|---|\n")
+    for i, m in enumerate(WAR_COUNCIL_ROSTER, 1):
+        veto_str = f"**{m.veto_scope}**" if m.has_specific_veto else "Standard vote (4/7)"
+        W(f"| {i} | **{m.title}** | {m.rotation_months} months | {m.primary_perspective} | {veto_str} |\n")
+    W("\n")
+
+    W("### Core military doctrine: 'Don't Mirror, Don't Chase, Don't Hold'\n\n")
+    W("| Doctrine rule | Strategic meaning | Operational application | Historical precedent |\n|---|---|---|---|\n")
+    for p in DOCTRINE_PRINCIPLES:
+        W(f"| **{p.rule_name}** | {p.meaning} | {p.application} | {p.historical_proof} |\n")
     W("\n")
 
     W("### The Living Contingency Scenario Library (Roman Model)\n\n")
@@ -1170,13 +1178,13 @@ def table_war_council() -> None:
     W("\n")
 
     sizing = SpecializedUnitSizing(population=10000, militia_size=3500)
-    W("### Specialized precision units (Elite in skill, not in status)\n\n")
+    W("### Specialized precision units (Elite in skill, ordinary in status)\n\n")
     W(
         f"| Specialized unit | Nominal size | Personnel range | Primary operational mission | Operational limit |\n|---|---|---|---|---|\n"
     )
     for u in SPECIALIZED_UNITS_ROSTER:
         W(
-            f"| **{u.name}** | **{u.nominal_size}** | {u.min_size}–{u.max_size} | "
+            f"| **{u.functional_name}** | **{u.nominal_size}** | {u.min_size}–{u.max_size} | "
             f"{u.mission[:45]}... | {u.operational_limit[:45]}... |\n"
         )
     W(
@@ -1196,7 +1204,8 @@ def table_war_council() -> None:
         f"| Hereditary recruitment | **Prohibited** | Merit and militia drill performance only |\n"
         f"| Civil political office ban | **Enforced** | Absolute separation of armed force and civil governance |\n"
         f"| Right of refusal | **Guaranteed** | Operators protected when refusing offensive war orders |\n"
-        f"| Functional naming rule | **Mandatory** | No prestige titles ('Guards', 'Elites'); named by tool/animal |\n\n"
+        f"| Functional naming rule | **Mandatory** | No prestige titles ('Guards', 'Elites'); named by tool/function |\n"
+        f"| Skill distribution rule | **Active** | Operators return to guilds and train apprentices |\n\n"
     )
 
     W("### Engagement simulation: Medium coordinated assault (Scenario S2)\n\n")

@@ -879,24 +879,34 @@ Dual-use plants (everyday demand keeps them alive until needed):
 
 ## A.20 War Council, Scenario Planning, and Specialized Strike Units
 
-### War Council collective command composition (8 seats)
+### The Seven Seats of the War Council
 
-| Role | Rotation | Primary deliberative focus |
-|---|---|---|
-| **Council Chair (Rotating)** | 3 months | Deliberation facilitation, deadlock resolution, procedural order |
-| **Defense Coordinator** | 12 months | Overall asymmetric military strategy, militia force readiness |
-| **CIS Chief of Intelligence** | 24 months | External threat vectors, adversary troop staging, logistics |
-| **EDMB Chief Environmental Officer** | 24 months | Topography, weather, seasonal flood/landslide risk, terrain defense |
-| **RAB Chief Analyst** | 24 months | Resource burn rate, supply chain sustainability, cost limits |
-| **Senior Militia Commander (Rotating)** | 6 months | Rank-and-file tactical readiness, ground morale, equipment status |
-| **Justice Coordinator** | 12 months | Geneva/customary law compliance, anti-atrocity, captive treatment |
-| **Community Representative (Sortition)** | 1 months | Civilian consent, popular support, public impact evaluation |
+| Seat # | Title | Rotation | Operational mandate & primary perspective | Special veto authority |
+|---|---|---|---|---|
+| 1 | **Strategist (Rotating Chair)** | 6 months | Overall strategy, contingency planning, long-term thinking 3–5 moves ahead | Standard vote (4/7) |
+| 2 | **Intelligence Officer** | 24 months | Direct CIS link; enemy movements, numbers, morale, supply lines, intentions | Standard vote (4/7) |
+| 3 | **Operations Officer** | 12 months | Turns plans into action; coordinates units, timing, deployment, extraction | Standard vote (4/7) |
+| 4 | **Logistics Officer** | 12 months | Supply, transport, routes, fallback positions, ammo, food, water, fuel | **Cost & Sustainability Veto** |
+| 5 | **Deception Officer** | 12 months | Feints, decoys, misinformation, false radio traffic, dummy positions, psyops | Standard vote (4/7) |
+| 6 | **Terrain Officer** | 24 months | Knows every river, forest, hill, pass, road, swamp, and ridge within 100 km | Standard vote (4/7) |
+| 7 | **Community Liaison** | 3 months | Civilian firewall representing Community Council; verifies public consent | **Offensive Action Veto** |
+
+### Core military doctrine: 'Don't Mirror, Don't Chase, Don't Hold'
+
+| Doctrine rule | Strategic meaning | Operational application | Historical precedent |
+|---|---|---|---|
+| **DON'T MIRROR** | Never fight the enemy on their terms; refuse to match expensive weapons with expensive weapons. | If they have tanks, deny tank terrain. If aircraft, hide underground. If drones, throw nets. | Finns vs Soviet tanks (skis & Molotovs); Viet Cong vs US jets (tunnels & jungle); Boers vs British artillery. |
+| **DON'T CHASE** | Avoid prolonged engagements; speed is armor; strike, achieve objective, withdraw immediately. | Never pursue retreating enemy into unknown terrain; do not try to 'finish them off' in open ground. | Khalid ibn al-Walid rapid cavalry disengagements; Boer dawn raids vanishing by noon; Afghan 20-minute ambushes. |
+| **DON'T HOLD** | Never try to hold open ground against superior firepower. | Hold only terrain that hurts the enemy: forests, mountain passes, swamps, urban choke points, and tunnels. | Viet Cong held jungle/tunnels not Saigon; Finns held frozen forests not open plains; Mujahideen held mountain passes. |
+| **Strike the System, Not the Mass** | Target command, communications, fuel, and supply routes rather than killing every enemy soldier. | An army without leadership, communication, fuel, and food collapses within 48 hours. | Decapitation strikes and fuel convoy interdictions in asymmetric guerrilla campaigns. |
+| **Deception First** | The battle is often won before first contact through feints, decoys, and false electronic traffic. | Force adversary to expend munitions and energy attacking empty dummy positions. | Sun Tzu; Zhuge Liang campaigns; WWII Allied deception operations. |
+| **Mobility > Numbers** | Speed, terrain knowledge, and timing beat numerical mass 9 times out of 10. | 40 fast, terrain-literate fighters defeat 400 slow, confused, and heavy expeditionary troops. | Khalid ibn al-Walid 51 undefeated battles; Boer light horse commandos. |
 
 ### The Living Contingency Scenario Library (Roman Model)
 
 | Scenario code | Threat description | Adversary scale | Warning lead time | Primary defensive response |
 |---|---|---|---|---|
-| **S1: Small armed raid** | 10–50 raiders | 10–50 raiders | 1–4 hours | Local militia (20–30) + Horse scouts; 5 km max pursuit... |
+| **S1: Small armed raid** | 10–50 raiders | 10–50 raiders | 1–4 hours | Local sector militia (20–30) + Mounted Unit scouts; 5 k... |
 | **S2: Medium coordinated assault** | 100–500 fighters + light vehicles | 100–500 fighters + light vehicles | 2–6 hours | Defense in depth (3 layers); IED fields; drone net defe... |
 | **S3: Large-scale invasion** | 1,000+ fighters + armor + air support | 1,000+ fighters + armor + air support | 12–48 hours | Full asymmetric transition: underground caches, decapit... |
 | **S4: Flash flood / River breach** | Ecological flood wave | Ecological flood wave | 24–72 hours | EDMB Red alert; high-ground evacuation; reserve vault w... |
@@ -905,19 +915,19 @@ Dual-use plants (everyday demand keeps them alive until needed):
 | **S7: Internal coup attempt** | Rogue faction / mutiny | Rogue faction / mutiny | 0–12 hours | Secure warehouses and communications; isolate rogue lea... |
 | **S8: External trade route closure** | Hostile economic embargo | Hostile economic embargo | 1–4 weeks | RAB economic buffer activation; production substitution... |
 | **S9: Cyber / Digital ledger attack** | Electronic state / cartel hackers | Electronic state / cartel hackers | Minutes to hours | Isolate network nodes; revert to offline physical note ... |
-| **S10: CBRN (Chemical/Biological/Radiological/Nuclear) attack** | Asymmetric / WMD strike | Asymmetric / WMD strike | Minutes to hours | Underground shelter seal; positive air filtration; deco... |
+| **S10: CBRN attack** | Asymmetric / WMD strike | Asymmetric / WMD strike | Minutes to hours | Underground shelter seal; positive air filtration; deco... |
 
-### Specialized precision units (Elite in skill, not in status)
+### Specialized precision units (Elite in skill, ordinary in status)
 
 | Specialized unit | Nominal size | Personnel range | Primary operational mission | Operational limit |
 |---|---|---|---|---|
-| **The Strike Team (Target Command Neutralizer)** | **4** | 4–8 | Infiltrate behind lines to eliminate high-val... | 72-hour maximum mission exfiltration limit; a... |
-| **The Hammer (Shock Assault)** | **40** | 30–50 | Concentrated 10-20 minute shock charge to sha... | Deployed max once per 30 days; 2 km max pursu... |
-| **The Scorpion (Counter-Drone & Air Defense)** | **25** | 20–30 | Layered drone neutralization (500m wires, 200... | Strict anti-air focus; falls back to militia ... |
-| **The Worm (Sappers, IEDs & Fortification)** | **25** | 20–30 | Construct hidden IED fields, ditch traps, cal... | Operates under night/smoke cover; zero standa... |
-| **The Healer (Combat Trauma Medical)** | **12** | 10–15 | Field triage, emergency trauma surgery, blood... | Treats friend and wounded enemy alike; protec... |
-| **The Echo (Signals, Electronic Warfare & Cyber)** | **12** | 10–15 | Mesh radio network maintenance, RF jamming of... | Continuous operation; first to deploy and las... |
-| **The Horse (Mounted Recon & Rapid Logistics)** | **40** | 30–50 | Early perimeter scouting, rapid tactical resp... | 5 km max pursuit; disengages immediately when... |
+| **Strike Team (Target Command Neutralizer)** | **4** | 4–8 | Infiltrate behind lines to eliminate high-val... | 72-hour maximum mission exfiltration limit; a... |
+| **Shock Unit (Breakthrough Assault)** | **40** | 30–50 | Concentrated 10-20 minute shock charge to sha... | Deployed max once per 30 days; 2 km max pursu... |
+| **Counter-Drone Team (Air Defense)** | **25** | 20–30 | Layered drone neutralization (500m wires, 200... | Strict anti-air focus; falls back to militia ... |
+| **Sapper Team (Traps & Fortifications)** | **25** | 20–30 | Construct hidden IED fields, ditch traps, cal... | Operates under night/smoke cover; zero standa... |
+| **Medical Team (Combat Trauma Medical)** | **12** | 10–15 | Field triage, emergency trauma surgery, blood... | Treats friend and wounded enemy alike; protec... |
+| **Signals Team (Electronic Warfare & Cyber)** | **12** | 10–15 | Mesh radio network maintenance, RF jamming of... | Continuous operation; first to deploy and las... |
+| **Mounted Unit (Recon & Rapid Logistics)** | **40** | 30–50 | Early perimeter scouting, rapid tactical resp... | 5 km max pursuit; disengages immediately when... |
 
 *Total Specialized Force:* **158 operators** (124–198 range), representing **4.51% of citizen militia** and **1.58% of total population**.
 
@@ -931,7 +941,8 @@ Dual-use plants (everyday demand keeps them alive until needed):
 | Hereditary recruitment | **Prohibited** | Merit and militia drill performance only |
 | Civil political office ban | **Enforced** | Absolute separation of armed force and civil governance |
 | Right of refusal | **Guaranteed** | Operators protected when refusing offensive war orders |
-| Functional naming rule | **Mandatory** | No prestige titles ('Guards', 'Elites'); named by tool/animal |
+| Functional naming rule | **Mandatory** | No prestige titles ('Guards', 'Elites'); named by tool/function |
+| Skill distribution rule | **Active** | Operators return to guilds and train apprentices |
 
 ### Engagement simulation: Medium coordinated assault (Scenario S2)
 

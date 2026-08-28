@@ -1,21 +1,23 @@
-"""War Council, Scenario Planning, and Specialized Strike Units.
+"""War Council, Scenario Planning, and Specialized Strike Units: Elite in Skill, Not in Status.
 
 This module models the command, contingency planning, and specialized operational
 architecture for an independent community:
-1. ``WarCouncil`` -- 8-member deliberative decision body balancing strategic,
-   intelligence, environmental, economic, justice, and civilian perspectives.
-2. ``DecisionEngine`` -- voting thresholds, consensus rules, the 24-hour "No" delay rule,
-   the 7/8 supermajority "Blood" rule (civilian casualties > 10), and the defensive-only
-   Community Council offensive authorization constraint.
-3. ``ScenarioLibrary`` -- 10 pre-planned threat responses (S1 to S10) covering raids,
+1. ``WarCouncil`` -- 7-seat deliberative decision body (Strategist, Intelligence,
+   Operations, Logistics, Deception, Terrain, Community Liaison).
+2. ``DecisionEngine`` -- voting thresholds (4/7 majority, 6/7 Blood Rule for civilian
+   casualties > 10, 24-hr "No" reflection delay, Logistics Officer Cost Veto, and
+   Community Liaison Offensive Veto).
+3. ``DefenseDoctrine`` -- "Don't Mirror, Don't Chase, Don't Hold", Strike the System,
+   Deception First, and Mobility > Numbers.
+4. ``ScenarioLibrary`` -- 10 pre-planned threat responses (S1 to S10) covering raids,
    invasions, floods, droughts, epidemics, internal coups, cyber/ledger attacks, and CBRN.
-4. ``WarRoom`` -- Chinese "Genius Council" multidisciplinary crisis session (8-15 minds,
+5. ``WarRoom`` -- Chinese "Genius Council" multidisciplinary crisis session (8-15 minds,
    24-72 hours, no rank, mandatory sleep, external wildcards).
-5. ``SpecializedUnits`` -- 7 precision units (Strike Team, Hammer, Scorpion, Worm,
-   Healer, Echo, Horse) totalling 155-195 personnel (<5% of militia).
-6. ``AntiCasteSafeguards`` -- firewalls against Praetorian / Janissary / Mamluk caste
-   capture (mandatory <=3 yr civilian rotation, no hereditary status, no separate barracks).
-7. ``BattleSimulation`` -- integrated combat timeline and loss/neutralization ratios.
+6. ``SpecializedUnits`` -- Functional naming, lean sizing (155-195 personnel, <5% of militia),
+   and skill-distribution mechanics.
+7. ``AntiCasteSafeguards`` -- 7 constitutional firewalls against Praetorian / Janissary /
+   Mamluk degeneration (mandatory 2-3 yr rotation, no separate barracks, no separate pay).
+8. ``BattleSimulation`` -- integrated combat timeline and loss/neutralization ratios.
 """
 
 from __future__ import annotations
@@ -26,19 +28,18 @@ from typing import Optional
 
 
 # --------------------------------------------------------------------------
-# 1. War Council Structure & Roles
+# 1. The Seven Seats of the War Council
 # --------------------------------------------------------------------------
 
 
 class WarCouncilRole(str, Enum):
-    CHAIR = "chair"                                  # Rotating 3-month facilitator
-    DEFENSE_COORDINATOR = "defense_coordinator"      # Militia readiness & strategy
-    CIS_CHIEF = "cis_chief"                          # External intelligence picture
-    EDMB_CHIEF = "edmb_chief"                        # Environmental, weather & terrain
-    RAB_CHIEF = "rab_chief"                          # Economic, logistics & cost modeling
-    SENIOR_MILITIA_CMD = "senior_militia_commander"  # Rank-and-file readiness & morale
-    JUSTICE_COORDINATOR = "justice_coordinator"      # Law, ethics, anti-atrocity compliance
-    COMMUNITY_REP = "community_representative"       # Civilian sortition delegate (monthly)
+    STRATEGIST = "strategist"                  # Rotating chair (6m), long-term strategy (3-5 moves ahead)
+    INTELLIGENCE_OFFICER = "intelligence_officer" # Links directly to CIS, adversary tracking
+    OPERATIONS_OFFICER = "operations_officer"  # Plans into action, unit timing, deployment, extraction
+    LOGISTICS_OFFICER = "logistics_officer"    # Supply, ammo, fuel, food, routes, fallback; COST VETO
+    DECEPTION_OFFICER = "deception_officer"    # Feints, decoys, misinformation, false radio traffic
+    TERRAIN_OFFICER = "terrain_officer"        # Topography, rivers, ridges, passes within 100km
+    COMMUNITY_LIAISON = "community_liaison"    # Civilian firewall, ensures mandate, OFFENSIVE VETO
 
 
 @dataclass(frozen=True)
@@ -47,57 +48,64 @@ class WarCouncilMember:
     title: str
     rotation_months: int
     primary_perspective: str
-    veto_or_delay_power: bool = True
+    why_seat_exists: str
+    has_specific_veto: bool = False
+    veto_scope: Optional[str] = None
 
 
 WAR_COUNCIL_ROSTER: tuple[WarCouncilMember, ...] = (
     WarCouncilMember(
-        role=WarCouncilRole.CHAIR,
-        title="Council Chair (Rotating)",
-        rotation_months=3,
-        primary_perspective="Deliberation facilitation, deadlock resolution, procedural order",
-    ),
-    WarCouncilMember(
-        role=WarCouncilRole.DEFENSE_COORDINATOR,
-        title="Defense Coordinator",
-        rotation_months=12,
-        primary_perspective="Overall asymmetric military strategy, militia force readiness",
-    ),
-    WarCouncilMember(
-        role=WarCouncilRole.CIS_CHIEF,
-        title="CIS Chief of Intelligence",
-        rotation_months=24,
-        primary_perspective="External threat vectors, adversary troop staging, logistics",
-    ),
-    WarCouncilMember(
-        role=WarCouncilRole.EDMB_CHIEF,
-        title="EDMB Chief Environmental Officer",
-        rotation_months=24,
-        primary_perspective="Topography, weather, seasonal flood/landslide risk, terrain defense",
-    ),
-    WarCouncilMember(
-        role=WarCouncilRole.RAB_CHIEF,
-        title="RAB Chief Analyst",
-        rotation_months=24,
-        primary_perspective="Resource burn rate, supply chain sustainability, cost limits",
-    ),
-    WarCouncilMember(
-        role=WarCouncilRole.SENIOR_MILITIA_CMD,
-        title="Senior Militia Commander (Rotating)",
+        role=WarCouncilRole.STRATEGIST,
+        title="Strategist (Rotating Chair)",
         rotation_months=6,
-        primary_perspective="Rank-and-file tactical readiness, ground morale, equipment status",
+        primary_perspective="Overall strategy, contingency planning, long-term thinking 3–5 moves ahead",
+        why_seat_exists="Ensures community fights the war it can win, not the war the enemy wants",
     ),
     WarCouncilMember(
-        role=WarCouncilRole.JUSTICE_COORDINATOR,
-        title="Justice Coordinator",
+        role=WarCouncilRole.INTELLIGENCE_OFFICER,
+        title="Intelligence Officer",
+        rotation_months=24,
+        primary_perspective="Direct CIS link; enemy movements, numbers, morale, supply lines, intentions",
+        why_seat_exists="No decision without intelligence; prevents guesswork that gets people killed",
+    ),
+    WarCouncilMember(
+        role=WarCouncilRole.OPERATIONS_OFFICER,
+        title="Operations Officer",
         rotation_months=12,
-        primary_perspective="Geneva/customary law compliance, anti-atrocity, captive treatment",
+        primary_perspective="Turns plans into action; coordinates units, timing, deployment, extraction",
+        why_seat_exists="Prevents plans from remaining theoretical ideas that fail on contact with reality",
     ),
     WarCouncilMember(
-        role=WarCouncilRole.COMMUNITY_REP,
-        title="Community Representative (Sortition)",
-        rotation_months=1,
-        primary_perspective="Civilian consent, popular support, public impact evaluation",
+        role=WarCouncilRole.LOGISTICS_OFFICER,
+        title="Logistics Officer",
+        rotation_months=12,
+        primary_perspective="Supply, transport, routes, fallback positions, ammo, food, water, fuel",
+        why_seat_exists="If logistics cannot sustain the operation, it does not happen. Absolute cost veto",
+        has_specific_veto=True,
+        veto_scope="Cost & Sustainability Veto",
+    ),
+    WarCouncilMember(
+        role=WarCouncilRole.DECEPTION_OFFICER,
+        title="Deception Officer",
+        rotation_months=12,
+        primary_perspective="Feints, decoys, misinformation, false radio traffic, dummy positions, psyops",
+        why_seat_exists="Sun Tzu: all warfare is based on deception; forces enemy to fight our conditions",
+    ),
+    WarCouncilMember(
+        role=WarCouncilRole.TERRAIN_OFFICER,
+        title="Terrain Officer",
+        rotation_months=24,
+        primary_perspective="Knows every river, forest, hill, pass, road, swamp, and ridge within 100 km",
+        why_seat_exists="Uses the land as a weapon (Finnish lakes, Viet Cong jungle/tunnels, Boer veldt)",
+    ),
+    WarCouncilMember(
+        role=WarCouncilRole.COMMUNITY_LIAISON,
+        title="Community Liaison",
+        rotation_months=3,
+        primary_perspective="Civilian firewall representing Community Council; verifies public consent",
+        why_seat_exists="Prevents War Council from becoming a military junta; absolute offensive veto",
+        has_specific_veto=True,
+        veto_scope="Offensive Action Veto",
     ),
 )
 
@@ -113,8 +121,7 @@ class WarDecisionProposal:
     description: str
     is_offensive_action: bool
     predicted_civilian_casualties: int
-    rab_economic_burn_acceptable: bool
-    justice_compliance_verified: bool
+    logistics_officer_affordability_approved: bool
     is_reversible: bool
     community_council_authorized: bool = False  # Mandatory for offensive operations
 
@@ -129,9 +136,9 @@ class CouncilVoteResult:
 
 
 class WarCouncilDecisionEngine:
-    COUNCIL_SIZE: int = 8
-    STANDARD_MAJORITY_THRESHOLD: int = 5     # 5 of 8
-    BLOOD_RULE_SUPERMAJORITY: int = 7         # 7 of 8 if civilian casualties > 10
+    COUNCIL_SIZE: int = 7
+    STANDARD_MAJORITY_THRESHOLD: int = 4     # 4 of 7
+    BLOOD_RULE_SUPERMAJORITY: int = 6         # 6 of 7 if civilian casualties >= 10
 
     @classmethod
     def evaluate_proposal(
@@ -140,6 +147,7 @@ class WarCouncilDecisionEngine:
         votes_in_favor: int,
         member_invoking_24h_delay: bool = False,
     ) -> CouncilVoteResult:
+        # 1. Mandatory 24-hour reflection "No" rule
         if member_invoking_24h_delay:
             return CouncilVoteResult(
                 approved=False,
@@ -149,40 +157,30 @@ class WarCouncilDecisionEngine:
                 rejection_reason="Delayed for 24 hours under the mandatory 'No' reflection rule",
             )
 
-        # 1. Defensive-only constraint: Offensive actions strictly require Community Council assent
+        # 2. Defensive-only constraint: Offensive actions strictly require Community Council assent
         if proposal.is_offensive_action and not proposal.community_council_authorized:
             return CouncilVoteResult(
                 approved=False,
                 votes_in_favor=votes_in_favor,
                 total_votes=cls.COUNCIL_SIZE,
                 delayed_by_no_rule=False,
-                rejection_reason="Offensive military action lacks explicit Community Council authorization",
+                rejection_reason="Offensive military action lacks explicit Community Council authorization (Community Liaison Veto)",
             )
 
-        # 2. Justice and Anti-Atrocity Compliance
-        if not proposal.justice_compliance_verified:
+        # 3. Logistics Officer Absolute Cost Veto
+        if not proposal.logistics_officer_affordability_approved:
             return CouncilVoteResult(
                 approved=False,
                 votes_in_favor=votes_in_favor,
                 total_votes=cls.COUNCIL_SIZE,
                 delayed_by_no_rule=False,
-                rejection_reason="Operation violates customary law or anti-atrocity compliance checks",
+                rejection_reason="Logistics Officer veto: operation exceeds sustainable supply and resource burn limits",
             )
 
-        # 3. RAB Economic Cost Rule
-        if not proposal.rab_economic_burn_acceptable:
-            return CouncilVoteResult(
-                approved=False,
-                votes_in_favor=votes_in_favor,
-                total_votes=cls.COUNCIL_SIZE,
-                delayed_by_no_rule=False,
-                rejection_reason="RAB assessment indicates operation exceeds sustainable resource burn rate",
-            )
-
-        # 4. The "Blood Rule": civilian casualties > 10 requires 7/8 supermajority
+        # 4. The "Blood Rule": civilian casualties >= 10 requires 6/7 supermajority
         required_threshold = (
             cls.BLOOD_RULE_SUPERMAJORITY
-            if proposal.predicted_civilian_casualties > 10
+            if proposal.predicted_civilian_casualties >= 10
             else cls.STANDARD_MAJORITY_THRESHOLD
         )
 
@@ -204,7 +202,60 @@ class WarCouncilDecisionEngine:
 
 
 # --------------------------------------------------------------------------
-# 3. The Living Scenario Library (Roman Contingency Model)
+# 3. The Core Doctrine: "Don't Mirror, Don't Chase, Don't Hold"
+# --------------------------------------------------------------------------
+
+
+@dataclass(frozen=True)
+class DoctrinePrinciple:
+    rule_name: str
+    meaning: str
+    application: str
+    historical_proof: str
+
+
+DOCTRINE_PRINCIPLES: tuple[DoctrinePrinciple, ...] = (
+    DoctrinePrinciple(
+        rule_name="DON'T MIRROR",
+        meaning="Never fight the enemy on their terms; refuse to match expensive weapons with expensive weapons.",
+        application="If they have tanks, deny tank terrain. If aircraft, hide underground. If drones, throw nets.",
+        historical_proof="Finns vs Soviet tanks (skis & Molotovs); Viet Cong vs US jets (tunnels & jungle); Boers vs British artillery.",
+    ),
+    DoctrinePrinciple(
+        rule_name="DON'T CHASE",
+        meaning="Avoid prolonged engagements; speed is armor; strike, achieve objective, withdraw immediately.",
+        application="Never pursue retreating enemy into unknown terrain; do not try to 'finish them off' in open ground.",
+        historical_proof="Khalid ibn al-Walid rapid cavalry disengagements; Boer dawn raids vanishing by noon; Afghan 20-minute ambushes.",
+    ),
+    DoctrinePrinciple(
+        rule_name="DON'T HOLD",
+        meaning="Never try to hold open ground against superior firepower.",
+        application="Hold only terrain that hurts the enemy: forests, mountain passes, swamps, urban choke points, and tunnels.",
+        historical_proof="Viet Cong held jungle/tunnels not Saigon; Finns held frozen forests not open plains; Mujahideen held mountain passes.",
+    ),
+    DoctrinePrinciple(
+        rule_name="Strike the System, Not the Mass",
+        meaning="Target command, communications, fuel, and supply routes rather than killing every enemy soldier.",
+        application="An army without leadership, communication, fuel, and food collapses within 48 hours.",
+        historical_proof="Decapitation strikes and fuel convoy interdictions in asymmetric guerrilla campaigns.",
+    ),
+    DoctrinePrinciple(
+        rule_name="Deception First",
+        meaning="The battle is often won before first contact through feints, decoys, and false electronic traffic.",
+        application="Force adversary to expend munitions and energy attacking empty dummy positions.",
+        historical_proof="Sun Tzu; Zhuge Liang campaigns; WWII Allied deception operations.",
+    ),
+    DoctrinePrinciple(
+        rule_name="Mobility > Numbers",
+        meaning="Speed, terrain knowledge, and timing beat numerical mass 9 times out of 10.",
+        application="40 fast, terrain-literate fighters defeat 400 slow, confused, and heavy expeditionary troops.",
+        historical_proof="Khalid ibn al-Walid 51 undefeated battles; Boer light horse commandos.",
+    ),
+)
+
+
+# --------------------------------------------------------------------------
+# 4. The Living Scenario Library (Roman Contingency Model)
 # --------------------------------------------------------------------------
 
 
@@ -226,8 +277,8 @@ SCENARIO_LIBRARY: tuple[ThreatScenario, ...] = (
         name="Small armed raid",
         adversary_scale="10–50 raiders",
         early_warning_lead_time="1–4 hours",
-        primary_response_phase="Local militia (20–30) + Horse scouts; 5 km max pursuit",
-        active_specialized_units=("The Horse", "The Healer"),
+        primary_response_phase="Local sector militia (20–30) + Mounted Unit scouts; 5 km max pursuit",
+        active_specialized_units=("Mounted Unit", "Medical Team"),
         militia_mobilization_scale=30,
         reversibility="High (quick local disengagement)",
     ),
@@ -236,8 +287,8 @@ SCENARIO_LIBRARY: tuple[ThreatScenario, ...] = (
         name="Medium coordinated assault",
         adversary_scale="100–500 fighters + light vehicles",
         early_warning_lead_time="2–6 hours",
-        primary_response_phase="Defense in depth (3 layers); IED fields; drone net defense; Hammer counter-strike",
-        active_specialized_units=("The Hammer", "The Scorpion", "The Worm", "The Echo", "The Strike Team", "The Healer", "The Horse"),
+        primary_response_phase="Defense in depth (3 layers); IED fields; drone net defense; Shock Unit counter-strike",
+        active_specialized_units=("Shock Unit", "Counter-Drone Team", "Sapper Team", "Signals Team", "Strike Team", "Medical Team", "Mounted Unit"),
         militia_mobilization_scale=2000,
         reversibility="Moderate (staged defensive fallback)",
     ),
@@ -247,7 +298,7 @@ SCENARIO_LIBRARY: tuple[ThreatScenario, ...] = (
         adversary_scale="1,000+ fighters + armor + air support",
         early_warning_lead_time="12–48 hours",
         primary_response_phase="Full asymmetric transition: underground caches, decapitation raids, tank blinding, protracted guerrilla warfare",
-        active_specialized_units=("Strike Team", "The Hammer", "The Scorpion", "The Worm", "The Echo", "The Healer", "The Horse"),
+        active_specialized_units=("Strike Team", "Shock Unit", "Counter-Drone Team", "Sapper Team", "Signals Team", "Medical Team", "Mounted Unit"),
         militia_mobilization_scale=3500,
         reversibility="Low (existential defense commitment)",
     ),
@@ -257,7 +308,7 @@ SCENARIO_LIBRARY: tuple[ThreatScenario, ...] = (
         adversary_scale="Ecological flood wave",
         early_warning_lead_time="24–72 hours",
         primary_response_phase="EDMB Red alert; high-ground evacuation; reserve vault waterproofing; water purification",
-        active_specialized_units=("The Worm", "The Healer", "The Horse"),
+        active_specialized_units=("Sapper Team", "Medical Team", "Mounted Unit"),
         militia_mobilization_scale=200,
         reversibility="High (civil recovery)",
     ),
@@ -267,7 +318,7 @@ SCENARIO_LIBRARY: tuple[ThreatScenario, ...] = (
         adversary_scale="Prolonged hydrological deficit",
         early_warning_lead_time="3–6 months",
         primary_response_phase="Water rationing; drought-crop rotation; RAB food security runway; border water conflict monitoring",
-        active_specialized_units=("The Echo",),
+        active_specialized_units=("Signals Team",),
         militia_mobilization_scale=50,
         reversibility="High (agricultural policy adjustment)",
     ),
@@ -277,7 +328,7 @@ SCENARIO_LIBRARY: tuple[ThreatScenario, ...] = (
         adversary_scale="Pathogen / Vector spike",
         early_warning_lead_time="2–4 weeks",
         primary_response_phase="Sector quarantine; medical triage; vector spraying; transparent civic communications",
-        active_specialized_units=("The Healer", "The Worm"),
+        active_specialized_units=("Medical Team", "Sapper Team"),
         militia_mobilization_scale=100,
         reversibility="High (staged de-escalation)",
     ),
@@ -287,7 +338,7 @@ SCENARIO_LIBRARY: tuple[ThreatScenario, ...] = (
         adversary_scale="Rogue faction / mutiny",
         early_warning_lead_time="0–12 hours",
         primary_response_phase="Secure warehouses and communications; isolate rogue leaders non-lethally; justice tribunal",
-        active_specialized_units=("The Echo", "Strike Team"),
+        active_specialized_units=("Signals Team", "Strike Team"),
         militia_mobilization_scale=500,
         reversibility="Moderate (due process adjudication)",
     ),
@@ -297,7 +348,7 @@ SCENARIO_LIBRARY: tuple[ThreatScenario, ...] = (
         adversary_scale="Hostile economic embargo",
         early_warning_lead_time="1–4 weeks",
         primary_response_phase="RAB economic buffer activation; production substitution ladder; diplomatic envoy dispatch",
-        active_specialized_units=("The Horse", "The Echo"),
+        active_specialized_units=("Mounted Unit", "Signals Team"),
         militia_mobilization_scale=50,
         reversibility="High (diplomatic resolution)",
     ),
@@ -307,17 +358,17 @@ SCENARIO_LIBRARY: tuple[ThreatScenario, ...] = (
         adversary_scale="Electronic state / cartel hackers",
         early_warning_lead_time="Minutes to hours",
         primary_response_phase="Isolate network nodes; revert to offline physical note ledger; trace intrusion origin",
-        active_specialized_units=("The Echo",),
+        active_specialized_units=("Signals Team",),
         militia_mobilization_scale=20,
         reversibility="High (system isolation and cryptographic rebuild)",
     ),
     ThreatScenario(
         code="S10",
-        name="CBRN (Chemical/Biological/Radiological/Nuclear) attack",
+        name="CBRN attack",
         adversary_scale="Asymmetric / WMD strike",
         early_warning_lead_time="Minutes to hours",
         primary_response_phase="Underground shelter seal; positive air filtration; decontamination; survival cache distribution",
-        active_specialized_units=("The Healer", "The Worm", "The Echo"),
+        active_specialized_units=("Medical Team", "Sapper Team", "Signals Team"),
         militia_mobilization_scale=1000,
         reversibility="Low (severe catastrophe management)",
     ),
@@ -325,7 +376,7 @@ SCENARIO_LIBRARY: tuple[ThreatScenario, ...] = (
 
 
 # --------------------------------------------------------------------------
-# 4. The War Room ("Genius Council")
+# 5. The War Room ("Genius Council")
 # --------------------------------------------------------------------------
 
 
@@ -343,32 +394,25 @@ class WarRoomRules:
     max_participants: int = 15
 
 
-@dataclass(frozen=True)
-class WarRoomParticipant:
-    name: str
-    role_category: str  # "commander", "intelligence", "environmental", "logistics", "engineering", "medical", "wildcard"
-    expertise: str
-
-
 # --------------------------------------------------------------------------
-# 5. Specialized Units Architecture (Elite in Skill, Not in Status)
+# 6. Specialized Units: Functional Naming & Skill Distribution
 # --------------------------------------------------------------------------
 
 
 class SpecializedUnitType(str, Enum):
-    STRIKE_TEAM = "strike_team"      # Decapitation / target command neutralizer (4)
-    THE_HAMMER = "the_hammer"        # Shock assault / rapid breakthrough (40)
-    THE_SCORPION = "the_scorpion"    # Counter-drone / air defense (20-30)
-    THE_WORM = "the_worm"            # Sappers / IEDs / engineering / traps (20-30)
-    THE_HEALER = "the_healer"        # Combat trauma medical / triage (10-15)
-    THE_ECHO = "the_echo"            # Comms / EW jamming / cyber (10-15)
-    THE_HORSE = "the_horse"          # Mounted recon / rapid response / supply (30-50)
+    STRIKE_TEAM = "strike_team"              # Decapitation / target command neutralizer (4)
+    SHOCK_UNIT = "shock_unit"                # Shock assault / rapid breakthrough (40)
+    COUNTER_DRONE = "counter_drone_team"     # Counter-drone / air defense (20-30)
+    SAPPER_TEAM = "sapper_team"              # Sappers / IEDs / engineering / traps (20-30)
+    MEDICAL_TEAM = "medical_team"            # Combat trauma medical / triage (10-15)
+    SIGNALS_TEAM = "signals_team"            # Comms / EW jamming / cyber (10-15)
+    MOUNTED_UNIT = "mounted_unit"            # Mounted recon / rapid response / supply (30-50)
 
 
 @dataclass(frozen=True)
 class SpecializedUnitSpec:
     unit_type: SpecializedUnitType
-    name: str
+    functional_name: str
     min_size: int
     max_size: int
     nominal_size: int
@@ -381,7 +425,7 @@ class SpecializedUnitSpec:
 SPECIALIZED_UNITS_ROSTER: tuple[SpecializedUnitSpec, ...] = (
     SpecializedUnitSpec(
         unit_type=SpecializedUnitType.STRIKE_TEAM,
-        name="The Strike Team (Target Command Neutralizer)",
+        functional_name="Strike Team (Target Command Neutralizer)",
         min_size=4,
         max_size=8,
         nominal_size=4,
@@ -391,8 +435,8 @@ SPECIALIZED_UNITS_ROSTER: tuple[SpecializedUnitSpec, ...] = (
         training_duration_months=6,
     ),
     SpecializedUnitSpec(
-        unit_type=SpecializedUnitType.THE_HAMMER,
-        name="The Hammer (Shock Assault)",
+        unit_type=SpecializedUnitType.SHOCK_UNIT,
+        functional_name="Shock Unit (Breakthrough Assault)",
         min_size=30,
         max_size=50,
         nominal_size=40,
@@ -402,8 +446,8 @@ SPECIALIZED_UNITS_ROSTER: tuple[SpecializedUnitSpec, ...] = (
         training_duration_months=3,
     ),
     SpecializedUnitSpec(
-        unit_type=SpecializedUnitType.THE_SCORPION,
-        name="The Scorpion (Counter-Drone & Air Defense)",
+        unit_type=SpecializedUnitType.COUNTER_DRONE,
+        functional_name="Counter-Drone Team (Air Defense)",
         min_size=20,
         max_size=30,
         nominal_size=25,
@@ -413,8 +457,8 @@ SPECIALIZED_UNITS_ROSTER: tuple[SpecializedUnitSpec, ...] = (
         training_duration_months=2,
     ),
     SpecializedUnitSpec(
-        unit_type=SpecializedUnitType.THE_WORM,
-        name="The Worm (Sappers, IEDs & Fortification)",
+        unit_type=SpecializedUnitType.SAPPER_TEAM,
+        functional_name="Sapper Team (Traps & Fortifications)",
         min_size=20,
         max_size=30,
         nominal_size=25,
@@ -424,19 +468,19 @@ SPECIALIZED_UNITS_ROSTER: tuple[SpecializedUnitSpec, ...] = (
         training_duration_months=3,
     ),
     SpecializedUnitSpec(
-        unit_type=SpecializedUnitType.THE_HEALER,
-        name="The Healer (Combat Trauma Medical)",
+        unit_type=SpecializedUnitType.MEDICAL_TEAM,
+        functional_name="Medical Team (Combat Trauma Medical)",
         min_size=10,
         max_size=15,
         nominal_size=12,
         mission="Field triage, emergency trauma surgery, blood storage, and casualty evacuation",
-        operational_limit="Treats friend and wounded enemy alike; protected by dedicated 4-man security",
+        operational_limit="Treats friend and wounded enemy alike; protected by dedicated security",
         max_service_years=3,
         training_duration_months=2,
     ),
     SpecializedUnitSpec(
-        unit_type=SpecializedUnitType.THE_ECHO,
-        name="The Echo (Signals, Electronic Warfare & Cyber)",
+        unit_type=SpecializedUnitType.SIGNALS_TEAM,
+        functional_name="Signals Team (Electronic Warfare & Cyber)",
         min_size=10,
         max_size=15,
         nominal_size=12,
@@ -446,8 +490,8 @@ SPECIALIZED_UNITS_ROSTER: tuple[SpecializedUnitSpec, ...] = (
         training_duration_months=2,
     ),
     SpecializedUnitSpec(
-        unit_type=SpecializedUnitType.THE_HORSE,
-        name="The Horse (Mounted Recon & Rapid Logistics)",
+        unit_type=SpecializedUnitType.MOUNTED_UNIT,
+        functional_name="Mounted Unit (Recon & Rapid Logistics)",
         min_size=30,
         max_size=50,
         nominal_size=40,
@@ -486,23 +530,24 @@ class SpecializedUnitSizing:
 
 
 # --------------------------------------------------------------------------
-# 6. Anti-Caste Safeguards (Anti-Praetorian / Anti-Janissary / Anti-Mamluk)
+# 7. Anti-Caste Safeguards (Anti-Praetorian / Anti-Janissary / Anti-Mamluk)
 # --------------------------------------------------------------------------
 
 
 @dataclass(frozen=True)
 class AntiCasteSafeguards:
-    max_consecutive_service_years: int = 3       # Mandatory return to civilian economic production
-    separate_barracks_allowed: bool = False      # Operators live in community homes
-    separate_pay_or_privilege: bool = False      # Equal standard compensation
-    hereditary_recruitment_allowed: bool = False # Merit and sortition-based entry only
+    max_consecutive_service_years: int = 3          # Mandatory return to civilian economic production
+    separate_barracks_allowed: bool = False         # Operators live in ordinary community homes
+    separate_pay_or_privilege: bool = False         # Equal standard compensation in weight-based currency
+    hereditary_recruitment_allowed: bool = False    # Merit and militia drill performance only
     holding_civilian_political_office: bool = False # Absolute separation of military & civil rule
     right_of_refusal_for_offensive_action: bool = True # Legal right to refuse illegal offensive war
-    no_elite_branding_names: bool = True         # Named strictly by operational function
+    no_elite_branding_names: bool = True            # Functional naming only (no 'Guards', 'Immortals', 'Elites')
+    skills_distributed_to_guilds: bool = True       # Veterans train apprentices upon return to civilian life
 
 
 # --------------------------------------------------------------------------
-# 7. Integrated Combat Timeline & Simulation
+# 8. Integrated Combat Timeline & Simulation
 # --------------------------------------------------------------------------
 
 
