@@ -1,17 +1,22 @@
-"""Media, Information Integrity, and Social Harm: Regulatory and Architectural Model.
+"""National Media and Information Integrity Act: Sovereign Enforcement Framework.
 
-This module formalizes the policy framework reconciling anti-corruption investigative
-freedom with social harm prevention:
-1. ``ContentPolicy`` -- Classifies content across Tier A (Instructional), Tier B (Depictive/Fiction),
-   Tier C (Aspirational/Commercial), Court Procedure, and Official Governance reporting.
-2. ``GoverningAxiom`` -- "Restrict the instructional and the deceptive. Do not restrict the depictive."
-3. ``DistributionArchitecture`` -- Distributed enforcement across 8 pillars; strict prohibition on
-   state pipe ownership / single filter gates (central systems may act only as *sources*, never *filters*).
-4. ``CourtReportingStandards`` -- Banning courtroom cameras, protecting suspect/victim dignity,
-   enforcing sub judice rules, and publishing open factual written registries.
-5. ``CommercialDeceptionSafeguards`` -- Mandatory paid-promotion disclosures, image retouching labels,
-   influencer financial promotion bans (crypto, forex, gambling), and debt-advertising restrictions for minors.
-6. ``AntiConcentrationPolicy`` -- Limits single-entity media market share and mandates ownership transparency.
+This module formalizes the statutory architecture of the National Media and Information
+Integrity Act (Rev. 2):
+1. ``DesignDoctrine`` -- Sovereign authority, enforcement precedes proclamation, elimination
+   of administrative discretion, and the source-not-filter rule.
+2. ``EnforcementBodies`` -- The three independent statutory organs:
+   - Media Standards Authority (MSA)
+   - Information Integrity Inspectorate (III)
+   - Media Tribunal
+3. ``FundingFormula`` -- Ring-fenced percentage of broadcast fees and digital ad revenue levy.
+4. ``SanctionLadder`` -- 7-step mandatory, escalating, percentage-of-turnover penalties.
+5. ``ForeignPlatformLevers`` -- Enforcement at the money layer: local representative liability,
+   loss of domestic advertiser tax-deductibility, payment processor blocks, and zero network-layer blocking.
+6. ``PlatformAmplification`` -- "Hosting stays immune; amplification does not." 8 statutory platform duties.
+7. ``SyntheticProvenance`` -- Content credentials, synthetic labelling, and shifted burden of proof.
+8. ``StateConductDiscipline`` -- Formula-only state advertising, deemed-grant FOI, whistleblower protection,
+   anti-SLAPP shields, and anti-astroturfing criminalization.
+9. ``PhasedSequence`` -- 5-phase implementation sequencing (disciplining the state in Phase 1).
 """
 
 from __future__ import annotations
@@ -22,222 +27,396 @@ from typing import Optional
 
 
 # --------------------------------------------------------------------------
-# 1. Content Categorization and Tiers
+# 1. Statutory Enforcement Bodies & Funding
 # --------------------------------------------------------------------------
 
 
-class ContentTier(str, Enum):
-    TIER_A_INSTRUCTIONAL = "tier_a_instructional"     # Method detail: suicide, weapons, hacking, manifestos
-    TIER_B_DEPICTIVE = "tier_b_depictive"             # Fiction, drama, art, literature, moral cautionary tales
-    TIER_C_ASPIRATIONAL = "tier_c_aspirational"       # Commercial promotion, curated affluence, debt ads
-    COURT_PROCEDURE = "court_procedure"               # Live trials, suspect naming, crime-scene gore
-    GOVERNMENT_REPORTING = "government_reporting"     # Investigative reporting on state officials & budgets
-    DISTRIBUTION_INFRASTRUCTURE = "distribution_pipe" # Ownership/operation of communications channels
-
-
-class RestrictionStatus(str, Enum):
-    RESTRICT = "restrict"                             # Regulate content conduct / standards
-    DO_NOT_RESTRICT = "do_not_restrict"               # Protected creative expression / free depiction
-    NEVER_RESTRICT = "never_restrict"                 # Constitutional prohibition on state restriction
-
-
-class RegulatoryInstrument(str, Enum):
-    REPORTING_GUIDELINES_STATUTE = "reporting_guidelines_statute"
-    NO_NOTORIETY_PRESS_CODE = "no_notoriety_press_code"
-    COURT_PROCEDURE_SUB_JUDICE = "court_procedure_sub_judice"
-    PRESS_CODE_PUBLICATION_BAN = "press_code_publication_ban"
-    AGE_CLASSIFICATION_ONLY = "age_classification_only"
-    DISCLOSURE_AND_ADVERTISING_CODE = "disclosure_and_advertising_code"
-    MEDIA_LITERACY_CURRICULUM = "media_literacy_curriculum"
-    CONSTITUTIONAL_PROTECTION = "constitutional_protection"
-    ANTI_CONCENTRATION_LAW = "anti_concentration_law"
+class RegulatoryBodyType(str, Enum):
+    MSA = "media_standards_authority"             # Adjudicates content conduct; issues corrections & fines
+    III = "information_integrity_inspectorate"     # Technical audits, ranking verification, forensics
+    TRIBUNAL = "media_tribunal"                   # Specialist fast-track judicial appeals
 
 
 @dataclass(frozen=True)
-class ContentPolicyRule:
-    category_name: str
-    tier: ContentTier
-    restriction_status: RestrictionStatus
-    instrument: RegulatoryInstrument
-    governing_rationale: str
-    evidence_base: str
+class StatutoryBodySpec:
+    body_type: RegulatoryBodyType
+    name: str
+    board_term_years: int
+    appointment_mechanism: str
+    removal_mechanism: str
+    primary_statutory_duties: tuple[str, ...]
+    is_ministerial_direction_prohibited: bool = True
 
 
-MEDIA_POLICY_RULES: tuple[ContentPolicyRule, ...] = (
-    ContentPolicyRule(
-        category_name="Operational method detail (suicide, weapons, fraud, hacking)",
-        tier=ContentTier.TIER_A_INSTRUCTIONAL,
-        restriction_status=RestrictionStatus.RESTRICT,
-        instrument=RegulatoryInstrument.REPORTING_GUIDELINES_STATUTE,
-        governing_rationale="Restricts the instructional 'how-to'; prevents copycat contagion (Werther effect)",
-        evidence_base="WHO suicide reporting guidelines; Austrian subway suicide reporting reductions",
+STATUTORY_BODIES: tuple[StatutoryBodySpec, ...] = (
+    StatutoryBodySpec(
+        body_type=RegulatoryBodyType.MSA,
+        name="Media Standards Authority (MSA)",
+        board_term_years=6,
+        appointment_mechanism="Parliamentary supermajority from judicial, journalist, and public nominations",
+        removal_mechanism="Judicial process for defined statutory cause only",
+        primary_statutory_duties=(
+            "Adjudicate content-conduct breaches (courtroom, instructional, commercial)",
+            "Enforce equal-prominence corrections and right-of-reply orders",
+            "Impose percentage-of-turnover fines and broadcast license conditions",
+        ),
     ),
-    ContentPolicyRule(
-        category_name="Perpetrator glorification and manifestos (mass shooters)",
-        tier=ContentTier.TIER_A_INSTRUCTIONAL,
-        restriction_status=RestrictionStatus.RESTRICT,
-        instrument=RegulatoryInstrument.NO_NOTORIETY_PRESS_CODE,
-        governing_rationale="Denies notoriety incentive; eliminates social learning reward model",
-        evidence_base="Bandura social learning theory; mass shooting contagion clustering data",
+    StatutoryBodySpec(
+        body_type=RegulatoryBodyType.III,
+        name="Information Integrity Inspectorate (III)",
+        board_term_years=6,
+        appointment_mechanism="Parliamentary supermajority; annual reporting to Parliament directly",
+        removal_mechanism="Judicial process for defined statutory cause only",
+        primary_statutory_duties=(
+            "Independent technical and algorithmic audit of platform ranking systems",
+            "Forensic accounting and beneficial ownership verification",
+            "Evidence gathering and referral of commercial fraud to prosecution",
+        ),
     ),
-    ContentPolicyRule(
-        category_name="Real crime as entertainment (court TV, crime-scene footage)",
-        tier=ContentTier.COURT_PROCEDURE,
-        restriction_status=RestrictionStatus.RESTRICT,
-        instrument=RegulatoryInstrument.COURT_PROCEDURE_SUB_JUDICE,
-        governing_rationale="Protects judicial dignity, prevents jury poisoning, preserves victim privacy",
-        evidence_base="German, French, Dutch, and UK courtroom camera prohibitions",
-    ),
-    ContentPolicyRule(
-        category_name="Naming pre-trial suspects, victims, and minors",
-        tier=ContentTier.COURT_PROCEDURE,
-        restriction_status=RestrictionStatus.RESTRICT,
-        instrument=RegulatoryInstrument.PRESS_CODE_PUBLICATION_BAN,
-        governing_rationale="Preserves presumption of innocence and personal dignity ('Andreas B.' standard)",
-        evidence_base="German Press Council code; European Court of Human Rights privacy jurisprudence",
-    ),
-    ContentPolicyRule(
-        category_name="Prejudicial pre-trial commentary",
-        tier=ContentTier.COURT_PROCEDURE,
-        restriction_status=RestrictionStatus.RESTRICT,
-        instrument=RegulatoryInstrument.COURT_PROCEDURE_SUB_JUDICE,
-        governing_rationale="Prevents trial by media and contamination of witness testimony",
-        evidence_base="UK, Canadian, and Indian Contempt of Court / sub judice statutes",
-    ),
-    ContentPolicyRule(
-        category_name="Fiction depicting wrongdoing with consequence",
-        tier=ContentTier.TIER_B_DEPICTIVE,
-        restriction_status=RestrictionStatus.DO_NOT_RESTRICT,
-        instrument=RegulatoryInstrument.AGE_CLASSIFICATION_ONLY,
-        governing_rationale="Preserves moral literature and cautionary structure; fiction transmits imitation weakly",
-        evidence_base="Decades of falling property crime during saturation of crime drama & fiction",
-    ),
-    ContentPolicyRule(
-        category_name="Undisclosed commercial or financial promotion",
-        tier=ContentTier.TIER_C_ASPIRATIONAL,
-        restriction_status=RestrictionStatus.RESTRICT,
-        instrument=RegulatoryInstrument.DISCLOSURE_AND_ADVERTISING_CODE,
-        governing_rationale="Prevents predatory consumer deception, debt traps, and scam contagion",
-        evidence_base="French influencer disclosure law; UK FCA / SA FSCA financial promotion rules",
-    ),
-    ContentPolicyRule(
-        category_name="Honest depiction of wealth and lifestyle",
-        tier=ContentTier.TIER_C_ASPIRATIONAL,
-        restriction_status=RestrictionStatus.DO_NOT_RESTRICT,
-        instrument=RegulatoryInstrument.MEDIA_LITERACY_CURRICULUM,
-        governing_rationale="Educates audience on staged/financed affluence rather than hiding depiction",
-        evidence_base="Gerbner cultivation theory; status anxiety and adolescent mental health research",
-    ),
-    ContentPolicyRule(
-        category_name="Investigative reporting on government and public officials",
-        tier=ContentTier.GOVERNMENT_REPORTING,
-        restriction_status=RestrictionStatus.NEVER_RESTRICT,
-        instrument=RegulatoryInstrument.CONSTITUTIONAL_PROTECTION,
-        governing_rationale="Primary instrument of anti-corruption; discomfort to state is the mechanism",
-        evidence_base="Historical collapse of anti-corruption mechanisms under state press censorship",
-    ),
-    ContentPolicyRule(
-        category_name="Ownership and control of information distribution channels",
-        tier=ContentTier.DISTRIBUTION_INFRASTRUCTURE,
-        restriction_status=RestrictionStatus.NEVER_RESTRICT,
-        instrument=RegulatoryInstrument.ANTI_CONCENTRATION_LAW,
-        governing_rationale="Single distributor creates a single point of capture; plural distribution mandatory",
-        evidence_base="State telecommunication monopolies inevitably becoming tools of autocratic suppression",
+    StatutoryBodySpec(
+        body_type=RegulatoryBodyType.TRIBUNAL,
+        name="Media Tribunal",
+        board_term_years=6,
+        appointment_mechanism="Specialist judges within ordinary judiciary",
+        removal_mechanism="Standard judicial tenure protections",
+        primary_statutory_duties=(
+            "Fast-track appeals from MSA and III rulings (max 90-day determination)",
+            "Review of emergency public-interest overrides",
+            "Onward appeal to higher appellate courts as of right",
+        ),
     ),
 )
 
 
-# --------------------------------------------------------------------------
-# 2. Central Technical System: Source vs. Filter Architecture
-# --------------------------------------------------------------------------
-
-
-class SystemMode(str, Enum):
-    AUTHORITATIVE_SOURCE = "authoritative_source" # Permitted: Wire service, emergency alert, court registry
-    EXCLUSIVE_FILTER = "exclusive_filter"         # Strictly Prohibited: Single gate through which all data passes
-
-
 @dataclass(frozen=True)
-class CentralTechnicalSystemSpec:
-    system_name: str
-    mode: SystemMode
-    is_mandatory_gate: bool
-    is_authoritative_source_only: bool
+class StatutoryFundingFormula:
+    broadcast_fee_levy_percent: float = 0.15     # 15% of annual broadcast license revenues
+    digital_ad_revenue_levy_percent: float = 0.02 # 2% statutory levy on domestic digital ad turnover
+    is_ring_fenced_trust_fund: bool = True
+    annual_ministerial_budget_discretion: bool = False # Strictly prohibited
 
     @property
-    def is_constitutionally_valid(self) -> bool:
-        # Rule: It may add authoritative information to the system; it may not be the only thing allowed through.
-        return (self.mode == SystemMode.AUTHORITATIVE_SOURCE) and (not self.is_mandatory_gate)
+    def is_genuinely_independent(self) -> bool:
+        return self.is_ring_fenced_trust_fund and not self.annual_ministerial_budget_discretion
 
 
-VALID_OFFICIAL_WIRE = CentralTechnicalSystemSpec(
-    system_name="Community Civic Wire & Court Registry",
-    mode=SystemMode.AUTHORITATIVE_SOURCE,
-    is_mandatory_gate=False,
-    is_authoritative_source_only=True,
-)
+# --------------------------------------------------------------------------
+# 2. The Seven-Step Mandatory Escalating Sanction Ladder
+# --------------------------------------------------------------------------
 
-INVALID_STATE_FILTER = CentralTechnicalSystemSpec(
-    system_name="Unified State Internet & Broadcast Filter",
-    mode=SystemMode.EXCLUSIVE_FILTER,
-    is_mandatory_gate=True,
-    is_authoritative_source_only=False,
+
+class SanctionStep(int, Enum):
+    STEP_1_ADVISORY = 1       # Private advisory note
+    STEP_2_PUBLISHED_FINDING = 2 # Publicly published finding of breach
+    STEP_3_CORRECTION = 3     # Mandatory correction with equal prominence (same slot/duration)
+    STEP_4_TURNOVER_FINE = 4  # Statutory fine as a percentage of domestic turnover
+    STEP_5_LICENSE_CONDITION = 5 # Binding operational condition on broadcast/platform license
+    STEP_6_COMMERCIAL_SUSPENSION = 6 # Temporary suspension of monetization/commercial operations
+    STEP_7_LICENSE_REVOCATION = 7 # Full revocation of operating authorization
+
+
+@dataclass(frozen=True)
+class SanctionLadderSpec:
+    step: SanctionStep
+    name: str
+    description: str
+    is_automatic_on_repeat_breach: bool
+    director_personal_liability: bool = False
+
+
+SANCTION_LADDER: tuple[SanctionLadderSpec, ...] = (
+    SanctionLadderSpec(
+        step=SanctionStep.STEP_1_ADVISORY,
+        name="Advisory Note",
+        description="Confidential guidance notice for minor first-time procedural ambiguities",
+        is_automatic_on_repeat_breach=False,
+    ),
+    SanctionLadderSpec(
+        step=SanctionStep.STEP_2_PUBLISHED_FINDING,
+        name="Published Finding",
+        description="Public notice of breach entered into the permanent regulatory registry",
+        is_automatic_on_repeat_breach=True,
+    ),
+    SanctionLadderSpec(
+        step=SanctionStep.STEP_3_CORRECTION,
+        name="Equal-Prominence Correction",
+        description="Mandatory correction published on the same page, slot, and duration within 48 hours",
+        is_automatic_on_repeat_breach=True,
+    ),
+    SanctionLadderSpec(
+        step=SanctionStep.STEP_4_TURNOVER_FINE,
+        name="Percentage-of-Turnover Fine",
+        description="Fine calculated as 1% to 10% of gross domestic turnover (debt to state)",
+        is_automatic_on_repeat_breach=True,
+        director_personal_liability=True,
+    ),
+    SanctionLadderSpec(
+        step=SanctionStep.STEP_5_LICENSE_CONDITION,
+        name="Statutory License Condition",
+        description="Binding operational restriction or mandatory external audit compliance monitor",
+        is_automatic_on_repeat_breach=True,
+        director_personal_liability=True,
+    ),
+    SanctionLadderSpec(
+        step=SanctionStep.STEP_6_COMMERCIAL_SUSPENSION,
+        name="Commercial Suspension",
+        description="Temporary prohibition on accepting domestic ad spend or processing subscription revenue",
+        is_automatic_on_repeat_breach=True,
+        director_personal_liability=True,
+    ),
+    SanctionLadderSpec(
+        step=SanctionStep.STEP_7_LICENSE_REVOCATION,
+        name="License Revocation",
+        description="Permanent termination of broadcast spectrum or domestic commercial registration",
+        is_automatic_on_repeat_breach=True,
+        director_personal_liability=True,
+    ),
 )
 
 
 # --------------------------------------------------------------------------
-# 3. Courtroom Dignity & Legal Reporting Standards
+# 3. Foreign Platform Enforcement: The Money-Layer Strategy
 # --------------------------------------------------------------------------
 
 
 @dataclass(frozen=True)
-class CourtroomReportingPolicy:
-    cameras_in_courtroom_allowed: bool = False
-    name_suspects_prior_to_conviction: bool = False
-    name_minors_or_victims: bool = False
-    broadcast_crime_scene_imagery: bool = False
-    enforce_sub_judice_rules: bool = True
-    public_open_written_registry: bool = True
-    citizens_in_person_attendance_allowed: bool = True
+class ForeignPlatformEnforcementModel:
+    mandatory_resident_legal_representative: bool = True
+    representative_personal_liability_for_contempt: bool = True
+    ad_spend_tax_deductibility_disallowance: bool = True  # Domestic advertisers lose expense deduction
+    payment_processor_settlement_prohibition: bool = True # Banks blocked from settling domestic ad billing
+    withholding_tax_on_revenue_remittances: bool = True
+    network_layer_packet_filtering_prohibited: bool = True # Zero ISP blocking/filtering
 
     @property
-    def is_compliant_with_dignity_standard(self) -> bool:
+    def is_enforceable_without_foreign_treaty(self) -> bool:
+        # All levers operate domestically on tax, corporate, and payment networks
         return (
-            not self.cameras_in_courtroom_allowed
-            and not self.name_suspects_prior_to_conviction
-            and not self.name_minors_or_victims
-            and not self.broadcast_crime_scene_imagery
-            and self.enforce_sub_judice_rules
-            and self.public_open_written_registry
-            and self.citizens_in_person_attendance_allowed
+            self.mandatory_resident_legal_representative
+            and self.ad_spend_tax_deductibility_disallowance
+            and self.payment_processor_settlement_prohibition
+            and self.network_layer_packet_filtering_prohibited
         )
 
 
 # --------------------------------------------------------------------------
-# 4. Commercial & Aspirational Deception Safeguards
+# 4. Platform Amplification: "Hosting Immune; Amplification Accountable"
 # --------------------------------------------------------------------------
 
 
 @dataclass(frozen=True)
-class CommercialDeceptionSafeguards:
-    mandatory_paid_promotion_disclosure: bool = True
-    mandatory_retouched_image_labeling: bool = True
-    ban_undisclosed_influencer_financial_promos: bool = True  # Crypto, forex, gambling
-    restrict_debt_and_credit_ads_to_minors: bool = True
-    algorithmic_feed_age_gating_under_16: bool = True
-    school_media_and_financial_literacy: bool = True
+class PlatformStatutoryDuties:
+    annual_independent_ranking_audit: bool = True        # Audited by III-accredited data engineers
+    published_systemic_risk_assessment: bool = True     # Focus on systemic risk, not individual posts
+    non_personalized_feed_default_option: bool = True   # One-tap chronological/non-algorithmic feed
+    no_engagement_optimization_under_16: bool = True    # Banning dopamine feedback loops for minors
+    public_political_ad_register_5yr: bool = True       # Searchable funder, spend, and targeting criteria
+    independent_researcher_data_access: bool = True     # Public reach data accessible to scholars
+    virality_friction_controls: bool = True             # Forwarding limits & group caps (metadata-layer)
+    provenance_credential_display: bool = True          # Displaying C2PA / origin authentication
+    no_encryption_backdoors_or_escrow: bool = True      # Protecting citizens' end-to-end security
 
 
 # --------------------------------------------------------------------------
-# 5. Media Pluralism and Anti-Concentration Limits
+# 5. State Conduct Discipline: Disciplining the State First
 # --------------------------------------------------------------------------
 
 
 @dataclass(frozen=True)
-class MediaPluralismPolicy:
-    max_single_entity_audience_share: float = 0.25  # 25% max audience concentration
-    mandatory_beneficial_ownership_registry: bool = True
-    independent_press_council_with_statutory_backing: bool = True
-    enforced_right_of_reply_and_prominent_correction: bool = True
-    independent_public_broadcaster_charter: bool = True
-    prior_restraint_prohibited: bool = True          # Post-publication accountability only
+class StateConductPolicy:
+    state_ad_spend_published_formula_only: bool = True   # Zero discretion in placing state ads
+    state_ad_deviation_is_criminal_offence: bool = True
+    foi_deemed_grant_on_deadline_lapse: bool = True      # Silence = approved request
+    foi_fees_capped_at_reproduction_cost: bool = True
+    whistleblower_reversed_burden_of_proof: bool = True  # State must prove retaliation did not occur
+    mandatory_anti_slapp_early_dismissal: bool = True    # Shields small publishers from lawfare
+    astroturfing_by_public_bodies_criminalized: bool = True
+    functional_press_definition_no_licensing: bool = True # Anyone practicing journalism is protected
+
+
+# --------------------------------------------------------------------------
+# 6. Consolidated Content Policy Rules
+# --------------------------------------------------------------------------
+
+
+class ContentTier(str, Enum):
+    TIER_A_INSTRUCTIONAL = "tier_a_instructional"
+    TIER_B_DEPICTIVE = "tier_b_depictive"
+    TIER_C_ASPIRATIONAL = "tier_c_aspirational"
+    COURT_PROCEDURE = "court_procedure"
+    GOVERNMENT_REPORTING = "government_reporting"
+    DISTRIBUTION_INFRASTRUCTURE = "distribution_pipe"
+
+
+class RestrictionStatus(str, Enum):
+    RESTRICT = "restrict"
+    ACCOUNTABLE = "accountable"
+    DO_NOT_RESTRICT = "do_not_restrict"
+    NEVER_RESTRICT = "never_restrict"
+
+
+@dataclass(frozen=True)
+class ConsolidatedRule:
+    category: str
+    status: RestrictionStatus
+    enforcement_mechanism: str
+    rationale: str
+
+
+CONSOLIDATED_POLICY_MATRIX: tuple[ConsolidatedRule, ...] = (
+    ConsolidatedRule(
+        category="Operational method detail (suicide, weapons, fraud, hacking)",
+        status=RestrictionStatus.RESTRICT,
+        enforcement_mechanism="MSA enforcement + criminal prosecution for weapon schematics",
+        rationale="Restricts the instructional 'how-to'; carve-outs for academic/security research",
+    ),
+    ConsolidatedRule(
+        category="Perpetrator glorification, manifestos, mass-casualty fame",
+        status=RestrictionStatus.RESTRICT,
+        enforcement_mechanism="MSA sanction ladder entering at Step 3 (Equal-Prominence Correction)",
+        rationale="Denies notoriety incentives; eliminates social learning reward model",
+    ),
+    ConsolidatedRule(
+        category="Courtroom live broadcast and crime-scene gore imagery",
+        status=RestrictionStatus.RESTRICT,
+        enforcement_mechanism="Court procedure contempt rules + broadcast license conditions",
+        rationale="Protects judicial truth-seeking from becoming reality TV; preserves dignity",
+    ),
+    ConsolidatedRule(
+        category="Naming suspects before formal charge; naming victims or minors",
+        status=RestrictionStatus.RESTRICT,
+        enforcement_mechanism="MSA sanction ladder + statutory civil damages to named individual",
+        rationale="Preserves presumption of innocence ('Andreas B.' standard) and victim protection",
+    ),
+    ConsolidatedRule(
+        category="Prejudicial commentary on live proceedings",
+        status=RestrictionStatus.RESTRICT,
+        enforcement_mechanism="Contempt of court applied by presiding judiciary",
+        rationale="Prevents trial by media and jury/witness contamination",
+    ),
+    ConsolidatedRule(
+        category="Undisclosed paid or financial promotion (crypto, forex, gambling)",
+        status=RestrictionStatus.RESTRICT,
+        enforcement_mechanism="Turnover fines + asset forfeiture + platform joint liability",
+        rationale="Eliminates predatory consumer deception and manufactured debt traps",
+    ),
+    ConsolidatedRule(
+        category="Unlabelled synthetic media in politics, elections, and commercial ads",
+        status=RestrictionStatus.RESTRICT,
+        enforcement_mechanism="Criminal offense for impersonation/electoral fraud + platform takedown",
+        rationale="Shifts default from 'prove it is fake' to 'prove origin credentials'",
+    ),
+    ConsolidatedRule(
+        category="Incitement to violence (two-limb test: intent + likelihood)",
+        status=RestrictionStatus.RESTRICT,
+        enforcement_mechanism="Ordinary criminal courts applying strict statutory dual-limb test",
+        rationale="Both intent and real likelihood required; offensiveness alone is never sufficient",
+    ),
+    ConsolidatedRule(
+        category="Algorithmic amplification systems of large platforms",
+        status=RestrictionStatus.ACCOUNTABLE,
+        enforcement_mechanism="III annual ranking audits + systemic risk mitigation + turnover fines",
+        rationale="Hosting is passive and immune; amplification is editorial and accountable",
+    ),
+    ConsolidatedRule(
+        category="Fiction depicting wrongdoing with narrative consequence",
+        status=RestrictionStatus.DO_NOT_RESTRICT,
+        enforcement_mechanism="Voluntary age classification only; mandatory label for reenactments",
+        rationale="Preserves moral literature and cautionary structure; fiction transmits imitation weakly",
+    ),
+    ConsolidatedRule(
+        category="Honest depiction of wealth and diverse lifestyle",
+        status=RestrictionStatus.DO_NOT_RESTRICT,
+        enforcement_mechanism="Curricular media and financial literacy in schools",
+        rationale="Critical education is durable; hiding honest economic reality is futile",
+    ),
+    ConsolidatedRule(
+        category="Investigative reporting on government officials, stewards, and budgets",
+        status=RestrictionStatus.NEVER_RESTRICT,
+        enforcement_mechanism="Constitutional press shield + Anti-SLAPP + whistleblower protection",
+        rationale="Primary instrument of anti-corruption; discomfort to state is the mechanism",
+    ),
+    ConsolidatedRule(
+        category="Ownership and control of information distribution channels",
+        status=RestrictionStatus.NEVER_RESTRICT,
+        enforcement_mechanism="Anti-concentration laws + prohibition on state network filtering",
+        rationale="Monopoly state filter creates fatal single point of capture (§0.4)",
+    ),
+)
+
+
+# --------------------------------------------------------------------------
+# 7. Phased Implementation Sequence
+# --------------------------------------------------------------------------
+
+
+@dataclass(frozen=True)
+class ImplementationPhase:
+    phase_number: int
+    timeline_months: str
+    phase_name: str
+    core_actions: tuple[str, ...]
+    strategic_rationale: str
+
+
+IMPLEMENTATION_PHASES: tuple[ImplementationPhase, ...] = (
+    ImplementationPhase(
+        phase_number=1,
+        timeline_months="0–12 mo",
+        phase_name="Institutional Foundations & State Self-Discipline",
+        core_actions=(
+            "Establish MSA, III, and Media Tribunal with formula funding",
+            "Enact formula-only state advertising law (criminal penalty for deviation)",
+            "Enact Deemed-Grant FOI reform and Anti-SLAPP protection statutes",
+            "Implement whistleblower protections with reversed burden of proof",
+        ),
+        strategic_rationale="Disciplines the state before the press; builds credible non-partisan regulators",
+    ),
+    ImplementationPhase(
+        phase_number=2,
+        timeline_months="12–24 mo",
+        phase_name="Content Conduct & Commercial Deception Enforcement",
+        core_actions=(
+            "Implement courtroom reporting rules (no cameras, suspect/victim anonymity)",
+            "Enact instructional method prohibitions (suicide, weapons, fraud)",
+            "Enact perpetrator 'No Notoriety' protocol",
+            "Mandate commercial disclosure for paid promotions, retouched images, and finance",
+            "Commission domestic baseline media consumption and trust research",
+        ),
+        strategic_rationale="Closes legitimate harm vectors without touching distribution ownership",
+    ),
+    ImplementationPhase(
+        phase_number=3,
+        timeline_months="24–36 mo",
+        phase_name="Platform Amplification & Money-Layer Foreign Levers",
+        core_actions=(
+            "Mandate local resident legal representatives for foreign platforms",
+            "Enact tax-deductibility disallowance for ads on non-compliant platforms",
+            "Initiate III annual independent audits of platform ranking algorithms",
+            "Enforce non-personalized feed defaults and under-16 engagement protection",
+        ),
+        strategic_rationale="Establishes domestic leverage over foreign platforms at the money layer",
+    ),
+    ImplementationPhase(
+        phase_number=4,
+        timeline_months="36–48 mo",
+        phase_name="Provenance, Synthetic Media & Consequence Layer",
+        core_actions=(
+            "Deploy content credentials standards on editing tools and platforms",
+            "Enact criminal penalties for deceptive synthetic political impersonation",
+            "Operationalize asset declarations with automatic lifestyle-audit triggers",
+            "Enforce open contracting and beneficial ownership registers",
+        ),
+        strategic_rationale="Shifts default from synthetic detection to origin provenance",
+    ),
+    ImplementationPhase(
+        phase_number=5,
+        timeline_months="Continuous",
+        phase_name="Accountability Audits & 5-Year Sunset Review",
+        core_actions=(
+            "Publish annual enforcement reports detailing all sanctions and appeals",
+            "Mandatory parliamentary review and re-enactment vote at Year 5",
+        ),
+        strategic_rationale="Prevents permanent ossification and forces regular democratic re-examination",
+    ),
+)

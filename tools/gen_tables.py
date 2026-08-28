@@ -123,13 +123,18 @@ from model.rcu.war_council import (  # noqa: E402
     WarCouncilDecisionEngine,
 )
 from model.rcu.information_integrity import (  # noqa: E402
-    MEDIA_POLICY_RULES,
-    CommercialDeceptionSafeguards,
-    ContentTier,
-    CourtroomReportingPolicy,
-    MediaPluralismPolicy,
+    CONSOLIDATED_POLICY_MATRIX,
+    IMPLEMENTATION_PHASES,
+    SANCTION_LADDER,
+    STATUTORY_BODIES,
+    ConsolidatedRule,
+    ForeignPlatformEnforcementModel,
+    PlatformStatutoryDuties,
+    RegulatoryBodyType,
     RestrictionStatus,
-    VALID_OFFICIAL_WIRE,
+    SanctionStep,
+    StateConductPolicy,
+    StatutoryFundingFormula,
 )
 from model.rcu.security import (  # noqa: E402
     ArmouryPolicy,
@@ -1229,50 +1234,81 @@ def table_war_council() -> None:
 
 
 def table_media_integrity() -> None:
-    W("## A.21 Media, Information Integrity, and Social Harm\n\n")
+    W("## A.21 National Media and Information Integrity Act\n\n")
 
-    W("### Consolidated media regulation decision matrix\n\n")
-    W("| Content category | Restrict? | Regulatory instrument | Governing rationale |\n|---|---|---|---|\n")
-    for r in MEDIA_POLICY_RULES:
-        status_str = f"**{r.restriction_status.value.upper().replace('_', ' ')}**"
+    W("### The three independent statutory bodies\n\n")
+    W("| Statutory body | Mandate & primary function | Governance & appointment insulation |\n|---|---|---|\n")
+    for b in STATUTORY_BODIES:
         W(
-            f"| {r.category_name} | {status_str} | "
-            f"`{r.instrument.value}` | {r.governing_rationale[:55]}... |\n"
+            f"| **{b.name}** | {b.primary_statutory_duties[0]} | "
+            f"{b.board_term_years}-yr terms; {b.appointment_mechanism[:45]}... |\n"
+        )
+    funding = StatutoryFundingFormula()
+    W(
+        f"\n*Statutory Funding Independence:* Ring-fenced formula (**{funding.broadcast_fee_levy_percent * 100:.0f}% broadcast license fee levy + "
+        f"{funding.digital_ad_revenue_levy_percent * 100:.0f}% digital ad turnover levy**); zero annual ministerial budget discretion.\n\n"
+    )
+
+    W("### The 7-step mandatory escalating sanction ladder\n\n")
+    W("| Step | Sanction level | Operational enforcement action | Automatic repeat escalation |\n|---|---|---|---|\n")
+    for s in SANCTION_LADDER:
+        W(
+            f"| **Step {s.step.value}** | **{s.name}** | {s.description} | "
+            f"{'**YES (Automatic)**' if s.is_automatic_on_repeat_breach else 'Discretionary'} |\n"
         )
     W("\n")
 
-    W("### Courtroom dignity & anti-circus legal standards\n\n")
-    court = CourtroomReportingPolicy()
+    W("### Foreign platform enforcement at the money layer\n\n")
+    fp = ForeignPlatformEnforcementModel()
     W(
-        f"| Court reporting standard | Policy rule | Legal / Institutional purpose |\n|---|---|---|\n"
-        f"| Cameras in courtroom | **Strictly prohibited** | Prevents trial-by-media and witness intimidation |\n"
-        f"| Naming unconvicted suspects | **Prohibited ('Andreas B.')** | Preserves presumption of innocence and personal dignity |\n"
-        f"| Minors & victim protection | **Strictly protected** | Protects traumatized individuals from exploitation |\n"
-        f"| Sub judice enforcement | **Active statutory rule** | Forbids prejudicial pre-trial public commentary |\n"
-        f"| Public written registry | **Mandatory open access** | Complete transparency of rulings, evidence, and legal reasoning |\n"
-        f"| In-person citizen attendance | **Guaranteed** | Open justice observed directly by citizens and sortition juries |\n\n"
+        f"| Enforcement mechanism | Domestic legal lever | Cross-border effectiveness |\n|---|---|---|\n"
+        f"| Resident Legal Representative | Mandatory resident officer | Personally liable for compliance and contempt of court |\n"
+        f"| Tax-Deductibility Disallowance | **Ad spend non-deductible** | Domestic advertisers lose tax deduction, forcing platforms to comply |\n"
+        f"| Payment Processor Prohibition | Banking settlement block | Banks prohibited from settling domestic ad billing for non-compliant firms |\n"
+        f"| Withholding Tax Surcharge | Remittance withholding | Direct statutory deduction on cross-border revenue outflows |\n"
+        f"| **Network-Layer Filtering** | **STRICTLY PROHIBITED (0%)** | State never acquires a monopoly censorship/packet filtering pipe |\n\n"
     )
 
-    W("### Commercial & aspirational deception safeguards\n\n")
-    cd = CommercialDeceptionSafeguards()
+    W("### Platform amplification duties vs. hosting immunity\n\n")
+    pd = PlatformStatutoryDuties()
     W(
-        f"| Safeguard mechanism | Legal requirement | Societal protection |\n|---|---|---|\n"
-        f"| Paid promotion disclosure | **Mandatory visual tag** | Prevents disguised commercial manipulation |\n"
-        f"| Retouched image disclosure | **Mandatory label** | Inoculates youth against artificial body dysmorphia |\n"
-        f"| Influencer financial promo ban | **Strictly prohibited** | Eliminates predatory crypto, forex, and gambling scams |\n"
-        f"| Minor debt advertising ban | **Strictly prohibited** | Shields minors from Buy-Now-Pay-Later debt traps |\n"
-        f"| Algorithmic feed age-gating | **Restricted under 16** | Breaks dopamine-loop behavioral addiction |\n"
-        f"| Curricular media literacy | **Mandatory in schools** | Teaches critical deconstruction of staged affluence |\n\n"
+        f"| Platform regulatory duty | Statutory requirement | Legal distinction |\n|---|---|---|\n"
+        f"| Independent Ranking Audit | **Mandatory annual audit by III** | Algorithmic amplification is an accountable editorial act |\n"
+        f"| Passive Hosting Immunity | **Maintained intact** | Passive user storage does not incur speech liability |\n"
+        f"| Non-Personalized Feed | **Default 1-tap chronological** | Eliminates engagement-maximizing radicalization funnels |\n"
+        f"| Under-16 Protection | **Zero engagement optimization** | Prohibits algorithmic dopamine loops on minor accounts |\n"
+        f"| Political Ad Registry | **5-year public searchable DB** | Full disclosure of funder, spend, and micro-targeting criteria |\n"
+        f"| Provenance Display | **C2PA credential support** | Shifts epistemic burden to verifiable content origin |\n"
+        f"| End-to-End Encryption | **Zero backdoors / escrow** | Mathematical privacy protected; governed via metadata friction |\n\n"
     )
 
-    W("### Distribution architecture: source vs. filter rule\n\n")
+    W("### Disciplining the state first (Pre-conditions for press regulation)\n\n")
+    sp = StateConductPolicy()
     W(
-        f"| Technical system | Mode | Mandatory gate? | Constitutionally valid? |\n|---|---|---|---|\n"
-        f"| **{VALID_OFFICIAL_WIRE.system_name}** | `{VALID_OFFICIAL_WIRE.mode.value}` | No | **YES (Permitted)** |\n"
-        f"| Unified State Content Filter | `exclusive_filter` | Yes | **NO (Prohibited - Single Point of Capture)** |\n\n"
-        f"*Core Rule:* A central state technical system may add authoritative data to the community; "
-        f"it may never act as the exclusive filter through which independent media must pass.\n\n"
+        f"| State self-discipline lock | Statutory mechanism | Anti-capture protection |\n|---|---|---|\n"
+        f"| State Advertising Allocation | **Published formula only** | Zero ministerial discretion; deviation is a criminal offense |\n"
+        f"| Freedom of Information (FOI) | **Deemed grant on silence** | Request automatically approved if deadline lapses without response |\n"
+        f"| Whistleblower Protection | **Reversed burden of proof** | State must prove employment action was not retaliatory |\n"
+        f"| Anti-SLAPP Shield | **Early dismissal & damages** | Immediate stay of discovery and fee-shifting against lawfare suits |\n"
+        f"| State Astroturfing Ban | **Criminalized** | Prohibits covert state-funded bot farms and propaganda campaigns |\n"
+        f"| Journalist Accreditation | **Functional definition** | No mandatory state journalist licensing register |\n\n"
     )
+
+    W("### Consolidated statutory decision matrix\n\n")
+    W("| Content category | Statutory status | Enforced by | Core rationale |\n|---|---|---|---|\n")
+    for r in CONSOLIDATED_POLICY_MATRIX:
+        status_str = f"**{r.status.value.upper()}**"
+        W(f"| {r.category[:38]}... | {status_str} | {r.enforcement_mechanism[:28]}... | {r.rationale[:35]}... |\n")
+    W("\n")
+
+    W("### Phased implementation sequence\n\n")
+    W("| Phase | Timeline | Phase title | Primary implementation milestone |\n|---|---|---|---|\n")
+    for p in IMPLEMENTATION_PHASES:
+        W(
+            f"| **Phase {p.phase_number}** | {p.timeline_months} | **{p.phase_name}** | "
+            f"{p.core_actions[0]} |\n"
+        )
+    W("\n")
 
 
 def main() -> None:

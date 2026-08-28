@@ -953,51 +953,88 @@ Dual-use plants (everyday demand keeps them alive until needed):
 | Equipment neutralized | 5/5 armor, 20/20 drones | 2 IED fields detonated | 100% heavy vehicle/drone neutralization |
 | Attrition rate | **70.0%** | 5.5% | Adversary column routed in 6 hours |
 
-## A.21 Media, Information Integrity, and Social Harm
+## A.21 National Media and Information Integrity Act
 
-### Consolidated media regulation decision matrix
+### The three independent statutory bodies
 
-| Content category | Restrict? | Regulatory instrument | Governing rationale |
-|---|---|---|---|
-| Operational method detail (suicide, weapons, fraud, hacking) | **RESTRICT** | `reporting_guidelines_statute` | Restricts the instructional 'how-to'; prevents copycat ... |
-| Perpetrator glorification and manifestos (mass shooters) | **RESTRICT** | `no_notoriety_press_code` | Denies notoriety incentive; eliminates social learning ... |
-| Real crime as entertainment (court TV, crime-scene footage) | **RESTRICT** | `court_procedure_sub_judice` | Protects judicial dignity, prevents jury poisoning, pre... |
-| Naming pre-trial suspects, victims, and minors | **RESTRICT** | `press_code_publication_ban` | Preserves presumption of innocence and personal dignity... |
-| Prejudicial pre-trial commentary | **RESTRICT** | `court_procedure_sub_judice` | Prevents trial by media and contamination of witness te... |
-| Fiction depicting wrongdoing with consequence | **DO NOT RESTRICT** | `age_classification_only` | Preserves moral literature and cautionary structure; fi... |
-| Undisclosed commercial or financial promotion | **RESTRICT** | `disclosure_and_advertising_code` | Prevents predatory consumer deception, debt traps, and ... |
-| Honest depiction of wealth and lifestyle | **DO NOT RESTRICT** | `media_literacy_curriculum` | Educates audience on staged/financed affluence rather t... |
-| Investigative reporting on government and public officials | **NEVER RESTRICT** | `constitutional_protection` | Primary instrument of anti-corruption; discomfort to st... |
-| Ownership and control of information distribution channels | **NEVER RESTRICT** | `anti_concentration_law` | Single distributor creates a single point of capture; p... |
-
-### Courtroom dignity & anti-circus legal standards
-
-| Court reporting standard | Policy rule | Legal / Institutional purpose |
+| Statutory body | Mandate & primary function | Governance & appointment insulation |
 |---|---|---|
-| Cameras in courtroom | **Strictly prohibited** | Prevents trial-by-media and witness intimidation |
-| Naming unconvicted suspects | **Prohibited ('Andreas B.')** | Preserves presumption of innocence and personal dignity |
-| Minors & victim protection | **Strictly protected** | Protects traumatized individuals from exploitation |
-| Sub judice enforcement | **Active statutory rule** | Forbids prejudicial pre-trial public commentary |
-| Public written registry | **Mandatory open access** | Complete transparency of rulings, evidence, and legal reasoning |
-| In-person citizen attendance | **Guaranteed** | Open justice observed directly by citizens and sortition juries |
+| **Media Standards Authority (MSA)** | Adjudicate content-conduct breaches (courtroom, instructional, commercial) | 6-yr terms; Parliamentary supermajority from judicial, jo... |
+| **Information Integrity Inspectorate (III)** | Independent technical and algorithmic audit of platform ranking systems | 6-yr terms; Parliamentary supermajority; annual reporting... |
+| **Media Tribunal** | Fast-track appeals from MSA and III rulings (max 90-day determination) | 6-yr terms; Specialist judges within ordinary judiciary... |
 
-### Commercial & aspirational deception safeguards
+*Statutory Funding Independence:* Ring-fenced formula (**15% broadcast license fee levy + 2% digital ad turnover levy**); zero annual ministerial budget discretion.
 
-| Safeguard mechanism | Legal requirement | Societal protection |
-|---|---|---|
-| Paid promotion disclosure | **Mandatory visual tag** | Prevents disguised commercial manipulation |
-| Retouched image disclosure | **Mandatory label** | Inoculates youth against artificial body dysmorphia |
-| Influencer financial promo ban | **Strictly prohibited** | Eliminates predatory crypto, forex, and gambling scams |
-| Minor debt advertising ban | **Strictly prohibited** | Shields minors from Buy-Now-Pay-Later debt traps |
-| Algorithmic feed age-gating | **Restricted under 16** | Breaks dopamine-loop behavioral addiction |
-| Curricular media literacy | **Mandatory in schools** | Teaches critical deconstruction of staged affluence |
+### The 7-step mandatory escalating sanction ladder
 
-### Distribution architecture: source vs. filter rule
-
-| Technical system | Mode | Mandatory gate? | Constitutionally valid? |
+| Step | Sanction level | Operational enforcement action | Automatic repeat escalation |
 |---|---|---|---|
-| **Community Civic Wire & Court Registry** | `authoritative_source` | No | **YES (Permitted)** |
-| Unified State Content Filter | `exclusive_filter` | Yes | **NO (Prohibited - Single Point of Capture)** |
+| **Step 1** | **Advisory Note** | Confidential guidance notice for minor first-time procedural ambiguities | Discretionary |
+| **Step 2** | **Published Finding** | Public notice of breach entered into the permanent regulatory registry | **YES (Automatic)** |
+| **Step 3** | **Equal-Prominence Correction** | Mandatory correction published on the same page, slot, and duration within 48 hours | **YES (Automatic)** |
+| **Step 4** | **Percentage-of-Turnover Fine** | Fine calculated as 1% to 10% of gross domestic turnover (debt to state) | **YES (Automatic)** |
+| **Step 5** | **Statutory License Condition** | Binding operational restriction or mandatory external audit compliance monitor | **YES (Automatic)** |
+| **Step 6** | **Commercial Suspension** | Temporary prohibition on accepting domestic ad spend or processing subscription revenue | **YES (Automatic)** |
+| **Step 7** | **License Revocation** | Permanent termination of broadcast spectrum or domestic commercial registration | **YES (Automatic)** |
 
-*Core Rule:* A central state technical system may add authoritative data to the community; it may never act as the exclusive filter through which independent media must pass.
+### Foreign platform enforcement at the money layer
+
+| Enforcement mechanism | Domestic legal lever | Cross-border effectiveness |
+|---|---|---|
+| Resident Legal Representative | Mandatory resident officer | Personally liable for compliance and contempt of court |
+| Tax-Deductibility Disallowance | **Ad spend non-deductible** | Domestic advertisers lose tax deduction, forcing platforms to comply |
+| Payment Processor Prohibition | Banking settlement block | Banks prohibited from settling domestic ad billing for non-compliant firms |
+| Withholding Tax Surcharge | Remittance withholding | Direct statutory deduction on cross-border revenue outflows |
+| **Network-Layer Filtering** | **STRICTLY PROHIBITED (0%)** | State never acquires a monopoly censorship/packet filtering pipe |
+
+### Platform amplification duties vs. hosting immunity
+
+| Platform regulatory duty | Statutory requirement | Legal distinction |
+|---|---|---|
+| Independent Ranking Audit | **Mandatory annual audit by III** | Algorithmic amplification is an accountable editorial act |
+| Passive Hosting Immunity | **Maintained intact** | Passive user storage does not incur speech liability |
+| Non-Personalized Feed | **Default 1-tap chronological** | Eliminates engagement-maximizing radicalization funnels |
+| Under-16 Protection | **Zero engagement optimization** | Prohibits algorithmic dopamine loops on minor accounts |
+| Political Ad Registry | **5-year public searchable DB** | Full disclosure of funder, spend, and micro-targeting criteria |
+| Provenance Display | **C2PA credential support** | Shifts epistemic burden to verifiable content origin |
+| End-to-End Encryption | **Zero backdoors / escrow** | Mathematical privacy protected; governed via metadata friction |
+
+### Disciplining the state first (Pre-conditions for press regulation)
+
+| State self-discipline lock | Statutory mechanism | Anti-capture protection |
+|---|---|---|
+| State Advertising Allocation | **Published formula only** | Zero ministerial discretion; deviation is a criminal offense |
+| Freedom of Information (FOI) | **Deemed grant on silence** | Request automatically approved if deadline lapses without response |
+| Whistleblower Protection | **Reversed burden of proof** | State must prove employment action was not retaliatory |
+| Anti-SLAPP Shield | **Early dismissal & damages** | Immediate stay of discovery and fee-shifting against lawfare suits |
+| State Astroturfing Ban | **Criminalized** | Prohibits covert state-funded bot farms and propaganda campaigns |
+| Journalist Accreditation | **Functional definition** | No mandatory state journalist licensing register |
+
+### Consolidated statutory decision matrix
+
+| Content category | Statutory status | Enforced by | Core rationale |
+|---|---|---|---|
+| Operational method detail (suicide, we... | **RESTRICT** | MSA enforcement + criminal p... | Restricts the instructional 'how-to... |
+| Perpetrator glorification, manifestos,... | **RESTRICT** | MSA sanction ladder entering... | Denies notoriety incentives; elimin... |
+| Courtroom live broadcast and crime-sce... | **RESTRICT** | Court procedure contempt rul... | Protects judicial truth-seeking fro... |
+| Naming suspects before formal charge; ... | **RESTRICT** | MSA sanction ladder + statut... | Preserves presumption of innocence ... |
+| Prejudicial commentary on live proceed... | **RESTRICT** | Contempt of court applied by... | Prevents trial by media and jury/wi... |
+| Undisclosed paid or financial promotio... | **RESTRICT** | Turnover fines + asset forfe... | Eliminates predatory consumer decep... |
+| Unlabelled synthetic media in politics... | **RESTRICT** | Criminal offense for imperso... | Shifts default from 'prove it is fa... |
+| Incitement to violence (two-limb test:... | **RESTRICT** | Ordinary criminal courts app... | Both intent and real likelihood req... |
+| Algorithmic amplification systems of l... | **ACCOUNTABLE** | III annual ranking audits + ... | Hosting is passive and immune; ampl... |
+| Fiction depicting wrongdoing with narr... | **DO_NOT_RESTRICT** | Voluntary age classification... | Preserves moral literature and caut... |
+| Honest depiction of wealth and diverse... | **DO_NOT_RESTRICT** | Curricular media and financi... | Critical education is durable; hidi... |
+| Investigative reporting on government ... | **NEVER_RESTRICT** | Constitutional press shield ... | Primary instrument of anti-corrupti... |
+| Ownership and control of information d... | **NEVER_RESTRICT** | Anti-concentration laws + pr... | Monopoly state filter creates fatal... |
+
+### Phased implementation sequence
+
+| Phase | Timeline | Phase title | Primary implementation milestone |
+|---|---|---|---|
+| **Phase 1** | 0–12 mo | **Institutional Foundations & State Self-Discipline** | Establish MSA, III, and Media Tribunal with formula funding |
+| **Phase 2** | 12–24 mo | **Content Conduct & Commercial Deception Enforcement** | Implement courtroom reporting rules (no cameras, suspect/victim anonymity) |
+| **Phase 3** | 24–36 mo | **Platform Amplification & Money-Layer Foreign Levers** | Mandate local resident legal representatives for foreign platforms |
+| **Phase 4** | 36–48 mo | **Provenance, Synthetic Media & Consequence Layer** | Deploy content credentials standards on editing tools and platforms |
+| **Phase 5** | Continuous | **Accountability Audits & 5-Year Sunset Review** | Publish annual enforcement reports detailing all sanctions and appeals |
 
