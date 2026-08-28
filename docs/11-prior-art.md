@@ -270,20 +270,65 @@ the Censorate's structural independence, the GAO's open analytical depth, and
 the CPIB's forensic anti-corruption focus—adapted for a decentralized,
 commodity-backed community model.
 
-## 11.10 Honest novelty assessment
+---
+
+## 11.10 The German Post-War Economic Resets (1923 Rentenmark, 1948 Erhard Reform, and Ordoliberalism)
+
+The economic and debt architecture formalized across Documents 01 through 29 shares foundational
+DNA with two of the most successful economic resets in modern history:
+
+```
+┌───────────────────────────────────────────────────────────────────────────────────┐
+│              THE POST-WAR GERMAN RESETS vs. OUR SOVEREIGN ARCHITECTURE            │
+├───────────────────────────────────┬───────────────────────────────────────────────┤
+│ HISTORICAL GERMAN MECHANISM       │ OUR SOVEREIGN BLUEPRINT                       │
+├───────────────────────────────────┼───────────────────────────────────────────────┤
+│ 1. 1923 RENTENMARK RESET:         │ Physical Commodity-Reserve Money (§01-§05):   │
+│ Following hyperinflation, currency│ Currency is backed 100% by a basket of 20     │
+│ was backed by a collective legal  │ physical commodities (grain, fuel, metals)    │
+│ mortgage on real physical assets  │ held in certified regional warehouse silos.   │
+│ (farmland, industry, timber).     │ Zero reliance on unbacked fiat promises.      │
+├───────────────────────────────────┼───────────────────────────────────────────────┤
+│ 2. 1948 ERHARD CURRENCY REFORM:   │ Debt Cancellation & Asset Restitution (§27):  │
+│ Cancelled/slashed 90–93% of paper │ Abolishes usurious debt; cancels mortgages    │
+│ debt overnight; issued an equal   │ 1-to-1 against net contributed float; returns │
+│ starting *Kopfgeld* to citizens to│ commercial real estate rental income directly │
+│ restart real economic production. │ to working households.                        │
+├───────────────────────────────────┼───────────────────────────────────────────────┤
+│ 3. ORDOLIBERAL SOCIAL MARKET:     │ Competence Council & Guild System (§14, §20): │
+│ State acts as strict referee      │ Outlaws usury, predatory subscriptions, and   │
+│ against cartels and monopolies,   │ corporate loot while preserving decentralized │
+│ while crafts guilds (*Handwerk*)  │ master-apprentice production, elder care, and │
+│ preserve apprentice depth.        │ citizen sortition oversight.                  │
+└───────────────────────────────────┴───────────────────────────────────────────────┘
+```
+
+> ### The Underlying Truth
+> The reason it feels like post-war Germany is simple: **Germany in 1923 and 1948 faced the exact same problem we are solving.**
+>
+> When a society is suffocated by astronomical debt, predatory financial intermediaries, currency instability,
+> and a population that works hard but owns nothing — **the only durable solution in human history is to
+> strip away the parasitic financial layer, reset the debt, anchor money in real physical goods, and
+> return ownership to the people who actually produce the wealth.**
+
+---
+
+## 11.11 Honest novelty assessment
 
 | Component | Prior art | Novel here? |
 |---|---|---|
-| Commodity backing | Graham 1937 | No |
+| Commodity backing | Graham 1937; Rentenmark 1923 | No |
 | Warehouse receipts as finance | Tanzania WRS 2005 | No |
 | Demurrage | Gesell; Wörgl 1932 | No |
+| Debt reset & float restitution | Erhard 1948 (*Wirtschaftswunder*) | No |
+| Master-apprentice guild compact | German *Duales Ausbildungssystem* | No |
 | Digital community currency | Sarafu 2010 | No |
 | Offline digital payment | CBDC research | No |
-| Decentralised issuance | Cooperative banking | No |
 | Institutional oversight synthesis | Venice, Censorate, GAO, CPIB | No |
 | **Decay rate calibrated to physical spoilage of the specific backing** | — | **Yes** |
 | **Two tiers separating exchange medium from store of value by construction** | Partial | **Largely yes** |
 | **Bearer warehouse receipts circulating at retail with offline verification** | — | **Yes** |
+| **Skyscraper float seizure with 1-to-1 mortgage offset & monthly dividend** | — | **Yes** |
 
 Three genuine contributions is a strong result. **It is a much stronger
 claim than "seven things never combined," because it is defensible.** A
@@ -298,10 +343,13 @@ idea, and it is worth writing up on its own.**
 
 ---
 
-## 11.11 Reading list
+## 11.12 Reading list
 
 **Essential:**
 - Graham, B. (1937) *Storage and Stability*
+- Erhard, L. (1958) *Prosperity Through Competition* (*Wohlstand für Alle*)
+- Eucken, W. (1952) *Grundsätze der Wirtschaftspolitik* (Foundations of Ordoliberalism)
+- Lutz, F.A. (1949) "The German Currency Reform and the Revival of the German Economy", *Economica*
 - Friedman, M. (1951) "Commodity-Reserve Currency" — the strongest critique
 - Coulter & Onumah (2002) "The role of warehouse receipt systems in enhanced
   commodity marketing and rural livelihoods in Africa", *Food Policy* 27
