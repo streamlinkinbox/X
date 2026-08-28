@@ -247,7 +247,30 @@ demand.
 labour and fail for scarce specialists. §15 reaches the same conclusion from
 arithmetic; the practitioners got there first, from experience.
 
-## 11.9 Honest novelty assessment
+## 11.9 Historical oversight and audit institutions
+
+The Research & Analysis Bureau (§22) draws directly on the proven institutional
+design of four historical oversight bodies:
+
+1. **The Venetian *Avogadori di Comun* (1300s–1700s):** Independent magistracy
+   auditing all financial ledgers, public contracts, and magistrates, including
+   the Doge. Sustained the Venetian Republic's fiscal integrity for four centuries.
+2. **The Chinese Censorate (*Yushitai*, 200 BC–1900 AD):** Imperial bureau of
+   independent inspectors bypassing provincial bureaucracies to report maladministration
+   directly to the apex executive.
+3. **The US Government Accountability Office (GAO, 1921–present):** Non-partisan
+   analytical agency with zero enforcement powers that drives reform through
+   public, empirical investigation of government waste and inefficiency.
+4. **Singapore Corrupt Practices Investigation Bureau (CPIB, 1952–present):**
+   High-integrity anti-corruption agency with direct operational autonomy that
+   transformed Singapore's institutional landscape.
+
+**Synthesis in this blueprint:** Combining the Venetian universal audit reach,
+the Censorate's structural independence, the GAO's open analytical depth, and
+the CPIB's forensic anti-corruption focus—adapted for a decentralized,
+commodity-backed community model.
+
+## 11.10 Honest novelty assessment
 
 | Component | Prior art | Novel here? |
 |---|---|---|
@@ -257,6 +280,7 @@ arithmetic; the practitioners got there first, from experience.
 | Digital community currency | Sarafu 2010 | No |
 | Offline digital payment | CBDC research | No |
 | Decentralised issuance | Cooperative banking | No |
+| Institutional oversight synthesis | Venice, Censorate, GAO, CPIB | No |
 | **Decay rate calibrated to physical spoilage of the specific backing** | — | **Yes** |
 | **Two tiers separating exchange medium from store of value by construction** | Partial | **Largely yes** |
 | **Bearer warehouse receipts circulating at retail with offline verification** | — | **Yes** |
@@ -274,7 +298,7 @@ idea, and it is worth writing up on its own.**
 
 ---
 
-## 11.10 Reading list
+## 11.11 Reading list
 
 **Essential:**
 - Graham, B. (1937) *Storage and Stability*
