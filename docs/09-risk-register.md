@@ -36,6 +36,10 @@ project-threatening and must have an owner and a mitigation before launch.
 | R27 | **Care credits reproduce injustice: the sick cannot earn** | 4 | 5 | **20** | Grant channel funded by gate levies, not by patients (§15.4) | 8 |
 | R28 | **Practitioner emigration wipes out credit holders** | 4 | 4 | **16** | Never back credits on fewer than 5 practitioners; insure; diversify (§15.2) | 8 |
 | R29 | **Service-hour obligations become indenture** | 2 | 5 | **10** | Hard caps; commodity buy-out; lapse on disability (§15.6) | 4 |
+| R30 | **Lethal-import supply cut with inadequate buffer** | 3 | 5 | **15** | 120-day physical buffer on medicines; two suppliers on different continents; monthly cover monitoring (§16.3) | 6 |
+| R31 | **Dependency ratchet unnoticed** | 4 | 4 | **16** | Published quarterly self-reliance ratio; alarm below 1.0 (§16.6) | 7 |
+| R32 | **FX spent on discretionary before critical imports** | 3 | 5 | **15** | Constitutional triage at the export window: lethal first, always (§16.4) | 5 |
+| R33 | **Ideological autarky attempted; withdrawal kills** | 2 | 5 | **10** | Taper doctrine is written policy; no critical import cut before substitute is proven | 4 |
 
 ---
 
@@ -157,6 +161,7 @@ conditions never stop.
 | Month 18 | Median note velocity ≥4 turns/year | Redesign demurrage |
 | Month 18 | Inspector variance within 1.5× peer band | Replace inspection regime |
 | Month 24 | Regulatory status resolved or credibly in progress | Wind down orderly |
+| Any time | Days of cover on lethal imports < 90 | **Emergency procurement**; halt discretionary FX spend |
 | Any time | Fraud loss > 3% of outstanding in any quarter | Halt; full audit |
 | Any time | Any holder loss from series impairment | Halt new issuance |
 

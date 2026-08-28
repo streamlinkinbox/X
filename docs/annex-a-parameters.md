@@ -360,3 +360,72 @@ Capital equipment is **8%** -- too small to explain prices that bankrupt familie
 
 Grain cannot get on a plane. A currency backed by scarce professionals is backed by the people most likely to leave.
 
+## A.12 Import dependency: severity, buffers, substitution
+
+### The import bill by withdrawal severity
+
+Classified by what happens if supply stops abruptly, not by cost. See section 16.1.
+
+| Severity | Annual FX | Share | Time to harm |
+|---|---|---|---|
+| Lethal | $55,000 | 11.8% | 7 days |
+| Severe | $235,000 | 50.5% | 45 days |
+| Disruptive | $65,000 | 14.0% | 120 days |
+| Tolerable | $110,000 | 23.7% | 365 days |
+
+**What kills you is cheap: lethal-withdrawal imports are 11.8% of the bill and 100% of the mortality risk. Value is the wrong metric for managing dependency.**
+
+### Buffer sizing: targeted versus uniform
+
+| Import | Severity | Buffer days | Cost |
+|---|---|---|---|
+| Essential medicines (insulin, anaesthetics, oxygen) | lethal | 128 | $14,027 |
+| Vaccines and cold chain | lethal | 128 | $5,260 |
+| Surgical consumables (gloves, sutures, reagents) | severe | 90 | $6,164 |
+| Fuel (diesel, petrol) | severe | 90 | $29,589 |
+| Fertiliser and agrochemicals | severe | 90 | $22,192 |
+| Spare parts and tools | disruptive | 15 | $1,849 |
+| Communications equipment | disruptive | 15 | $822 |
+| Processed foods and beverages | tolerable | 0 | $0 |
+| Clothing and household goods | tolerable | 0 | $0 |
+
+| Approach | Cost |
+|---|---|
+| Uniform 3 months of everything | $116,250 |
+| **Severity-targeted** | **$79,904** |
+
+**Targeted buffering is 31% cheaper and holds 128 days of medicine against 90.** Discretionary imports get no buffer at all -- if supply stops, you wear the clothes you have.
+
+### Substitution ladder
+
+| Rank | Import | Payback | Severity |
+|---|---|---|---|
+| 1 | Processed foods and beverages | 1.9 yr | tolerable |
+| 2 | Fertiliser and agrochemicals | 2.7 yr | severe |
+| 3 | Clothing and household goods | 2.9 yr | tolerable |
+| 4 | Spare parts and tools | 5.0 yr | disruptive |
+| 5 | Fuel (diesel, petrol) | 6.8 yr | severe |
+| 6 | Surgical consumables (gloves, sutures, reagents) | 23.8 yr | severe |
+| 7 | Communications equipment | 58.8 yr | disruptive |
+| 8 | Essential medicines (insulin, anaesthetics, oxygen) | 200.0 yr | lethal |
+| 9 | Vaccines and cold chain | never | lethal |
+
+**The ranking inverts intuition.** Medicines matter most and localise worst -- a 200-year payback against 1.9 years for food. Localise the easy categories so foreign exchange is always available for the impossible ones.
+
+| Metric | Value |
+|---|---|
+| Achievable independence | **51.2%** |
+| Irreducible annual FX need | **$227,000** |
+| Minimum exports for non-discretionary | $290,000 |
+
+### The dependency ratchet
+
+| Year | Imports | Exports | Self-reliance |
+|---|---|---|---|
+| 1 | $300,000 | $320,000 | 1.067 |
+| 2 | $340,000 | $330,000 | 0.971 |
+| 3 | $400,000 | $340,000 | 0.850 |
+| 4 | $465,000 | $350,000 | 0.753 |
+
+Nothing dramatic happens in any single year. Dependency forms by drift, not by decision -- which is why the ratio must be published quarterly.
+

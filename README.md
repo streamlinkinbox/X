@@ -52,6 +52,7 @@ the five model findings that change the original design.
 | [13 Weight denomination](docs/13-weight-denomination.md) | **Physical units, grading, provenance — supersedes §1.1** |
 | [14 People & recruitment](docs/14-people-and-recruitment.md) | Cadre vs. network, screening bias, apprenticeship |
 | [15 Service credits](docs/15-service-credits.md) | Labour-backed currency, health costs, care pooling |
+| [16 External trade](docs/16-external-trade-and-dependency.md) | Import dependency, buffers, substitution, trade window |
 | [Annex A](docs/annex-a-parameters.md) | **Generated** parameter and stress tables |
 | [Annex B](docs/annex-b-open-problems.md) | Unsolved problems, ranked by severity |
 
@@ -216,6 +217,31 @@ differentials of 10–50×. But recurring imported consumables are **25%**, so
 Answer: credits for abundant labour, a commodity-backed health **fund** for
 scarce care, training bonds to reduce scarcity. See
 [§15](docs/15-service-credits.md).
+
+## Import dependency without addiction
+
+§16 takes the addiction analogy seriously: withdrawal from caffeine is a
+headache, withdrawal from alcohol can kill. Imports differ the same way, and
+**what kills you is cheap**:
+
+| Severity | Share of import bill | Time to harm |
+|---|---|---|
+| **Lethal** (medicines, vaccines) | **11.8%** | 7 days |
+| Severe (fuel, fertiliser) | 50.5% | 45 days |
+| Tolerable (food, clothing) | 23.7% | 365 days |
+
+So buffer by severity — **128 days of medicine, zero days of clothing**. That
+is **31% cheaper** than uniform stockpiling and protects lethal goods **42%
+longer**.
+
+Substitution ranking inverts intuition: food pays back in **1.9 years**,
+medicines in **200**. Localise the easy things so the foreign exchange is
+always there for the impossible ones. Achievable independence is **~51%** —
+promise resilience, not autarky.
+
+**Never detox abruptly:** cutting a critical import before its substitute
+works is the withdrawal that kills the patient. See
+[§16](docs/16-external-trade-and-dependency.md).
 
 ## Honest positioning
 

@@ -233,6 +233,34 @@ the moment of illness*.
 **The hard limit:** ~40% of care cost is imported consumables and drugs.
 No local currency can pay for those.
 
+## Managing the outside world without becoming dependent on it
+
+§16 addresses the addiction analogy directly, and follows it to the policy a
+clinician would actually choose — which is **not** abstinence.
+
+Withdrawal severity differs by substance: quitting caffeine is a headache,
+quitting alcohol can kill. The same is true of imports, and the key finding is
+that **what kills you is cheap** — medicines and vaccines are just **11.8%**
+of the import bill and 100% of the mortality risk. Africa imports **95–99% of
+medicines** and nearly all active pharmaceutical ingredients.
+
+So classify by withdrawal severity, never by cost:
+
+- **Buffer by severity:** 128 days of medicine, zero days of clothing. This is
+  **31% cheaper** than uniform stockpiling and protects lethal goods **42%
+  longer**.
+- **Substitute where it pays, not where it feels urgent.** Food pays back in
+  **1.9 years**; medicines in **200**. Localising the easy categories is what
+  guarantees the FX for the impossible ones.
+- **Never detox abruptly.** Cutting a critical import before its substitute is
+  proven is not sovereignty; it is the withdrawal that kills the patient.
+- **Accept the floor:** ~51% independence is achievable. Promise resilience,
+  not independence.
+
+The deeper point: RCU's contribution is not eliminating imports. It is that
+when imports fail, **the grain is still in the shed and the notes still work**
+— turning a collapse into a shortage.
+
 ## What this system cannot do
 
 Stated plainly, because a blueprint that only lists strengths is marketing:
@@ -240,7 +268,9 @@ Stated plainly, because a blueprint that only lists strengths is marketing:
 - **It cannot back imports.** No foreign supplier accepts maize-backed notes
   for fuel, medicine or machinery. RCU is a domestic circulation instrument
   and the region still needs foreign exchange for everything it does not
-  produce.
+  produce — about **49% of the import bill is irreducible**, and it is
+  disproportionately the part that kills people if it lapses (§16). What RCU
+  *does* prevent is an FX shortage becoming a domestic monetary collapse.
 - **It cannot be made non-political.** A parallel currency that succeeds
   becomes a fiscal and monetary fact, and the central bank will treat it as
   one. Wörgl was suppressed in thirteen months, at a scale of 12,000
@@ -272,6 +302,7 @@ Stated plainly, because a blueprint that only lists strengths is marketing:
 | [`13-weight-denomination.md`](13-weight-denomination.md) | **Weight-denominated units, grading, provenance — supersedes §1.1** |
 | [`14-people-and-recruitment.md`](14-people-and-recruitment.md) | Recruitment, screening, trust, apprenticeship — the human constraint |
 | [`15-service-credits.md`](15-service-credits.md) | Can labour back a currency? Health costs, time banking, care |
+| [`16-external-trade-and-dependency.md`](16-external-trade-and-dependency.md) | Import dependency, buffers, substitution, the trade window |
 | [`annex-a-parameters.md`](annex-a-parameters.md) | Generated tables: all parameters and stress results |
 | [`annex-b-open-problems.md`](annex-b-open-problems.md) | Unsolved problems, ranked by how badly they hurt |
 

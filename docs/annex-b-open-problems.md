@@ -371,6 +371,33 @@ external finance.
 
 ---
 
+## P14. The irreducible import floor
+
+**Severity: high. Structural. Partially mitigable, never solvable.**
+
+About **51%** of a district's import bill can realistically be localised. The
+remainder -- roughly **$227,000/year** in the modelled basket -- cannot be, at
+any plausible level of local investment.
+
+The composition is what makes this serious. What cannot be localised is
+disproportionately what cannot be skipped: medicines, vaccines and active
+pharmaceutical ingredients, where Africa imports 95-99% of medicines and close
+to 100% of APIs. Substitution payback for medicines is on the order of **200
+years**; for vaccines it is effectively never.
+
+**Mitigation, not solution:** severity-weighted physical buffers (§16.3),
+supplier diversification across regions, constitutional FX triage, and
+localising the *easy* categories so that foreign exchange is always available
+for the impossible ones.
+
+**What remains open:** the community must earn hard currency indefinitely.
+If export earnings collapse -- a commodity price fall, a trade route closing,
+a sanction -- no monetary design in this document prevents the lethal basket
+from lapsing. This is the hardest external constraint on the entire project
+and it has no internal answer.
+
+---
+
 ## Summary
 
 | # | Problem | Severity | Status |
@@ -388,6 +415,7 @@ external finance.
 | P11 | No common unit of account | **High (new)** | Mitigations untested; Phase 1 must measure |
 | P12 | Recruiting the acceptor network, not just a cadre | **High (new)** | §14.2 gives the arithmetic; no proven playbook at scale |
 | P13 | Scarce services cannot be monetised | **High (new)** | Structural; use pooling not credits. FX gap for consumables unsolved |
+| P14 | Irreducible import floor (~49% of bill) | **High (new)** | Buffers and triage mitigate; export dependence is permanent |
 
 **The three at the top are not reasons to abandon the design.** They are the
 reasons a pilot exists — and a pilot that is not explicitly built to test

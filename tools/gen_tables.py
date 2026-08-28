@@ -26,6 +26,19 @@ from model.rcu.people import (  # noqa: E402
     screening_bias,
     years_to_replace_masters,
 )
+from model.rcu.external import (  # noqa: E402
+    BASKET,
+    DependencyTrend,
+    Withdrawal,
+    achievable_independence,
+    buffer_plan,
+    by_withdrawal,
+    irreducible_dependency,
+    lethal_share,
+    minimum_exports_needed,
+    substitution_ladder,
+    uniform_buffer_cost,
+)
 from model.rcu.services import (  # noqa: E402
     CreditPool,
     EarnCapacity,
@@ -512,6 +525,85 @@ def table_services() -> None:
     )
 
 
+def table_external() -> None:
+    W("## A.12 Import dependency: severity, buffers, substitution\n\n")
+
+    W("### The import bill by withdrawal severity\n\n")
+    W(
+        "Classified by what happens if supply stops abruptly, not by cost. "
+        "See section 16.1.\n\n"
+    )
+    W("| Severity | Annual FX | Share | Time to harm |\n|---|---|---|---|\n")
+    totals = by_withdrawal()
+    grand = sum(totals.values())
+    from model.rcu.external import TIME_TO_HARM_DAYS
+    for w in Withdrawal:
+        W(
+            f"| {w.value.title()} | ${totals[w]:,.0f} | "
+            f"{totals[w] / grand * 100:.1f}% | "
+            f"{TIME_TO_HARM_DAYS[w]} days |\n"
+        )
+    W(
+        f"\n**What kills you is cheap: lethal-withdrawal imports are "
+        f"{float(lethal_share()) * 100:.1f}% of the bill and 100% of the "
+        "mortality risk. Value is the wrong metric for managing dependency.**\n\n"
+    )
+
+    W("### Buffer sizing: targeted versus uniform\n\n")
+    W("| Import | Severity | Buffer days | Cost |\n|---|---|---|---|\n")
+    for imp in BASKET:
+        W(
+            f"| {imp.name} | {imp.withdrawal.value} | "
+            f"{imp.buffer_days():.0f} | ${imp.buffer_cost():,.0f} |\n"
+        )
+    bp = buffer_plan()
+    uni = uniform_buffer_cost(months=3)
+    W(
+        f"\n| Approach | Cost |\n|---|---|\n"
+        f"| Uniform 3 months of everything | ${uni:,.0f} |\n"
+        f"| **Severity-targeted** | **${bp.total_cost:,.0f}** |\n"
+    )
+    W(
+        f"\n**Targeted buffering is {(1 - bp.total_cost / uni) * 100:.0f}% cheaper "
+        "and holds 128 days of medicine against 90.** Discretionary imports get "
+        "no buffer at all -- if supply stops, you wear the clothes you have.\n\n"
+    )
+
+    W("### Substitution ladder\n\n")
+    W("| Rank | Import | Payback | Severity |\n|---|---|---|---|\n")
+    for i, (imp, eff, pb) in enumerate(substitution_ladder(), 1):
+        pbs = "never" if pb.is_infinite() else f"{float(pb):.1f} yr"
+        W(f"| {i} | {imp.name} | {pbs} | {imp.withdrawal.value} |\n")
+    W(
+        f"\n**The ranking inverts intuition.** Medicines matter most and "
+        "localise worst -- a 200-year payback against 1.9 years for food. "
+        "Localise the easy categories so foreign exchange is always available "
+        "for the impossible ones.\n\n"
+        f"| Metric | Value |\n|---|---|\n"
+        f"| Achievable independence | **{float(achievable_independence()) * 100:.1f}%** |\n"
+        f"| Irreducible annual FX need | **${irreducible_dependency():,.0f}** |\n"
+        f"| Minimum exports for non-discretionary | ${minimum_exports_needed():,.0f} |\n\n"
+    )
+
+    W("### The dependency ratchet\n\n")
+    d = DependencyTrend()
+    for y, i, e in (
+        (1, 300_000, 320_000),
+        (2, 340_000, 330_000),
+        (3, 400_000, 340_000),
+        (4, 465_000, 350_000),
+    ):
+        d.add(y, i, e)
+    W("| Year | Imports | Exports | Self-reliance |\n|---|---|---|---|\n")
+    for y, i, e, r in zip(d.years, d.import_fx, d.export_fx, d.self_reliance()):
+        W(f"| {y} | ${i:,.0f} | ${e:,.0f} | {r} |\n")
+    W(
+        "\nNothing dramatic happens in any single year. Dependency forms by "
+        "drift, not by decision -- which is why the ratio must be published "
+        "quarterly.\n\n"
+    )
+
+
 def main() -> None:
     header()
     table_classes()
@@ -525,6 +617,7 @@ def main() -> None:
     table_weight()
     table_people()
     table_services()
+    table_external()
 
 
 if __name__ == "__main__":
