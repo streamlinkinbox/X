@@ -1181,3 +1181,21 @@ Dual-use plants (everyday demand keeps them alive until needed):
 | Civil notice issued (Garment refused) | **60** | **6.0%** | Standard formulaic civil notice (no criminal charge) |
 | Custodial arrest count | **0** | **0.0%** | **Complete elimination of debtor/morality jail terms** |
 
+### Tiered public sector dress & service accountability architecture
+
+| Dress tier | Target roles | Mandatory uniform? | Visible ID? | Core civic & anti-aristocracy purpose |
+|---|---|---|---|---|
+| **Tier 1: Authority Over the Public (Mandatory Uniform + ID)** | Police, military, emergency service... | **MANDATORY** | **MANDATORY (Criminal ban on obscuring)** | Accountability device before dress code; citi... |
+| **Tier 2: Administrative & Professional Staff (Dress Code, No Uniform)** | Ministries, departments, administra... | No (Standardized Code) | N/A (Desk role) | Standardized, sex-neutral modesty standard wi... |
+| **Tier 3: Senior Officials (Deliberate Plainness & Anti-Aristocracy)** | Department heads, council ministers... | No (Standardized Code) | N/A (Desk role) | Visual restraint: senior leaders dress most s... |
+
+### Sovereign uniform procurement and domestic industrial clauses
+
+| Procurement pillar | Statutory rule | Operational economic effect |
+|---|---|---|
+| 100% State-Funded | **Free issue, replacement, laundering** | Prohibits stealth wage cuts on frontline public servants |
+| Domestic Manufacture | **100% Local guild procurement (§17)** | Converts uniform budget into permanent domestic industrial stimulus |
+| Anti-Graft Transparency | **Open tenders & beneficial ownership** | Eliminates historical kickbacks and procurement extortion |
+| Dignity & Sizing | **Ergonomic, maternity & religious cuts** | Ensures climate-appropriate comfort and high compliance |
+| Sovereign Visual Design | **National idiom & domestic fibers** | Real cultural sovereignty rather than copying foreign braid in reverse |
+

@@ -426,11 +426,14 @@ See [§27](docs/27-abolishing-debt-and-subscription-systems.md).
 
 ## Public clothing standards & exposure thresholds
 
-§28 establishes an objective statutory framework for shared public spaces, eliminating subjective "morality policing" through bright-line anatomical thresholds and remedy-first enforcement:
+§28 establishes an objective statutory framework for shared public spaces and public service dress, eliminating subjective "morality policing" through bright-line anatomical thresholds, remedy-first enforcement, and accountability-driven uniform design:
+- **Sovereign Purpose-First Principle:** Rejects reactive inversion ("do the opposite of external powers"); decides strictly from local civic purpose.
 - **Bright-Line Spatial Zones:** Three graduated zones (Strict civic/administrative, Standard general thoroughfare, Relaxed recreation/bathing) with enumerated, sex-neutral anatomical coverage standards.
 - **Remedy Before Penalty:** First contact is a free loaner wrap provided on the spot; accepting the wrap closes the encounter immediately with zero fine, zero record, and zero escalation.
 - **Zero Custodial Detentions:** Absolute prohibition on physical touching, arrests, or jail time for dress code violations; unresolved refusals trigger a civil administrative notice, never criminal charges.
 - **Anti-Humiliation Safeguards:** Female citizens approached exclusively by female officers; criminal bans on public photographing/shaming; mandatory bodycam logging; absolute ban on body inspections or comments.
+- **Tiered Public Sector Dress (Accountability Device):** Mandatory uniforms with prominent visible IDs for frontline authority (police, military, inspectors) so power is traceable; standardized dress codes for desk staff; deliberate plainness at the top (stripping ceremonial braid and visual aristocracy).
+- **100% State-Paid Domestic Procurement:** Uniforms issued and replaced free (no stealth wage cuts), 100% manufactured by domestic textile guilds (§17) via open, audited tenders.
 - **Democratic Sunset & Venue Duty:** Commercial hubs, transit stations, and event venues maintain free loaner supplies; mandatory 5-year legislative sunset with published demographic compliance audits.
 
 See [§28](docs/28-public-clothing-standards-and-exposure-thresholds.md).

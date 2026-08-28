@@ -173,3 +173,100 @@ class ClothingComplianceSimulation:
     def arrest_count(self) -> int:
         # Strictly zero arrests across all encounters
         return 0
+
+# --------------------------------------------------------------------------
+# 5. Sovereign Methodology & Public Sector Dress Architecture
+# --------------------------------------------------------------------------
+
+
+class SovereigntyDesignRule(str, Enum):
+    PURPOSE_FIRST = "purpose_first"         # Decide from own purpose; coincidences with foreign practice cost nothing
+    REACTIVE_INVERSION = "reactive_inversion" # Inverting foreign practice hands them the steering wheel backwards (Rejected)
+
+
+@dataclass(frozen=True)
+class SovereignMethodology:
+    rule: SovereigntyDesignRule = SovereigntyDesignRule.PURPOSE_FIRST
+    reject_inversion_of_foreign_models: bool = True
+    operational_necessity_acknowledged: bool = True
+
+    def evaluate_policy_design(self) -> dict[str, str | bool]:
+        if self.rule == SovereigntyDesignRule.REACTIVE_INVERSION:
+            return {
+                "status": "REJECTED_REACTIVE_TRAP",
+                "autonomous": False,
+                "reason": "Governed in reverse by external systems; hands foreign models the steering wheel.",
+            }
+        return {
+            "status": "SOVEREIGN_PURPOSE_DRIVEN",
+            "autonomous": True,
+            "reason": "Decides strictly from local civic purpose. Coincidence with external practice is operational necessity.",
+        }
+
+
+class DressTierCategory(str, Enum):
+    TIER_1_AUTHORITY_UNIFORM = "tier_1_authority_uniform"       # Mandatory uniform with visible ID (Police, military, inspectors)
+    TIER_2_ADMINISTRATIVE_CODE = "tier_2_administrative_code"   # Published dress code, no uniform (Desk, ministries, policy)
+    TIER_3_SENIOR_PLAINNESS = "tier_3_senior_plainness"         # Deliberate plainness, zero ceremonial braid (Senior officials)
+
+
+@dataclass(frozen=True)
+class PublicSectorDressTier:
+    tier: DressTierCategory
+    title: str
+    target_roles: str
+    mandatory_uniform: bool
+    mandatory_visible_id: bool
+    core_purpose: str
+    anti_aristocracy_rule: str
+
+
+PUBLIC_SECTOR_DRESS_TIERS: tuple[PublicSectorDressTier, ...] = (
+    PublicSectorDressTier(
+        tier=DressTierCategory.TIER_1_AUTHORITY_UNIFORM,
+        title="Tier 1: Authority Over the Public (Mandatory Uniform + ID)",
+        target_roles="Police, military, emergency services, prisons, transport inspectors, court officers",
+        mandatory_uniform=True,
+        mandatory_visible_id=True,
+        core_purpose="Accountability device before dress code; citizen must know exactly who to identify and complain about",
+        anti_aristocracy_rule="Plainclothes enforcement prohibited; criminal offense to obscure or remove service ID number",
+    ),
+    PublicSectorDressTier(
+        tier=DressTierCategory.TIER_2_ADMINISTRATIVE_CODE,
+        title="Tier 2: Administrative & Professional Staff (Dress Code, No Uniform)",
+        target_roles="Ministries, departments, administrative clerks, policy analysts, research bureaus",
+        mandatory_uniform=False,
+        mandatory_visible_id=False,
+        core_purpose="Standardized, sex-neutral modesty standard without imposing costly or demoralizing desk costumes",
+        anti_aristocracy_rule="Professional plain-language standard; zero uniform requirement for non-enforcement staff",
+    ),
+    PublicSectorDressTier(
+        tier=DressTierCategory.TIER_3_SENIOR_PLAINNESS,
+        title="Tier 3: Senior Officials (Deliberate Plainness & Anti-Aristocracy)",
+        target_roles="Department heads, council ministers, judges, senior commanders",
+        mandatory_uniform=False,
+        mandatory_visible_id=False,
+        core_purpose="Visual restraint: senior leaders dress most simply to signal public servant status, not a ruling caste",
+        anti_aristocracy_rule="Absolute prohibition on ceremonial gold braid, excessive sash/insignia, and visual caste signaling",
+    ),
+)
+
+
+@dataclass(frozen=True)
+class UniformProcurementPolicy:
+    state_funded_full_cost: bool = True          # 100% state paid: issued free, replaced free, laundering allowance
+    domestic_guild_manufacture: bool = True      # 100% procured from domestic textile guilds (§17 industrial policy)
+    open_contracting_mandatory: bool = True       # Published tenders, beneficial ownership disclosed, auto-audit
+    dignity_and_fit_specifications: bool = True   # Climate-appropriate, fitted, maternity/pregnancy cuts, religious observance
+    sovereign_local_visual_design: bool = True   # Designed in national idiom, local fibers, domestic colorways
+
+    @property
+    def is_procurement_sound(self) -> bool:
+        return (
+            self.state_funded_full_cost
+            and self.domestic_guild_manufacture
+            and self.open_contracting_mandatory
+            and self.dignity_and_fit_specifications
+            and self.sovereign_local_visual_design
+        )
+

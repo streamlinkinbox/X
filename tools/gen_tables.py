@@ -159,10 +159,15 @@ from model.rcu.debt_and_subscriptions import (  # noqa: E402
     ZeroInterestAdvance,
 )
 from model.rcu.clothing_standards import (  # noqa: E402
+    PUBLIC_SECTOR_DRESS_TIERS,
     SPATIAL_ZONE_SPECS,
     AntiHumiliationPolicy,
     ClothingComplianceSimulation,
+    DressTierCategory,
+    PublicSectorDressTier,
+    SovereignMethodology,
     SpatialZone,
+    UniformProcurementPolicy,
 )
 from model.rcu.security import (  # noqa: E402
     ArmouryPolicy,
@@ -1479,6 +1484,25 @@ def table_clothing_standards() -> None:
         f"| Resolved on spot (Accepted free wrap) | **{sim.encounters_resolved_without_record:,}** | **{sim.acceptance_of_free_garment_rate * 100:.1f}%** | Zero fine, zero conflict, zero regulatory record |\n"
         f"| Civil notice issued (Garment refused) | **{sim.civil_notices_issued:,}** | **{(1 - sim.acceptance_of_free_garment_rate) * 100:.1f}%** | Standard formulaic civil notice (no criminal charge) |\n"
         f"| Custodial arrest count | **{sim.arrest_count}** | **0.0%** | **Complete elimination of debtor/morality jail terms** |\n\n"
+    )
+
+    W("### Tiered public sector dress & service accountability architecture\n\n")
+    W("| Dress tier | Target roles | Mandatory uniform? | Visible ID? | Core civic & anti-aristocracy purpose |\n|---|---|---|---|---|\n")
+    for t in PUBLIC_SECTOR_DRESS_TIERS:
+        u_str = "**MANDATORY**" if t.mandatory_uniform else "No (Standardized Code)"
+        id_str = "**MANDATORY (Criminal ban on obscuring)**" if t.mandatory_visible_id else "N/A (Desk role)"
+        W(f"| **{t.title}** | {t.target_roles[:35]}... | {u_str} | {id_str} | {t.core_purpose[:45]}... |\n")
+    W("\n")
+
+    proc = UniformProcurementPolicy()
+    W("### Sovereign uniform procurement and domestic industrial clauses\n\n")
+    W(
+        f"| Procurement pillar | Statutory rule | Operational economic effect |\n|---|---|---|\n"
+        f"| 100% State-Funded | **Free issue, replacement, laundering** | Prohibits stealth wage cuts on frontline public servants |\n"
+        f"| Domestic Manufacture | **100% Local guild procurement (§17)** | Converts uniform budget into permanent domestic industrial stimulus |\n"
+        f"| Anti-Graft Transparency | **Open tenders & beneficial ownership** | Eliminates historical kickbacks and procurement extortion |\n"
+        f"| Dignity & Sizing | **Ergonomic, maternity & religious cuts** | Ensures climate-appropriate comfort and high compliance |\n"
+        f"| Sovereign Visual Design | **National idiom & domestic fibers** | Real cultural sovereignty rather than copying foreign braid in reverse |\n\n"
     )
 
 

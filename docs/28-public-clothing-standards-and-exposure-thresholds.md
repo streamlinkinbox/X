@@ -1,6 +1,6 @@
 # Public Clothing Standards and Exposure Thresholds
 
-*Sovereign design for shared public space: bright-line anatomical thresholds, remedy-first enforcement, and absolute anti-humiliation safeguards.*
+*Sovereign design for shared public space: bright-line anatomical thresholds, remedy-first enforcement, tiered public sector dress, and absolute anti-humiliation safeguards.*
 
 ---
 
@@ -32,6 +32,29 @@ degenerates into corruption is this:
 > in public space — written as an enumerated list, sex-neutral in structure, with the coverage
 > requirement stated in plain, measurable terms. There is nothing for an officer to judge,
 > moralize, or negotiate.
+
+---
+
+## 0.1 Sovereign Methodology: Beyond Reactive Inversion
+
+A common failure in post-colonial and sovereign statecraft is adopting the rule: *"Do the exact opposite
+of the West."* This framework explicitly rejects reactive inversion:
+
+```
+┌───────────────────────────────────────────────────────────────────────────────────┐
+│                  THE SOVEREIGN EPISTEMIC PRINCIPLE                                │
+├───────────────────────────────────────────────────────────────────────────────────┤
+│ 1. INVERSION IS STILL SUBORDINATION: If your rule is "opposite of X," then X is   │
+│    still setting your policy; you have merely handed them the steering wheel      │
+│    backwards. It produces absurdity by rejecting functional necessities.         │
+│ 2. OPERATIONAL NECESSITY IS NOT WESTERN: Police and emergency services wear       │
+│    uniforms in Riyadh, Tokyo, Lagos, Moscow, and Washington alike. That is not    │
+│    Western culture — that is operational necessity and public accountability.     │
+│ 3. PURPOSE-FIRST DESIGN: The sovereign move is: DECIDE STRICTLY FROM YOUR OWN     │
+│    CIVIC PURPOSE, THEN CHECK WHETHER IT HAPPENS TO COINCIDE. Where it lands in    │
+│    the same place as external systems, that is coincidence, not surrender.        │
+└───────────────────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -121,7 +144,7 @@ spectacle inflicted on citizens. This framework enacts **seven non-negotiable an
 
 ---
 
-## Part III: Structural Supports (Doing Most of the Work)
+## Part III: Structural Supports & Graduated Spatial Zones
 
 The community achieves compliance not by deploying police squads, but through **impersonal,
 built-in institutional architecture**:
@@ -167,10 +190,93 @@ built-in institutional architecture**:
 
 ---
 
-## Part IV: The Honest Limit & Institutional Synthesis
+## Part IV: Tiered Public Sector and Service Dress Architecture
 
-This framework guarantees public space decorum with **near-zero friction, zero physical violence,
-and zero extortion**:
+Dress standards within public administration are **tiered by function and authority**, explicitly
+rejecting both universal uniform mandates and visual aristocracy:
+
+```
+┌───────────────────────────────────────────────────────────────────────────────────┐
+│              THREE-TIER PUBLIC SECTOR DRESS ARCHITECTURE                          │
+├───────────────────────────────┬───────────────────────────────────────────────────┤
+│ TIER                          │ STATUTORY RULE & CORE PURPOSE                     │
+├───────────────────────────────┼───────────────────────────────────────────────────┤
+│ TIER 1: AUTHORITY OVER PUBLIC │ MANDATORY FULL UNIFORM + PROMINENT VISIBLE ID     │
+│ (Police, Military, Emergency, │ Purpose: ACCOUNTABILITY DEVICE BEFORE DRESS CODE. │
+│  Prisons, Transport Inspectors│ Citizen must know exactly who is exercising power │
+│  and Court Officers)          │ to enable disqualification (§25). Obscuring ID is │
+│                               │ a criminal offense. Plainclothes authority banned.│
+├───────────────────────────────┼───────────────────────────────────────────────────┤
+│ TIER 2: ADMINISTRATIVE STAFF  │ PUBLISHED DRESS STANDARD (NO UNIFORM)             │
+│ (Ministries, Departments,     │ Purpose: Plain-language modesty and professionalism│
+│  Desk Clerks, Policy Staff)   │ without imposing costly, demoralizing costumes on │
+│                               │ non-enforcement desk workers.                     │
+├───────────────────────────────┼───────────────────────────────────────────────────┤
+│ TIER 3: SENIOR OFFICIALS      │ DELIBERATE PLAINNESS (ANTI-ARISTOCRACY RESTRAINT) │
+│ (Council Ministers, Judges,   │ Purpose: Restraint at the top. Ban on ceremonial  │
+│  Department Heads, Generals)  │ gold braid and decorative insignia. Senior leader │
+│                               │ dresses most simply to signal servant status.     │
+└───────────────────────────────┴───────────────────────────────────────────────────┘
+```
+
+### 4.1 Tier 1: Full Uniform as an Accountability Device
+- **Identification Precedes Authority:** A uniform is an accountability device before it is a
+  dress code. It carries a prominent service ID number, rank, and branch.
+- **Traceability of Power:** Any citizen subject to state authority must be able to identify the
+  exact officer at a glance. Plainclothes authority is strictly prohibited in routine civic
+  policing — the officer who cannot be identified is the officer who cannot be held accountable
+  or disqualified (§20, §25).
+- **Criminal Ban on ID Obscuration:** Removing, taping over, or obscuring a badge or service number
+  is an automatic criminal offense and triggers immediate suspension.
+
+### 4.2 Tier 2: Standardized Dress Code for Administrative Staff
+- Ministry officials, analysts, and desk clerks follow a published, sex-neutral dress standard
+  reflecting Zone 1 modesty standards.
+- **No Costumes for Desk Work:** Forcing uniforms on administrative staff buys zero public
+  accountability while destroying workplace morale and wasting municipal budgets.
+
+### 4.3 Tier 3: Senior Officials and Deliberate Visual Restraint
+- Putting senior leadership in elaborate uniforms, ceremonial gold braid, and medals creates a
+  **visual aristocracy** signaling caste superiority over citizens.
+- **The Sovereign Rule:** The most senior person in the room must dress most simply. High officials
+  wear clean, plain civilian service attire, visually reinforcing that authority in this system
+  is temporary stewardship, not hereditary aristocracy.
+
+---
+
+## Part V: Sovereign Procurement and Industrial Design Clauses
+
+A dress policy that exploits workers or leaks capital abroad destroys its own legitimacy. All public
+sector clothing is governed by five mandatory operational clauses:
+
+```
+┌───────────────────────────────────────────────────────────────────────────────────┐
+│               FIVE MANDATORY PUBLIC SECTOR PROCUREMENT CLAUSES                    │
+├───────────────────────────────────────────────────────────────────────────────────┤
+│ 1. THE STATE PAYS (100%): Every uniform is issued free, replaced free, and        │
+│    provided with a laundering allowance. Shifting uniform costs onto staff is a   │
+│    stealth wage cut and is legally prohibited.                                    │
+│ 2. 100% DOMESTIC MANUFACTURE: Uniform procurement represents a large, permanent,  │
+│    predictable order. All fabric spinning, dyeing, cutting, and stitching must    │
+│    run through local domestic textile guilds (§17 industrial policy).             │
+│ 3. OPEN CONTRACTING & ANTI-GRAFT AUDITS: Full tender transparency with beneficial │
+│    ownership disclosure and automatic sortition audit triggers (§20, §21) to      │
+│    prevent notorious uniform procurement graft.                                   │
+│ 4. DIGNITY & INCLUSIVE SPECIFICATION: Mandatory climate-appropriate fabrics,      │
+│    ergonomic tailored sizing, maternity/pregnancy cuts, and religious observance  │
+│    accommodations. A humiliating or uncomfortable uniform destroys morale.        │
+│ 5. SOVEREIGN LOCAL DESIGN: Designed in the nation's own idiom, local cotton/linen │
+│    weaves, domestic dye palettes, and cultural cuts — expressing true independence│
+│    rather than copying foreign ceremonial dress in reverse.                       │
+└───────────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Part VI: The Honest Limit & Institutional Synthesis
+
+This framework guarantees public space decorum and transparent public service with **near-zero
+friction, zero physical violence, and zero extortion**:
 
 ```
 ┌───────────────────────────────────────────────────────────────────────────────────┐
@@ -182,10 +288,14 @@ and zero extortion**:
 │ • Eliminates roadside shakedowns     │ • Internal conviction comes from family,   │
 │ • Eliminates public humiliation      │   schools, and cultural guilds (§14)       │
 │ • Provides objective, appealable law │ • Law regulates public shared space; it    │
-│ • Solves 90%+ via free loaner wraps  │   does not police private conscience       │
+│ • Enforces officer accountability ID │   does not police private conscience       │
+│ • Solves 90%+ via free loaner wraps  │ • Uniforms identify power; they do not     │
+│ • Restrains ruling class aristocracy │   substitute for ethical culture           │
 └──────────────────────────────────────┴────────────────────────────────────────────┘
 ```
 
-> **The Essential Takeaway:** *Give the garment before you write the notice. A law that hands
-> you a covering costs almost nothing and generates compliance. A law that fines you first creates
-> an enemy out of someone who would have willingly complied.*
+> **The Essential Takeaway:** *Give the garment before you write the notice. Require the uniform
+> where there is power over the public, because the uniform is an identification badge. Keep desk
+> staff in simple professional dress, and strip ceremonial gold braid from senior officials. State
+> pays for all of it, made domestically by your own textile guilds. That is sovereign statecraft.*
+

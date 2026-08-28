@@ -5,9 +5,15 @@ import pytest
 from model.rcu.clothing_standards import (
     AntiHumiliationPolicy,
     ClothingComplianceSimulation,
+    DressTierCategory,
     EnforcementEncounter,
+    PUBLIC_SECTOR_DRESS_TIERS,
+    PublicSectorDressTier,
+    SovereigntyDesignRule,
+    SovereignMethodology,
     SPATIAL_ZONE_SPECS,
     SpatialZone,
+    UniformProcurementPolicy,
 )
 
 
@@ -89,3 +95,44 @@ def test_compliance_simulation_metrics():
     assert sim.encounters_resolved_without_record >= 900
     assert sim.civil_notices_issued <= 100
     assert sim.arrest_count == 0  # Zero arrests across the entire population
+
+
+def test_sovereignty_methodology_purpose_first():
+    sovereign = SovereignMethodology(rule=SovereigntyDesignRule.PURPOSE_FIRST)
+    eval_sov = sovereign.evaluate_policy_design()
+    assert eval_sov["status"] == "SOVEREIGN_PURPOSE_DRIVEN"
+    assert eval_sov["autonomous"] is True
+
+    reactive = SovereignMethodology(rule=SovereigntyDesignRule.REACTIVE_INVERSION)
+    eval_react = reactive.evaluate_policy_design()
+    assert eval_react["status"] == "REJECTED_REACTIVE_TRAP"
+    assert eval_react["autonomous"] is False
+
+
+def test_public_sector_dress_tiers_and_accountability():
+    assert len(PUBLIC_SECTOR_DRESS_TIERS) == 3
+    tier_map = {t.tier: t for t in PUBLIC_SECTOR_DRESS_TIERS}
+
+    tier_1 = tier_map[DressTierCategory.TIER_1_AUTHORITY_UNIFORM]
+    assert tier_1.mandatory_uniform is True
+    assert tier_1.mandatory_visible_id is True
+    assert "accountability device" in tier_1.core_purpose.lower()
+
+    tier_2 = tier_map[DressTierCategory.TIER_2_ADMINISTRATIVE_CODE]
+    assert tier_2.mandatory_uniform is False
+    assert tier_2.mandatory_visible_id is False
+
+    tier_3 = tier_map[DressTierCategory.TIER_3_SENIOR_PLAINNESS]
+    assert tier_3.mandatory_uniform is False
+    assert "visual restraint" in tier_3.core_purpose.lower() or "simply" in tier_3.core_purpose.lower()
+
+
+def test_uniform_procurement_policy_and_industrial_link():
+    proc = UniformProcurementPolicy()
+    assert proc.is_procurement_sound is True
+    assert proc.state_funded_full_cost is True
+    assert proc.domestic_guild_manufacture is True
+    assert proc.open_contracting_mandatory is True
+    assert proc.dignity_and_fit_specifications is True
+    assert proc.sovereign_local_visual_design is True
+
