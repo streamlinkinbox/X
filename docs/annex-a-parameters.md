@@ -561,3 +561,120 @@ Dual-use plants (everyday demand keeps them alive until needed):
 
 **A 2-of-5 rule fails completely if two keyholders collude.** Quorum must exceed the plausible number of colluding keyholders: use 3-of-7.
 
+## A.15 Military doctrine and asymmetric defense
+
+### Minimum personal kit (self-funded)
+
+| # | Item | Cost (USD) | Weight (kg) | Locally producible |
+|---|---|---|---|---|
+| 1 | Primary weapon | $250 | 3.5 kg | no |
+| 2 | Secondary weapon | $25 | 1.2 kg | **yes** |
+| 3 | Ammunition reserve | $100 | 3.0 kg | no |
+| 4 | Blade maintenance kit | $8 | 0.4 kg | **yes** |
+| 5 | Personal medical kit | $30 | 0.8 kg | **yes** |
+| 6 | Water purification | $20 | 0.5 kg | **yes** |
+| 7 | Food ration supply | $25 | 4.5 kg | **yes** |
+| 8 | Shelter & bivvy | $35 | 1.5 kg | **yes** |
+| 9 | Navigation tools | $10 | 0.3 kg | **yes** |
+| 10 | Signaling & communications | $20 | 0.6 kg | no |
+| 11 | Tactical field clothing | $60 | 2.0 kg | **yes** |
+| 12 | Field footwear | $75 | 1.8 kg | **yes** |
+| 13 | Fire-starting kit | $7 | 0.2 kg | **yes** |
+| 14 | Cordage & rope | $8 | 0.3 kg | **yes** |
+| 15 | Multi-tool / fixed blade | $25 | 0.4 kg | **yes** |
+
+| Metric | Value |
+|---|---|
+| Total kit cost | **$698** |
+| Total kit weight | **21.0 kg** |
+| Local production share | **80.0%** |
+
+### Transport fleet & fuel independence (10,000 population)
+
+| Mode | Count | Unit payload | Speed | Fuel required | Terrain rating |
+|---|---|---|---|---|---|
+| Horse (Mounted Cavalry / Scout) | 250 | 125 kg | 20 km/h | **no** | 5/5 |
+| Truck (Motor Transport / Logistics) | 25 | 2,500 kg | 65 km/h | yes | 2/5 |
+| Bicycle (Courier / Local Logistics) | 150 | 40 kg | 18 km/h | **no** | 3/5 |
+| Donkey / Mule (Pack Animal) | 75 | 90 kg | 6 km/h | **no** | 5/5 |
+| Foot March (Infantry Backbone) | 3500 | 35 kg | 5 km/h | **no** | 5/5 |
+
+| Metric | Value |
+|---|---|
+| Total fleet payload capacity | **229,000 kg** (229.0 tonnes) |
+| Zero-fuel unit share | **99.4%** |
+| Zero-fuel payload share | **72.7%** |
+
+### Demographics and mobilization timeline
+
+| Demographic | Count | Share |
+|---|---|---|
+| Total community population | 10,000 | 100.0% |
+| Registered adults (ages 18–50) | 5,500 | 55.0% |
+| Exemptions (caregivers, medical) | 1,650 | 30.0% of adults |
+| **Active combatants mobilized** | **3,850** | **38.5% of total** |
+| Non-combatant shelter population | 6,150 | 61.5% of total |
+
+| Hours | Phase name | Readiness pct |
+|---|---|---|
+| H+0 to H+1 | Alert Broadcast | 0% |
+| H+1 to H+4 | Kit Retrieval & Movement | 25% |
+| H+4 to H+8 | Assembly & Roll Call | 60% |
+| H+8 to H+12 | Tactical Sector Deployment | 80% |
+| H+12 to H+18 | Defensive Preparation | 95% |
+| H+18 to H+24 | Full Combat Readiness | 100% |
+
+### Medieval & low-tech arsenal
+
+| Weapon | Range | Lethality | Manufacture | Silent | Ammo free |
+|---|---|---|---|---|---|
+| Spear / Assegai | 2–15 m | High | Very Easy | **yes** | **yes** |
+| Bow (Longbow / Recurve) | 30–250 m | High | Moderate | **yes** | no |
+| Crossbow | 10–150 m | Very High | Moderate | **yes** | no |
+| Sword / Machete | 0–1 m | High | Moderate | **yes** | **yes** |
+| Combat Axe | 0–2 m | High | Easy | **yes** | **yes** |
+| Shield (Hide / Wood / Metal) | 0–1 m | Defensive | Easy | **yes** | **yes** |
+| Punji Stakes / Spike Traps | 0 m (passive) | Moderate–High | Very Easy | **yes** | **yes** |
+| Caltrops | 0 m (passive) | Low–Moderate | Easy | **yes** | **yes** |
+| Sling | 20–100 m | Moderate | Very Easy | **yes** | **yes** |
+| Atlatl (Spear-Thrower) | 15–50 m | High | Easy | **yes** | no |
+| Boiling Oil / Water | 1–10 m | Very High | Easy | no | **yes** |
+| Incendiaries / Greek Fire | 5–30 m | Very High | Moderate | no | no |
+
+### Asymmetric neutralization cost ratios
+
+| Threat asset | Enemy cost | Militia cost | Method | Cost ratio |
+|---|---|---|---|---|
+| F-22 Raptor Fighter Jet | $150,000,000 | $200 | Runway & Fuel Depot Sabotage | **750,000 : 1** |
+| M1 Abrams Main Battle Tank | $10,000,000 | $10 | Sensor Blinding & Track Jamming | **1,000,000 : 1** |
+| Drone Swarm (100 units) | $20,000,000 | $500 | Layered Net / Wire / Shotgun Defense | **40,000 : 1** |
+| Armored Personnel Carrier (APC) | $3,000,000 | $5 | Anti-Belly Trench & Molotov | **600,000 : 1** |
+| Fuel Supply Convoy (10 trucks) | $500,000 | $50 | Roadside IED & Choke Point Ambush | **10,000 : 1** |
+
+### Multi-layered anti-drone swarm defense (100-drone test)
+
+| Layer | Range | Mechanism | Interception rate | Cost |
+|---|---|---|---|---|
+| Layer 1: Wire & Line Barriers | 500 m | Monofilament fishing line and thin wire ... | 35% | $50 |
+| Layer 2: Smoke & Dust Screens | 200 m | Burning tires, waste oil, and damp brush... | 40% | $50 |
+| Layer 3: Weighted Nets & Net Launchers | 100 m | Weighted throw nets and compressed-air n... | 50% | $100 |
+| Layer 4: Shotgun Birdshot Teams | 50 m | 12-gauge shotguns firing dense birdshot ... | 85% | $150 |
+| Layer 5: EMP Bursts & RF/GPS Jamming | 15 m | Improvised electromagnetic burst devices... | 95% | $150 |
+
+| Simulation metric (100 drones) | Value |
+|---|---|
+| Total drones intercepted | **99.85 / 100** |
+| Cumulative interception rate | **99.85%** |
+| Total defense cost | **$500** |
+| Cost per intercepted drone | **$5.01** |
+
+### Campaign attrition economics
+
+| Metric | Invader | Citizen Militia | Asymmetric Ratio |
+|---|---|---|---|
+| Daily operational burn rate | $25,000,000/day | $10,000/day | **2,500 : 1** |
+| Cumulative 30 days | $750,000,000 | $300,000 | 2,500 : 1 |
+| Cumulative 90 days | $2,250,000,000 | $900,000 | 2,500 : 1 |
+| Cumulative 180 days | $4,500,000,000 | $1,800,000 | 2,500 : 1 |
+| Cumulative 365 days | $9,125,000,000 | $3,650,000 | 2,500 : 1 |
+

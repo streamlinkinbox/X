@@ -48,6 +48,19 @@ from model.rcu.production import (  # noqa: E402
     ranked_by_sovereignty,
     viable_projects,
 )
+from model.rcu.military import (  # noqa: E402
+    DRONE_DEFENSE_LAYERS,
+    MEDIEVAL_ARSENAL,
+    MOBILIZATION_TIMELINE,
+    NEUTRALIZATION_MATRIX,
+    REQUIRED_KIT_ITEMS,
+    TRANSPORT_CLASSES,
+    CampaignEconomics,
+    CommunityDemographics,
+    DroneSwarmEngagement,
+    PersonalKit,
+    TransportFleet,
+)
 from model.rcu.security import (  # noqa: E402
     ArmouryPolicy,
     audit_effort_curve,
@@ -750,6 +763,106 @@ def table_security() -> None:
     )
 
 
+def table_military() -> None:
+    W("## A.15 Military doctrine and asymmetric defense\n\n")
+
+    W("### Minimum personal kit (self-funded)\n\n")
+    W("| # | Item | Cost (USD) | Weight (kg) | Locally producible |\n|---|---|---|---|---|\n")
+    kit = PersonalKit()
+    for i, item in enumerate(kit.items, 1):
+        W(
+            f"| {i} | {item.name} | ${item.estimated_cost_usd:,.0f} | "
+            f"{item.weight_kg:.1f} kg | {'**yes**' if item.locally_producible else 'no'} |\n"
+        )
+    W(
+        f"\n| Metric | Value |\n|---|---|\n"
+        f"| Total kit cost | **${kit.total_cost_usd:,.0f}** |\n"
+        f"| Total kit weight | **{kit.total_weight_kg:.1f} kg** |\n"
+        f"| Local production share | **{float(kit.local_production_share) * 100:.1f}%** |\n\n"
+    )
+
+    W("### Transport fleet & fuel independence (10,000 population)\n\n")
+    fleet = TransportFleet(population=10000)
+    W("| Mode | Count | Unit payload | Speed | Fuel required | Terrain rating |\n|---|---|---|---|---|---|\n")
+    for key, c in TRANSPORT_CLASSES.items():
+        W(
+            f"| {c.name} | {fleet.counts[key]} | {c.unit_payload_kg:,.0f} kg | "
+            f"{c.cruising_speed_kmh:.0f} km/h | {'yes' if c.requires_fuel else '**no**'} | "
+            f"{c.rough_terrain_rating}/5 |\n"
+        )
+    W(
+        f"\n| Metric | Value |\n|---|---|\n"
+        f"| Total fleet payload capacity | **{fleet.total_payload_capacity_kg:,.0f} kg** ({fleet.total_payload_capacity_kg / 1000:.1f} tonnes) |\n"
+        f"| Zero-fuel unit share | **{float(fleet.zero_fuel_unit_share) * 100:.1f}%** |\n"
+        f"| Zero-fuel payload share | **{float(fleet.zero_fuel_payload_share) * 100:.1f}%** |\n\n"
+    )
+
+    W("### Demographics and mobilization timeline\n\n")
+    demo = CommunityDemographics(population=10000)
+    W(
+        f"| Demographic | Count | Share |\n|---|---|---|\n"
+        f"| Total community population | {demo.population:,} | 100.0% |\n"
+        f"| Registered adults (ages 18–50) | {demo.registered_adults:,} | {demo.adult_eligible_fraction * 100:.1f}% |\n"
+        f"| Exemptions (caregivers, medical) | {demo.exempt_adults:,} | {demo.exemption_rate * 100:.1f}% of adults |\n"
+        f"| **Active combatants mobilized** | **{demo.mobilized_combatants:,}** | **{demo.mobilized_combatants / demo.population * 100:.1f}% of total** |\n"
+        f"| Non-combatant shelter population | {demo.non_combatant_population:,} | {demo.non_combatant_population / demo.population * 100:.1f}% of total |\n\n"
+    )
+
+    W("| Hours | Phase name | Readiness pct |\n|---|---|---|\n")
+    for phase in MOBILIZATION_TIMELINE:
+        W(f"| H+{phase.hours_start} to H+{phase.hours_end} | {phase.name} | {phase.force_readiness_pct:.0f}% |\n")
+    W("\n")
+
+    W("### Medieval & low-tech arsenal\n\n")
+    W("| Weapon | Range | Lethality | Manufacture | Silent | Ammo free |\n|---|---|---|---|---|---|\n")
+    for w in MEDIEVAL_ARSENAL:
+        rng = f"{w.effective_range_min_m:.0f}–{w.effective_range_max_m:.0f} m" if w.effective_range_max_m > 0 else "0 m (passive)"
+        W(
+            f"| {w.name} | {rng} | {w.lethality} | {w.manufacture_difficulty} | "
+            f"{'**yes**' if w.silent else 'no'} | {'**yes**' if not w.ammunition_dependent else 'no'} |\n"
+        )
+    W("\n")
+
+    W("### Asymmetric neutralization cost ratios\n\n")
+    W("| Threat asset | Enemy cost | Militia cost | Method | Cost ratio |\n|---|---|---|---|---|\n")
+    for n in NEUTRALIZATION_MATRIX:
+        W(
+            f"| {n.target_asset} | ${n.enemy_cost_usd:,.0f} | ${n.militia_neutralization_cost_usd:,.0f} | "
+            f"{n.method} | **{n.cost_ratio:,} : 1** |\n"
+        )
+    W("\n")
+
+    W("### Multi-layered anti-drone swarm defense (100-drone test)\n\n")
+    W("| Layer | Range | Mechanism | Interception rate | Cost |\n|---|---|---|---|---|\n")
+    for l in DRONE_DEFENSE_LAYERS:
+        W(
+            f"| Layer {l.layer_number}: {l.name} | {l.engagement_distance_m:.0f} m | "
+            f"{l.mechanism[:40]}... | {l.attrition_fraction * 100:.0f}% | ${l.cost_per_engagement_usd:,.0f} |\n"
+        )
+    sim = DroneSwarmEngagement(initial_swarm_size=100).simulate()
+    W(
+        f"\n| Simulation metric (100 drones) | Value |\n|---|---|\n"
+        f"| Total drones intercepted | **{sim['total_intercepted']} / 100** |\n"
+        f"| Cumulative interception rate | **{sim['interception_rate'] * 100:.2f}%** |\n"
+        f"| Total defense cost | **${sim['total_defense_cost_usd']:,.0f}** |\n"
+        f"| Cost per intercepted drone | **${sim['cost_per_interception_usd']:.2f}** |\n\n"
+    )
+
+    W("### Campaign attrition economics\n\n")
+    econ = CampaignEconomics()
+    W(
+        f"| Metric | Invader | Citizen Militia | Asymmetric Ratio |\n|---|---|---|---|\n"
+        f"| Daily operational burn rate | ${econ.enemy_daily_cost_usd:,.0f}/day | ${econ.militia_daily_cost_usd:,.0f}/day | **{econ.daily_cost_ratio:,} : 1** |\n"
+    )
+    for days in (30, 90, 180, 365):
+        c = econ.cumulative_expenditure(days)
+        W(
+            f"| Cumulative {days} days | ${c['enemy_total_usd']:,.0f} | "
+            f"${c['militia_total_usd']:,.0f} | {int(c['net_deficit_ratio']):,} : 1 |\n"
+        )
+    W("\n")
+
+
 def main() -> None:
     header()
     table_classes()
@@ -766,6 +879,7 @@ def main() -> None:
     table_external()
     table_production()
     table_security()
+    table_military()
 
 
 if __name__ == "__main__":

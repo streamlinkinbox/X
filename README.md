@@ -55,6 +55,7 @@ the five model findings that change the original design.
 | [16 External trade](docs/16-external-trade-and-dependency.md) | Import dependency, buffers, substitution, trade window |
 | [17 Local production](docs/17-local-production-doctrine.md) | **The production ladder — what can be made locally** |
 | [18 Community security](docs/18-community-security.md) | Mediation, fraud forensics, rotation, armoury |
+| [19 Military doctrine](docs/19-military-doctrine.md) | **Citizen militia, asymmetric defense, asset neutralization** |
 | [Annex A](docs/annex-a-parameters.md) | **Generated** parameter and stress tables |
 | [Annex B](docs/annex-b-open-problems.md) | Unsolved problems, ranked by severity |
 
@@ -275,6 +276,22 @@ One correction: the claim that police numbers don't affect crime is
 contradicted by modern evidence. The real case for this model —
 accountability, fit-to-task, cost, currency integrity — is stronger without
 it.
+
+## Defense: the citizen militia and asymmetric neutralization
+
+§19 models territorial defense: **a mandatory, self-funded, self-equipped
+citizen militia** operating on radical asymmetry rather than industrial mirror-copying.
+
+| Dimension | Militia design | Strategic advantage |
+|---|---|---|
+| **Funding** | 100% self-funded personal kit | Zero military budget to corrupt; zero defense contractor lobbying |
+| **Mobility** | 99.3% zero-fuel fleet (horses, pack mules, bikes, foot) | Zero fuel logistics tail; immune to fuel refinery blockade |
+| **Arsenal** | Firearms + locally forged medieval weapons | Never runs out of bullets; blades crafted by village blacksmiths |
+| **Neutralization** | Blinding & jamming rather than kinetic destruction | **$10 net/mud defeats $10M tank; $500 layered defense stops 100-drone swarm** |
+
+Cost ratios against conventional weapons exceed **10,000:1 to 1,000,000:1**,
+yielding a **2,500:1 daily burn rate advantage** ($10k/day vs $25M/day) that
+exhausts any invading superpower. See [§19](docs/19-military-doctrine.md).
 
 ## Honest positioning
 

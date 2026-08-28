@@ -299,6 +299,30 @@ instrument accuracy** — detection falls from 93% to 20% as collusion rises to
 certainty. Rotation genuinely prevents capture, but only within a narrow
 band: 9-month tours with 18-month breaks are safe, 24-month tours are not.
 
+## Defense: the citizen militia and asymmetric neutralization
+
+§19 models military defense: **a mandatory, self-funded, self-equipped
+citizen militia** operating on pure asymmetry without a standing military
+budget or foreign arms dependency.
+
+The decisive insight: **destruction is expensive; neutralization is cheap.**
+You do not need a $150,000 missile to destroy a $10 million tank; a $5 net
+and a bucket of mud over its periscopes leaves it blind, immobile, and
+useless.
+
+Key findings:
+- **99.3% zero-fuel fleet:** Horses, pack mules, bicycles, and marching foot
+  units decouple military logistics from vulnerable fuel refineries and convoys.
+- **73.3% locally producible kit:** 15-item standard personal kit costs ~$698,
+  with blades, rations, shelter, and medical kits forged and sewn locally.
+- **Layered drone defense:** A 5-layer system (wire barriers, smoke, net guns,
+  12ga birdshot, and close-range jamming) neutralizes **>99% of incoming drone
+  swarms** at a cost of $500 per engagement.
+- **Asymmetric cost ratios > 10,000:1:** Neutralizing an F-22 (runway cratering
+  at $200), a tank (sensor blinding at $10), or an APC ($5) creates an
+  unsustainable financial burn rate for the invader ($25M/day vs $10k/day),
+  ensuring the community survives as an un-swallowable porcupine.
+
 ## What this system cannot do
 
 Stated plainly, because a blueprint that only lists strengths is marketing:
@@ -343,6 +367,7 @@ Stated plainly, because a blueprint that only lists strengths is marketing:
 | [`16-external-trade-and-dependency.md`](16-external-trade-and-dependency.md) | Import dependency, buffers, substitution, the trade window |
 | [`17-local-production-doctrine.md`](17-local-production-doctrine.md) | **The production ladder — what can actually be made locally** |
 | [`18-community-security.md`](18-community-security.md) | Mediation, fraud forensics, rotation, armoury, capture resistance |
+| [`19-military-doctrine.md`](19-military-doctrine.md) | **Citizen militia, asymmetric defense, asset neutralization** |
 | [`annex-a-parameters.md`](annex-a-parameters.md) | Generated tables: all parameters and stress results |
 | [`annex-b-open-problems.md`](annex-b-open-problems.md) | Unsolved problems, ranked by how badly they hurt |
 

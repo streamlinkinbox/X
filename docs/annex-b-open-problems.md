@@ -411,6 +411,37 @@ and it has no internal answer.
 
 ---
 
+## P15. Asymmetric defense escalation, standoff strikes, and adversary adaptation
+
+**Severity: high. Inherent to asymmetric defense.**
+
+The citizen militia doctrine (§19) proves that high-tech assets (tanks, stealth
+aircraft, drone swarms) can be neutralized at 10,000:1+ cost ratios during
+ground operations. However, an industrialized adversary facing low-cost ground
+neutralization will adapt its doctrine in two specific ways:
+
+1. **Standoff kinetic bombardment:** Transitioning from ground assault to
+   high-altitude standoff glide bombs, long-range cruise missiles, and heavy
+   artillery fired from beyond visual and militia range.
+2. **Technological adaptation:** Fitting tanks with cope cages and thermal
+   blaster sensors, and equipping drone swarms with dynamic frequency-hopping
+   and fiber-optic tethering immune to RF jamming.
+
+**Mitigation:**
+- Subterranean infrastructure: Hardening warehouses, medical clinics, and
+  command nodes beneath 3+ meters of reinforced earth.
+- Signature reduction: Complete dispersal into civilian fabric (the Ghost
+  doctrine) where standoff strikes inflict unacceptable collateral damage.
+- Political exhaustion: Escalating the adversary's financial and moral costs
+  per day until domestic political support collapses.
+
+**What remains open:** A determined adversary willing to use scorched-earth
+tactics or indiscriminate standoff shelling cannot be stopped by kinetic
+neutralization alone. Asymmetric victory remains fundamentally **political**,
+not purely military.
+
+---
+
 ## Summary
 
 | # | Problem | Severity | Status |
@@ -429,6 +460,7 @@ and it has no internal answer.
 | P12 | Recruiting the acceptor network, not just a cadre | **High (new)** | §14.2 gives the arithmetic; no proven playbook at scale |
 | P13 | Scarce services cannot be monetised | **High (new)** | Structural; use pooling not credits. FX gap for consumables unsolved |
 | P14 | Irreducible import floor | **High** | Reduced from ~49% to ~40% by §17 production ladder; APIs and vaccines permanent |
+| P15 | Asymmetric defense escalation and adaptation | **High (new)** | Subterranean hardening + Ghost doctrine; political exhaustion is required |
 
 **The three at the top are not reasons to abandon the design.** They are the
 reasons a pilot exists — and a pilot that is not explicitly built to test
