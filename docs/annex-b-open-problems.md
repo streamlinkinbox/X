@@ -539,6 +539,35 @@ community faces dual vulnerabilities:
 
 ---
 
+### P20: Specialized strike unit operational drift and informal prestige hierarchy
+
+**Severity: medium-high. Military sociological vulnerability.**
+
+Even with strict legal prohibitions against separate barracks, prestige uniforms,
+and hereditary titles (§24.5), small specialized cadres (The Strike Team, The
+Hammer) face an intrinsic sociological hazard: **informal warrior elitism and
+cultural detachment from the civilian militia.** Over time, veterans of high-risk
+strike missions may develop closed informal cliques, covert fraternal bonds, or
+a sense of moral superiority over "ordinary" agrarian militia members, gradually
+eroding civilian democratic control.
+
+**Mitigation:**
+- **Mandatory 3-Year Hard Civilian Rotation (§24.5):** Strike operators must
+  return to full-time guild production (farming, masonry, weaving) with zero
+  military duties for a minimum of 2 years before being eligible for re-selection.
+- **Sortition-Led Tactical Debriefs (§24.2):** All post-action operational
+  reviews are observed and signed off by the sortition civilian representative
+  to demystify combat actions.
+- **Functional Functionalist Naming & Uniform Parity:** Complete ban on
+  insignia, honorifics, or separate gear aesthetics. Specialized operators wear
+  standard citizen militia kit (§19.1) modified only by functional tools.
+- **Embedded Apprenticeship Cross-Training (§14):** Specialized unit veterans
+  are required to teach basic marksmanship and field medical skills directly to
+  civilian apprentices, reinforcing their role as teachers rather than an
+  exclusive warrior caste.
+
+---
+
 ## Summary
 
 | # | Problem | Severity | Status |
@@ -562,6 +591,7 @@ community faces dual vulnerabilities:
 | P17 | Cross-regional comparative benchmarking data reliability | **Medium (new)** | Satellite/NDVI telemetry + multi-year local baseline calibration |
 | P18 | Epistemic capture and analyst bias in central intelligence | **Medium-High (new)** | Open data + 2-yr rotation + 5-yr analyst term limits + external audits |
 | P19 | Transboundary watershed conflict and SIGINT spoofing | **High (new)** | Triangulated OSINT/HUMINT + LoRa mesh failover + upstream grassroots pacts |
+| P20 | Specialized unit operational drift & warrior elitism | **Medium-High (new)** | Mandatory 3-yr civilian return + uniform parity + apprentice teaching |
 
 **The three at the top are not reasons to abandon the design.** They are the
 reasons a pilot exists — and a pilot that is not explicitly built to test

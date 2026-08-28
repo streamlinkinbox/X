@@ -401,6 +401,30 @@ with outward awareness and ecological guardianship:
   and droughts (3–12m) predicted and countered with pre-positioned 30-day caches
   and 4-phase rescue operations.
 
+## The War Council & specialized strike units: asymmetric imperial defense
+
+§24 formalizes how a small community commands and fights with the precision of an empire:
+
+- **The War Council (8 Seats):** A collective deliberative civilian/military command
+  (Rotating Chair, Defense Coordinator, CIS Intel Chief, EDMB Environmental Chief,
+  RAB Logistics Chief, Senior Militia Commander, Justice Coordinator, and Sortition
+  Civilian Delegate).
+- **Constitutional Decision Safeguards:** 5-of-8 standard majority, mandatory
+  **24-hour "No" reflection delay**, **7-of-8 supermajority Blood Rule** (civilian
+  casualties $> 10$), and strict prohibition on unprovoked offensive operations without
+  Community Council assent.
+- **The Living Contingency Library (10 Scenarios):** Pre-planned Roman operational
+  blueprints (S1–S10) updated quarterly and wargamed semi-annually.
+- **The War Room ("Genius Council"):** 24–72 hour multidisciplinary isolation chamber
+  solving tactical deadlock with zero rank hierarchy, mandatory 6h sleep, and outside
+  wildcard thinkers (blacksmiths, farmers).
+- **7 Specialized Units (155–195 Operators, <5% of Militia):** Precision cadres
+  (Strike Team, Hammer shock assault, Scorpion counter-drone, Worm sappers, Healer trauma
+  medics, Echo signals/EW, Horse mounted recon).
+- **Anti-Janissary / Anti-Mamluk Firewalls:** Elite in skill, not in status. Mandatory
+  **3-year return to civilian economic production**, no separate barracks, no separate
+  wages, no hereditary succession, and no civilian political office while serving.
+
 ## What this system cannot do
 
 Stated plainly, because a blueprint that only lists strengths is marketing:
@@ -450,6 +474,7 @@ Stated plainly, because a blueprint that only lists strengths is marketing:
 | [`21-anti-corruption-and-resource-curse-prevention.md`](21-anti-corruption-and-resource-curse-prevention.md) | **Anti-corruption, difficulty diagnostics, resource curse prevention** |
 | [`22-research-and-analysis-bureau.md`](22-research-and-analysis-bureau.md) | **Research and Analysis Bureau (RAB), cross-silo intelligence, reform** |
 | [`23-intelligence-and-environmental-disaster-management.md`](23-intelligence-and-environmental-disaster-management.md) | **Community Intelligence (CIS), Environmental Disaster Bureau (EDMB)** |
+| [`24-war-council-scenario-planning-and-specialized-units.md`](24-war-council-scenario-planning-and-specialized-units.md) | **War Council, Scenario Planning, and Specialized Strike Units** |
 | [`annex-a-parameters.md`](annex-a-parameters.md) | Generated tables: all parameters and stress results |
 | [`annex-b-open-problems.md`](annex-b-open-problems.md) | Unsolved problems, ranked by how badly they hurt |
 

@@ -877,3 +877,68 @@ Dual-use plants (everyday demand keeps them alive until needed):
 | **Regional Cholera Outbreak in Bor...** | CIS (OSINT news digests) ... | Tracks refugee and border trav... | Increases chlorination monitor... | Establishes border health scre... |
 | **Prolonged Regional Drought Patte...** | EDMB (Rainfall & soil tel... | Monitors neighboring state foo... | Predicts drought duration and ... | Mandates drought-resistant mil... |
 
+## A.20 War Council, Scenario Planning, and Specialized Strike Units
+
+### War Council collective command composition (8 seats)
+
+| Role | Rotation | Primary deliberative focus |
+|---|---|---|
+| **Council Chair (Rotating)** | 3 months | Deliberation facilitation, deadlock resolution, procedural order |
+| **Defense Coordinator** | 12 months | Overall asymmetric military strategy, militia force readiness |
+| **CIS Chief of Intelligence** | 24 months | External threat vectors, adversary troop staging, logistics |
+| **EDMB Chief Environmental Officer** | 24 months | Topography, weather, seasonal flood/landslide risk, terrain defense |
+| **RAB Chief Analyst** | 24 months | Resource burn rate, supply chain sustainability, cost limits |
+| **Senior Militia Commander (Rotating)** | 6 months | Rank-and-file tactical readiness, ground morale, equipment status |
+| **Justice Coordinator** | 12 months | Geneva/customary law compliance, anti-atrocity, captive treatment |
+| **Community Representative (Sortition)** | 1 months | Civilian consent, popular support, public impact evaluation |
+
+### The Living Contingency Scenario Library (Roman Model)
+
+| Scenario code | Threat description | Adversary scale | Warning lead time | Primary defensive response |
+|---|---|---|---|---|
+| **S1: Small armed raid** | 10–50 raiders | 10–50 raiders | 1–4 hours | Local militia (20–30) + Horse scouts; 5 km max pursuit... |
+| **S2: Medium coordinated assault** | 100–500 fighters + light vehicles | 100–500 fighters + light vehicles | 2–6 hours | Defense in depth (3 layers); IED fields; drone net defe... |
+| **S3: Large-scale invasion** | 1,000+ fighters + armor + air support | 1,000+ fighters + armor + air support | 12–48 hours | Full asymmetric transition: underground caches, decapit... |
+| **S4: Flash flood / River breach** | Ecological flood wave | Ecological flood wave | 24–72 hours | EDMB Red alert; high-ground evacuation; reserve vault w... |
+| **S5: Multi-season drought** | Prolonged hydrological deficit | Prolonged hydrological deficit | 3–6 months | Water rationing; drought-crop rotation; RAB food securi... |
+| **S6: Epidemic / Vector outbreak** | Pathogen / Vector spike | Pathogen / Vector spike | 2–4 weeks | Sector quarantine; medical triage; vector spraying; tra... |
+| **S7: Internal coup attempt** | Rogue faction / mutiny | Rogue faction / mutiny | 0–12 hours | Secure warehouses and communications; isolate rogue lea... |
+| **S8: External trade route closure** | Hostile economic embargo | Hostile economic embargo | 1–4 weeks | RAB economic buffer activation; production substitution... |
+| **S9: Cyber / Digital ledger attack** | Electronic state / cartel hackers | Electronic state / cartel hackers | Minutes to hours | Isolate network nodes; revert to offline physical note ... |
+| **S10: CBRN (Chemical/Biological/Radiological/Nuclear) attack** | Asymmetric / WMD strike | Asymmetric / WMD strike | Minutes to hours | Underground shelter seal; positive air filtration; deco... |
+
+### Specialized precision units (Elite in skill, not in status)
+
+| Specialized unit | Nominal size | Personnel range | Primary operational mission | Operational limit |
+|---|---|---|---|---|
+| **The Strike Team (Target Command Neutralizer)** | **4** | 4–8 | Infiltrate behind lines to eliminate high-val... | 72-hour maximum mission exfiltration limit; a... |
+| **The Hammer (Shock Assault)** | **40** | 30–50 | Concentrated 10-20 minute shock charge to sha... | Deployed max once per 30 days; 2 km max pursu... |
+| **The Scorpion (Counter-Drone & Air Defense)** | **25** | 20–30 | Layered drone neutralization (500m wires, 200... | Strict anti-air focus; falls back to militia ... |
+| **The Worm (Sappers, IEDs & Fortification)** | **25** | 20–30 | Construct hidden IED fields, ditch traps, cal... | Operates under night/smoke cover; zero standa... |
+| **The Healer (Combat Trauma Medical)** | **12** | 10–15 | Field triage, emergency trauma surgery, blood... | Treats friend and wounded enemy alike; protec... |
+| **The Echo (Signals, Electronic Warfare & Cyber)** | **12** | 10–15 | Mesh radio network maintenance, RF jamming of... | Continuous operation; first to deploy and las... |
+| **The Horse (Mounted Recon & Rapid Logistics)** | **40** | 30–50 | Early perimeter scouting, rapid tactical resp... | 5 km max pursuit; disengages immediately when... |
+
+*Total Specialized Force:* **158 operators** (124–198 range), representing **4.51% of citizen militia** and **1.58% of total population**.
+
+### Anti-caste constitutional firewalls
+
+| Constitutional firewall | Parameter | Institutional rationale |
+|---|---|---|
+| Mandatory civilian rotation | **3 years max** | Returns operators to economic guild production |
+| Separate barracks | **Prohibited** | Operators live in family homes among citizens |
+| Separate pay / privilege | **Prohibited** | Equal standard wage in weight-based currency |
+| Hereditary recruitment | **Prohibited** | Merit and militia drill performance only |
+| Civil political office ban | **Enforced** | Absolute separation of armed force and civil governance |
+| Right of refusal | **Guaranteed** | Operators protected when refusing offensive war orders |
+| Functional naming rule | **Mandatory** | No prestige titles ('Guards', 'Elites'); named by tool/animal |
+
+### Engagement simulation: Medium coordinated assault (Scenario S2)
+
+| Engagement metric | Invading adversary force | Community defense force | Outcome asymmetry |
+|---|---|---|---|
+| Initial deployment | 500 fighters, 5 armor, 20 drones | 2000 militia + 158 specialized | 4:1 local terrain defense ratio |
+| Casualties | 200 killed, 150 captured | 30 killed, 80 wounded | **3.18:1 casualty exchange ratio** |
+| Equipment neutralized | 5/5 armor, 20/20 drones | 2 IED fields detonated | 100% heavy vehicle/drone neutralization |
+| Attrition rate | **70.0%** | 5.5% | Adversary column routed in 6 hours |
+

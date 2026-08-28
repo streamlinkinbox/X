@@ -60,6 +60,7 @@ the five model findings that change the original design.
 | [21 Anti-corruption](docs/21-anti-corruption-and-resource-curse-prevention.md) | **Difficulty diagnostics, shadow succession, resource curse** |
 | [22 Research & Analysis Bureau](docs/22-research-and-analysis-bureau.md) | **Cross-silo intelligence, 5 divisions, closed-loop reform** |
 | [23 Intelligence & Environment](docs/23-intelligence-and-environmental-disaster-management.md) | **Community Intelligence (CIS), Ecology & Disaster (EDMB)** |
+| [24 War Council & Specialized Units](docs/24-war-council-scenario-planning-and-specialized-units.md) | **War Council, Scenario Planning, 7 Specialized Units** |
 | [Annex A](docs/annex-a-parameters.md) | **Generated** parameter and stress tables |
 | [Annex B](docs/annex-b-open-problems.md) | Unsolved problems, ranked by severity |
 
@@ -375,6 +376,17 @@ See [§22](docs/22-research-and-analysis-bureau.md).
 | **Environmental & Disaster Bureau (EDMB)** | Real-time sensor monitoring, mandatory EIAs, disaster rescue, and reforestation | Flood/landslide early warnings, 75% Council EIA override rule, 3-to-1 tree replanting |
 
 See [§23](docs/23-intelligence-and-environmental-disaster-management.md).
+
+## The War Council & specialized strike units: asymmetric imperial defense
+
+§24 formalizes the command architecture that allows a small community to defend itself against large expeditionary forces:
+- **The War Council:** 8-seat deliberative collective command with a rotating chair, the 24-hour "No" delay rule, the 7/8 Blood Rule, and mandatory Community Council authorization for any offensive action.
+- **The Scenario Library:** 10 pre-planned Roman contingency blueprints (S1–S10) updated quarterly and wargamed semi-annually.
+- **The War Room:** 24–72 hour multidisciplinary crisis sessions solving operational deadlocks with no rank hierarchy, mandatory 6h sleep, and outside wildcard thinkers.
+- **7 Specialized Units (155–195 personnel, <5% of militia):** Strike Team (decapitation), Hammer (shock assault), Scorpion (counter-drone), Worm (sappers/IEDs), Healer (trauma medical), Echo (signals/EW), and Horse (mounted recon).
+- **Anti-Janissary / Anti-Mamluk Safeguards:** Elite in skill, not in status. Mandatory 3-year return to civilian economic production, no separate barracks, no separate pay, and no civilian political office while serving.
+
+See [§24](docs/24-war-council-scenario-planning-and-specialized-units.md).
 
 ## Honest positioning
 

@@ -112,6 +112,15 @@ from model.rcu.rab import (  # noqa: E402
     ReformStage,
     SiloDataPoint,
 )
+from model.rcu.war_council import (  # noqa: E402
+    SCENARIO_LIBRARY,
+    SPECIALIZED_UNITS_ROSTER,
+    WAR_COUNCIL_ROSTER,
+    AntiCasteSafeguards,
+    EngagementBattleReport,
+    SpecializedUnitSizing,
+    WarCouncilDecisionEngine,
+)
 from model.rcu.security import (  # noqa: E402
     ArmouryPolicy,
     audit_effort_curve,
@@ -1142,6 +1151,65 @@ def table_intel_env() -> None:
     W("\n")
 
 
+def table_war_council() -> None:
+    W("## A.20 War Council, Scenario Planning, and Specialized Strike Units\n\n")
+
+    W("### War Council collective command composition (8 seats)\n\n")
+    W("| Role | Rotation | Primary deliberative focus |\n|---|---|---|\n")
+    for m in WAR_COUNCIL_ROSTER:
+        W(f"| **{m.title}** | {m.rotation_months} months | {m.primary_perspective} |\n")
+    W("\n")
+
+    W("### The Living Contingency Scenario Library (Roman Model)\n\n")
+    W("| Scenario code | Threat description | Adversary scale | Warning lead time | Primary defensive response |\n|---|---|---|---|---|\n")
+    for s in SCENARIO_LIBRARY:
+        W(
+            f"| **{s.code}: {s.name}** | {s.adversary_scale} | {s.adversary_scale} | "
+            f"{s.early_warning_lead_time} | {s.primary_response_phase[:55]}... |\n"
+        )
+    W("\n")
+
+    sizing = SpecializedUnitSizing(population=10000, militia_size=3500)
+    W("### Specialized precision units (Elite in skill, not in status)\n\n")
+    W(
+        f"| Specialized unit | Nominal size | Personnel range | Primary operational mission | Operational limit |\n|---|---|---|---|---|\n"
+    )
+    for u in SPECIALIZED_UNITS_ROSTER:
+        W(
+            f"| **{u.name}** | **{u.nominal_size}** | {u.min_size}–{u.max_size} | "
+            f"{u.mission[:45]}... | {u.operational_limit[:45]}... |\n"
+        )
+    W(
+        f"\n*Total Specialized Force:* **{sizing.total_specialized_nominal} operators** "
+        f"({sizing.total_specialized_min}–{sizing.total_specialized_max} range), representing "
+        f"**{sizing.fraction_of_militia * 100:.2f}% of citizen militia** and "
+        f"**{sizing.fraction_of_population * 100:.2f}% of total population**.\n\n"
+    )
+
+    W("### Anti-caste constitutional firewalls\n\n")
+    safeguards = AntiCasteSafeguards()
+    W(
+        f"| Constitutional firewall | Parameter | Institutional rationale |\n|---|---|---|\n"
+        f"| Mandatory civilian rotation | **{safeguards.max_consecutive_service_years} years max** | Returns operators to economic guild production |\n"
+        f"| Separate barracks | **Prohibited** | Operators live in family homes among citizens |\n"
+        f"| Separate pay / privilege | **Prohibited** | Equal standard wage in weight-based currency |\n"
+        f"| Hereditary recruitment | **Prohibited** | Merit and militia drill performance only |\n"
+        f"| Civil political office ban | **Enforced** | Absolute separation of armed force and civil governance |\n"
+        f"| Right of refusal | **Guaranteed** | Operators protected when refusing offensive war orders |\n"
+        f"| Functional naming rule | **Mandatory** | No prestige titles ('Guards', 'Elites'); named by tool/animal |\n\n"
+    )
+
+    W("### Engagement simulation: Medium coordinated assault (Scenario S2)\n\n")
+    report = EngagementBattleReport()
+    W(
+        f"| Engagement metric | Invading adversary force | Community defense force | Outcome asymmetry |\n|---|---|---|---|\n"
+        f"| Initial deployment | {report.enemy_initial_force} fighters, {report.enemy_tanks} armor, {report.enemy_drones} drones | {report.community_militia_deployed} militia + {report.specialized_operators_deployed} specialized | 4:1 local terrain defense ratio |\n"
+        f"| Casualties | {report.enemy_casualties_killed} killed, {report.enemy_casualties_captured} captured | {report.community_militia_killed} killed, {report.community_militia_wounded} wounded | **{report.casualty_exchange_ratio:.2f}:1 casualty exchange ratio** |\n"
+        f"| Equipment neutralized | {report.enemy_tanks_neutralized}/{report.enemy_tanks} armor, {report.enemy_drones_neutralized}/{report.enemy_drones} drones | 2 IED fields detonated | 100% heavy vehicle/drone neutralization |\n"
+        f"| Attrition rate | **{report.enemy_attrition_rate * 100:.1f}%** | 5.5% | Adversary column routed in 6 hours |\n\n"
+    )
+
+
 def main() -> None:
     header()
     table_classes()
@@ -1163,6 +1231,7 @@ def main() -> None:
     table_integrity()
     table_rab()
     table_intel_env()
+    table_war_council()
 
 
 if __name__ == "__main__":
