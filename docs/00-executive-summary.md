@@ -446,6 +446,29 @@ with outward awareness and ecological guardianship:
   a monopoly content filter or owning media pipes. Press reporting on government is
   constitutionally protected.
 
+## Non-cash penalties, restorative labor & anti-extortion enforcement
+
+§26 eliminates roadside bribery, predatory fines, and "policing for profit" through
+the total demonetization of law enforcement:
+
+- **The Fatal Flaw of Cash Fines:** Cash fines create extortion markets, predatory
+  revenue quotas, and wealth-based injustice where the rich buy impunity.
+- **The 4-Tier "Sweat & Duty" Non-Cash Penalty Ladder:** Penalties take time and
+  public physical labor (sewer and drain clearing, pothole patching, firebreaks).
+- **Victim Restitution (100% Direct):** Assessed damages are paid 100% directly to
+  the harmed victim (at 2.0x value) and **exactly 0% to police department budgets
+  or municipal slush funds**, eliminating the economic incentive for quota hunting.
+- **Six Statutory Anti-Extortion Locks:**
+  1. Automatic felony offense for any patrol officer to carry or demand cash on duty.
+  2. Missing dashcam/bodycam footage results in **automatic citation dismissal**.
+  3. Reverse bounty (500 RCU) paid to citizens who report bribe-soliciting officers.
+  4. RAB algorithmic anomaly detection flags predatory quota-hunting choke points.
+  5. Mandatory 6-month patrol sector rotation.
+  6. Contested citations adjudicated by a **3-person random sortition citizen jury**.
+- **Community Exile (Banishment):** Reserved strictly for irredeemable violent
+  predation, armed treason, or willful refusal of restorative labor, requiring a
+  **75% Community Council supermajority vote**.
+
 ## What this system cannot do
 
 Stated plainly, because a blueprint that only lists strengths is marketing:
@@ -497,6 +520,7 @@ Stated plainly, because a blueprint that only lists strengths is marketing:
 | [`23-intelligence-and-environmental-disaster-management.md`](23-intelligence-and-environmental-disaster-management.md) | **Community Intelligence (CIS), Environmental Disaster Bureau (EDMB)** |
 | [`24-war-council-scenario-planning-and-specialized-units.md`](24-war-council-scenario-planning-and-specialized-units.md) | **War Council, Scenario Planning, and Specialized Strike Units** |
 | [`25-media-information-integrity-and-social-harm.md`](25-media-information-integrity-and-social-harm.md) | **Media, Information Integrity, and Social Harm** |
+| [`26-penalty-system-and-anti-extortion-enforcement.md`](26-penalty-system-and-anti-extortion-enforcement.md) | **Non-Cash Penalties, Restorative Labor, and Anti-Extortion Enforcement** |
 | [`annex-a-parameters.md`](annex-a-parameters.md) | Generated tables: all parameters and stress results |
 | [`annex-b-open-problems.md`](annex-b-open-problems.md) | Unsolved problems, ranked by how badly they hurt |
 

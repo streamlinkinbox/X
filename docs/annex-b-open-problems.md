@@ -593,6 +593,38 @@ redemptions are halted.
 
 ---
 
+### P22: Community labor enforcement evasion and exile boundary coordination
+
+**Severity: medium-high. Jurisdictional and compliance vulnerability.**
+
+When a non-cash penalty system replaces debtor prisons and monetary fines with
+mandatory public civic labor (sewer clearing, road repairs, canal maintenance §26),
+the community faces two enforcement risks:
+1. **Labor Non-Compliance & Feigned Incapacity:** Stubborn offenders or affluent
+   citizens accustomed to financial buyouts may feign medical incapacity, perform
+   maliciously slow "work-to-rule" sabotage on work crews, or repeatedly default
+   on scheduled Saturday labor shifts.
+2. **Exile Border Friction & Transboundary Retaliation:** Banishing irredeemable
+   violent predators or corrupt conspirators (§26.5) creates friction with
+   neighboring federations or external towns. If exiled individuals join hostile
+   mercenary or bandit raiding bands operating beyond the border, they become
+   external security threats (§19, §24).
+
+**Mitigation:**
+- **Objective Independent Medical Certification (§15):** Claims of physical
+  disability are verified by rotating certified guild healers; individuals
+  unable to perform heavy ditch digging are assigned non-physical civic tasks
+  (braille transcription, seed sorting, public archive digitization).
+- **Escalation to High-Disruption Labor & Impound Extensions:** Refusal to perform
+  Tier 1 sewer clearing automatically escalates the offender to Tier 2 with
+  immediate extension of vehicle impoundment and public registry demerits.
+- **CIS Perimeter Tracking & Regional Extradition Compacts (§23.2):** Exiled
+  persons are logged into the CIS watch-list. Neighboring communities receive
+  formal forensic case dossiers; any exiled individual attempting to cross back
+  into community territory is detained for long-term secure labor containment.
+
+---
+
 ## Summary
 
 | # | Problem | Severity | Status |
@@ -618,6 +650,7 @@ redemptions are halted.
 | P19 | Transboundary watershed conflict and SIGINT spoofing | **High (new)** | Triangulated OSINT/HUMINT + LoRa mesh failover + upstream grassroots pacts |
 | P20 | Specialized unit operational drift & warrior elitism | **Medium-High (new)** | Mandatory 3-yr civilian return + uniform parity + apprentice teaching |
 | P21 | Cryptographic wire provenance vs viral gossip cascades | **Medium (new)** | Ed25519 signing + rapid press verification + physical seal notice boards |
+| P22 | Community labor evasion and exile border friction | **Medium-High (new)** | Healer audits + auto-escalation + CIS border alerts & extradition compacts |
 
 **The three at the top are not reasons to abandon the design.** They are the
 reasons a pilot exists — and a pilot that is not explicitly built to test

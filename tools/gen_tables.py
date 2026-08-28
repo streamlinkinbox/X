@@ -125,9 +125,10 @@ from model.rcu.war_council import (  # noqa: E402
 from model.rcu.information_integrity import (  # noqa: E402
     CONSOLIDATED_POLICY_MATRIX,
     IMPLEMENTATION_PHASES,
-    SANCTION_LADDER,
+    REVISED_SANCTION_LADDER_REV3,
     STATUTORY_BODIES,
     ConsolidatedRule,
+    DisgorgementAssessment,
     ForeignPlatformEnforcementModel,
     PlatformStatutoryDuties,
     RegulatoryBodyType,
@@ -135,6 +136,15 @@ from model.rcu.information_integrity import (  # noqa: E402
     SanctionStep,
     StateConductPolicy,
     StatutoryFundingFormula,
+)
+from model.rcu.penalties import (  # noqa: E402
+    AntiExtortionPolicy,
+    CitationDispute,
+    CivicLaborType,
+    ExileAssessment,
+    PENALTY_TIER_ROSTER,
+    PenaltyTier,
+    RestitutionAccounting,
 )
 from model.rcu.security import (  # noqa: E402
     ArmouryPolicy,
@@ -1249,14 +1259,23 @@ def table_media_integrity() -> None:
         f"{funding.digital_ad_revenue_levy_percent * 100:.0f}% digital ad turnover levy**); zero annual ministerial budget discretion.\n\n"
     )
 
-    W("### The 7-step mandatory escalating sanction ladder\n\n")
-    W("| Step | Sanction level | Operational enforcement action | Automatic repeat escalation |\n|---|---|---|---|\n")
-    for s in SANCTION_LADDER:
+    W("### The 9-step revised sanction ladder (Attacking Reach, Revenue & Position)\n\n")
+    W("| Step | Sanction name | Target asset | Operational enforcement action | Repeat trigger |\n|---|---|---|---|---|\n")
+    for s in REVISED_SANCTION_LADDER_REV3:
         W(
-            f"| **Step {s.step.value}** | **{s.name}** | {s.description} | "
-            f"{'**YES (Automatic)**' if s.is_automatic_on_repeat_breach else 'Discretionary'} |\n"
+            f"| **Step {s.step}** | **{s.name}** | {s.target_asset} | {s.operational_action[:45]}... | "
+            f"{'**Automatic**' if s.is_automatic_on_repeat_breach else 'First breach'} |\n"
         )
     W("\n")
+
+    disg = DisgorgementAssessment(commercial_revenue_earned_usd=100000.0, statutory_multiplier=1.5, victim_harm_compensation_usd=25000.0)
+    W("### Disgorgement vs. fine revenue allocation\n\n")
+    W(
+        f"| Financial component | Assessment basis | Beneficiary | Systemic impact |\n|---|---|---|---|\n"
+        f"| Commercial Revenue Disgorgement | **${disg.total_disgorgement_amount_usd:,.0f}** ({disg.statutory_multiplier:.1f}x multiplier) | Escrow Trust Fund | Strips all profit motive from illegal promotion |\n"
+        f"| Victim Direct Compensation | **${disg.victim_allocation_usd:,.0f}** (100% direct) | Named Victims / Persons | Compensates harmed individuals on statutory scale |\n"
+        f"| State Slush Fund Allocation | **$0.00 (0.0%)** | None | **Eliminates state incentive for regulatory shakedowns** |\n\n"
+    )
 
     W("### Foreign platform enforcement at the money layer\n\n")
     fp = ForeignPlatformEnforcementModel()
@@ -1311,6 +1330,47 @@ def table_media_integrity() -> None:
     W("\n")
 
 
+def table_penalties() -> None:
+    W("## A.22 Non-Cash Penalties, Restorative Labor, and Anti-Extortion Enforcement\n\n")
+
+    W("### The 4-Tier 'Sweat & Duty' Non-Cash Penalty Ladder\n\n")
+    W("| Tier | Offense category | Public labor duty | Labor hours | Vehicle impound | Exile applicable? |\n|---|---|---|---|---|---|\n")
+    for t in PENALTY_TIER_ROSTER:
+        W(
+            f"| **{t.name}** | {t.target_offenses[:32]}... | `{t.primary_labor_duty.value}` | "
+            f"{t.min_labor_hours}–{t.max_labor_hours} hrs ({t.nominal_labor_hours} nom) | {t.vehicle_impound_days} days | "
+            f"{'**YES (Council 75%)**' if t.exile_applicable else 'No'} |\n"
+        )
+    W("\n")
+
+    ra = RestitutionAccounting(damage_assessed_rcu=1000.0, restitution_multiplier=2.0)
+    W("### Restitution allocation (100% to Victims, 0% to Police)\n\n")
+    W(
+        f"| Recipient entity | Allocation share | Sample allocation (1,000 RCU Damage) | Policy rationale |\n|---|---|---|---|\n"
+        f"| **Harmed Victim** | **100.0%** | **{ra.victim_allocation_rcu:,.0f} RCU** ({ra.restitution_multiplier:.1f}x damage) | Restores property loss and emotional disruption directly |\n"
+        f"| **Police Department** | **0.0%** | **0 RCU** | **Eliminates policing-for-profit and roadside quota hunting** |\n"
+        f"| **Municipal Slush Fund** | **0.0%** | **0 RCU** | Prevents administrative budget reliance on citations |\n\n"
+    )
+
+    W("### Six statutory anti-extortion locks\n\n")
+    aep = AntiExtortionPolicy()
+    W(
+        f"| Anti-extortion lock | Statutory rule | Anti-bribery mechanism |\n|---|---|---|\n"
+        f"| Officer Cash Possession | **Automatic felony offense** | Prevents patrol officers carrying or accepting money on duty |\n"
+        f"| Roadside Cash Collections | **Strictly prohibited** | No fine payment can ever occur at the scene of an infraction |\n"
+        f"| Evidence Prerequisite | **Mandatory dashcam / bodycam** | Citations missing timestamped video are **automatically dismissed** |\n"
+        f"| Bribe Reverse Bounty | **{aep.reverse_bounty_on_reported_bribe_solicitation_rcu:.0f} RCU to citizen** | Paid from corrupt officer's forfeited integrity bond |\n"
+        f"| Quota Anomaly Detection | **Active algorithmic monitoring** | RAB flags choke points with $>70\%$ citation dismissal rates |\n"
+        f"| Mandatory Patrol Rotation | **Every {aep.patrol_officer_mandatory_rotation_months} months** | Prevents establishment of entrenched roadside toll cartels |\n\n"
+    )
+
+    W("### 3-Citizen sortition dispute tribunal\n\n")
+    W("| Dispute condition | Sortition jury rule | Outcome & disciplinary action |\n|---|---|---|\n")
+    W("| Missing dashcam footage | Automatic dismissal with prejudice | Citation voided; citing officer flagged for disciplinary review |\n")
+    W("| Contested citation with footage | 3-citizen random sortition panel | Majority vote (2 of 3) decides factual guilt or dismissal |\n")
+    W("| Unjustified harassment proven | Immediate dismissal | Offender exonerated; officer cited for abusive enforcement |\n\n")
+
+
 def main() -> None:
     header()
     table_classes()
@@ -1334,6 +1394,7 @@ def main() -> None:
     table_intel_env()
     table_war_council()
     table_media_integrity()
+    table_penalties()
 
 
 if __name__ == "__main__":

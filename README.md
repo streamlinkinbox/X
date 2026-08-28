@@ -62,6 +62,7 @@ the five model findings that change the original design.
 | [23 Intelligence & Environment](docs/23-intelligence-and-environmental-disaster-management.md) | **Community Intelligence (CIS), Ecology & Disaster (EDMB)** |
 | [24 War Council & Specialized Units](docs/24-war-council-scenario-planning-and-specialized-units.md) | **War Council, Scenario Planning, 7 Specialized Units** |
 | [25 Media & Information Integrity](docs/25-media-information-integrity-and-social-harm.md) | **Content conduct, court dignity, source-not-filter architecture** |
+| [26 Non-Cash Penalties & Anti-Extortion](docs/26-penalty-system-and-anti-extortion-enforcement.md) | **Sweat & duty ladder, sewer clearing, exile, zero roadside cash** |
 | [Annex A](docs/annex-a-parameters.md) | **Generated** parameter and stress tables |
 | [Annex B](docs/annex-b-open-problems.md) | Unsolved problems, ranked by severity |
 
@@ -399,6 +400,17 @@ See [§24](docs/24-war-council-scenario-planning-and-specialized-units.md).
 - **Source, Never Filter:** The state may publish an authoritative wire service, but is constitutionally prohibited from operating a monopoly content filter or owning media distribution channels.
 
 See [§25](docs/25-media-information-integrity-and-social-harm.md).
+
+## Non-cash penalties, restorative labor & anti-extortion enforcement
+
+§26 eliminates roadside shakedowns, "cooldrink money," and policing-for-profit through complete enforcement demonetization:
+- **Zero Roadside Cash:** Automatic felony offense for any patrol officer to carry or solicit cash on duty; digital/paper citations only.
+- **The "Sweat & Duty" Penalty Ladder:** Fines replaced by mandatory public labor (sewer and storm drain clearing, pothole patching, firebreak clearing).
+- **Victim Restitution:** 100% of assessed damages flow to the harmed victim (at 2.0x value); exactly 0% flows to police stations or municipal slush funds.
+- **Democratic Sortition Dispute Tribunal:** Contested citations decided by a 3-citizen random sortition jury; missing dashcam/bodycam footage results in automatic dismissal.
+- **Community Exile Protocol:** Irredeemable violent predation, armed treason, or refusal of restorative labor triggers community banishment upon a 75% Community Council supermajority vote.
+
+See [§26](docs/26-penalty-system-and-anti-extortion-enforcement.md).
 
 ## Honest positioning
 

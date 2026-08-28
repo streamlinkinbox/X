@@ -1,22 +1,26 @@
-"""National Media and Information Integrity Act: Sovereign Enforcement Framework.
+"""National Media and Information Integrity Act: Sovereign Enforcement Framework (Rev. 3).
 
 This module formalizes the statutory architecture of the National Media and Information
-Integrity Act (Rev. 2):
+Integrity Act (Rev. 3):
 1. ``DesignDoctrine`` -- Sovereign authority, enforcement precedes proclamation, elimination
    of administrative discretion, and the source-not-filter rule.
-2. ``EnforcementBodies`` -- The three independent statutory organs:
-   - Media Standards Authority (MSA)
-   - Information Integrity Inspectorate (III)
-   - Media Tribunal
-3. ``FundingFormula`` -- Ring-fenced percentage of broadcast fees and digital ad revenue levy.
-4. ``SanctionLadder`` -- 7-step mandatory, escalating, percentage-of-turnover penalties.
-5. ``ForeignPlatformLevers`` -- Enforcement at the money layer: local representative liability,
-   loss of domestic advertiser tax-deductibility, payment processor blocks, and zero network-layer blocking.
-6. ``PlatformAmplification`` -- "Hosting stays immune; amplification does not." 8 statutory platform duties.
-7. ``SyntheticProvenance`` -- Content credentials, synthetic labelling, and shifted burden of proof.
-8. ``StateConductDiscipline`` -- Formula-only state advertising, deemed-grant FOI, whistleblower protection,
-   anti-SLAPP shields, and anti-astroturfing criminalization.
-9. ``PhasedSequence`` -- 5-phase implementation sequencing (disciplining the state in Phase 1).
+2. ``SanctionsThatActuallyBite`` -- Replaces fines with sanctions that attack what media actors
+   actually want: reach, revenue continuity, and personal standing.
+3. ``NineStepSanctionLadder`` -- The 9-step mandatory, escalating, reach-and-revenue ladder:
+   - Step 1: Published finding
+   - Step 2: Equal-prominence and equal-reach correction
+   - Step 3: Disgorgement of revenue + statutory victim compensation
+   - Step 4: Algorithmic amplification suspension / prominence demotion
+   - Step 5: Monetization suspension (72h, 7d, 30d)
+   - Step 6: Independent compliance monitor at offender's cost
+   - Step 7: Personal disqualification of accountable individual (no indemnification)
+   - Step 8: Algorithmic feature suspension / operational suspension (product recall)
+   - Step 9: License revocation with principal bar
+4. ``DisgorgementVsFines`` -- Arithmetic revenue disgorgement + 100% direct victim compensation;
+   zero money into state slush funds.
+5. ``ForeignPlatformLevers`` -- Money layer enforcement: representative liability, tax deductibility
+   disallowance, payment processor settlement block, and zero network-layer filtering.
+6. ``StateConductDiscipline`` -- Formula-only state ads, deemed-grant FOI, anti-SLAPP, whistleblower shield.
 """
 
 from __future__ import annotations
@@ -27,12 +31,12 @@ from typing import Optional
 
 
 # --------------------------------------------------------------------------
-# 1. Statutory Enforcement Bodies & Funding
+# 1. Statutory Enforcement Bodies & Formula Funding
 # --------------------------------------------------------------------------
 
 
 class RegulatoryBodyType(str, Enum):
-    MSA = "media_standards_authority"             # Adjudicates content conduct; issues corrections & fines
+    MSA = "media_standards_authority"             # Adjudicates content conduct; issues reach/revenue sanctions
     III = "information_integrity_inspectorate"     # Technical audits, ranking verification, forensics
     TRIBUNAL = "media_tribunal"                   # Specialist fast-track judicial appeals
 
@@ -56,21 +60,21 @@ STATUTORY_BODIES: tuple[StatutoryBodySpec, ...] = (
         appointment_mechanism="Parliamentary supermajority from judicial, journalist, and public nominations",
         removal_mechanism="Judicial process for defined statutory cause only",
         primary_statutory_duties=(
-            "Adjudicate content-conduct breaches (courtroom, instructional, commercial)",
-            "Enforce equal-prominence corrections and right-of-reply orders",
-            "Impose percentage-of-turnover fines and broadcast license conditions",
+            "Adjudicate content-conduct breaches (courtroom, instructional, commercial deception)",
+            "Enforce equal-prominence and equal-reach corrections",
+            "Order revenue disgorgement, victim compensation, and monetization suspensions",
         ),
     ),
     StatutoryBodySpec(
         body_type=RegulatoryBodyType.III,
         name="Information Integrity Inspectorate (III)",
         board_term_years=6,
-        appointment_mechanism="Parliamentary supermajority; annual reporting to Parliament directly",
+        appointment_mechanism="Parliamentary supermajority; reports annually to Parliament directly",
         removal_mechanism="Judicial process for defined statutory cause only",
         primary_statutory_duties=(
             "Independent technical and algorithmic audit of platform ranking systems",
             "Forensic accounting and beneficial ownership verification",
-            "Evidence gathering and referral of commercial fraud to prosecution",
+            "Supervise compliance monitors and algorithmic feature suspensions",
         ),
     ),
     StatutoryBodySpec(
@@ -81,7 +85,7 @@ STATUTORY_BODIES: tuple[StatutoryBodySpec, ...] = (
         removal_mechanism="Standard judicial tenure protections",
         primary_statutory_duties=(
             "Fast-track appeals from MSA and III rulings (max 90-day determination)",
-            "Review of emergency public-interest overrides",
+            "Enforce compensation on wrongly imposed sanctions upon reversal",
             "Onward appeal to higher appellate courts as of right",
         ),
     ),
@@ -101,73 +105,108 @@ class StatutoryFundingFormula:
 
 
 # --------------------------------------------------------------------------
-# 2. The Seven-Step Mandatory Escalating Sanction Ladder
+# 2. Rev. 3: The 9-Step Sanction Ladder (Attacking Reach, Revenue & Position)
 # --------------------------------------------------------------------------
 
 
 class SanctionStep(int, Enum):
-    STEP_1_ADVISORY = 1       # Private advisory note
-    STEP_2_PUBLISHED_FINDING = 2 # Publicly published finding of breach
-    STEP_3_CORRECTION = 3     # Mandatory correction with equal prominence (same slot/duration)
-    STEP_4_TURNOVER_FINE = 4  # Statutory fine as a percentage of domestic turnover
-    STEP_5_LICENSE_CONDITION = 5 # Binding operational condition on broadcast/platform license
-    STEP_6_COMMERCIAL_SUSPENSION = 6 # Temporary suspension of monetization/commercial operations
-    STEP_7_LICENSE_REVOCATION = 7 # Full revocation of operating authorization
+    STEP_1_PUBLISHED_FINDING = 1              # Published finding in permanent public registry
+    STEP_2_EQUAL_REACH_CORRECTION = 2         # Forced correction at equal prominence & equal reach
+    STEP_3_DISGORGEMENT_COMPENSATION = 3      # Revenue disgorgement + 100% victim compensation
+    STEP_4_AMPLIFICATION_SUSPENSION = 4       # Barred from algorithmic promotion / prominence demotion
+    STEP_5_MONETIZATION_SUSPENSION = 5        # Temporary advertising & subscription monetization freeze
+    STEP_6_COMPLIANCE_MONITOR = 7             # External monitor installed at offender's expense
+    STEP_7_PERSONAL_DISQUALIFICATION = 7      # 1–5 yr industry ban for accountable named individual
+    STEP_8_ALGORITHMIC_FEATURE_SUSPENSION = 8 # Domestic feature suspension (platform product recall)
+    STEP_9_LICENSE_REVOCATION_PRINCIPAL_BAR = 9 # Full revocation + principal reincorporation bar
 
 
 @dataclass(frozen=True)
 class SanctionLadderSpec:
-    step: SanctionStep
+    step: int
     name: str
-    description: str
+    target_asset: str                         # "Audience / Reach", "Cash Flow / Revenue", "Personal Position", "Operations"
+    operational_action: str
+    trigger_condition: str
     is_automatic_on_repeat_breach: bool
     director_personal_liability: bool = False
 
 
-SANCTION_LADDER: tuple[SanctionLadderSpec, ...] = (
+REVISED_SANCTION_LADDER_REV3: tuple[SanctionLadderSpec, ...] = (
     SanctionLadderSpec(
-        step=SanctionStep.STEP_1_ADVISORY,
-        name="Advisory Note",
-        description="Confidential guidance notice for minor first-time procedural ambiguities",
-        is_automatic_on_repeat_breach=False,
-    ),
-    SanctionLadderSpec(
-        step=SanctionStep.STEP_2_PUBLISHED_FINDING,
+        step=1,
         name="Published Finding",
-        description="Public notice of breach entered into the permanent regulatory registry",
+        target_asset="Reputation / Record",
+        operational_action="Formal determination published on MSA registry and on outlet homepage for 7 days",
+        trigger_condition="First breach (minor or procedural)",
         is_automatic_on_repeat_breach=True,
     ),
     SanctionLadderSpec(
-        step=SanctionStep.STEP_3_CORRECTION,
-        name="Equal-Prominence Correction",
-        description="Mandatory correction published on the same page, slot, and duration within 48 hours",
+        step=2,
+        name="Equal-Prominence & Equal-Reach Correction",
+        target_asset="Audience / Reach",
+        operational_action="Mandatory correction in identical slot, duration, and verified audience size within 72h",
+        trigger_condition="First substantive factual or conduct breach",
         is_automatic_on_repeat_breach=True,
     ),
     SanctionLadderSpec(
-        step=SanctionStep.STEP_4_TURNOVER_FINE,
-        name="Percentage-of-Turnover Fine",
-        description="Fine calculated as 1% to 10% of gross domestic turnover (debt to state)",
+        step=3,
+        name="Revenue Disgorgement + Victim Compensation",
+        target_asset="Profit Motive & Victim Justice",
+        operational_action="100% of revenue earned from breach disgorged + statutory compensation paid to named victim",
+        trigger_condition="Any breach that earned commercial revenue or named an individual",
+        is_automatic_on_repeat_breach=True,
+    ),
+    SanctionLadderSpec(
+        step=4,
+        name="Amplification Suspension & Prominence Demotion",
+        target_asset="Audience / Reach",
+        operational_action="Barred from algorithmic recommendations and EPG preferential placement for 14–30 days",
+        trigger_condition="Repeat breach within 12 months",
+        is_automatic_on_repeat_breach=True,
+    ),
+    SanctionLadderSpec(
+        step=5,
+        name="Monetization Suspension",
+        target_asset="Cash Flow / Revenue Continuity",
+        operational_action="Total ban on domestic ad monetization and subscription processing for 72h, 7d, or 30d",
+        trigger_condition="Second repeat breach within 12 months",
         is_automatic_on_repeat_breach=True,
         director_personal_liability=True,
     ),
     SanctionLadderSpec(
-        step=SanctionStep.STEP_5_LICENSE_CONDITION,
-        name="Statutory License Condition",
-        description="Binding operational restriction or mandatory external audit compliance monitor",
+        step=6,
+        name="Compliance Monitor at Offender's Expense",
+        target_asset="Operational Autonomy",
+        operational_action="III-appointed independent monitor embedded in editorial/ranking process for 6–12 months",
+        trigger_condition="Third breach within 24 months",
         is_automatic_on_repeat_breach=True,
         director_personal_liability=True,
     ),
     SanctionLadderSpec(
-        step=SanctionStep.STEP_6_COMMERCIAL_SUSPENSION,
-        name="Commercial Suspension",
-        description="Temporary prohibition on accepting domestic ad spend or processing subscription revenue",
+        step=7,
+        name="Personal Disqualification (No Indemnification)",
+        target_asset="Personal Position & Career",
+        operational_action="Accountable editor/officer barred from media executive roles for 1–5 years; zero corporate indemnification",
+        trigger_condition="Deliberate falsification, obstruction, or fourth breach",
         is_automatic_on_repeat_breach=True,
         director_personal_liability=True,
     ),
     SanctionLadderSpec(
-        step=SanctionStep.STEP_7_LICENSE_REVOCATION,
-        name="License Revocation",
-        description="Permanent termination of broadcast spectrum or domestic commercial registration",
+        step=8,
+        name="Algorithmic Feature Suspension",
+        target_asset="Product Architecture",
+        operational_action="Domestic suspension of specific recommender algorithm feature (product recall)",
+        trigger_condition="Systemic algorithmic harm or audit refusal",
+        is_automatic_on_repeat_breach=True,
+        director_personal_liability=True,
+    ),
+    SanctionLadderSpec(
+        step=9,
+        name="License Revocation + Principal Bar",
+        target_asset="Corporate Existence",
+        operational_action="Permanent termination of broadcast spectrum / operating registration; principals barred from reincorporating",
+        trigger_condition="Persistent or egregious bad-faith defiance",
         is_automatic_on_repeat_breach=True,
         director_personal_liability=True,
     ),
@@ -175,7 +214,38 @@ SANCTION_LADDER: tuple[SanctionLadderSpec, ...] = (
 
 
 # --------------------------------------------------------------------------
-# 3. Foreign Platform Enforcement: The Money-Layer Strategy
+# 3. Disgorgement vs. Fines Model
+# --------------------------------------------------------------------------
+
+
+@dataclass(frozen=True)
+class DisgorgementAssessment:
+    commercial_revenue_earned_usd: float
+    statutory_multiplier: float = 1.5
+    victim_harm_compensation_usd: float = 10000.0
+    investigation_cost_recovery_usd: float = 5000.0
+
+    @property
+    def total_disgorgement_amount_usd(self) -> float:
+        # Removes the profit motive completely: revenue earned * multiplier
+        return self.commercial_revenue_earned_usd * self.statutory_multiplier
+
+    @property
+    def victim_allocation_usd(self) -> float:
+        # Paid 100% directly to the person harmed, 0% to state treasury slush funds
+        return self.victim_harm_compensation_usd
+
+    @property
+    def total_financial_liability_usd(self) -> float:
+        return (
+            self.total_disgorgement_amount_usd
+            + self.victim_allocation_usd
+            + self.investigation_cost_recovery_usd
+        )
+
+
+# --------------------------------------------------------------------------
+# 4. Foreign Platform Enforcement: The Money-Layer Strategy
 # --------------------------------------------------------------------------
 
 
@@ -183,14 +253,13 @@ SANCTION_LADDER: tuple[SanctionLadderSpec, ...] = (
 class ForeignPlatformEnforcementModel:
     mandatory_resident_legal_representative: bool = True
     representative_personal_liability_for_contempt: bool = True
-    ad_spend_tax_deductibility_disallowance: bool = True  # Domestic advertisers lose expense deduction
-    payment_processor_settlement_prohibition: bool = True # Banks blocked from settling domestic ad billing
+    ad_spend_tax_deductibility_disallowance: bool = True  # Domestic advertisers lose tax deduction
+    payment_processor_settlement_prohibition: bool = True # Banks blocked from settling ad billing
     withholding_tax_on_revenue_remittances: bool = True
     network_layer_packet_filtering_prohibited: bool = True # Zero ISP blocking/filtering
 
     @property
     def is_enforceable_without_foreign_treaty(self) -> bool:
-        # All levers operate domestically on tax, corporate, and payment networks
         return (
             self.mandatory_resident_legal_representative
             and self.ad_spend_tax_deductibility_disallowance
@@ -200,7 +269,7 @@ class ForeignPlatformEnforcementModel:
 
 
 # --------------------------------------------------------------------------
-# 4. Platform Amplification: "Hosting Immune; Amplification Accountable"
+# 5. Platform Amplification: "Hosting Immune; Amplification Accountable"
 # --------------------------------------------------------------------------
 
 
@@ -218,7 +287,7 @@ class PlatformStatutoryDuties:
 
 
 # --------------------------------------------------------------------------
-# 5. State Conduct Discipline: Disciplining the State First
+# 6. State Conduct Discipline: Disciplining the State First
 # --------------------------------------------------------------------------
 
 
@@ -235,17 +304,8 @@ class StateConductPolicy:
 
 
 # --------------------------------------------------------------------------
-# 6. Consolidated Content Policy Rules
+# 7. Consolidated Content Policy Rules
 # --------------------------------------------------------------------------
-
-
-class ContentTier(str, Enum):
-    TIER_A_INSTRUCTIONAL = "tier_a_instructional"
-    TIER_B_DEPICTIVE = "tier_b_depictive"
-    TIER_C_ASPIRATIONAL = "tier_c_aspirational"
-    COURT_PROCEDURE = "court_procedure"
-    GOVERNMENT_REPORTING = "government_reporting"
-    DISTRIBUTION_INFRASTRUCTURE = "distribution_pipe"
 
 
 class RestrictionStatus(str, Enum):
@@ -273,7 +333,7 @@ CONSOLIDATED_POLICY_MATRIX: tuple[ConsolidatedRule, ...] = (
     ConsolidatedRule(
         category="Perpetrator glorification, manifestos, mass-casualty fame",
         status=RestrictionStatus.RESTRICT,
-        enforcement_mechanism="MSA sanction ladder entering at Step 3 (Equal-Prominence Correction)",
+        enforcement_mechanism="MSA sanction ladder entering at Step 2 (Equal-Reach Correction)",
         rationale="Denies notoriety incentives; eliminates social learning reward model",
     ),
     ConsolidatedRule(
@@ -297,7 +357,7 @@ CONSOLIDATED_POLICY_MATRIX: tuple[ConsolidatedRule, ...] = (
     ConsolidatedRule(
         category="Undisclosed paid or financial promotion (crypto, forex, gambling)",
         status=RestrictionStatus.RESTRICT,
-        enforcement_mechanism="Turnover fines + asset forfeiture + platform joint liability",
+        enforcement_mechanism="Disgorgement (1.5x) + monetization freeze + joint platform liability",
         rationale="Eliminates predatory consumer deception and manufactured debt traps",
     ),
     ConsolidatedRule(
@@ -315,7 +375,7 @@ CONSOLIDATED_POLICY_MATRIX: tuple[ConsolidatedRule, ...] = (
     ConsolidatedRule(
         category="Algorithmic amplification systems of large platforms",
         status=RestrictionStatus.ACCOUNTABLE,
-        enforcement_mechanism="III annual ranking audits + systemic risk mitigation + turnover fines",
+        enforcement_mechanism="III ranking audits + systemic risk mitigation + feature suspensions",
         rationale="Hosting is passive and immune; amplification is editorial and accountable",
     ),
     ConsolidatedRule(
@@ -346,7 +406,7 @@ CONSOLIDATED_POLICY_MATRIX: tuple[ConsolidatedRule, ...] = (
 
 
 # --------------------------------------------------------------------------
-# 7. Phased Implementation Sequence
+# 8. Phased Implementation Sequence
 # --------------------------------------------------------------------------
 
 

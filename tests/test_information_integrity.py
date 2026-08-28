@@ -1,18 +1,18 @@
-"""Tests for National Media and Information Integrity Act Framework (§25)."""
+"""Tests for National Media and Information Integrity Act Framework (Rev. 3) (§25)."""
 
 import pytest
 
 from model.rcu.information_integrity import (
     CONSOLIDATED_POLICY_MATRIX,
     IMPLEMENTATION_PHASES,
-    SANCTION_LADDER,
+    REVISED_SANCTION_LADDER_REV3,
     STATUTORY_BODIES,
     ConsolidatedRule,
+    DisgorgementAssessment,
     ForeignPlatformEnforcementModel,
     PlatformStatutoryDuties,
     RegulatoryBodyType,
     RestrictionStatus,
-    SanctionStep,
     StateConductPolicy,
     StatutoryFundingFormula,
 )
@@ -36,23 +36,40 @@ def test_statutory_bodies_and_formula_funding():
     assert funding.annual_ministerial_budget_discretion is False
 
 
-def test_sanction_ladder_automatic_escalation():
-    assert len(SANCTION_LADDER) == 7
-    steps = [s.step for s in SANCTION_LADDER]
-    assert steps == [
-        SanctionStep.STEP_1_ADVISORY,
-        SanctionStep.STEP_2_PUBLISHED_FINDING,
-        SanctionStep.STEP_3_CORRECTION,
-        SanctionStep.STEP_4_TURNOVER_FINE,
-        SanctionStep.STEP_5_LICENSE_CONDITION,
-        SanctionStep.STEP_6_COMMERCIAL_SUSPENSION,
-        SanctionStep.STEP_7_LICENSE_REVOCATION,
-    ]
+def test_revised_sanction_ladder_rev3():
+    assert len(REVISED_SANCTION_LADDER_REV3) == 9
+    steps = [s.step for s in REVISED_SANCTION_LADDER_REV3]
+    assert steps == [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-    # Repeat breaches from step 2 onward trigger automatic escalation
-    for s in SANCTION_LADDER:
-        if s.step >= SanctionStep.STEP_2_PUBLISHED_FINDING:
-            assert s.is_automatic_on_repeat_breach is True
+    # Check Step 2 is Equal-Prominence Correction
+    step2 = next(s for s in REVISED_SANCTION_LADDER_REV3 if s.step == 2)
+    assert "Correction" in step2.name
+    assert step2.target_asset == "Audience / Reach"
+
+    # Check Step 3 is Disgorgement + Victim Compensation
+    step3 = next(s for s in REVISED_SANCTION_LADDER_REV3 if s.step == 3)
+    assert "Disgorgement" in step3.name
+
+    # Check Step 7 is Personal Disqualification (No indemnification)
+    step7 = next(s for s in REVISED_SANCTION_LADDER_REV3 if s.step == 7)
+    assert "Personal Disqualification" in step7.name
+    assert step7.director_personal_liability is True
+
+    # Check Step 8 is Algorithmic Feature Suspension
+    step8 = next(s for s in REVISED_SANCTION_LADDER_REV3 if s.step == 8)
+    assert "Algorithmic Feature Suspension" in step8.name
+
+
+def test_disgorgement_vs_fines_allocation():
+    disg = DisgorgementAssessment(
+        commercial_revenue_earned_usd=100_000.0,
+        statutory_multiplier=1.5,
+        victim_harm_compensation_usd=25_000.0,
+        investigation_cost_recovery_usd=5_000.0,
+    )
+    assert disg.total_disgorgement_amount_usd == 150_000.0
+    assert disg.victim_allocation_usd == 25_000.0
+    assert disg.total_financial_liability_usd == 180_000.0
 
 
 def test_foreign_platform_money_layer_enforcement():

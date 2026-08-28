@@ -959,23 +959,33 @@ Dual-use plants (everyday demand keeps them alive until needed):
 
 | Statutory body | Mandate & primary function | Governance & appointment insulation |
 |---|---|---|
-| **Media Standards Authority (MSA)** | Adjudicate content-conduct breaches (courtroom, instructional, commercial) | 6-yr terms; Parliamentary supermajority from judicial, jo... |
-| **Information Integrity Inspectorate (III)** | Independent technical and algorithmic audit of platform ranking systems | 6-yr terms; Parliamentary supermajority; annual reporting... |
+| **Media Standards Authority (MSA)** | Adjudicate content-conduct breaches (courtroom, instructional, commercial deception) | 6-yr terms; Parliamentary supermajority from judicial, jo... |
+| **Information Integrity Inspectorate (III)** | Independent technical and algorithmic audit of platform ranking systems | 6-yr terms; Parliamentary supermajority; reports annually... |
 | **Media Tribunal** | Fast-track appeals from MSA and III rulings (max 90-day determination) | 6-yr terms; Specialist judges within ordinary judiciary... |
 
 *Statutory Funding Independence:* Ring-fenced formula (**15% broadcast license fee levy + 2% digital ad turnover levy**); zero annual ministerial budget discretion.
 
-### The 7-step mandatory escalating sanction ladder
+### The 9-step revised sanction ladder (Attacking Reach, Revenue & Position)
 
-| Step | Sanction level | Operational enforcement action | Automatic repeat escalation |
+| Step | Sanction name | Target asset | Operational enforcement action | Repeat trigger |
+|---|---|---|---|---|
+| **Step 1** | **Published Finding** | Reputation / Record | Formal determination published on MSA registr... | **Automatic** |
+| **Step 2** | **Equal-Prominence & Equal-Reach Correction** | Audience / Reach | Mandatory correction in identical slot, durat... | **Automatic** |
+| **Step 3** | **Revenue Disgorgement + Victim Compensation** | Profit Motive & Victim Justice | 100% of revenue earned from breach disgorged ... | **Automatic** |
+| **Step 4** | **Amplification Suspension & Prominence Demotion** | Audience / Reach | Barred from algorithmic recommendations and E... | **Automatic** |
+| **Step 5** | **Monetization Suspension** | Cash Flow / Revenue Continuity | Total ban on domestic ad monetization and sub... | **Automatic** |
+| **Step 6** | **Compliance Monitor at Offender's Expense** | Operational Autonomy | III-appointed independent monitor embedded in... | **Automatic** |
+| **Step 7** | **Personal Disqualification (No Indemnification)** | Personal Position & Career | Accountable editor/officer barred from media ... | **Automatic** |
+| **Step 8** | **Algorithmic Feature Suspension** | Product Architecture | Domestic suspension of specific recommender a... | **Automatic** |
+| **Step 9** | **License Revocation + Principal Bar** | Corporate Existence | Permanent termination of broadcast spectrum /... | **Automatic** |
+
+### Disgorgement vs. fine revenue allocation
+
+| Financial component | Assessment basis | Beneficiary | Systemic impact |
 |---|---|---|---|
-| **Step 1** | **Advisory Note** | Confidential guidance notice for minor first-time procedural ambiguities | Discretionary |
-| **Step 2** | **Published Finding** | Public notice of breach entered into the permanent regulatory registry | **YES (Automatic)** |
-| **Step 3** | **Equal-Prominence Correction** | Mandatory correction published on the same page, slot, and duration within 48 hours | **YES (Automatic)** |
-| **Step 4** | **Percentage-of-Turnover Fine** | Fine calculated as 1% to 10% of gross domestic turnover (debt to state) | **YES (Automatic)** |
-| **Step 5** | **Statutory License Condition** | Binding operational restriction or mandatory external audit compliance monitor | **YES (Automatic)** |
-| **Step 6** | **Commercial Suspension** | Temporary prohibition on accepting domestic ad spend or processing subscription revenue | **YES (Automatic)** |
-| **Step 7** | **License Revocation** | Permanent termination of broadcast spectrum or domestic commercial registration | **YES (Automatic)** |
+| Commercial Revenue Disgorgement | **$150,000** (1.5x multiplier) | Escrow Trust Fund | Strips all profit motive from illegal promotion |
+| Victim Direct Compensation | **$25,000** (100% direct) | Named Victims / Persons | Compensates harmed individuals on statutory scale |
+| State Slush Fund Allocation | **$0.00 (0.0%)** | None | **Eliminates state incentive for regulatory shakedowns** |
 
 ### Foreign platform enforcement at the money layer
 
@@ -1019,10 +1029,10 @@ Dual-use plants (everyday demand keeps them alive until needed):
 | Courtroom live broadcast and crime-sce... | **RESTRICT** | Court procedure contempt rul... | Protects judicial truth-seeking fro... |
 | Naming suspects before formal charge; ... | **RESTRICT** | MSA sanction ladder + statut... | Preserves presumption of innocence ... |
 | Prejudicial commentary on live proceed... | **RESTRICT** | Contempt of court applied by... | Prevents trial by media and jury/wi... |
-| Undisclosed paid or financial promotio... | **RESTRICT** | Turnover fines + asset forfe... | Eliminates predatory consumer decep... |
+| Undisclosed paid or financial promotio... | **RESTRICT** | Disgorgement (1.5x) + moneti... | Eliminates predatory consumer decep... |
 | Unlabelled synthetic media in politics... | **RESTRICT** | Criminal offense for imperso... | Shifts default from 'prove it is fa... |
 | Incitement to violence (two-limb test:... | **RESTRICT** | Ordinary criminal courts app... | Both intent and real likelihood req... |
-| Algorithmic amplification systems of l... | **ACCOUNTABLE** | III annual ranking audits + ... | Hosting is passive and immune; ampl... |
+| Algorithmic amplification systems of l... | **ACCOUNTABLE** | III ranking audits + systemi... | Hosting is passive and immune; ampl... |
 | Fiction depicting wrongdoing with narr... | **DO_NOT_RESTRICT** | Voluntary age classification... | Preserves moral literature and caut... |
 | Honest depiction of wealth and diverse... | **DO_NOT_RESTRICT** | Curricular media and financi... | Critical education is durable; hidi... |
 | Investigative reporting on government ... | **NEVER_RESTRICT** | Constitutional press shield ... | Primary instrument of anti-corrupti... |
@@ -1037,4 +1047,42 @@ Dual-use plants (everyday demand keeps them alive until needed):
 | **Phase 3** | 24–36 mo | **Platform Amplification & Money-Layer Foreign Levers** | Mandate local resident legal representatives for foreign platforms |
 | **Phase 4** | 36–48 mo | **Provenance, Synthetic Media & Consequence Layer** | Deploy content credentials standards on editing tools and platforms |
 | **Phase 5** | Continuous | **Accountability Audits & 5-Year Sunset Review** | Publish annual enforcement reports detailing all sanctions and appeals |
+
+## A.22 Non-Cash Penalties, Restorative Labor, and Anti-Extortion Enforcement
+
+### The 4-Tier 'Sweat & Duty' Non-Cash Penalty Ladder
+
+| Tier | Offense category | Public labor duty | Labor hours | Vehicle impound | Exile applicable? |
+|---|---|---|---|---|---|
+| **Tier 1: Minor Civic Infractions** | Speeding, signal violation, ille... | `sewer_and_drain_clearing` | 4–8 hrs (6 nom) | 0 days | No |
+| **Tier 2: Reckless / Disruption** | Reckless/drunk driving, street f... | `road_and_pothole_repair` | 16–40 hrs (24 nom) | 30 days | No |
+| **Tier 3: Predatory Crime** | Theft, burglary, commercial frau... | `supervised_guild_restoration` | 100–300 hrs (200 nom) | 90 days | No |
+| **Tier 4: Extreme Predation & Officer Extortion** | Police bribe solicitation, armed... | `sewer_and_drain_clearing` | 500–2000 hrs (1000 nom) | 365 days | **YES (Council 75%)** |
+
+### Restitution allocation (100% to Victims, 0% to Police)
+
+| Recipient entity | Allocation share | Sample allocation (1,000 RCU Damage) | Policy rationale |
+|---|---|---|---|
+| **Harmed Victim** | **100.0%** | **2,000 RCU** (2.0x damage) | Restores property loss and emotional disruption directly |
+| **Police Department** | **0.0%** | **0 RCU** | **Eliminates policing-for-profit and roadside quota hunting** |
+| **Municipal Slush Fund** | **0.0%** | **0 RCU** | Prevents administrative budget reliance on citations |
+
+### Six statutory anti-extortion locks
+
+| Anti-extortion lock | Statutory rule | Anti-bribery mechanism |
+|---|---|---|
+| Officer Cash Possession | **Automatic felony offense** | Prevents patrol officers carrying or accepting money on duty |
+| Roadside Cash Collections | **Strictly prohibited** | No fine payment can ever occur at the scene of an infraction |
+| Evidence Prerequisite | **Mandatory dashcam / bodycam** | Citations missing timestamped video are **automatically dismissed** |
+| Bribe Reverse Bounty | **500 RCU to citizen** | Paid from corrupt officer's forfeited integrity bond |
+| Quota Anomaly Detection | **Active algorithmic monitoring** | RAB flags choke points with $>70\%$ citation dismissal rates |
+| Mandatory Patrol Rotation | **Every 6 months** | Prevents establishment of entrenched roadside toll cartels |
+
+### 3-Citizen sortition dispute tribunal
+
+| Dispute condition | Sortition jury rule | Outcome & disciplinary action |
+|---|---|---|
+| Missing dashcam footage | Automatic dismissal with prejudice | Citation voided; citing officer flagged for disciplinary review |
+| Contested citation with footage | 3-citizen random sortition panel | Majority vote (2 of 3) decides factual guilt or dismissal |
+| Unjustified harassment proven | Immediate dismissal | Offender exonerated; officer cited for abusive enforcement |
 
