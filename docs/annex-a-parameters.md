@@ -781,3 +781,53 @@ Dual-use plants (everyday demand keeps them alive until needed):
 | Exclusive import licensing | **Strictly prohibited (0%)** | Open market competition default across all goods |
 | Family separation rule | Zero close relatives in domain | Prevents nepotistic procurement and grant looting |
 
+## A.18 Research and Analysis Bureau (RAB)
+
+### The five analytical divisions
+
+| Division | Mandate | Primary deliverable |
+|---|---|---|
+| **Forensic Audit Division** | Scans financial, transactional, and warehouse... | Monthly Named Fraud Alerts (forwarded to Justice) |
+| **Economic Analysis Division** | Monitors macroeconomic health, circulation ve... | Monthly Public Economic Dashboard |
+| **Human Capital Division** | Evaluates performance of coordinators, master... | Quarterly Leadership Scorecards |
+| **Reform Design Division** | Designs actionable, evidence-based structural... | Costed Multi-Department Reform Proposals |
+| **Science & Technology Division** | Conducts applied research on agricultural res... | Locally Adapted Crop Seeds and Pest Solutions |
+
+### RAB lean staffing model (10,000 population)
+
+| Role | Headcount | Functional scope |
+|---|---|---|
+| Chief Analyst | 1 | Bureau leadership; 2-year mandatory rotation |
+| Senior Analysts | 6 | Division leads across 5 operational branches |
+| Junior Analysts | 14 | Data synthesis, telemetry logging, report drafting |
+| Field Data Collectors | 18 | Physical counts, soil/grain sampling, surveys |
+| Applied Researchers | 8 | Lab assays, metallurgy, agriscience trials |
+| **Total RAB Staff** | **47** | **0.47% of population** |
+
+### Cross-silo correlation & anomaly detection
+
+| Investigation metric | Value | Operational meaning |
+|---|---|---|
+| Anomaly data points | 3 / 3 | Multi-silo correlation |
+| Departments involved | 3 | Cross-departmental synthesis |
+| Systemic threat score | **1.00 / 1.00** | High severity collusion risk |
+| Justice referral | **TRIGGERED** | Direct handover to Steward of Justice |
+
+### Economic early warning thresholds
+
+| Risk metric | Red line threshold | Current status |
+|---|---|---|
+| Top 10% currency concentration | $> 30.0\%$ wealth share | 28.0% (Normal) |
+| Single-resource export reliance | $> 30.0\%$ trade revenue | 22.0% (Normal) |
+| Timber extraction vs replanting | Ratio $> 1.00$ | 0.80 (Normal) |
+
+### Constitutional safeguards on the RAB
+
+| Constitutional check | Rule | Purpose |
+|---|---|---|
+| Police / Arrest power | **Zero power (Prohibited)** | Prevents transformation into secret police |
+| Data classification | **Public by default** | Open access for all community members |
+| Chief Analyst tenure | **2 years max** | Prevents entrenched intelligence baron |
+| Analyst maximum tenure | **5 years max** | Mandatory return to productive guild work |
+| External audit | **Mandatory annual review** | Independent validation of algorithms and data |
+

@@ -89,6 +89,17 @@ from model.rcu.integrity import (  # noqa: E402
     RevenueDiversification,
     ShadowLeaderProbation,
 )
+from model.rcu.rab import (  # noqa: E402
+    RAB_DIVISIONS,
+    CrossDepartmentInvestigation,
+    DivisionType,
+    EconomicEarlyWarningSystem,
+    RABAccountabilityPolicy,
+    RABStaffing,
+    ReformProject,
+    ReformStage,
+    SiloDataPoint,
+)
 from model.rcu.security import (  # noqa: E402
     ArmouryPolicy,
     audit_effort_curve,
@@ -1011,6 +1022,68 @@ def table_integrity() -> None:
     )
 
 
+def table_rab() -> None:
+    W("## A.18 Research and Analysis Bureau (RAB)\n\n")
+
+    W("### The five analytical divisions\n\n")
+    W("| Division | Mandate | Primary deliverable |\n|---|---|---|\n")
+    for d in RAB_DIVISIONS:
+        W(
+            f"| **{d.name}** | {d.mandate[:45]}... | {d.primary_deliverables[0]} |\n"
+        )
+    W("\n")
+
+    W("### RAB lean staffing model (10,000 population)\n\n")
+    staff = RABStaffing(population=10000)
+    W(
+        f"| Role | Headcount | Functional scope |\n|---|---|---|\n"
+        f"| Chief Analyst | {staff.chief_analysts} | Bureau leadership; 2-year mandatory rotation |\n"
+        f"| Senior Analysts | {staff.senior_analysts} | Division leads across 5 operational branches |\n"
+        f"| Junior Analysts | {staff.junior_analysts} | Data synthesis, telemetry logging, report drafting |\n"
+        f"| Field Data Collectors | {staff.data_collectors} | Physical counts, soil/grain sampling, surveys |\n"
+        f"| Applied Researchers | {staff.field_researchers} | Lab assays, metallurgy, agriscience trials |\n"
+        f"| **Total RAB Staff** | **{staff.total_staff}** | **{float(staff.staff_share_of_population) * 100:.2f}% of population** |\n\n"
+    )
+
+    W("### Cross-silo correlation & anomaly detection\n\n")
+    inv = CrossDepartmentInvestigation(
+        investigation_id="SAMPLE-INV-001",
+        data_points=(
+            SiloDataPoint("Treasury/Warehouse", "Grain Spoilage", True, "Warehouse 7 reporting 15% loss vs 3% avg"),
+            SiloDataPoint("Inspectorate", "Grade Variance", True, "Inspector X consistently approved high grades"),
+            SiloDataPoint("Civil Registry", "Kinship Link", True, "Manager is Inspector X brother-in-law"),
+        ),
+        kinship_or_collusion_flag=True,
+    )
+    W(
+        f"| Investigation metric | Value | Operational meaning |\n|---|---|---|\n"
+        f"| Anomaly data points | {inv.anomaly_count} / {len(inv.data_points)} | Multi-silo correlation |\n"
+        f"| Departments involved | {len(inv.departments_involved)} | Cross-departmental synthesis |\n"
+        f"| Systemic threat score | **{inv.systemic_threat_score:.2f} / 1.00** | High severity collusion risk |\n"
+        f"| Justice referral | **{'TRIGGERED' if inv.triggers_formal_justice_referral else 'Monitored'}** | Direct handover to Steward of Justice |\n\n"
+    )
+
+    W("### Economic early warning thresholds\n\n")
+    ews = EconomicEarlyWarningSystem(0.28, 0.18, 0.22, 0.05, 0.80)
+    W(
+        f"| Risk metric | Red line threshold | Current status |\n|---|---|---|\n"
+        f"| Top 10% currency concentration | $> 30.0\%$ wealth share | {ews.top_10_pct_wealth_share * 100:.1f}% ({'**ALERT**' if ews.wealth_inequality_alert else 'Normal'}) |\n"
+        f"| Single-resource export reliance | $> 30.0\%$ trade revenue | {ews.single_resource_dependence * 100:.1f}% ({'**ALERT**' if ews.resource_curse_alert else 'Normal'}) |\n"
+        f"| Timber extraction vs replanting | Ratio $> 1.00$ | {ews.timber_depletion_vs_replant:.2f} ({'**ALERT**' if ews.ecological_depletion_alert else 'Normal'}) |\n\n"
+    )
+
+    W("### Constitutional safeguards on the RAB\n\n")
+    pol = RABAccountabilityPolicy()
+    W(
+        f"| Constitutional check | Rule | Purpose |\n|---|---|---|\n"
+        f"| Police / Arrest power | **Zero power (Prohibited)** | Prevents transformation into secret police |\n"
+        f"| Data classification | **Public by default** | Open access for all community members |\n"
+        f"| Chief Analyst tenure | **{pol.chief_analyst_rotation_years} years max** | Prevents entrenched intelligence baron |\n"
+        f"| Analyst maximum tenure | **{pol.analyst_max_tenure_years} years max** | Mandatory return to productive guild work |\n"
+        f"| External audit | **Mandatory annual review** | Independent validation of algorithms and data |\n\n"
+    )
+
+
 def main() -> None:
     header()
     table_classes()
@@ -1030,6 +1103,7 @@ def main() -> None:
     table_military()
     table_governance()
     table_integrity()
+    table_rab()
 
 
 if __name__ == "__main__":

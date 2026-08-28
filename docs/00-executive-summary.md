@@ -365,6 +365,22 @@ accusations, and single-commodity Dutch Disease:
 - **Anti-Monopoly Caps:** Outlaws exclusive import charters (e.g., car import
   monopolies) and enforces a strict **20% single-entity market cap**.
 
+## Intelligence: the Research & Analysis Bureau (RAB)
+
+§22 models the central analytical organ connecting departmental data into systemic reform:
+
+- **The Missing Organ:** Connects siloed reports (police crimes, warehouse inventory,
+  apprentice test scores, clinic recoveries, soil tests) into a cohesive operational picture.
+- **Five Specialized Divisions:** Forensic Audit (corruption hunters), Economic
+  Analysis (macroeconomic doctors), Human Capital (difficulty-adjusted talent
+  evaluators), Reform Design (closed-loop 6-stage system fixers), and Science &
+  Technology (applied indigenous research).
+- **Lean Cadre:** **35–55 total staff per 10,000 population** ($\approx 0.47\%$),
+  combining cross-domain senior masters with advanced 4th-year apprentices.
+- **Watching the Watchers:** Strictly **zero arrest or police powers**, public
+  open data by default, **2-year Chief Analyst rotation**, and mandatory annual
+  external audits by federated community teams.
+
 ## What this system cannot do
 
 Stated plainly, because a blueprint that only lists strengths is marketing:
@@ -412,6 +428,7 @@ Stated plainly, because a blueprint that only lists strengths is marketing:
 | [`19-military-doctrine.md`](19-military-doctrine.md) | **Citizen militia, asymmetric defense, asset neutralization** |
 | [`20-competence-council-and-departmental-policing.md`](20-competence-council-and-departmental-policing.md) | **Competence Council governance, departmental policing, measurement** |
 | [`21-anti-corruption-and-resource-curse-prevention.md`](21-anti-corruption-and-resource-curse-prevention.md) | **Anti-corruption, difficulty diagnostics, resource curse prevention** |
+| [`22-research-and-analysis-bureau.md`](22-research-and-analysis-bureau.md) | **Research and Analysis Bureau (RAB), cross-silo intelligence, reform** |
 | [`annex-a-parameters.md`](annex-a-parameters.md) | Generated tables: all parameters and stress results |
 | [`annex-b-open-problems.md`](annex-b-open-problems.md) | Unsolved problems, ranked by how badly they hurt |
 

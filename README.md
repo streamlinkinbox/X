@@ -58,6 +58,7 @@ the five model findings that change the original design.
 | [19 Military doctrine](docs/19-military-doctrine.md) | **Citizen militia, asymmetric defense, asset neutralization** |
 | [20 Competence Council](docs/20-competence-council-and-departmental-policing.md) | **Merit governance, departmental policing, measurement bureaus** |
 | [21 Anti-corruption](docs/21-anti-corruption-and-resource-curse-prevention.md) | **Difficulty diagnostics, shadow succession, resource curse** |
+| [22 Research & Analysis Bureau](docs/22-research-and-analysis-bureau.md) | **Cross-silo intelligence, 5 divisions, closed-loop reform** |
 | [Annex A](docs/annex-a-parameters.md) | **Generated** parameter and stress tables |
 | [Annex B](docs/annex-b-open-problems.md) | Unsolved problems, ranked by severity |
 
@@ -326,6 +327,29 @@ accusations, and Dutch Disease:
 | **Import monopolies** | Exclusive licensing charters (Cars, cement) | **Zero exclusive licensing & 20% market cap:** competition is mandatory default |
 
 See [§21](docs/21-anti-corruption-and-resource-curse-prevention.md).
+
+## Intelligence: the Research & Analysis Bureau (RAB)
+
+§22 formalizes the state's central analytical organ: **the brain that connects
+siloed departmental data into systemic reform.**
+
+```
+       DEPARTMENTS (Data) ──► RAB (Synthesis) ──► REFORM DESIGN (Solutions)
+              ▲                                              │
+              └────────────── COUNCIL RATIFICATION ──────────┘
+```
+
+| Division | Function | Deliverable |
+|---|---|---|
+| **Forensic Audit** | Scans transactions, inventory, and grading variance | Monthly Named Fraud Alerts to Justice |
+| **Economic Analysis** | Monitors velocity, quotas, trade windows, and wealth concentration | Monthly Public Economic Dashboard & 6–12 mo Early Warnings |
+| **Human Capital** | Difficulty-adjusted evaluation of leaders, educators, and apprentices | Quarterly Leadership Scorecards & Recall Alerts |
+| **Reform Design** | Translates anomalies into costed, actionable 6-stage solutions | Pilot-tested cross-department structural reforms |
+| **Science & Tech** | Applied local research (seeds, herbal assays, metallurgy, microgrids) | 4th-year apprentice research integration & domestic IP |
+
+Staffed by **35–55 analysts per 10k population**, bounded by **zero arrest powers,
+public open data, 2-year leadership rotation, and annual external audits**.
+See [§22](docs/22-research-and-analysis-bureau.md).
 
 ## Honest positioning
 

@@ -486,6 +486,31 @@ comparative baseline.
 
 ---
 
+## P18. Epistemic capture and analyst bias in central intelligence synthesis
+
+**Severity: medium-high. Analytical vulnerability.**
+
+Because the Research & Analysis Bureau (§22) sits at the nexus of all
+departmental data streams, it risks developing **technocratic insularity,
+confirmation bias, or analytical capture.** If a small clique of senior analysts
+develops dogmatic statistical models or quietly favors specific guild factions,
+their reports could misdiagnose crises or suppress unconventional grassroots
+solutions.
+
+**Mitigation:**
+- **Zero enforcement power (§22.2):** The RAB can only recommend and alert; it
+  cannot enforce decrees, execute arrests, or block council deliberations.
+- **Radical public open data:** All raw data and analytical models are public,
+  enabling independent guild masters, apprentices, and citizens to audit RAB code
+  and replicate findings.
+- **2-Year leadership rotation & 5-Year analyst term limits:** Mandatory return
+  to physical guild production prevents the formation of an entrenched
+  technocratic class.
+- **Annual external peer audit:** Independent analytical teams from federated
+  districts audit methodologies, algorithms, and investigative accuracy.
+
+---
+
 ## Summary
 
 | # | Problem | Severity | Status |
@@ -507,6 +532,7 @@ comparative baseline.
 | P15 | Asymmetric defense escalation and adaptation | **High (new)** | Subterranean hardening + Ghost doctrine; political exhaustion is required |
 | P16 | Peer selection cartels and guild conservatism | **Medium-High (new)** | Mitigated by objective ledger filters, 1-yr probation, and sortition juries |
 | P17 | Cross-regional comparative benchmarking data reliability | **Medium (new)** | Satellite/NDVI telemetry + multi-year local baseline calibration |
+| P18 | Epistemic capture and analyst bias in central intelligence | **Medium-High (new)** | Open data + 2-yr rotation + 5-yr analyst term limits + external audits |
 
 **The three at the top are not reasons to abandon the design.** They are the
 reasons a pilot exists — and a pilot that is not explicitly built to test
