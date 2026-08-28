@@ -625,6 +625,37 @@ the community faces two enforcement risks:
 
 ---
 
+### P23: Zero-interest capital allocation queues and credit rationing
+
+**Severity: medium-high. Economic rationing vulnerability.**
+
+When compound interest is abolished ($I=0.0\%$) and advances for housing, vehicles,
+and farm tools charge zero usury (§27.6), the demand for zero-interest resource
+advances will naturally exceed the available physical capital buffer at any given
+moment. In capitalist markets, high interest rates ration credit by pricing out
+poorer borrowers. In a zero-interest sovereign system, credit cannot be rationed
+by price, creating two structural risks:
+1. **Queuing Bottlenecks & Bureaucratic Favoritism:** Without an interest rate,
+   who decides whether Farmer A gets the utility tractor or Builder B gets the
+   timber advance first? Stewards or cooperative managers might favor relatives,
+   political allies, or senior guild masters.
+2. **Capital Hoarding & Over-Requisition:** Because holding capital advances carries
+   no interest penalty, enterprises may request more tools or building supplies
+   than they can actively deploy.
+
+**Mitigation:**
+- **Productive Capacity & Readiness Audits (§17, §22):** Capital advances are
+  allocated based on verified material readiness (e.g. land prepared, crew
+  certified, foundation poured) rather than subjective requests.
+- **Sortition-Audited Queue Priorities (§20):** Waiting lists for vehicles and
+  housing advances are publicly logged on the tamper-proof ledger; queue order
+  deviations require sortition jury approval.
+- **Resource Utilization Clocks:** Advanced machinery and vehicles carry minimum
+  active monthly operating hour requirements; idle equipment is automatically
+  reassigned to the next producer in the queue.
+
+---
+
 ## Summary
 
 | # | Problem | Severity | Status |
@@ -651,6 +682,7 @@ the community faces two enforcement risks:
 | P20 | Specialized unit operational drift & warrior elitism | **Medium-High (new)** | Mandatory 3-yr civilian return + uniform parity + apprentice teaching |
 | P21 | Cryptographic wire provenance vs viral gossip cascades | **Medium (new)** | Ed25519 signing + rapid press verification + physical seal notice boards |
 | P22 | Community labor evasion and exile border friction | **Medium-High (new)** | Healer audits + auto-escalation + CIS border alerts & extradition compacts |
+| P23 | Zero-interest capital allocation queues & rationing | **Medium-High (new)** | Readiness audits + public sortition queues + utilization clocks |
 
 **The three at the top are not reasons to abandon the design.** They are the
 reasons a pilot exists — and a pilot that is not explicitly built to test

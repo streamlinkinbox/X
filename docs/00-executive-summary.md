@@ -469,6 +469,28 @@ the total demonetization of law enforcement:
   predation, armed treason, or willful refusal of restorative labor, requiring a
   **75% Community Council supermajority vote**.
 
+## Abolishing debt-based & subscription extraction: direct physical provisioning
+
+§27 eliminates the parasitic financial middleman layer (commercial medical aid,
+private insurance, speculative pensions, usurious loans, and sovereign debt):
+
+- **Claims vs. Real Wealth:** Prohibits financialized claims multiplying faster than
+  real production. Money represents physical goods and verified labor, not private
+  claims on future survival.
+- **Healthcare & Legal Defense:** 100% direct public and guild provisioning (§14, §15)
+  with 90-day physical drug stockpiles (§16); zero medical aid debit orders, zero hourly legal fees.
+- **Disaster Risk Pooling:** Replaces private insurance adjusters and claim denials
+  with physical commodity mutual reserve pools (timber, stone, seed) mobilizing
+  guild reconstruction within 48 hours (§02, §23).
+- **Master-Apprentice Elder Security:** Replaces crash-prone speculative pension funds
+  with guaranteed monthly physical commodity rations (grains, oil, fuel, housing, care)
+  funded directly by active guild output.
+- **Zero-Interest Advances (Housing, Vehicles, Tools):** Borrowers repay the exact
+  principal advanced ($I=0.0\%$). Installments flexible on hardship; zero compound
+  interest; zero foreclosure/seizure of primary family homes; zero inherited debt.
+- **The Decisive Access Test:** *"Does the system provide direct physical access to
+  necessities — or merely a more sophisticated mechanism to charge people?"*
+
 ## What this system cannot do
 
 Stated plainly, because a blueprint that only lists strengths is marketing:
@@ -521,6 +543,7 @@ Stated plainly, because a blueprint that only lists strengths is marketing:
 | [`24-war-council-scenario-planning-and-specialized-units.md`](24-war-council-scenario-planning-and-specialized-units.md) | **War Council, Scenario Planning, and Specialized Strike Units** |
 | [`25-media-information-integrity-and-social-harm.md`](25-media-information-integrity-and-social-harm.md) | **Media, Information Integrity, and Social Harm** |
 | [`26-penalty-system-and-anti-extortion-enforcement.md`](26-penalty-system-and-anti-extortion-enforcement.md) | **Non-Cash Penalties, Restorative Labor, and Anti-Extortion Enforcement** |
+| [`27-abolishing-debt-and-subscription-systems.md`](27-abolishing-debt-and-subscription-systems.md) | **Abolishing Debt-Based and Subscription-Based Systems** |
 | [`annex-a-parameters.md`](annex-a-parameters.md) | Generated tables: all parameters and stress results |
 | [`annex-b-open-problems.md`](annex-b-open-problems.md) | Unsolved problems, ranked by how badly they hurt |
 

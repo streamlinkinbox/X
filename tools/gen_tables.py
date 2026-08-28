@@ -146,6 +146,14 @@ from model.rcu.penalties import (  # noqa: E402
     PenaltyTier,
     RestitutionAccounting,
 )
+from model.rcu.debt_and_subscriptions import (  # noqa: E402
+    DecisiveAccessTest,
+    ElderCareStipend,
+    FinancialSector,
+    MechanismComparison,
+    SECTOR_COMPARISONS,
+    ZeroInterestAdvance,
+)
 from model.rcu.security import (  # noqa: E402
     ArmouryPolicy,
     audit_effort_curve,
@@ -1371,6 +1379,54 @@ def table_penalties() -> None:
     W("| Unjustified harassment proven | Immediate dismissal | Offender exonerated; officer cited for abusive enforcement |\n\n")
 
 
+def table_debt_subscriptions() -> None:
+    W("## A.23 Abolition of Debt-Based and Subscription-Based Financial Extraction\n\n")
+
+    W("### Sector-by-sector sovereign transformation matrix\n\n")
+    W("| Economic sector | Extractive financial model | Sovereign replacement | Operating principle |\n|---|---|---|---|\n")
+    for sc in SECTOR_COMPARISONS:
+        W(
+            f"| **{sc.sector.value.replace('_', ' ').title()}** | {sc.extractive_system_name[:35]}... | "
+            f"{sc.sovereign_replacement_name[:35]}... | {sc.replacement_operating_model[:40]}... |\n"
+        )
+    W("\n")
+
+    adv = ZeroInterestAdvance(
+        item_description="Transport utility vehicle / Housing build",
+        principal_amount_rcu=15000.0,
+        monthly_installment_rcu=250.0,
+    )
+    comp = adv.calculate_commercial_loan_comparison(commercial_interest_rate_percent=15.0, loan_years=5)
+    W("### Zero-interest advance vs. commercial compound-interest loan\n\n")
+    W(
+        f"| Financing parameter | Commercial compound-interest loan | Sovereign zero-interest advance | Extraction eliminated |\n|---|---|---|---|\n"
+        f"| Principal advance | {comp['principal_rcu']:,.0f} RCU | {comp['principal_rcu']:,.0f} RCU | Direct material parity |\n"
+        f"| Interest rate (APR) | 15.0% compounding | **0.0% (Zero interest)** | Compounding interest banned |\n"
+        f"| Total repayment | **{comp['commercial_loan_total_rcu']:,.0f} RCU** | **{comp['zero_interest_total_rcu']:,.0f} RCU** | **{comp['interest_extraction_eliminated_rcu']:,.0f} RCU saved ({comp['savings_multiplier']:.2f}x)** |\n"
+        f"| Default consequence | Foreclosure & asset repossession | Hardship pause; restorative labor | Zero primary home foreclosure |\n\n"
+    )
+
+    elder = ElderCareStipend()
+    W("### Master-Apprentice elder production compact (Physical commodity security)\n\n")
+    W(
+        f"| Elder support component | Guaranteed monthly allocation | Backing source | Risk profile |\n|---|---|---|---|\n"
+        f"| Grains / Flour | **{elder.monthly_grain_ration_kg:.0f} kg** | Guild physical reserve silos (§02) | 100% immune to inflation |\n"
+        f"| Cooking Oil | **{elder.monthly_oil_ration_liters:.0f} Liters** | Tier A commodity warehouses | Real physical delivery |\n"
+        f"| Utility / Biofuel | **{elder.monthly_fuel_biofuel_liters:.0f} Liters** | Guild energy production (§17) | Free from utility debt |\n"
+        f"| Civic Currency Stipend | **{elder.monthly_stipend_rcu:.0f} RCU** | General public revenue | Personal discretionary use |\n"
+        f"| Healthcare & Housing | **100% Guaranteed free access** | Direct guild provisioning | Zero medical aid billing |\n\n"
+    )
+
+    W("### The Decisive Access Test evaluation\n\n")
+    W("| System / Institution | Direct physical access? | Charges interest / sub? | Profit-driven denial? | Socially defensible? |\n|---|---|---|---|---|\n")
+    W("| **Commercial Medical Aid Scheme** | No (middleman) | **Yes (Perpetual)** | **Yes (Denial = Profit)** | **FAILED (Abolished)** |\n")
+    W("| **Private Commercial Insurance** | No (financial float) | **Yes (Perpetual)** | **Yes (Adjuster loopholes)** | **FAILED (Abolished)** |\n")
+    W("| **Compound-Interest Auto/Home Loan** | No (debt command) | **Yes (Compounding)** | **Yes (Foreclosure)** | **FAILED (Abolished)** |\n")
+    W("| **Sovereign Guild Provisioning** | **YES (Direct care)** | **NO (0% Subs)** | **NO (Medical need only)** | **PASSED (Adopted)** |\n")
+    W("| **Physical Commodity Mutual Pool** | **YES (48h rebuild)** | **NO (0% Premiums)** | **NO (Real reserve release)** | **PASSED (Adopted)** |\n")
+    W("| **Zero-Interest Resource Advance** | **YES (Physical tools)**| **NO (0.0% Interest)** | **NO (Pause on hardship)** | **PASSED (Adopted)** |\n\n")
+
+
 def main() -> None:
     header()
     table_classes()
@@ -1395,6 +1451,7 @@ def main() -> None:
     table_war_council()
     table_media_integrity()
     table_penalties()
+    table_debt_subscriptions()
 
 
 if __name__ == "__main__":

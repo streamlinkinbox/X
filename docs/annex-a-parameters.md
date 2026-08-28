@@ -1086,3 +1086,46 @@ Dual-use plants (everyday demand keeps them alive until needed):
 | Contested citation with footage | 3-citizen random sortition panel | Majority vote (2 of 3) decides factual guilt or dismissal |
 | Unjustified harassment proven | Immediate dismissal | Offender exonerated; officer cited for abusive enforcement |
 
+## A.23 Abolition of Debt-Based and Subscription-Based Financial Extraction
+
+### Sector-by-sector sovereign transformation matrix
+
+| Economic sector | Extractive financial model | Sovereign replacement | Operating principle |
+|---|---|---|---|
+| **Healthcare** | Commercial Medical Aid / Private He... | Direct Public Provisioning & Guild ... | 100% covered care at point of need; 90-d... |
+| **Risk And Disaster** | Commercial Property / Crop / Disast... | Physical Commodity Mutual Risk Pool... | Direct mobilization of carpentry/masonry... |
+| **Elder Security** | Compulsory Private Pension Funds / ... | Master-Apprentice Intergenerational... | Guaranteed monthly physical commodity al... |
+| **Legal Protection** | Commercial Legal-Aid Retainers / Ho... | Universal Sortition Advocates & Com... | Free assigned mediators and 3-citizen ra... |
+| **Equipment And Housing** | Compound-Interest Auto Loans & 30-Y... | Zero-Interest Non-Compounding Resou... | Repay exact principal borrowed; zero int... |
+| **Infrastructure Finance** | Sovereign Bond Markets & Structural... | Commodity-Backed Public Development... | Direct issuance against verified materia... |
+
+### Zero-interest advance vs. commercial compound-interest loan
+
+| Financing parameter | Commercial compound-interest loan | Sovereign zero-interest advance | Extraction eliminated |
+|---|---|---|---|
+| Principal advance | 15,000 RCU | 15,000 RCU | Direct material parity |
+| Interest rate (APR) | 15.0% compounding | **0.0% (Zero interest)** | Compounding interest banned |
+| Total repayment | **21,411 RCU** | **15,000 RCU** | **6,411 RCU saved (1.43x)** |
+| Default consequence | Foreclosure & asset repossession | Hardship pause; restorative labor | Zero primary home foreclosure |
+
+### Master-Apprentice elder production compact (Physical commodity security)
+
+| Elder support component | Guaranteed monthly allocation | Backing source | Risk profile |
+|---|---|---|---|
+| Grains / Flour | **25 kg** | Guild physical reserve silos (§02) | 100% immune to inflation |
+| Cooking Oil | **4 Liters** | Tier A commodity warehouses | Real physical delivery |
+| Utility / Biofuel | **10 Liters** | Guild energy production (§17) | Free from utility debt |
+| Civic Currency Stipend | **150 RCU** | General public revenue | Personal discretionary use |
+| Healthcare & Housing | **100% Guaranteed free access** | Direct guild provisioning | Zero medical aid billing |
+
+### The Decisive Access Test evaluation
+
+| System / Institution | Direct physical access? | Charges interest / sub? | Profit-driven denial? | Socially defensible? |
+|---|---|---|---|---|
+| **Commercial Medical Aid Scheme** | No (middleman) | **Yes (Perpetual)** | **Yes (Denial = Profit)** | **FAILED (Abolished)** |
+| **Private Commercial Insurance** | No (financial float) | **Yes (Perpetual)** | **Yes (Adjuster loopholes)** | **FAILED (Abolished)** |
+| **Compound-Interest Auto/Home Loan** | No (debt command) | **Yes (Compounding)** | **Yes (Foreclosure)** | **FAILED (Abolished)** |
+| **Sovereign Guild Provisioning** | **YES (Direct care)** | **NO (0% Subs)** | **NO (Medical need only)** | **PASSED (Adopted)** |
+| **Physical Commodity Mutual Pool** | **YES (48h rebuild)** | **NO (0% Premiums)** | **NO (Real reserve release)** | **PASSED (Adopted)** |
+| **Zero-Interest Resource Advance** | **YES (Physical tools)**| **NO (0.0% Interest)** | **NO (Pause on hardship)** | **PASSED (Adopted)** |
+

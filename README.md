@@ -63,6 +63,7 @@ the five model findings that change the original design.
 | [24 War Council & Specialized Units](docs/24-war-council-scenario-planning-and-specialized-units.md) | **War Council, Scenario Planning, 7 Specialized Units** |
 | [25 Media & Information Integrity](docs/25-media-information-integrity-and-social-harm.md) | **Content conduct, court dignity, source-not-filter architecture** |
 | [26 Non-Cash Penalties & Anti-Extortion](docs/26-penalty-system-and-anti-extortion-enforcement.md) | **Sweat & duty ladder, sewer clearing, exile, zero roadside cash** |
+| [27 Abolishing Debt & Subscriptions](docs/27-abolishing-debt-and-subscription-systems.md) | **Direct provisioning, zero-interest advances, elder compact** |
 | [Annex A](docs/annex-a-parameters.md) | **Generated** parameter and stress tables |
 | [Annex B](docs/annex-b-open-problems.md) | Unsolved problems, ranked by severity |
 
@@ -411,6 +412,17 @@ See [§25](docs/25-media-information-integrity-and-social-harm.md).
 - **Community Exile Protocol:** Irredeemable violent predation, armed treason, or refusal of restorative labor triggers community banishment upon a 75% Community Council supermajority vote.
 
 See [§26](docs/26-penalty-system-and-anti-extortion-enforcement.md).
+
+## Abolishing debt-based & subscription extraction
+
+§27 eliminates the parasitic financial middleman layer through direct physical provisioning and zero-interest advance financing:
+- **Direct Healthcare & Legal Protection:** 100% covered guild care; zero medical aid debit orders, zero hourly legal fees.
+- **Physical Mutual Risk Pools:** 48-hour guild mobilization for disaster/crop loss backed by physical reserves, replacing profit-maximizing private insurance adjusters.
+- **Master-Apprentice Elder Security:** Guaranteed monthly physical commodity allocations (grain, oil, biofuel, housing, care) backed by active guild production, eliminating crash-prone private pension funds.
+- **Zero-Interest Advances (Housing, Vehicles, Tools):** Exact principal repayment ($I=0.0\%$); flexible pause on hardship; zero home foreclosure; zero inherited debt.
+- **Decisive Access Test:** *"Does the system give direct access to necessities — or merely a more sophisticated way to charge people?"*
+
+See [§27](docs/27-abolishing-debt-and-subscription-systems.md).
 
 ## Honest positioning
 
