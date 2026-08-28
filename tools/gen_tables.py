@@ -158,6 +158,12 @@ from model.rcu.debt_and_subscriptions import (  # noqa: E402
     VehiclePurchaseComparison,
     ZeroInterestAdvance,
 )
+from model.rcu.clothing_standards import (  # noqa: E402
+    SPATIAL_ZONE_SPECS,
+    AntiHumiliationPolicy,
+    ClothingComplianceSimulation,
+    SpatialZone,
+)
 from model.rcu.security import (  # noqa: E402
     ArmouryPolicy,
     audit_effort_curve,
@@ -1441,6 +1447,41 @@ def table_debt_subscriptions() -> None:
     W("| **Zero-Interest Resource Advance** | **YES (Physical tools)**| **NO (0.0% Interest)** | **NO (Pause on hardship)** | **PASSED (Adopted)** |\n\n")
 
 
+def table_clothing_standards() -> None:
+    W("## A.24 Public Clothing Standards and Exposure Thresholds\n\n")
+
+    W("### Graduated spatial zones & bright-line exposure thresholds\n\n")
+    W("| Spatial zone | Scope of locations | Coverage standard | Venue operator duty |\n|---|---|---|---|\n")
+    for sz in SPATIAL_ZONE_SPECS:
+        W(
+            f"| **{sz.name}** | {sz.locations[:35]}... | "
+            f"{sz.coverage_threshold_description[:35]}... | {sz.venue_operator_duty[:40]}... |\n"
+        )
+    W("\n")
+
+    W("### Seven anti-humiliation constitutional firewalls\n\n")
+    ah = AntiHumiliationPolicy()
+    W(
+        f"| Anti-humiliation lock | Statutory rule | Operational protection |\n|---|---|---|\n"
+        f"| Physical Contact | **Strictly prohibited (0%)** | Felony for officer to touch, grab, or detain a citizen |\n"
+        f"| Custodial Penalty | **Zero arrest / custody** | A person can **never go to jail** for what they wear |\n"
+        f"| Remedy-First Offer | **Free covering garment on spot** | Accepting free wrap closes encounter with zero record / fine |\n"
+        f"| Public Shaming Ban | **Criminalized for all** | Criminal offense for officers or bystanders to photograph or post |\n"
+        f"| Mixed-Sex Patrols | **Female-to-female approach** | Female citizens may only be approached by female officers |\n"
+        f"| Body Measurement Ban | **Strictly prohibited** | Hard ban on officers measuring, inspecting, or remarking on bodies |\n"
+        f"| Democratic Review | **5-year statutory sunset** | Full legislative review and published demographic audit data |\n\n"
+    )
+
+    sim = ClothingComplianceSimulation(total_non_compliant_encounters=1000)
+    W("### First-contact resolution simulation (1,000 non-compliant encounters)\n\n")
+    W(
+        f"| Encounter outcome | Count | Percentage | Systemic impact |\n|---|---|---|---|\n"
+        f"| Resolved on spot (Accepted free wrap) | **{sim.encounters_resolved_without_record:,}** | **{sim.acceptance_of_free_garment_rate * 100:.1f}%** | Zero fine, zero conflict, zero regulatory record |\n"
+        f"| Civil notice issued (Garment refused) | **{sim.civil_notices_issued:,}** | **{(1 - sim.acceptance_of_free_garment_rate) * 100:.1f}%** | Standard formulaic civil notice (no criminal charge) |\n"
+        f"| Custodial arrest count | **{sim.arrest_count}** | **0.0%** | **Complete elimination of debtor/morality jail terms** |\n\n"
+    )
+
+
 def main() -> None:
     header()
     table_classes()
@@ -1466,6 +1507,7 @@ def main() -> None:
     table_media_integrity()
     table_penalties()
     table_debt_subscriptions()
+    table_clothing_standards()
 
 
 if __name__ == "__main__":

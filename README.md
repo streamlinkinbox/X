@@ -424,6 +424,17 @@ See [§26](docs/26-penalty-system-and-anti-extortion-enforcement.md).
 
 See [§27](docs/27-abolishing-debt-and-subscription-systems.md).
 
+## Public clothing standards & exposure thresholds
+
+§28 establishes an objective statutory framework for shared public spaces, eliminating subjective "morality policing" through bright-line anatomical thresholds and remedy-first enforcement:
+- **Bright-Line Spatial Zones:** Three graduated zones (Strict civic/administrative, Standard general thoroughfare, Relaxed recreation/bathing) with enumerated, sex-neutral anatomical coverage standards.
+- **Remedy Before Penalty:** First contact is a free loaner wrap provided on the spot; accepting the wrap closes the encounter immediately with zero fine, zero record, and zero escalation.
+- **Zero Custodial Detentions:** Absolute prohibition on physical touching, arrests, or jail time for dress code violations; unresolved refusals trigger a civil administrative notice, never criminal charges.
+- **Anti-Humiliation Safeguards:** Female citizens approached exclusively by female officers; criminal bans on public photographing/shaming; mandatory bodycam logging; absolute ban on body inspections or comments.
+- **Democratic Sunset & Venue Duty:** Commercial hubs, transit stations, and event venues maintain free loaner supplies; mandatory 5-year legislative sunset with published demographic compliance audits.
+
+See [§28](docs/28-public-clothing-standards-and-exposure-thresholds.md).
+
 ## Honest positioning
 
 **Genuinely novel:**

@@ -1151,3 +1151,33 @@ Dual-use plants (everyday demand keeps them alive until needed):
 | **Physical Commodity Mutual Pool** | **YES (48h rebuild)** | **NO (0% Premiums)** | **NO (Real reserve release)** | **PASSED (Adopted)** |
 | **Zero-Interest Resource Advance** | **YES (Physical tools)**| **NO (0.0% Interest)** | **NO (Pause on hardship)** | **PASSED (Adopted)** |
 
+## A.24 Public Clothing Standards and Exposure Thresholds
+
+### Graduated spatial zones & bright-line exposure thresholds
+
+| Spatial zone | Scope of locations | Coverage standard | Venue operator duty |
+|---|---|---|---|
+| **Zone 1: Strict Civic & Educational** | Schools, courts, council chambers, ... | Full torso, shoulders, and mid-thig... | Mandatory entrance checkpoint with free ... |
+| **Zone 2: Standard Public Shared Space** | Commercial markets, public streets,... | Anatomical pelvic region, buttocks,... | Prominent entrance signage; commercial v... |
+| **Zone 3: Relaxed / Recreational** | Public baths, athletic tracks, desi... | Standard functional athletic / swim... | Activity-specific safety and hygiene sig... |
+
+### Seven anti-humiliation constitutional firewalls
+
+| Anti-humiliation lock | Statutory rule | Operational protection |
+|---|---|---|
+| Physical Contact | **Strictly prohibited (0%)** | Felony for officer to touch, grab, or detain a citizen |
+| Custodial Penalty | **Zero arrest / custody** | A person can **never go to jail** for what they wear |
+| Remedy-First Offer | **Free covering garment on spot** | Accepting free wrap closes encounter with zero record / fine |
+| Public Shaming Ban | **Criminalized for all** | Criminal offense for officers or bystanders to photograph or post |
+| Mixed-Sex Patrols | **Female-to-female approach** | Female citizens may only be approached by female officers |
+| Body Measurement Ban | **Strictly prohibited** | Hard ban on officers measuring, inspecting, or remarking on bodies |
+| Democratic Review | **5-year statutory sunset** | Full legislative review and published demographic audit data |
+
+### First-contact resolution simulation (1,000 non-compliant encounters)
+
+| Encounter outcome | Count | Percentage | Systemic impact |
+|---|---|---|---|
+| Resolved on spot (Accepted free wrap) | **940** | **94.0%** | Zero fine, zero conflict, zero regulatory record |
+| Civil notice issued (Garment refused) | **60** | **6.0%** | Standard formulaic civil notice (no criminal charge) |
+| Custodial arrest count | **0** | **0.0%** | **Complete elimination of debtor/morality jail terms** |
+

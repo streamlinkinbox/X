@@ -656,6 +656,36 @@ by price, creating two structural risks:
 
 ---
 
+### P24: Bright-line boundary edge cases, subcultural expression, and harassment arbitrage
+
+**Severity: medium. Social cohesion and enforcement integrity vulnerability.**
+
+While §28 replaces subjective "morality policing" with enumerated anatomical coverage
+thresholds, spatial zones, and remedy-first enforcement (free loaner garments), three
+operational vulnerabilities persist at the boundary of public space:
+1. **Translucent Fabrics & Athletic/Cultural Edge Cases:** Rapidly changing textile
+   materials (e.g., sheer weaves, compression wear, wet fabrics) or regional cultural
+   attire with non-standard geometry can generate ambiguity around the "opaque coverage"
+   bright-line standard, risking subjective officer discretion.
+2. **Harassment via Bad-Faith Reporting:** Malicious actors or neighborhood factions
+   could weaponize clothing complaints to harass specific subcultures, youth groups, or
+   political opponents, seeking to generate repeated civil notices.
+3. **Venue-Level Loaner Supply Decay:** Private businesses and transit operators may
+   fail to maintain hygienic, culturally appropriate, and sized loaner garment supplies,
+   forcing unfair civil notice exposure onto low-income travelers.
+
+**Mitigation:**
+- **Standardized Daylight Opacity Test:** Coverage is judged solely on daylight opacity
+  without stretching or tactile inspection; officers are strictly prohibited from touching
+  or measuring garments.
+- **Anti-Extortion Malicious Reporting Penalties (§25, §26):** Verified bad-faith or
+  retaliatory complaints trigger civic labor penalties against the complainant.
+- **Textile Guild Civic Loaner Logistics (§17, §28):** Municipal textile guilds produce
+  and regularly restock standardized, hygienic, unisex civic wraps at all transit nodes,
+  removing supply risk from private venue operators.
+
+---
+
 ## Summary
 
 | # | Problem | Severity | Status |
@@ -683,6 +713,7 @@ by price, creating two structural risks:
 | P21 | Cryptographic wire provenance vs viral gossip cascades | **Medium (new)** | Ed25519 signing + rapid press verification + physical seal notice boards |
 | P22 | Community labor evasion and exile border friction | **Medium-High (new)** | Healer audits + auto-escalation + CIS border alerts & extradition compacts |
 | P23 | Zero-interest capital allocation queues & rationing | **Medium-High (new)** | Readiness audits + public sortition queues + utilization clocks |
+| P24 | Bright-line boundary edge cases & harassment arbitrage | **Medium (new)** | Daylight opacity rule + bad-faith penalty + guild loaner logistics |
 
 **The three at the top are not reasons to abandon the design.** They are the
 reasons a pilot exists — and a pilot that is not explicitly built to test
