@@ -568,6 +568,31 @@ eroding civilian democratic control.
 
 ---
 
+### P21: Cryptographic provenance of official wires vs. decentralized gossip cascades
+
+**Severity: medium. Information ecosystem vulnerability.**
+
+Under a decentralized media architecture without a monopoly state filter (§25.1),
+the community is protected from autocratic censorship but exposed to **rapid-onset
+viral disinformation, forged court rulings, and rumor cascades** spread via
+peer-to-peer mesh messaging. In high-stress scenarios (enemy invasion S3, epidemic
+S6, bank panic), malicious actors or panic-driven citizens can circulate forged
+"official announcements" claiming that food stores are empty or that currency
+redemptions are halted.
+
+**Mitigation:**
+- **Asymmetric Cryptographic Signing of Official Feeds (§25.1):** All official
+  telemetry, court registries, and EDMB alerts are signed with rotating Council
+  ed25519 private keys. Local client apps verify signatures instantly offline.
+- **Independent Press Council Rapid Verification Desk (§25.3):** Guild journalists
+  maintain a decentralized fact-checking channel verifying rumors against primary
+  physical ledger hashes.
+- **Physical Town Square Redundant Notice Boards:** In the event of electronic mesh
+  disruption, physical embossed seal bulletins posted at registered warehouse
+  gates override digital rumors.
+
+---
+
 ## Summary
 
 | # | Problem | Severity | Status |
@@ -592,6 +617,7 @@ eroding civilian democratic control.
 | P18 | Epistemic capture and analyst bias in central intelligence | **Medium-High (new)** | Open data + 2-yr rotation + 5-yr analyst term limits + external audits |
 | P19 | Transboundary watershed conflict and SIGINT spoofing | **High (new)** | Triangulated OSINT/HUMINT + LoRa mesh failover + upstream grassroots pacts |
 | P20 | Specialized unit operational drift & warrior elitism | **Medium-High (new)** | Mandatory 3-yr civilian return + uniform parity + apprentice teaching |
+| P21 | Cryptographic wire provenance vs viral gossip cascades | **Medium (new)** | Ed25519 signing + rapid press verification + physical seal notice boards |
 
 **The three at the top are not reasons to abandon the design.** They are the
 reasons a pilot exists — and a pilot that is not explicitly built to test

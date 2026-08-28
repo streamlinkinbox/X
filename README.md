@@ -61,6 +61,7 @@ the five model findings that change the original design.
 | [22 Research & Analysis Bureau](docs/22-research-and-analysis-bureau.md) | **Cross-silo intelligence, 5 divisions, closed-loop reform** |
 | [23 Intelligence & Environment](docs/23-intelligence-and-environmental-disaster-management.md) | **Community Intelligence (CIS), Ecology & Disaster (EDMB)** |
 | [24 War Council & Specialized Units](docs/24-war-council-scenario-planning-and-specialized-units.md) | **War Council, Scenario Planning, 7 Specialized Units** |
+| [25 Media & Information Integrity](docs/25-media-information-integrity-and-social-harm.md) | **Content conduct, court dignity, source-not-filter architecture** |
 | [Annex A](docs/annex-a-parameters.md) | **Generated** parameter and stress tables |
 | [Annex B](docs/annex-b-open-problems.md) | Unsolved problems, ranked by severity |
 
@@ -387,6 +388,17 @@ See [§23](docs/23-intelligence-and-environmental-disaster-management.md).
 - **Anti-Janissary / Anti-Mamluk Safeguards:** Elite in skill, not in status. Mandatory 3-year return to civilian economic production, no separate barracks, no separate pay, and no civilian political office while serving.
 
 See [§24](docs/24-war-council-scenario-planning-and-specialized-units.md).
+
+## Media, information integrity & social harm
+
+§25 resolves the conflict between investigative press freedom (preventing corruption) and social harm prevention (stopping media circus and predatory commercial deception):
+- **Governing Axiom:** *"Restrict the instructional and the deceptive. Do not restrict the depictive."*
+- **Courtroom Dignity:** Zero cameras in courts; unconvicted suspects and victims anonymized; *sub judice* strictly enforced; public open written registries maintained.
+- **Instructional vs Fiction:** Method details (suicide how-tos, shooter manifestos, hacking exploits) restricted; fiction, literature, and art protected without censorship.
+- **Commercial Transparency:** Mandatory disclosure of paid sponsorships and filtered images; ban on influencer crypto/gambling promotions.
+- **Source, Never Filter:** The state may publish an authoritative wire service, but is constitutionally prohibited from operating a monopoly content filter or owning media distribution channels.
+
+See [§25](docs/25-media-information-integrity-and-social-harm.md).
 
 ## Honest positioning
 

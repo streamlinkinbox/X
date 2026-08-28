@@ -953,3 +953,51 @@ Dual-use plants (everyday demand keeps them alive until needed):
 | Equipment neutralized | 5/5 armor, 20/20 drones | 2 IED fields detonated | 100% heavy vehicle/drone neutralization |
 | Attrition rate | **70.0%** | 5.5% | Adversary column routed in 6 hours |
 
+## A.21 Media, Information Integrity, and Social Harm
+
+### Consolidated media regulation decision matrix
+
+| Content category | Restrict? | Regulatory instrument | Governing rationale |
+|---|---|---|---|
+| Operational method detail (suicide, weapons, fraud, hacking) | **RESTRICT** | `reporting_guidelines_statute` | Restricts the instructional 'how-to'; prevents copycat ... |
+| Perpetrator glorification and manifestos (mass shooters) | **RESTRICT** | `no_notoriety_press_code` | Denies notoriety incentive; eliminates social learning ... |
+| Real crime as entertainment (court TV, crime-scene footage) | **RESTRICT** | `court_procedure_sub_judice` | Protects judicial dignity, prevents jury poisoning, pre... |
+| Naming pre-trial suspects, victims, and minors | **RESTRICT** | `press_code_publication_ban` | Preserves presumption of innocence and personal dignity... |
+| Prejudicial pre-trial commentary | **RESTRICT** | `court_procedure_sub_judice` | Prevents trial by media and contamination of witness te... |
+| Fiction depicting wrongdoing with consequence | **DO NOT RESTRICT** | `age_classification_only` | Preserves moral literature and cautionary structure; fi... |
+| Undisclosed commercial or financial promotion | **RESTRICT** | `disclosure_and_advertising_code` | Prevents predatory consumer deception, debt traps, and ... |
+| Honest depiction of wealth and lifestyle | **DO NOT RESTRICT** | `media_literacy_curriculum` | Educates audience on staged/financed affluence rather t... |
+| Investigative reporting on government and public officials | **NEVER RESTRICT** | `constitutional_protection` | Primary instrument of anti-corruption; discomfort to st... |
+| Ownership and control of information distribution channels | **NEVER RESTRICT** | `anti_concentration_law` | Single distributor creates a single point of capture; p... |
+
+### Courtroom dignity & anti-circus legal standards
+
+| Court reporting standard | Policy rule | Legal / Institutional purpose |
+|---|---|---|
+| Cameras in courtroom | **Strictly prohibited** | Prevents trial-by-media and witness intimidation |
+| Naming unconvicted suspects | **Prohibited ('Andreas B.')** | Preserves presumption of innocence and personal dignity |
+| Minors & victim protection | **Strictly protected** | Protects traumatized individuals from exploitation |
+| Sub judice enforcement | **Active statutory rule** | Forbids prejudicial pre-trial public commentary |
+| Public written registry | **Mandatory open access** | Complete transparency of rulings, evidence, and legal reasoning |
+| In-person citizen attendance | **Guaranteed** | Open justice observed directly by citizens and sortition juries |
+
+### Commercial & aspirational deception safeguards
+
+| Safeguard mechanism | Legal requirement | Societal protection |
+|---|---|---|
+| Paid promotion disclosure | **Mandatory visual tag** | Prevents disguised commercial manipulation |
+| Retouched image disclosure | **Mandatory label** | Inoculates youth against artificial body dysmorphia |
+| Influencer financial promo ban | **Strictly prohibited** | Eliminates predatory crypto, forex, and gambling scams |
+| Minor debt advertising ban | **Strictly prohibited** | Shields minors from Buy-Now-Pay-Later debt traps |
+| Algorithmic feed age-gating | **Restricted under 16** | Breaks dopamine-loop behavioral addiction |
+| Curricular media literacy | **Mandatory in schools** | Teaches critical deconstruction of staged affluence |
+
+### Distribution architecture: source vs. filter rule
+
+| Technical system | Mode | Mandatory gate? | Constitutionally valid? |
+|---|---|---|---|
+| **Community Civic Wire & Court Registry** | `authoritative_source` | No | **YES (Permitted)** |
+| Unified State Content Filter | `exclusive_filter` | Yes | **NO (Prohibited - Single Point of Capture)** |
+
+*Core Rule:* A central state technical system may add authoritative data to the community; it may never act as the exclusive filter through which independent media must pass.
+

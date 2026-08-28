@@ -122,6 +122,15 @@ from model.rcu.war_council import (  # noqa: E402
     SpecializedUnitSizing,
     WarCouncilDecisionEngine,
 )
+from model.rcu.information_integrity import (  # noqa: E402
+    MEDIA_POLICY_RULES,
+    CommercialDeceptionSafeguards,
+    ContentTier,
+    CourtroomReportingPolicy,
+    MediaPluralismPolicy,
+    RestrictionStatus,
+    VALID_OFFICIAL_WIRE,
+)
 from model.rcu.security import (  # noqa: E402
     ArmouryPolicy,
     audit_effort_curve,
@@ -1219,6 +1228,53 @@ def table_war_council() -> None:
     )
 
 
+def table_media_integrity() -> None:
+    W("## A.21 Media, Information Integrity, and Social Harm\n\n")
+
+    W("### Consolidated media regulation decision matrix\n\n")
+    W("| Content category | Restrict? | Regulatory instrument | Governing rationale |\n|---|---|---|---|\n")
+    for r in MEDIA_POLICY_RULES:
+        status_str = f"**{r.restriction_status.value.upper().replace('_', ' ')}**"
+        W(
+            f"| {r.category_name} | {status_str} | "
+            f"`{r.instrument.value}` | {r.governing_rationale[:55]}... |\n"
+        )
+    W("\n")
+
+    W("### Courtroom dignity & anti-circus legal standards\n\n")
+    court = CourtroomReportingPolicy()
+    W(
+        f"| Court reporting standard | Policy rule | Legal / Institutional purpose |\n|---|---|---|\n"
+        f"| Cameras in courtroom | **Strictly prohibited** | Prevents trial-by-media and witness intimidation |\n"
+        f"| Naming unconvicted suspects | **Prohibited ('Andreas B.')** | Preserves presumption of innocence and personal dignity |\n"
+        f"| Minors & victim protection | **Strictly protected** | Protects traumatized individuals from exploitation |\n"
+        f"| Sub judice enforcement | **Active statutory rule** | Forbids prejudicial pre-trial public commentary |\n"
+        f"| Public written registry | **Mandatory open access** | Complete transparency of rulings, evidence, and legal reasoning |\n"
+        f"| In-person citizen attendance | **Guaranteed** | Open justice observed directly by citizens and sortition juries |\n\n"
+    )
+
+    W("### Commercial & aspirational deception safeguards\n\n")
+    cd = CommercialDeceptionSafeguards()
+    W(
+        f"| Safeguard mechanism | Legal requirement | Societal protection |\n|---|---|---|\n"
+        f"| Paid promotion disclosure | **Mandatory visual tag** | Prevents disguised commercial manipulation |\n"
+        f"| Retouched image disclosure | **Mandatory label** | Inoculates youth against artificial body dysmorphia |\n"
+        f"| Influencer financial promo ban | **Strictly prohibited** | Eliminates predatory crypto, forex, and gambling scams |\n"
+        f"| Minor debt advertising ban | **Strictly prohibited** | Shields minors from Buy-Now-Pay-Later debt traps |\n"
+        f"| Algorithmic feed age-gating | **Restricted under 16** | Breaks dopamine-loop behavioral addiction |\n"
+        f"| Curricular media literacy | **Mandatory in schools** | Teaches critical deconstruction of staged affluence |\n\n"
+    )
+
+    W("### Distribution architecture: source vs. filter rule\n\n")
+    W(
+        f"| Technical system | Mode | Mandatory gate? | Constitutionally valid? |\n|---|---|---|---|\n"
+        f"| **{VALID_OFFICIAL_WIRE.system_name}** | `{VALID_OFFICIAL_WIRE.mode.value}` | No | **YES (Permitted)** |\n"
+        f"| Unified State Content Filter | `exclusive_filter` | Yes | **NO (Prohibited - Single Point of Capture)** |\n\n"
+        f"*Core Rule:* A central state technical system may add authoritative data to the community; "
+        f"it may never act as the exclusive filter through which independent media must pass.\n\n"
+    )
+
+
 def main() -> None:
     header()
     table_classes()
@@ -1241,6 +1297,7 @@ def main() -> None:
     table_rab()
     table_intel_env()
     table_war_council()
+    table_media_integrity()
 
 
 if __name__ == "__main__":

@@ -425,6 +425,27 @@ with outward awareness and ecological guardianship:
   **3-year return to civilian economic production**, no separate barracks, no separate
   wages, no hereditary succession, and no civilian political office while serving.
 
+## Media, information integrity & social harm: the conduct-not-distribution framework
+
+§25 resolves the tension between anti-corruption transparency and social harm prevention:
+
+- **The Governing Axiom:** *"Restrict the instructional and the deceptive. Do not
+  restrict the depictive."*
+- **Courtroom Dignity (Anti-Circus):** Cameras in courtrooms are banned; unconvicted
+  suspects, victims, and minors are anonymized (*"Andreas B."* rule); *sub judice* is
+  strictly enforced. Justice remains open to in-person citizens and sortition juries
+  with transparent written registries.
+- **Instructional vs. Fictional Line:** Method details (suicide how-tos, mass shooter
+  manifestos, cyber exploits) are restricted; fictional crime drama, art, and literature
+  remain completely uncensored.
+- **Commercial & Aspirational Deception:** Mandatory disclosure of paid promotions and
+  filtered images; ban on influencer financial schemes (crypto, forex, gambling); credit
+  ad bans for minors.
+- **Distribution Architecture (Source, Never Filter):** The state may operate an official
+  authoritative wire service or court registry; it is strictly prohibited from operating
+  a monopoly content filter or owning media pipes. Press reporting on government is
+  constitutionally protected.
+
 ## What this system cannot do
 
 Stated plainly, because a blueprint that only lists strengths is marketing:
@@ -475,6 +496,7 @@ Stated plainly, because a blueprint that only lists strengths is marketing:
 | [`22-research-and-analysis-bureau.md`](22-research-and-analysis-bureau.md) | **Research and Analysis Bureau (RAB), cross-silo intelligence, reform** |
 | [`23-intelligence-and-environmental-disaster-management.md`](23-intelligence-and-environmental-disaster-management.md) | **Community Intelligence (CIS), Environmental Disaster Bureau (EDMB)** |
 | [`24-war-council-scenario-planning-and-specialized-units.md`](24-war-council-scenario-planning-and-specialized-units.md) | **War Council, Scenario Planning, and Specialized Strike Units** |
+| [`25-media-information-integrity-and-social-harm.md`](25-media-information-integrity-and-social-harm.md) | **Media, Information Integrity, and Social Harm** |
 | [`annex-a-parameters.md`](annex-a-parameters.md) | Generated tables: all parameters and stress results |
 | [`annex-b-open-problems.md`](annex-b-open-problems.md) | Unsolved problems, ranked by how badly they hurt |
 
