@@ -5,127 +5,179 @@
 > of your life slightly worse or slightly more miserable, but there will be
 > no significant change. We need functional leadership based on proven
 > competence, not politics, voting, or monarchy — paired with strict internal
-> enforcement and measurement in every department."*
+> enforcement and continuous measurement in every department."*
 
 This document defines the macro-governance and administrative architecture
-for an independent state: the **Competence Council Governance Model**,
+for an independent state: the **Competence-Based Governance Model**,
 integrated with **Departmental Policing (Military Police and Bureau Enforcers)**
 and **Independent Continuous Measurement Bureaus**.
 
 ---
 
-## 20.1 Diagnosis: why mass voting and monarchy both fail
+## 20.1 Diagnosis: why voting and monarchy both fail
 
-```
-┌──────────────────────────────────────────────┬──────────────────────────────────────────────┐
-│           THE ILLUSION OF VOTING             │            THE FLAW OF MONARCHY              │
-├──────────────────────────────────────────────┼──────────────────────────────────────────────┤
-│ • Pre-selected choices by donors & machines  │ • Hereditary succession is genetic roulette  │
-│ • Zero mathematical impact per voter         │ • Permanent parasitic aristocratic class     │
-│ • No recall mechanism between elections      │ • Zero peaceful removal mechanism for bad    │
-│ • Rhetoric changes; structural policies stay │   monarchs without bloody civil war          │
-│ • Rewards charisma and demagoguery           │ • Extracts community wealth without merit    │
-└──────────────────────────────────────────────┴──────────────────────────────────────────────┘
-```
+### The Empirical Evidence That Voting Does Not Change Outcomes
 
-### Empirical Evidence from the Historical Record
-- **Nigeria:** Decades of alternation between PDP and APC. Corruption, currency
-  depreciation, infrastructure decay, and insecurity deepened under every
-  administration. The faces rotate; the systemic extraction remains constant.
-- **South Africa:** Continuous electoral cycles since 1994. Rolling blackouts
-  (*load shedding*), youth unemployment exceeding 60%, state capture, and
-  collapsing municipal water infrastructure worsened under every elected president.
-- **Arab Spring States (Egypt, Tunisia, Algeria, Iraq):** Post-revolution
-  elections produced either military restoration, legislative gridlock, or
-  authoritarian regression. The ballot box failed to deliver administrative
-  competence.
-- **United States:** 160 years of alternating party rule. Structural crises
-  (wealth concentration, housing unaffordability, healthcare inflation, $35T+
-  national debt, decaying infrastructure) compound identically under both parties.
+| Country | What voting produces | Reality on the ground |
+|---|---|---|
+| **Nigeria** | Elections every 4 years. Massive campaigns. Billions spent. "Change" promised every cycle. | Oil wealth stolen by the same elite. Infrastructure collapsing. Youth unemployment rising. Only the faction controlling the treasury changes. |
+| **South Africa** | The ANC has won every election since 1994. "Democratic miracle." | Inequality is worse than under apartheid. Youth unemployment is 60%. Rolling blackouts (*load shedding*) destroy the economy. Same political families control state contracts. |
+| **Egypt** | Elections held after 2011 revolution. Morsi elected, then Sisi took over. | The military controls the economy, media, and courts. The election was a transition between two authoritarian systems, not a change of direction. |
+| **United States** | Two parties alternate power every 4–8 years. Trillions spent on campaigns. | Healthcare costs keep rising. Housing becomes less affordable. Student debt grows. The defense budget never goes down. Only the rhetoric changes. |
+| **France** | Macron vs. Le Pen. "The most important election of our generation." | After the election, the same economic policies continue. The same corporate interests are served. The same suburbs burn. |
 
-### Why Electoral Systems Inevitably Select for Mediocrity
-1. **The Information Deficit:** The average citizen cannot evaluate the
-   technical administrative competence of a central banker, a surgeon general,
-   or a military logistician. Voters evaluate charisma, tribal/ethnic identity,
-   and media propaganda.
-2. **The Wrong Incentive Filter:** Mass elections reward fundraising, public
-   oratory, and deceptive promises. They actively filter out disciplined,
-   quiet, detail-oriented practitioners who build working systems.
+### The Six Structural Reasons Why Voting Fails
+
+1. **Candidates are pre-selected by money:** Before a citizen ever casts a ballot,
+   candidates have been filtered by donors, party machines, and media conglomerates.
+   Voters merely choose between two brands of the identical underlying product.
+2. **Campaigns reward performance, not competence:** The skills required to win
+   an election (charisma, fundraising, media manipulation, lying convincingly) are
+   the exact opposite of the skills required to govern effectively (patience,
+   technical knowledge, honesty, long-term operational discipline).
+3. **Voters are manipulated, not informed:** Campaign promises trigger emotional
+   responses rather than describing executable policy. The average voter cannot
+   evaluate the technical competence of an agricultural logistician, epidemiologist,
+   or currency engineer.
+4. **The system is designed to produce mediocrity:** A system rewarding wealth and
+   connections systematically excludes the most capable practitioners, who are too
+   busy doing real work to campaign. It selects for ambition, not competence.
+5. **One vote changes nothing mathematically:** In an electorate of millions, a
+   single vote has a $\approx 0.000002\%$ chance of affecting the outcome. Rational
+   voters realize participation is symbolic theater designed to manufacture legitimacy.
+6. **Policy does not change regardless of who wins:** Empirical studies (e.g.,
+   Gilens & Page) demonstrate that the preferences of the bottom 90% of income
+   earners have near-zero correlation with enacted legislation; policy correlates
+   almost exclusively with elite donor interests.
+
+> **The Conclusion:** *Voting is not a mechanism of change. It is a mechanism
+> of legitimacy. It exists to make the population believe they have power so they
+> do not seek actual power.*
+
+### Why Monarchy Is Equally Disastrous
+- **Hereditary incompetence:** Hereditary succession is genetic roulette. A
+  capable founder is inevitably followed by an incompetent or corrupt heir.
+- **Parasitic elite:** The royal lineage becomes a permanent aristocracy that
+  extracts surplus without contributing productive labor.
+- **Succession violence:** There is no peaceful mechanism to remove a tyrannical
+  monarch without bloody civil war or coup d'état.
 
 ---
 
-## 20.2 The three-stage merit selection process
+## 20.2 The core governance structure
 
-Leadership in this system is not an elected office or a hereditary title; it is
-a **functional technical job assignment based on demonstrated performance**.
+```
+                    ┌─────────────────────────┐
+                    │    COMMUNITY COUNCIL    │
+                    │      (7–11 Members)     │
+                    │   Rotating Chair (3 mo) │
+                    └────────────┬────────────┘
+                                 │
+          ┌──────────────────────┼──────────────────────┐
+          │                      │                      │
+    ┌─────┴─────┐          ┌─────┴─────┐          ┌─────┴─────┐
+    │  DEFENSE  │          │ PRODUCTION│          │  JUSTICE  │
+    │  COUNCIL  │          │  COUNCIL  │          │  COUNCIL  │
+    └─────┬─────┘          └─────┬─────┘          └─────┬─────┘
+          │                      │                      │
+    ┌─────┴─────┐          ┌─────┴─────┐          ┌─────┴─────┐
+    │ Militia   │          │ Agriculture│         │ Dispute   │
+    │ Security  │          │ Currency   │         │ Resolution│
+    │ Intel     │          │ Warehouses │         │ Forensics │
+    │ Logistics │          │ Apprentice │         │ Records   │
+    └───────────┘          └────────────┘         └───────────┘
+```
+
+### The Core Principle
+**Leaders are not chosen by who they convince. They are chosen by what they have
+already done.**
+
+You do not vote for a finance steward. You examine who has successfully managed
+the community's commodity reserves for 5 years without losing a single kilogram
+to rot, fraud, or theft. That person is assigned the role. No campaigns, no
+speeches, no promises — only a verified physical track record.
+
+---
+
+## 20.3 The three-stage merit selection process
 
 ```
   ┌─────────────────────────┐     ┌─────────────────────────┐     ┌─────────────────────────┐
-  │  STAGE 1: QUALIFICATION │     │  STAGE 2: PEER SELECTION│     │   STAGE 3: PROBATION    │
-  │  Objective Ledger Pool  │ ──► │  Senior Masters (75%)   │ ──► │  1-Yr Target Review     │
-  │  10-Yr Proven Record    │     │  Direct Observation     │     │  Confirmed or Replaced  │
+  │  STAGE 1: DEMONSTRATION │     │  STAGE 2: PEER CONSENSUS│     │  STAGE 3: RATIFICATION  │
+  │  5–10 Yr Ledger Record  │ ──► │  Domain Masters (75%)   │ ──► │  14-Day Public Vetting  │
+  │  No Self-Nomination     │     │  Sortition on Deadlock  │     │  1-Yr Target Probation  │
   └─────────────────────────┘     └─────────────────────────┘     └─────────────────────────┘
 ```
 
-### Stage 1: The Objective Qualification Pool
-Candidates do not "campaign" or announce candidacies. Entry into the
-qualification pool is calculated automatically by the community ledger:
+### Stage 1: Demonstration (Years 1–10)
+Anyone seeking to lead a functional domain must first demonstrate mastery
+through the community's physical production systems:
+- **Agriculture/Food:** Successfully managed a farm or agricultural cooperative
+  for $\ge 3$ years with measured yield, storage efficiency, and soil conservation.
+- **Defense:** Completed full military training and demonstrated tactical
+  leadership in $\ge 2$ district emergency mobilization drills.
+- **Finance/Treasury:** Managed commodity warehouse accounting and ledger audits
+  for $\ge 2$ years without fraud, shrinkage, or discrepancies.
+- **General Requirements:** Full 4-year apprenticeship completed (§14), minimum
+  age 30, minimum 10 years active service, and $\ge 75\%$ positive coworker
+  reliability ratings. Zero self-nomination: the community identifies candidates
+  from the ledger.
 
-| Criterion | Mandatory requirement | Strategic justification |
-|---|---|---|
-| **Apprenticeship completion** | Full 4-year technical apprenticeship completed (§14) | Ensures deep foundational mastery of physical and administrative reality |
-| **Production record** | Led at least 1 major project with measured results | Proven track record of building tangible infrastructure, water, or harvests |
-| **Peer reliability rating** | $\ge \mathbf{75\%}$ positive rating from coworkers over prior 5 years | Weed out toxic, abusive, or unreliable managers through direct coworker audits |
-| **Clean record** | Zero disqualifying findings for corruption, abuse, or negligence | Zero tolerance for prior embezzlement, grade fraud, or breach of trust |
-| **Maturity & experience** | Minimum age **30**; minimum **10 years** active community contribution | Prevents reckless, untested actors from assuming systemic responsibility |
+### Stage 2: Peer Selection by Domain Practitioners
+- Leaders are chosen exclusively by the **current senior practitioners in that
+  domain** (e.g., farmers select the Agriculture Steward; doctors and herbalists
+  select the Health Steward).
+- Selection operates by **consensus (or 75% supermajority)** after reviewing
+  objective historical track records.
+- If peer practitioners deadlock, **sortition (random lottery selection from the
+  qualified candidate pool)** is used to break the tie, eliminating political
+  factions.
 
-### Stage 2: Peer Selection by Senior Practitioners
-- The leader is selected exclusively by the **20–30 most senior masters and
-  practitioners** in the relevant domain who have worked directly alongside the
-  candidates for years.
-- **75% Consensus Requirement:** The selection panel must reach a 75%
-  supermajority. If consensus is not reached, the pool is narrowed and
-  deliberation continues.
-- **Why peer selection outperforms voting:** A farmer who has worked next to a
-  colleague for a decade knows their integrity, work ethic, and crisis
-  management far better than a million voters watching television advertisements.
-
-### Stage 3: 1-Year Quantitative Probationary Period
-- The selected leader serves a **1-year probationary term** before confirmation.
-- Performance is measured against binding, pre-agreed quantitative targets
-  (e.g., "increase grain reserve buffer by 25%", "maintain electrical grid uptime
-  above 98%", "reduce dispute resolution cycle below 14 days").
-- If targets are met $\rightarrow$ Confirmed for full multi-year term.
-- If targets fail $\rightarrow$ Automatically replaced by the next qualified
-  candidate in the pool. No political crisis, no impeachment theater, no riots.
+### Stage 3: Community Ratification & 1-Year Probation
+- **14-Day Public Challenge Window:** The selected candidate is presented to
+  the community. Citizens do not vote; they are asked: *"Does anyone have
+  documented evidence that this person is corrupt, abusive, or disqualified?"*
+  If substantiated evidence is presented, the selection restarts.
+- **1-Year Quantitative Probation:** The candidate serves a 1-year probationary
+  term with binding, pre-agreed targets (e.g., reserve growth, water uptime,
+  dispute cycle reduction). If targets are met $\rightarrow$ confirmed for a full
+  3–5 year term; if failed $\rightarrow$ automatically replaced by the next
+  candidate in the pool.
 
 ---
 
-## 20.3 Functional hierarchy: The Leadership Council
+## 20.4 The Leadership Council: functional domains & constitutional limits
 
-Governance is partitioned into **11 clear functional domains**, each headed by
-a Steward selected through peer qualification:
+The council consists of **7–11 functional domain leaders** (an odd number to
+prevent tied votes):
 
-| Title | Domain | Term | Selected from | Primary Mandate | Key Performance Metrics (KPIs) |
+| Functional domain | Leader title | Selection base | Core responsibilities | Constitutional limitations | Key performance metrics |
 |---|---|---|---|---|---|
-| **The Coordinator** | Coordination | 3+1 yr | Senior cross-functional masters ($\ge 3$ depts) | Overall inter-departmental harmony; council chair; external representation (no unilateral decrees) | Community output tonnage; conflict resolution rate; threat early warning |
-| **The Deputy Coordinator** | Continuity | 3+1 yr | Selected from pool; confirmed by Council | Shadows Coordinator; manages day-to-day operations; assumes Coordinator post instantly on vacancy | Operational efficiency index; inter-branch task completion; zero transition lag |
-| **The Steward of Reserves** | Treasury | 4+1 yr | Senior warehouse managers, forensic auditors | Manages physical commodity vaults, RCU 100% backing (§3), and currency stability | Collateral backing adequacy ($\ge 100\%$); warehouse loss ($< 2\%$); fraud detection rate |
-| **The Steward of Production** | Economy | 4+1 yr | Senior master farmers, fabrication leads | Directs agricultural tonnage, workshop fabrication, and local import substitution ladder (§17) | Net productive output; FX import substitution savings; apprentice placement rate |
-| **The Steward of Knowledge** | Education | 4+1 yr | Senior guild masters from apprenticeship system | Oversees 4-year apprenticeship curriculums, technical libraries, and knowledge preservation archives | Graduation competency scores; critical skill coverage ratio; archive completeness |
-| **The Steward of Health** | Medical | 4+1 yr | Senior physicians, midwives, herbalists | Manages clinical triage network, maternal health, preventive care, and epidemic response (§15) | Infant/maternal mortality; infectious disease incidence; 128-day medicine buffer |
-| **The Steward of Infrastructure** | Works | 4+1 yr | Civil engineers, water specialists, electricians | Maintains and builds water reticulation, renewable microgrids, roads, and defensive fortifications | Clean water access rate; grid uptime ($> 98\%$); defensive works condition index |
-| **The Steward of Security** | Internal Order | 3+1 yr | Senior security cooperative officers | Oversees Community Security Cooperative: mediation (65%), forensics (14%), and non-lethal order (§18) | Mediation settlement rate ($> 80\%$); property/violent crime rate; community trust index |
-| **The War Council** | Defense | 5+1 yr | 5–7 senior militia tacticians (min. 2 women) | Collective defense command; militia readiness, asymmetric doctrine, and 24-hr mobilization (§19) | 24-hr mobilization drill score; marksmanship qualification rate; anti-drone defense tests |
-| **The Steward of Justice** | Legal / Appeals | 5+1 yr | Respected elders and dispute mediators ($\ge 10$ yrs) | Hears major judicial appeals; investigates leadership misconduct; enforces constitutional charter | Appeal cycle time ($< 30$ days); zero judicial backlog; integrity index |
-| **The Steward of Relations** | Diplomacy | 3+1 yr | Multi-lingual negotiators and regional liaisons | Manages bilateral trade corridors, non-aggression treaties, intelligence sharing, and early warning | Trade agreements secured; cross-border conflict avoidance; early-warning lead time |
+| **Coordination** | The Coordinator | Senior masters with cross-experience in $\ge 3$ depts | Inter-departmental harmony; council facilitation; external representation | **Cannot make unilateral decrees;** cannot override council decisions | Output tonnage, dispute resolution rate, threat early warning |
+| **Continuity** | Deputy Coordinator | Selected from pool; confirmed by Council | Manages operations; shadows Coordinator; **assumes post instantly on vacancy** | Subject to identical recall rules as Coordinator | Operational efficiency index, task completion rate |
+| **Finance & Currency** | Treasury Steward | Senior warehouse managers, forensic auditors | Currency issuance, warehouse reserves, 100% commodity collateral backing (§3) | **Cannot issue without verified collateral;** personal currency wealth strictly capped | Collateral backing ratio ($\ge 100\%$), warehouse loss ($< 2\%$), zero counterfeit |
+| **Agriculture & Food** | Food Steward | Master farmers, grain cooperative leads | Crop planning, seed banks, warehouse reserves, soil and irrigation management | **Cannot set prices unilaterally;** cannot export food during shortages | Net harvest tonnage, reserve buffer days, post-harvest loss rate |
+| **Defense** | War Council (5–7 members) | Senior militia commanders, logistics masters (min. 2 women) | Militia training, 24-hr mobilization (§19), asymmetric defense, intelligence | **Cannot declare war or deploy forces outside territory** without Council vote | 24-hr mobilization drill score, marksmanship rate ($> 90\%$), anti-drone readiness |
+| **Health & Medical** | Health Steward | Senior physicians, herbalists, midwives | Clinic network, preventive care, maternal health, 128-day medicine buffer (§16) | **Strict prohibition on private fees for care;** narcotics strictly controlled | Infant/maternal mortality, disease incidence, 128-day medicine buffer |
+| **Works & Infrastructure** | Works Steward | Civil engineers, water specialists, electricians | Water reticulation, renewable microgrids, roads, defensive fortifications | **Cannot prioritize luxury projects** over essential water and energy access | Clean water access rate, microgrid uptime ($> 98\%$), works index |
+| **Education & Training** | Education Steward | Senior guild masters from apprenticeship system | 4-year apprenticeship curricula, technical libraries, knowledge preservation | **Cannot lower testing standards** without Master Guild consensus | Apprentice graduation rate, master competency scores, archive status |
+| **Justice & Law** | Justice Steward | Elders, dispute mediators with $\ge 10$ yrs experience | Judicial appeals, investigating leadership misconduct, constitutional charter | **Cannot imprison $> 30$ days without Council review; zero capital punishment** | Case resolution cycle ($< 30$ days), zero backlog, integrity score |
+| **Communications & Intel** | Communications Steward | Radio engineers, digital systems specialists | Telemetry networks, emergency broadcasting, counter-propaganda, early warning | **Cannot censor internal reporting;** open books enforced | Broadcast uptime ($> 99.9\%$), warning lead time, network latency |
+| **External Relations** | Diplomacy Steward | Multi-lingual negotiators, regional liaisons | Bilateral trade corridors, non-aggression pacts, intelligence sharing | **Cannot sign secret treaties;** all pacts must be ratified by Council | Trade pacts secured, conflict avoidance rate, threat warning lead |
+
+### The Rotating Chair (No Permanent Leader)
+- The council chair rotates among the 7–11 members **every 3 months** in a
+  predetermined order.
+- **Role:** Facilitates meetings, coordinates emergency responses, and acts as
+  council spokesperson.
+- **Prohibitions:** The chair cannot make decisions alone, cannot veto the
+  council, cannot serve consecutive terms, and **cannot command the defense force**.
+- **Rationale:** Prevents power concentration, assassination vulnerability, and
+  personality cults.
 
 ---
 
-## 20.4 Deterministic succession: zero power vacuums
-
-Power vacuums and messy succession disputes destroy states. In this system,
-transitions are deterministic, institutional, and instant:
+## 20.5 Deterministic succession: zero power vacuums
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -139,25 +191,29 @@ transitions are deterministic, institutional, and instant:
 │ Death / Incapacitation  │ Deputy assumes    │ 0-day power vacuum; new       │
 │                         │ role instantly    │ Deputy selected in 30 days    │
 ├─────────────────────────┼───────────────────┼───────────────────────────────┤
-│ Incompetence (2 Failed  │ Deputy assumes    │ 75% Council vote removes;     │
-│ Review Cycles)          │ role instantly    │ pool selects new permanent    │
+│ Incompetence (2 Failed  │ Deputy assumes    │ Domain practitioners vote     │
+│ Review Cycles)          │ role instantly    │ consensus replacement         │
 ├─────────────────────────┼───────────────────┼───────────────────────────────┤
 │ Corruption / Malfeasance│ Immediate arrest, │ Judicial removal & asset      │
 │                         │ Deputy takes over │ seizure; permanent civic ban  │
+├─────────────────────────┼───────────────────┼───────────────────────────────┤
+│ Simultaneous Multi-Loss │ Council shrinks to│ Domain councils operate       │
+│ (War, Pandemic)         │ min 5; emergency  │ autonomously; pipeline trains │
+│                         │ powers shared     │ rapid replacements            │
 └─────────────────────────┴───────────────────┴───────────────────────────────┘
 ```
 
 ---
 
-## 20.5 Departmental policing and internal enforcement bureaus
+## 20.6 Departmental policing and internal enforcement bureaus
 
 > **Core Insight:** *A system without internal policing rots from within.
-> Soldiers loot and sell weapons on the black market; warehouse staff hoard
-> grain during shortages; clinic staff divert medicines. Every single
-> department must have internal enforcement and independent measurement.*
+> Soldiers loot and sell ammunition; warehouse managers hoard grain during
+> famines; clinic staff steal antibiotics. Every department must have internal
+> enforcers and independent telemetry.*
 
 ```
-                       [ LEADERSHIP COUNCIL ]
+                       [ COMMUNITY COUNCIL ]
                                  │
              ┌───────────────────┴───────────────────┐
              ▼                                       ▼
@@ -188,7 +244,7 @@ transitions are deterministic, institutional, and instant:
   - **Unauthorized Operations:** Neutralizing rogue militia factions attempting
     unauthorized raids outside War Council directives.
 
-### 2. Departmental Enforcers across Civil Bureaus
+### 2. Civil Departmental Enforcers
 
 | Department | Internal enforcement unit | Primary abuses policed | Staffing allocation |
 |---|---|---|---|
@@ -200,7 +256,7 @@ transitions are deterministic, institutional, and instant:
 
 ---
 
-## 20.6 Independent continuous measurement bureaus
+## 20.7 Independent continuous measurement bureaus
 
 To prevent **Goodhart's Law** (when a metric becomes a target, it ceases to be
 a good metric), data recording is completely decoupled from operational management.
@@ -210,7 +266,7 @@ a good metric), data recording is completely decoupled from operational manageme
 the Audit Board and the Steward of Justice — NEVER to the Steward or manager
 of the department being measured.**
 
-### Responsibilities of Measurement Specialists:
+### Key Measurement Responsibilities:
 1. **Physical Flow Telemetry:** Direct sensor and physical count logging of
    grain in/outflows, water reservoir levels, electrical kWh output, and
    fuel liters.
@@ -221,54 +277,86 @@ of the department being measured.**
 
 ---
 
-## 20.7 Citizen accountability: sortition audits and anti-monarchy safeguards
+## 20.8 Accountability without elections
 
-To ensure the Competence Council never degenerates into an entrenched oligarchy
-or monarchy, the system embeds six structural checks:
+### 1. The Right of Recall
+- **Trigger:** A petition signed by **20% of registered community adults** triggers
+  an automatic formal review.
+- **Domain Evaluation:** Practitioners in that domain convene to evaluate the
+  leader against hard metrics.
+- **Data-Driven Defense:** The coordinator must defend their tenure with hard
+  data (*"I increased grain yields by 15%"*), not rhetoric (*"I have a vision for the future"*).
+- **Removal & Appeal:** Consensus among domain practitioners removes the leader
+  immediately. The removed leader may appeal to the full Community Council.
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                    ANTI-OLIGARCHY ACCOUNTABILITY SYSTEM                     │
-├──────────────────────────┬──────────────────────────────────────────────────┤
-│ 1. Sortition Jury Audit  │ 20 citizens chosen randomly by lottery annually; │
-│                          │ full subpoena power to inspect vaults & logs     │
-├──────────────────────────┼──────────────────────────────────────────────────┤
-│ 2. Equal Living Standards│ Leaders receive identical housing, food rations, │
-│                          │ and currency as guild masters (1.0 : 1.0 ratio)  │
-├──────────────────────────┼──────────────────────────────────────────────────┤
-│ 3. Zero Legal Immunity   │ Council members tried under standard community   │
-│                          │ justice without special immunities or pardons    │
-├──────────────────────────┼──────────────────────────────────────────────────┤
-│ 4. Community Recall      │ 30% citizen petition triggers mandatory indepen- │
-│                          │ dent sortition audit and removal vote            │
-├──────────────────────────┼──────────────────────────────────────────────────┤
-│ 5. Post-Tenure Audit     │ Mandatory forensic audit of personal assets and  │
-│                          │ departmental accounts upon leaving office        │
-├──────────────────────────┼──────────────────────────────────────────────────┤
-│ 6. No Dynastic Privilege │ Children of leaders have zero advantage; must    │
-│                          │ qualify through standard 4-year apprenticeship   │
-└──────────────────────────┴──────────────────────────────────────────────────┘
-```
+### 2. Radical Transparency Mechanisms
+- **Open Books:** All financial ledgers, warehouse inventories, currency
+  issuances, and council votes are digitally and physically open to any citizen.
+- **Monthly Community Reporting:** Each coordinator presents a factual monthly
+  summary: what was produced, what was spent, problems encountered, and solutions deployed.
+- **Annual Sortition Jury Audit:** 20 citizens selected by lottery conduct a
+  comprehensive audit of vaults, books, and apprentice facilities.
+- **Whistleblower Protection:** Full legal protection for reporting misconduct;
+  retaliation against a whistleblower is itself a severe criminal offense.
+
+### 3. Term Limits & Anti-Entrenchment
+- **5-Year Maximum Tenure:** No coordinator can serve more than 5 consecutive
+  years in the same domain.
+- **Mandatory 2-Year Cooling-Off:** After 5 years, the leader must return to
+  ordinary productive work (farming, building, medical practice) for at least 2
+  years before becoming eligible again.
+- **Crisis Exception:** During active war, the council may extend a tenure by 1
+  year at a time, subject to community ratification.
+
+### 4. Anti-Monarchy & Anti-Oligarchy Safeguards
+- **Equal Living Standards:** Leaders receive identical housing, food rations,
+  and currency allocations as guild masters (**1.0 : 1.0 ratio**) — no palaces,
+  motorcades, or luxury allocations.
+- **Zero Legal Immunity:** Leaders face the standard justice system without
+  immunities, pardons, or executive privileges.
+- **Zero Dynastic Privilege:** Children of leaders receive zero advantages;
+  they must complete standard apprenticeships and qualify through the ledger.
 
 ---
 
-## 20.8 Summary in one paragraph
+## 20.9 Honest limitations and risks
 
-The **Competence Council Governance Model** replaces the illusion of mass
-electoral politics and the genetic failure of hereditary monarchy with
-functional, technical leadership selected strictly on demonstrated performance.
-Candidates enter the qualification pool automatically via verifiable ledger
-track records (4-year apprenticeship, project delivery, $\ge 75\%$ coworker
-ratings, clean records, age 30+, 10+ years service) and are chosen by 75%
-consensus among the 20–30 senior masters who worked alongside them. Serving
-under a 1-year quantitative probation across 11 functional domains (including a
-5–7 member collective War Council with mandatory female representation),
-leaders operate under deterministic, zero-vacuum succession rules. Internal
-rot is prevented by **Military Police** (enforcing rules of engagement and
-stopping looting, atrocities, and ammunition black-marketing) and **Bureau
-Enforcers** across all civil departments, backed by **Independent Continuous
-Measurement Bureaus** reporting outside departmental command. With **zero legal
-immunity, strictly equal living standards (1.0 : 1.0 ratio), quarterly public
-reviews, and annual 20-citizen sortition jury audits**, the state guarantees
-enduring administrative excellence, internal integrity, and anti-authoritarian
-resilience.
+1. **Requires a functional community:** In an apathetic or corrupt population,
+   competence selection will be hijacked by local power brokers defining
+   "competence" as personal loyalty.
+2. **Slower deliberation than autocracy:** A council of 7–11 deliberating by
+   consensus takes longer to act than a single dictator. *Mitigation:* The War
+   Council possesses emergency tactical powers during active attacks, subject to
+   post-crisis audit.
+3. **Absolute dependence on honest record-keeping:** If the digital and physical
+   ledgers are falsified, the entire merit selection system collapses. *Mitigation:*
+   The independent measurement bureaus and cryptographic verification of RCU (§5)
+   make falsification visible.
+4. **Inter-domain resource competition:** Coordinators will inevitably clash over
+   shared resources (e.g., Agriculture wanting water for crops vs. Works wanting
+   water for hydro power). *Mitigation:* The Justice Steward and Coordinator mediate
+   through structured cost-benefit protocols.
+5. **Scaling challenges:** Designed for communities of hundreds to tens of
+   thousands. National scale requires a **federation of community councils** (§6),
+   which must be proven locally before expanding.
+
+---
+
+## 20.10 Summary in one paragraph
+
+The **Competence-Based Governance Model** eliminates elections, political
+parties, campaigns, and monarchies in favor of quiet, technical administrators
+selected purely on demonstrated physical track records. Candidates qualify via
+objective ledger achievements (4-year apprenticeship, project delivery, $\ge 75\%$
+coworker ratings, clean records, age 30+, 10+ years service) and are chosen by
+consensus among the 20–30 senior masters who worked alongside them, followed by
+a 14-day public challenge window and 1-year target probation. Power is partitioned
+across **7–11 functional domains** with a **3-month rotating chair** and a **5-year
+term limit followed by 2 years of mandatory manual/technical work**. Internal
+integrity is enforced by **Military Police** (preventing looting, atrocities, and
+black-market arms sales) and **Bureau Enforcers** across all civil branches,
+backed by **Independent Continuous Measurement Bureaus** reporting outside
+departmental command. With **zero legal immunity, equal living standards (1.0 : 1.0),
+open books, 20% petition recall, and annual 20-citizen sortition jury audits**,
+the system produces disciplined, incorruptible leadership engineered for
+multi-generational survival.

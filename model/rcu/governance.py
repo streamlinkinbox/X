@@ -3,14 +3,18 @@
 This module models functional governance without electoral politics, voting,
 or monarchy:
 1. ``qualification`` -- objective track-record filtering for leadership pools.
-2. ``peer_selection`` -- multi-stage peer selection with 75% consensus versus
-   mass electoral popularity voting.
+2. ``peer_selection`` -- multi-stage peer selection with 75% consensus / domain
+   consensus versus mass electoral popularity voting.
 3. ``council_roles`` -- 11 functional leadership mandates, terms, and KPI metrics.
-4. ``succession`` -- deterministic, zero-vacuum succession state machine.
-5. ``probation`` -- 1-year quantitative performance evaluation.
-6. ``departmental_policing`` -- internal enforcement (Military Police, warehouse
-   enforcers, anti-hoarding) and independent measurement bureaus in every branch.
-7. ``sortition_audit`` -- statistical model of 20-citizen annual random audits.
+4. ``rotating_chair`` -- 3-month facilitator rotation preventing power accumulation.
+5. ``succession`` -- deterministic, zero-vacuum succession state machine.
+6. ``probation`` -- 1-year quantitative performance evaluation.
+7. ``recall`` -- 20% citizen petition triggering domain-level data-driven review.
+8. ``term_limits`` -- 5-year maximum consecutive tenure + 2-year cooling-off.
+9. ``domain_restrictions`` -- constitutional checks (wealth caps, detention limits).
+10. ``departmental_policing`` -- internal enforcement (Military Police, warehouse
+    enforcers, anti-hoarding) and independent measurement bureaus in every branch.
+11. ``sortition_audit`` -- statistical model of 20-citizen annual random audits.
 """
 
 from __future__ import annotations
@@ -113,7 +117,7 @@ class SelectionComparison:
 
 
 # --------------------------------------------------------------------------
-# 3. Functional Leadership Council Roles
+# 3. Functional Leadership Council Roles & Rotating Chair
 # --------------------------------------------------------------------------
 
 
@@ -143,6 +147,7 @@ class CouncilRole:
     min_members: int = 1
     max_members: int = 1
     mandatory_female_min: int = 0
+    specific_limitation: str = ""
 
 
 COUNCIL_ROLES: tuple[CouncilRole, ...] = (
@@ -158,6 +163,7 @@ COUNCIL_ROLES: tuple[CouncilRole, ...] = (
             "Dispute resolution completion rate",
             "External threat early warning and prevention",
         ),
+        specific_limitation="Cannot make unilateral decrees; cannot override council decisions",
     ),
     CouncilRole(
         title="The Deputy Coordinator",
@@ -171,9 +177,10 @@ COUNCIL_ROLES: tuple[CouncilRole, ...] = (
             "Cross-department task completion rate",
             "Institutional continuity readiness",
         ),
+        specific_limitation="Bound by Coordinator mandates; subject to same recall mechanisms",
     ),
     CouncilRole(
-        title="The Steward of Reserves",
+        title="The Steward of Reserves (Treasury)",
         domain=RoleDomain.TREASURY,
         term_years=4,
         probation_years=1,
@@ -184,9 +191,10 @@ COUNCIL_ROLES: tuple[CouncilRole, ...] = (
             "Warehouse physical spoilage and loss rate (< 2%)",
             "Note counterfeit and grade fraud detection rate",
         ),
+        specific_limitation="Cannot issue currency without verified collateral; personal currency wealth strictly capped",
     ),
     CouncilRole(
-        title="The Steward of Production",
+        title="The Steward of Production (Economy/Food)",
         domain=RoleDomain.ECONOMY,
         term_years=4,
         probation_years=1,
@@ -197,9 +205,10 @@ COUNCIL_ROLES: tuple[CouncilRole, ...] = (
             "Import substitution progress (FX savings)",
             "Productive employment and apprentice placement rate",
         ),
+        specific_limitation="Cannot unilaterally set prices; cannot export food without council approval during shortages",
     ),
     CouncilRole(
-        title="The Steward of Knowledge",
+        title="The Steward of Knowledge (Education)",
         domain=RoleDomain.EDUCATION,
         term_years=4,
         probation_years=1,
@@ -210,9 +219,10 @@ COUNCIL_ROLES: tuple[CouncilRole, ...] = (
             "Critical skill coverage ratio across the community",
             "Knowledge archive completeness and resilience",
         ),
+        specific_limitation="Cannot alter core apprenticeship testing standards without Master Guild consensus",
     ),
     CouncilRole(
-        title="The Steward of Health",
+        title="The Steward of Health (Medical)",
         domain=RoleDomain.HEALTH,
         term_years=4,
         probation_years=1,
@@ -223,22 +233,24 @@ COUNCIL_ROLES: tuple[CouncilRole, ...] = (
             "Infectious disease incidence rate",
             "Essential medicine buffer reserve (minimum 128 days)",
         ),
+        specific_limitation="Strict prohibition on private fees for community care; narcotics strictly controlled",
     ),
     CouncilRole(
-        title="The Steward of Infrastructure",
+        title="The Steward of Infrastructure (Works)",
         domain=RoleDomain.WORKS,
         term_years=4,
         probation_years=1,
         selected_from="Senior builders, civil engineers, water and energy specialists",
-        mandate="Maintains and expands physical infrastructure: water reticulation, renewable energy, roads, and fortifications",
+        mandate="Maintains and expands physical infrastructure: water reticulation, renewable microgrids, roads, fortifications",
         key_metrics=(
             "Clean water access percentage",
             "Electrical microgrid uptime percentage",
             "Road and defensive works condition index",
         ),
+        specific_limitation="Cannot prioritize luxury construction over essential water and energy access",
     ),
     CouncilRole(
-        title="The Steward of Security",
+        title="The Steward of Security (Internal Order)",
         domain=RoleDomain.SECURITY,
         term_years=3,
         probation_years=1,
@@ -249,9 +261,10 @@ COUNCIL_ROLES: tuple[CouncilRole, ...] = (
             "Violent crime and property theft rate",
             "Community safety and trust index",
         ),
+        specific_limitation="No daily firearms on patrol; armory access governed by 3-of-7 quorum and 30-min delay",
     ),
     CouncilRole(
-        title="The War Council",
+        title="The War Council (Defense)",
         domain=RoleDomain.DEFENSE,
         term_years=5,
         probation_years=1,
@@ -266,9 +279,10 @@ COUNCIL_ROLES: tuple[CouncilRole, ...] = (
         min_members=5,
         max_members=7,
         mandatory_female_min=2,
+        specific_limitation="Cannot declare war or deploy forces outside territory without full Council authorization",
     ),
     CouncilRole(
-        title="The Steward of Justice",
+        title="The Steward of Justice (Dispute Resolution)",
         domain=RoleDomain.JUSTICE,
         term_years=5,
         probation_years=1,
@@ -279,9 +293,10 @@ COUNCIL_ROLES: tuple[CouncilRole, ...] = (
             "Judicial integrity and impartiality index",
             "Zero backlog in major property and fraud cases",
         ),
+        specific_limitation="Cannot imprison anyone >30 days without full council review; zero capital punishment",
     ),
     CouncilRole(
-        title="The Steward of Relations",
+        title="The Steward of Relations (Diplomacy)",
         domain=RoleDomain.DIPLOMACY,
         term_years=3,
         probation_years=1,
@@ -292,12 +307,21 @@ COUNCIL_ROLES: tuple[CouncilRole, ...] = (
             "Cross-border conflict avoidance and peaceful de-escalation",
             "External threat early-warning lead time",
         ),
+        specific_limitation="Cannot sign secret treaties; all trade and defense pacts must be ratified by Council",
     ),
 )
 
 
+@dataclass(frozen=True)
+class RotatingChairRule:
+    rotation_months: int = 3
+    chair_count_per_year: int = 4
+    powers: str = "Facilitates meetings, external diplomatic communications, emergency coordination"
+    limitations: str = "Cannot make unilateral decrees; cannot override council; cannot command defense forces"
+
+
 # --------------------------------------------------------------------------
-# 4. Probation & Succession State Machine
+# 4. Probation, Succession & Term Limits
 # --------------------------------------------------------------------------
 
 
@@ -361,6 +385,22 @@ SUCCESSION_RULES: dict[SuccessionTrigger, SuccessionProtocol] = {
         public_disruption_level="Zero — seamless transition",
     ),
 }
+
+
+@dataclass(frozen=True)
+class TermLimitPolicy:
+    max_consecutive_years: int = 5
+    mandatory_cooling_off_years: int = 2
+    crisis_extension_max_years: int = 1   # Allowed only during active war with community ratification
+
+
+@dataclass(frozen=True)
+class RecallProtocol:
+    petition_adult_share_threshold: Decimal = Decimal("0.20")  # 20% of registered adults
+    review_body: str = "Domain Practitioners Assembly"
+    defense_standard: str = "Data-driven performance review against published metrics"
+    decision_rule: str = "Domain consensus removal"
+    appeal_body: str = "Community Council"
 
 
 # --------------------------------------------------------------------------

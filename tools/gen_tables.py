@@ -68,10 +68,13 @@ from model.rcu.governance import (  # noqa: E402
     CandidateRecord,
     MeasurementBureau,
     QualificationPool,
+    RecallProtocol,
     RoleDomain,
+    RotatingChairRule,
     SelectionComparison,
     SortitionAudit,
     SuccessionTrigger,
+    TermLimitPolicy,
 )
 from model.rcu.security import (  # noqa: E402
     ArmouryPolicy,
@@ -879,14 +882,25 @@ def table_governance() -> None:
     W("## A.16 Competence Council governance and departmental enforcement\n\n")
 
     W("### Functional Leadership Council roles\n\n")
-    W("| Title | Domain | Term | Selection base | Collective body |\n|---|---|---|---|---|\n")
+    W("| Title | Domain | Term | Selection base | Constitutional limitation |\n|---|---|---|---|---|\n")
     for r in COUNCIL_ROLES:
-        coll = f"**Yes ({r.min_members}–{r.max_members}, min {r.mandatory_female_min} women)**" if r.is_collective_body else "No (Single Steward)"
         W(
             f"| {r.title} | {r.domain.value.title()} | {r.term_years} + {r.probation_years} yr prob. | "
-            f"{r.selected_from[:35]}... | {coll} |\n"
+            f"{r.selected_from[:30]}... | {r.specific_limitation[:40]}... |\n"
         )
     W("\n")
+
+    chair = RotatingChairRule()
+    term_pol = TermLimitPolicy()
+    recall = RecallProtocol()
+    W("### Governance rotation, term limits, and recall\n\n")
+    W(
+        f"| Parameter | Specification | Purpose |\n|---|---|---|\n"
+        f"| Rotating Council Chair | Every {chair.rotation_months} months ({chair.chair_count_per_year}×/yr) | Facilitator role; {chair.limitations[:45]}... |\n"
+        f"| Maximum consecutive tenure | {term_pol.max_consecutive_years} years max | Prevents entrenched bureaucratic ruling class |\n"
+        f"| Mandatory cooling-off | {term_pol.mandatory_cooling_off_years} years in manual/field work | Re-grounds former leaders in physical production |\n"
+        f"| Citizen recall petition | {float(recall.petition_adult_share_threshold) * 100:.0f}% registered adults | Triggers automatic domain-level review against metrics |\n\n"
+    )
 
     W("### Selection accuracy: peer consensus vs mass ballot\n\n")
     comp = SelectionComparison()

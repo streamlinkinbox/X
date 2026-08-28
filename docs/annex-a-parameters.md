@@ -682,19 +682,28 @@ Dual-use plants (everyday demand keeps them alive until needed):
 
 ### Functional Leadership Council roles
 
-| Title | Domain | Term | Selection base | Collective body |
+| Title | Domain | Term | Selection base | Constitutional limitation |
 |---|---|---|---|---|
-| The Coordinator | Coordination | 3 + 1 yr prob. | Senior practitioners with cross-fun... | No (Single Steward) |
-| The Deputy Coordinator | Coordination | 3 + 1 yr prob. | Selected by Coordinator from qualif... | No (Single Steward) |
-| The Steward of Reserves | Treasury | 4 + 1 yr prob. | Senior warehouse managers, forensic... | No (Single Steward) |
-| The Steward of Production | Economy | 4 + 1 yr prob. | Senior agricultural masters, fabric... | No (Single Steward) |
-| The Steward of Knowledge | Education | 4 + 1 yr prob. | Senior guild masters from the appre... | No (Single Steward) |
-| The Steward of Health | Health | 4 + 1 yr prob. | Senior medical practitioners (physi... | No (Single Steward) |
-| The Steward of Infrastructure | Works | 4 + 1 yr prob. | Senior builders, civil engineers, w... | No (Single Steward) |
-| The Steward of Security | Security | 3 + 1 yr prob. | Senior security cooperative members... | No (Single Steward) |
-| The War Council | Defense | 5 + 1 yr prob. | Senior militia commanders, tacticia... | **Yes (5–7, min 2 women)** |
-| The Steward of Justice | Justice | 5 + 1 yr prob. | Community elders and legal mediatio... | No (Single Steward) |
-| The Steward of Relations | Diplomacy | 3 + 1 yr prob. | Experienced negotiators with multi-... | No (Single Steward) |
+| The Coordinator | Coordination | 3 + 1 yr prob. | Senior practitioners with cros... | Cannot make unilateral decrees; cannot o... |
+| The Deputy Coordinator | Coordination | 3 + 1 yr prob. | Selected by Coordinator from q... | Bound by Coordinator mandates; subject t... |
+| The Steward of Reserves (Treasury) | Treasury | 4 + 1 yr prob. | Senior warehouse managers, for... | Cannot issue currency without verified c... |
+| The Steward of Production (Economy/Food) | Economy | 4 + 1 yr prob. | Senior agricultural masters, f... | Cannot unilaterally set prices; cannot e... |
+| The Steward of Knowledge (Education) | Education | 4 + 1 yr prob. | Senior guild masters from the ... | Cannot alter core apprenticeship testing... |
+| The Steward of Health (Medical) | Health | 4 + 1 yr prob. | Senior medical practitioners (... | Strict prohibition on private fees for c... |
+| The Steward of Infrastructure (Works) | Works | 4 + 1 yr prob. | Senior builders, civil enginee... | Cannot prioritize luxury construction ov... |
+| The Steward of Security (Internal Order) | Security | 3 + 1 yr prob. | Senior security cooperative me... | No daily firearms on patrol; armory acce... |
+| The War Council (Defense) | Defense | 5 + 1 yr prob. | Senior militia commanders, tac... | Cannot declare war or deploy forces outs... |
+| The Steward of Justice (Dispute Resolution) | Justice | 5 + 1 yr prob. | Community elders and legal med... | Cannot imprison anyone >30 days without ... |
+| The Steward of Relations (Diplomacy) | Diplomacy | 3 + 1 yr prob. | Experienced negotiators with m... | Cannot sign secret treaties; all trade a... |
+
+### Governance rotation, term limits, and recall
+
+| Parameter | Specification | Purpose |
+|---|---|---|
+| Rotating Council Chair | Every 3 months (4×/yr) | Facilitator role; Cannot make unilateral decrees; cannot overri... |
+| Maximum consecutive tenure | 5 years max | Prevents entrenched bureaucratic ruling class |
+| Mandatory cooling-off | 2 years in manual/field work | Re-grounds former leaders in physical production |
+| Citizen recall petition | 20% registered adults | Triggers automatic domain-level review against metrics |
 
 ### Selection accuracy: peer consensus vs mass ballot
 
