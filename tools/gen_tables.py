@@ -76,6 +76,18 @@ from model.rcu.governance import (  # noqa: E402
     SuccessionTrigger,
     TermLimitPolicy,
 )
+from model.rcu.environmental_intel import (  # noqa: E402
+    CIS_DIRECTORATES,
+    COMMON_TRANSBOUNDARY_EVENTS,
+    AlertLevel,
+    CISDirectorateType,
+    CISSafeguards,
+    CISStaffing,
+    EIAAssessment,
+    EIARiskRating,
+    EDMBStaffing,
+    EnvironmentalTelemetry,
+)
 from model.rcu.integrity import (  # noqa: E402
     EnvironmentalStress,
     EvaluationVerdict,
@@ -1084,6 +1096,52 @@ def table_rab() -> None:
     )
 
 
+def table_intel_env() -> None:
+    W("## A.19 Intelligence Service (CIS) and Environmental Disaster Bureau (EDMB)\n\n")
+
+    W("### Community Intelligence Service (CIS) directorates\n\n")
+    W("| Directorate | Mandate | Primary deliverable |\n|---|---|---|\n")
+    for d in CIS_DIRECTORATES:
+        W(
+            f"| **{d.name}** | {d.mandate[:45]}... | {d.primary_deliverables[0]} |\n"
+        )
+    W("\n")
+
+    cis_staff = CISStaffing(population=10000)
+    edmb_staff = EDMBStaffing(population=10000)
+    W("### Staffing architecture (10,000 population)\n\n")
+    W(
+        f"| Agency | Permanent staff | Volunteers | Functional scope |\n|---|---|---|---|\n"
+        f"| **CIS (External Intelligence)** | **{cis_staff.total_staff}** | 0 | HUMINT ({cis_staff.humint_officers}), SIGINT ({cis_staff.sigint_technicians}), OSINT ({cis_staff.osint_analysts}), CI ({cis_staff.counter_intel_officers}) |\n"
+        f"| **EDMB (Ecology & Disaster)** | **{edmb_staff.permanent_staff}** | **{edmb_staff.trained_emergency_volunteers}** | Monitoring ({edmb_staff.monitoring_technicians}), EIA ({edmb_staff.eia_assessors}), Rescue ({edmb_staff.disaster_response_coordinators}), Regeneration ({edmb_staff.regeneration_specialists}) |\n"
+        f"| **Total Sensory & Ecological Force** | **{cis_staff.total_staff + edmb_staff.permanent_staff}** | **{edmb_staff.trained_emergency_volunteers}** | **Mobilizable crisis force of {cis_staff.total_staff + edmb_staff.total_mobilizable_response_force} personnel** |\n\n"
+    )
+
+    W("### Environmental telemetry & predictive disaster lead times\n\n")
+    W("| Disaster threat | Primary monitoring telemetry | Predictive lead time | Action threshold |\n|---|---|---|---|\n")
+    W("| **Floods** | River float gauges + 24h rainfall | 24–72 hours | Gauge $> 1.0\times$ threshold or rain $> 120$ mm (Red Alert) |\n")
+    W("| **Landslides** | Soil moisture saturation + slope angle | 12–48 hours | Slope $\ge 30^\circ$ and saturation $\ge 90\%$ (Red Alert) |\n")
+    W("| **Epidemics / Vectors** | Mosquito larvae delta + water pathogens | 2–4 weeks | Larvae surge $\ge 250\%$ or pathogens $> 10$ CFU (Red Alert) |\n")
+    W("| **Droughts** | Multi-season rainfall + reservoir drawdown | 3–12 months | 2 consecutive failed seasonal rain cycles |\n")
+    W("| **Forest Fires** | Ambient temperature + brush moisture | 1–7 days | Relative humidity $< 20\%$ with high winds |\n\n")
+
+    W("### Environmental Impact Assessment (EIA) risk framework\n\n")
+    W("| EIA Risk level | Project status | Required action | Override threshold |\n|---|---|---|---|\n")
+    W("| **Low** | Approved | Standard monitoring | Standard Council assent |\n")
+    W("| **Moderate** | Conditional | Mandatory mitigation plan approved by EDMB | Proposing Steward complies |\n")
+    W("| **High** | Suspended | Mandatory engineering redesign | Redesign re-evaluated by EDMB |\n")
+    W("| **Critical** | **DENIED** | Unacceptable ecological catastrophe risk | **75% Council Supermajority Override Only** |\n\n")
+
+    W("### The Awareness Triangle in action (Sample transboundary events)\n\n")
+    W("| Transboundary crisis | Detected by | CIS action | EDMB action | Council response |\n|---|---|---|---|---|\n")
+    for ev in COMMON_TRANSBOUNDARY_EVENTS:
+        W(
+            f"| **{ev.event_name[:32]}...** | {ev.detected_by[:25]}... | "
+            f"{ev.cis_action[:30]}... | {ev.edmb_action[:30]}... | {ev.council_action[:30]}... |\n"
+        )
+    W("\n")
+
+
 def main() -> None:
     header()
     table_classes()
@@ -1104,6 +1162,7 @@ def main() -> None:
     table_governance()
     table_integrity()
     table_rab()
+    table_intel_env()
 
 
 if __name__ == "__main__":

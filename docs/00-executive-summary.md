@@ -381,6 +381,26 @@ accusations, and single-commodity Dutch Disease:
   open data by default, **2-year Chief Analyst rotation**, and mandatory annual
   external audits by federated community teams.
 
+## External intelligence & ecology: the Awareness Triangle
+
+§23 completes the sensory apparatus of the state, pairing internal analysis (RAB)
+with outward awareness and ecological guardianship:
+
+- **Community Intelligence Service (CIS):** 16–24 external intelligence officers
+  monitoring geopolitical horizons via HUMINT (traders, refugees, diaspora), SIGINT
+  (radio, border cellular, drone RF), OSINT (government gazettes, mining concessions),
+  and Counter-Intelligence (disinformation, cyber, supply chain defense).
+  *Strict prohibition on domestic surveillance; zero offensive operations.*
+- **Environmental & Disaster Management Bureau (EDMB):** 21–32 permanent staff
+  and 50–100 trained emergency volunteers operating real-time river, rainfall,
+  soil, and disease vector sensors.
+- **Mandatory Environmental Impact Assessments (EIA):** All civil projects
+  must receive an EIA. Critical-risk projects are denied by default and require a
+  **75% Council supermajority override**.
+- **Predictive Disaster Preparedness:** Floods (24–72h), landslides (12–48h),
+  and droughts (3–12m) predicted and countered with pre-positioned 30-day caches
+  and 4-phase rescue operations.
+
 ## What this system cannot do
 
 Stated plainly, because a blueprint that only lists strengths is marketing:
@@ -429,6 +449,7 @@ Stated plainly, because a blueprint that only lists strengths is marketing:
 | [`20-competence-council-and-departmental-policing.md`](20-competence-council-and-departmental-policing.md) | **Competence Council governance, departmental policing, measurement** |
 | [`21-anti-corruption-and-resource-curse-prevention.md`](21-anti-corruption-and-resource-curse-prevention.md) | **Anti-corruption, difficulty diagnostics, resource curse prevention** |
 | [`22-research-and-analysis-bureau.md`](22-research-and-analysis-bureau.md) | **Research and Analysis Bureau (RAB), cross-silo intelligence, reform** |
+| [`23-intelligence-and-environmental-disaster-management.md`](23-intelligence-and-environmental-disaster-management.md) | **Community Intelligence (CIS), Environmental Disaster Bureau (EDMB)** |
 | [`annex-a-parameters.md`](annex-a-parameters.md) | Generated tables: all parameters and stress results |
 | [`annex-b-open-problems.md`](annex-b-open-problems.md) | Unsolved problems, ranked by how badly they hurt |
 

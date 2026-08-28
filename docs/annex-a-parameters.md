@@ -831,3 +831,49 @@ Dual-use plants (everyday demand keeps them alive until needed):
 | Analyst maximum tenure | **5 years max** | Mandatory return to productive guild work |
 | External audit | **Mandatory annual review** | Independent validation of algorithms and data |
 
+## A.19 Intelligence Service (CIS) and Environmental Disaster Bureau (EDMB)
+
+### Community Intelligence Service (CIS) directorates
+
+| Directorate | Mandate | Primary deliverable |
+|---|---|---|
+| **Human Intelligence Directorate** | Gathers information through long-distance tra... | Weekly Regional Situation Reports (200km radius) |
+| **Signals Intelligence Directorate** | Monitors external electronic transmissions, r... | Immediate Pre-Deployment Tactical Radio Alerts |
+| **Open Source Intelligence Directorate** | Synthesizes global and regional public data: ... | Daily Curated News Digest |
+| **Counter-Intelligence Directorate** | Protects the community against external espio... | Espionage Threat Bulletins |
+
+### Staffing architecture (10,000 population)
+
+| Agency | Permanent staff | Volunteers | Functional scope |
+|---|---|---|---|
+| **CIS (External Intelligence)** | **20** | 0 | HUMINT (6), SIGINT (4), OSINT (5), CI (4) |
+| **EDMB (Ecology & Disaster)** | **26** | **75** | Monitoring (10), EIA (4), Rescue (5), Regeneration (6) |
+| **Total Sensory & Ecological Force** | **46** | **75** | **Mobilizable crisis force of 121 personnel** |
+
+### Environmental telemetry & predictive disaster lead times
+
+| Disaster threat | Primary monitoring telemetry | Predictive lead time | Action threshold |
+|---|---|---|---|
+| **Floods** | River float gauges + 24h rainfall | 24–72 hours | Gauge $> 1.0	imes$ threshold or rain $> 120$ mm (Red Alert) |
+| **Landslides** | Soil moisture saturation + slope angle | 12–48 hours | Slope $\ge 30^\circ$ and saturation $\ge 90\%$ (Red Alert) |
+| **Epidemics / Vectors** | Mosquito larvae delta + water pathogens | 2–4 weeks | Larvae surge $\ge 250\%$ or pathogens $> 10$ CFU (Red Alert) |
+| **Droughts** | Multi-season rainfall + reservoir drawdown | 3–12 months | 2 consecutive failed seasonal rain cycles |
+| **Forest Fires** | Ambient temperature + brush moisture | 1–7 days | Relative humidity $< 20\%$ with high winds |
+
+### Environmental Impact Assessment (EIA) risk framework
+
+| EIA Risk level | Project status | Required action | Override threshold |
+|---|---|---|---|
+| **Low** | Approved | Standard monitoring | Standard Council assent |
+| **Moderate** | Conditional | Mandatory mitigation plan approved by EDMB | Proposing Steward complies |
+| **High** | Suspended | Mandatory engineering redesign | Redesign re-evaluated by EDMB |
+| **Critical** | **DENIED** | Unacceptable ecological catastrophe risk | **75% Council Supermajority Override Only** |
+
+### The Awareness Triangle in action (Sample transboundary events)
+
+| Transboundary crisis | Detected by | CIS action | EDMB action | Council response |
+|---|---|---|---|---|
+| **Upstream Dam Construction by Nei...** | CIS (HUMINT from traders ... | Monitors construction timeline... | Models downstream river flow r... | Initiates bilateral water trea... |
+| **Regional Cholera Outbreak in Bor...** | CIS (OSINT news digests) ... | Tracks refugee and border trav... | Increases chlorination monitor... | Establishes border health scre... |
+| **Prolonged Regional Drought Patte...** | EDMB (Rainfall & soil tel... | Monitors neighboring state foo... | Predicts drought duration and ... | Mandates drought-resistant mil... |
+

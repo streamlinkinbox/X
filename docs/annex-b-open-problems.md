@@ -511,6 +511,34 @@ solutions.
 
 ---
 
+### P19: Transboundary watershed conflict and regional SIGINT countermeasures
+
+**Severity: high. Geopolitical and ecological vulnerability.**
+
+When an external upstream power or foreign mining conglomerate alters shared
+hydrological flows, dumps heavy-metal tailings, or deploys advanced electronic
+countermeasures (RF jamming, cellular IMSI-catchers, encrypted drone feeds), the
+community faces dual vulnerabilities:
+1. **Diplomatic / Legal Impasse:** Because the community is not recognized as a
+   sovereign state in international treaty forums, it cannot sue an upstream
+   dam operator at the International Court of Justice.
+2. **SIGINT Blindness & Spoofing:** Sophisticated state actors can spoof radio
+   direction-finding equipment, feed false crop telemetry, or jam SDR listening
+   posts at the border perimeter (§23.2).
+
+**Mitigation:**
+- **Triangulated HUMINT & OSINT Cross-Verification (§23.4):** CIS never relies
+  on SIGINT alone; commercial SAR radar satellite imagery and merchant trader
+  reports verify hydrological alterations before alerts are issued.
+- **Physical Sensor Hardening & LoRa Mesh Failover:** EDMB monitoring river
+  gauges use physical float lines and low-frequency mesh relays independent of
+  commercial cellular infrastructure.
+- **Upstream Civil Alliances & Downstream Coalitions:** The Diplomacy Bureau
+  builds shared telemetry compacts with upstream indigenous and peasant
+  communities, exchanging local medical assistance for real-time river flow data.
+
+---
+
 ## Summary
 
 | # | Problem | Severity | Status |
@@ -533,6 +561,7 @@ solutions.
 | P16 | Peer selection cartels and guild conservatism | **Medium-High (new)** | Mitigated by objective ledger filters, 1-yr probation, and sortition juries |
 | P17 | Cross-regional comparative benchmarking data reliability | **Medium (new)** | Satellite/NDVI telemetry + multi-year local baseline calibration |
 | P18 | Epistemic capture and analyst bias in central intelligence | **Medium-High (new)** | Open data + 2-yr rotation + 5-yr analyst term limits + external audits |
+| P19 | Transboundary watershed conflict and SIGINT spoofing | **High (new)** | Triangulated OSINT/HUMINT + LoRa mesh failover + upstream grassroots pacts |
 
 **The three at the top are not reasons to abandon the design.** They are the
 reasons a pilot exists — and a pilot that is not explicitly built to test

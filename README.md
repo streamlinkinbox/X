@@ -59,6 +59,7 @@ the five model findings that change the original design.
 | [20 Competence Council](docs/20-competence-council-and-departmental-policing.md) | **Merit governance, departmental policing, measurement bureaus** |
 | [21 Anti-corruption](docs/21-anti-corruption-and-resource-curse-prevention.md) | **Difficulty diagnostics, shadow succession, resource curse** |
 | [22 Research & Analysis Bureau](docs/22-research-and-analysis-bureau.md) | **Cross-silo intelligence, 5 divisions, closed-loop reform** |
+| [23 Intelligence & Environment](docs/23-intelligence-and-environmental-disaster-management.md) | **Community Intelligence (CIS), Ecology & Disaster (EDMB)** |
 | [Annex A](docs/annex-a-parameters.md) | **Generated** parameter and stress tables |
 | [Annex B](docs/annex-b-open-problems.md) | Unsolved problems, ranked by severity |
 
@@ -350,6 +351,30 @@ siloed departmental data into systemic reform.**
 Staffed by **35–55 analysts per 10k population**, bounded by **zero arrest powers,
 public open data, 2-year leadership rotation, and annual external audits**.
 See [§22](docs/22-research-and-analysis-bureau.md).
+
+## External intelligence & ecology: the Awareness Triangle
+
+§23 eliminates the state's external and ecological blind spots through two dedicated organs:
+
+```
+                  ┌────────────────────────────────────────┐
+                  │         THE AWARENESS TRIANGLE         │
+                  ├───────────────────┬────────────────────┤
+                  │ CIS (External)    │ EDMB (Ecological)  │
+                  │ Traders, SIGINT,  │ Real-time sensors, │
+                  │ OSINT, CI         │ EIA, Disaster Prep │
+                  └─────────┬─────────┴──────────┬─────────┘
+                            └─────────┬──────────┘
+                                      ▼
+                             RAB (Synthesis) §22
+```
+
+| Agency | Mandate | Operational Deliverables |
+|---|---|---|
+| **Community Intelligence Service (CIS)** | Looks outward; monitors foreign actors, military staging, and markets | Weekly Situation Reports (200km), drone RF alerts, and daily OSINT news digests |
+| **Environmental & Disaster Bureau (EDMB)** | Real-time sensor monitoring, mandatory EIAs, disaster rescue, and reforestation | Flood/landslide early warnings, 75% Council EIA override rule, 3-to-1 tree replanting |
+
+See [§23](docs/23-intelligence-and-environmental-disaster-management.md).
 
 ## Honest positioning
 
