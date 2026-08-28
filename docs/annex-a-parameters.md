@@ -301,3 +301,62 @@ Identical population size and identical underlying reliability (5%). The only di
 
 Starting from 12 masters, year 10 yields 23.1 practitioners -- **1.9x, not 20x.** The binding constraint is supervision capacity, not willing apprentices. The community first holds more practitioners than it started with in **year 5**, which is the honest success criterion: knowledge outliving its holders.
 
+## A.11 Service credits: clearing, earning capacity, incentives
+
+### Can service credits be redeemed?
+
+A credit that cannot be redeemed is a queue ticket. Supply of practitioner hours against demand for them:
+
+| Service | Ratio | Demand covered | Clears? | Backlog |
+|---|---|---|---|---|
+| Doctor (typical) | 1:25,000 | 6.4% | no | 15.63 yr |
+| Doctor (generous) | 1:5,000 | 32.0% | no | 3.13 yr |
+| Nurse / clinical officer | 1:2,000 | 80.0% | no | 1.25 yr |
+| Community health worker | 1:500 | 320.0% | **yes** | 0.31 yr |
+| Teacher | 1:60 | 66.7% | no | 1.50 yr |
+
+**Service credits work where skill is abundant and fail where it is scarce.** See section 15.3.
+
+### Who can earn care credits?
+
+| Segment | People | Can earn (h) | Needs (h) | Self-sufficiency | Subsidy |
+|---|---|---|---|---|---|
+| Healthy adults | 700 | 66,500 | 4,200 | 15.833 | no |
+| Frail elderly | 150 | 2,250 | 4,500 | 0.500 | **yes** |
+| Chronically ill / disabled | 100 | 2,000 | 4,000 | 0.500 | **yes** |
+| Children | 50 | 250 | 750 | 0.333 | **yes** |
+
+**Earning capacity is inversely related to need** -- the Fureai Kippu trap. A grant channel is mandatory. See section 15.4.
+
+### Flat rate versus skill premium
+
+| Skill multiplier | Lifetime if trained | If untrained | Net | Rational? |
+|---|---|---|---|---|
+| 1x | 48,000 | 59,200 | -11,200 | **no** |
+| 1.5x | 72,000 | 59,200 | +12,800 | yes |
+| 2x | 96,000 | 59,200 | +36,800 | yes |
+| 3x | 144,000 | 59,200 | +84,800 | yes |
+
+**Breakeven premium is only 1.233x.** Market differentials between a doctor and an unskilled worker are commonly 10-50x. The incentive function is served at about 1.25x; the remainder is rent.
+
+### What drives the price of care
+
+| Input | Share |
+|---|---|
+| Labour (practitioner + support) | 57% |
+| Consumables and drugs | 25% |
+| Equipment amortisation | 8% |
+
+Capital equipment is **8%** -- too small to explain prices that bankrupt families. But recurring consumables are three times larger and must be imported. **60% of care cost could be paid in labour credits; 40% requires real goods or foreign exchange.**
+
+### The backing can emigrate
+
+| Event | Coverage | Holders lose |
+|---|---|---|
+| Start (3 practitioners) | 1.200 | -- |
+| 1 leave | 0.800 | 20% |
+| 2 leave | 0.400 | 60% |
+| 3 leave | 0.000 | 100% |
+
+Grain cannot get on a plane. A currency backed by scarce professionals is backed by the people most likely to leave.
+

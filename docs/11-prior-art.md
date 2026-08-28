@@ -214,7 +214,40 @@ tuition. Relevant to §14.6, with the caveat modelled there: growth is limited
 by supervision capacity, so realistic projections are far below the
 enthusiastic ones.
 
-## 11.8 Honest novelty assessment
+## 11.8 Time banking and care currencies
+
+Directly relevant to §15, and the closest prior art to a service-backed
+currency.
+
+**Time banking** (Edgar Cahn, 1980) makes one hour of anyone's time equal to
+one hour of anyone else's, deliberately, as a statement that the market
+undervalues relational labour. Hundreds of schemes operate across dozens of
+countries. Two consistent findings matter here: participants **earn credits
+far more easily than they spend them** -- in early time banks nobody spent
+more than about 20% of what they earned -- and the model explicitly struggles
+with "highly specialised and technical" services such as medical procedures,
+because providers cannot find members able to match the value.
+
+**Fureai Kippu** (Japan, from 1973) is the largest care-credit system ever
+run: credits earned caring for the elderly, bankable against one's own future
+care. Its documented central failure is decisive for this blueprint --
+**service users were often unable to earn credits precisely because of their
+frailty and disability**, and paid cash instead. User fees reached as much as
+70% of income in some organisations, excluding the poorest older users.
+Growth stalled after public long-term care insurance arrived in 2000.
+
+One encouraging finding: elderly recipients often *preferred* carers paid in
+credits to those paid in money, because the relationship felt different.
+
+**LETS** (Michael Linton, 1983) mobilises latent skills where cash is scarce,
+and shares the chronic problem of credit accumulation without matching
+demand.
+
+**Implication:** these systems work for abundant, low-training, relational
+labour and fail for scarce specialists. §15 reaches the same conclusion from
+arithmetic; the practitioners got there first, from experience.
+
+## 11.9 Honest novelty assessment
 
 | Component | Prior art | Novel here? |
 |---|---|---|
@@ -241,7 +274,7 @@ idea, and it is worth writing up on its own.**
 
 ---
 
-## 11.9 Reading list
+## 11.10 Reading list
 
 **Essential:**
 - Graham, B. (1937) *Storage and Stability*
@@ -257,6 +290,9 @@ idea, and it is worth writing up on its own.**
 - Tierney, Bevc & Kuligowski (2006) "Metaphors Matter: Disaster Myths, Media
   Frames, and Their Consequences in Hurricane Katrina"
 - Solnit, R. (2009) *A Paradise Built in Hell*
+- Cahn, E. (2004) *No More Throw-Away People*
+- Hayashi, M. (2012) "Japan's Fureai Kippu Time-banking in Elderly Care",
+  *International Journal of Community Currency Research*
 - Cooper, R. (1988) "Toward an International Commodity Standard?", *Cato
   Journal* 8(2)
 - FAO (2016) *Designing warehouse receipt legislation*

@@ -346,6 +346,31 @@ cycles** rather than raw counts, which is measurable but not yet a recipe.
 
 ---
 
+## P13. Scarce services cannot be monetised
+
+**Severity: high. Introduced by §15. Structurally unsolvable as a currency.**
+
+A service credit is a claim on a future hour of a living person. Unlike a
+commodity note, the backing does not survive the institution, cannot be
+inspected before it exists, is not storable, and **can emigrate**.
+
+For abundant labour this is manageable. For scarce specialists it is fatal:
+at one doctor per 25,000 people, doctor-hour credits cover **6.4%** of demand
+and represent a 15-year queue. Worse, need is inversely related to earning
+capacity, so a care currency charges the sick most at the moment they can
+produce least -- the documented failure of Japan's Fureai Kippu.
+
+**Not solvable by better design.** The blueprint's answer is to stop trying:
+use risk-pooling (a commodity-backed health fund) for scarce care, credits
+only for abundant labour, and training bonds to reduce the scarcity itself.
+
+What remains genuinely open: **roughly 40% of the cost of care -- consumables,
+drugs, equipment -- must be bought abroad and cannot be met by any local
+currency.** No design in this document solves that. It requires exports or
+external finance.
+
+---
+
 ## Summary
 
 | # | Problem | Severity | Status |
@@ -362,6 +387,7 @@ cycles** rather than raw counts, which is measurable but not yet a recipe.
 | P10 | Impact measurement | Medium | Methodologically hard |
 | P11 | No common unit of account | **High (new)** | Mitigations untested; Phase 1 must measure |
 | P12 | Recruiting the acceptor network, not just a cadre | **High (new)** | §14.2 gives the arithmetic; no proven playbook at scale |
+| P13 | Scarce services cannot be monetised | **High (new)** | Structural; use pooling not credits. FX gap for consumables unsolved |
 
 **The three at the top are not reasons to abandon the design.** They are the
 reasons a pilot exists — and a pilot that is not explicitly built to test

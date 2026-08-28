@@ -51,6 +51,7 @@ the five model findings that change the original design.
 | [12 Bundle pricing & receipts](docs/12-bundle-pricing-and-receipts.md) | Bundle prices, dual-price receipts, hoarding |
 | [13 Weight denomination](docs/13-weight-denomination.md) | **Physical units, grading, provenance — supersedes §1.1** |
 | [14 People & recruitment](docs/14-people-and-recruitment.md) | Cadre vs. network, screening bias, apprenticeship |
+| [15 Service credits](docs/15-service-credits.md) | Labour-backed currency, health costs, care pooling |
 | [Annex A](docs/annex-a-parameters.md) | **Generated** parameter and stress tables |
 | [Annex B](docs/annex-b-open-problems.md) | Unsolved problems, ranked by severity |
 
@@ -190,6 +191,31 @@ test wrongly rejects 23 reliable people from a destitute pool versus 3 from a
 comfortable one), and apprenticeship yields **~1.9× in a decade, not 20×** —
 supervision capacity is the bottleneck. See
 [§14](docs/14-people-and-recruitment.md).
+
+## Can labour back the currency?
+
+§15 models service credits. They work for abundant labour and fail for scarce
+specialists:
+
+| Service | Ratio | Demand covered | Clears? |
+|---|---|---|---|
+| Doctor | 1:25,000 | **6.4%** | No — 15-year queue |
+| Nurse | 1:2,000 | 80% | No |
+| Community health worker | 1:500 | **320%** | **Yes** |
+
+Two further findings: **the sick cannot earn** (need is inversely related to
+earning capacity — the documented failure of Japan's Fureai Kippu), and the
+backing **emigrates** in a way grain cannot.
+
+On the cost of care, the popular grievance is largely correct — capital
+equipment is only **8%** of delivered cost, labour ~57%, and the skill premium
+needed to justify seven years of training is **1.23×** against market
+differentials of 10–50×. But recurring imported consumables are **25%**, so
+**~40% of care cost cannot be paid in any local currency.**
+
+Answer: credits for abundant labour, a commodity-backed health **fund** for
+scarce care, training bonds to reduce scarcity. See
+[§15](docs/15-service-credits.md).
 
 ## Honest positioning
 

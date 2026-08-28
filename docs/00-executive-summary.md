@@ -207,6 +207,32 @@ decade, not 20×**, because supervision capacity, not enthusiasm, is the
 bottleneck. The honest win is that the community holds more practitioners
 than it started with by roughly year 5: knowledge outliving its holders.
 
+## Can services back the currency?
+
+§15 tests whether skilled labour — a doctor's hour — can be a monetary unit.
+**Partly, and not where the injustice is sharpest.**
+
+The grievance checks out. Health costs push over **150 million people** into
+or deeper into poverty in the WHO Africa region alone, and capital equipment
+is only about **8%** of the cost of care — far too small to justify bills that
+bankrupt families. Labour is ~57%. The market pays specialists **10–50×** an
+unskilled worker; the premium actually needed to make seven years of training
+rational is **1.23×**. The rest is rent.
+
+But service credits fail for scarce specialists, for three independent
+reasons: at 1 doctor per 25,000 they cover **6.4%** of demand (a 15-year queue
+ticket); **the sick cannot earn** (need is inversely related to earning
+capacity — Japan's Fureai Kippu proved this over decades); and **the backing
+emigrates**, where grain cannot.
+
+So: credits for *abundant* labour, a commodity-backed health **fund** for
+scarce care, and training bonds to reduce the scarcity. Pooling is the key —
+what destroys families is not the price of care but being asked to pay it *at
+the moment of illness*.
+
+**The hard limit:** ~40% of care cost is imported consumables and drugs.
+No local currency can pay for those.
+
 ## What this system cannot do
 
 Stated plainly, because a blueprint that only lists strengths is marketing:
@@ -245,6 +271,7 @@ Stated plainly, because a blueprint that only lists strengths is marketing:
 | [`12-bundle-pricing-and-receipts.md`](12-bundle-pricing-and-receipts.md) | Bundle prices, dual-price receipts, the hoarding question |
 | [`13-weight-denomination.md`](13-weight-denomination.md) | **Weight-denominated units, grading, provenance — supersedes §1.1** |
 | [`14-people-and-recruitment.md`](14-people-and-recruitment.md) | Recruitment, screening, trust, apprenticeship — the human constraint |
+| [`15-service-credits.md`](15-service-credits.md) | Can labour back a currency? Health costs, time banking, care |
 | [`annex-a-parameters.md`](annex-a-parameters.md) | Generated tables: all parameters and stress results |
 | [`annex-b-open-problems.md`](annex-b-open-problems.md) | Unsolved problems, ranked by how badly they hurt |
 

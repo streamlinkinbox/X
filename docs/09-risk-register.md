@@ -32,6 +32,10 @@ project-threatening and must have an owner and a mitigation before launch.
 | R23 | **Secrecy doctrine adopted; system unauditable** | 3 | 5 | **15** | §6 transparency is non-negotiable; a warehouse cannot be clandestine | 6 |
 | R24 | **Screening selects the comfortable** | 4 | 3 | 12 | Cost-free tests, multiple pass routes, monitor participant wealth profile (§14.4) | 6 |
 | R25 | **Half-trained practitioner causes harm** | 3 | 5 | **15** | Scope-of-practice limits; written referral protocol; clinician oversight (§14.6) | 6 |
+| R26 | **Service credits issued against scarce specialists; cannot clear** | 4 | 5 | **20** | 90-day clearing test; abundant-labour classes only (§15.3) | 7 |
+| R27 | **Care credits reproduce injustice: the sick cannot earn** | 4 | 5 | **20** | Grant channel funded by gate levies, not by patients (§15.4) | 8 |
+| R28 | **Practitioner emigration wipes out credit holders** | 4 | 4 | **16** | Never back credits on fewer than 5 practitioners; insure; diversify (§15.2) | 8 |
+| R29 | **Service-hour obligations become indenture** | 2 | 5 | **10** | Hard caps; commodity buy-out; lapse on disability (§15.6) | 4 |
 
 ---
 

@@ -26,6 +26,16 @@ from model.rcu.people import (  # noqa: E402
     screening_bias,
     years_to_replace_masters,
 )
+from model.rcu.services import (  # noqa: E402
+    CreditPool,
+    EarnCapacity,
+    ServiceCapacity,
+    cost_decomposition,
+    equipment_pretext_check,
+    practitioner_departure_shock,
+    sick_cannot_earn,
+    training_incentive,
+)
 from model.rcu.units import (  # noqa: E402
     PHYSICAL_HAIRCUT,
     UNIT_DEFINITION,
@@ -404,6 +414,104 @@ def table_people() -> None:
     )
 
 
+def table_services() -> None:
+    W("## A.11 Service credits: clearing, earning capacity, incentives\n\n")
+
+    W("### Can service credits be redeemed?\n\n")
+    W(
+        "A credit that cannot be redeemed is a queue ticket. Supply of "
+        "practitioner hours against demand for them:\n\n"
+    )
+    W("| Service | Ratio | Demand covered | Clears? | Backlog |\n")
+    W("|---|---|---|---|---|\n")
+    for name, prac, pop, ep, hpe in (
+        ("Doctor (typical)", 1, 25_000, 2.0, 0.5),
+        ("Doctor (generous)", 1, 5_000, 2.0, 0.5),
+        ("Nurse / clinical officer", 1, 2_000, 2.0, 0.5),
+        ("Community health worker", 1, 500, 2.0, 0.5),
+        ("Teacher", 1, 60, 40.0, 1.0),
+    ):
+        s = ServiceCapacity(name, prac, pop, episodes_per_person=ep,
+                            hours_per_episode=hpe)
+        W(
+            f"| {name} | 1:{s.people_per_practitioner:,} | "
+            f"{float(s.coverage) * 100:.1f}% | "
+            f"{'**yes**' if s.can_clear else 'no'} | "
+            f"{s.queue_years()} yr |\n"
+        )
+    W(
+        "\n**Service credits work where skill is abundant and fail where it is "
+        "scarce.** See section 15.3.\n\n"
+    )
+
+    W("### Who can earn care credits?\n\n")
+    segs = [
+        EarnCapacity("Healthy adults", 700, 0.95, 0.6),
+        EarnCapacity("Frail elderly", 150, 0.15, 3.0),
+        EarnCapacity("Chronically ill / disabled", 100, 0.20, 4.0),
+        EarnCapacity("Children", 50, 0.05, 1.5),
+    ]
+    W("| Segment | People | Can earn (h) | Needs (h) | Self-sufficiency | Subsidy |\n")
+    W("|---|---|---|---|---|---|\n")
+    for g in sick_cannot_earn(segs):
+        W(
+            f"| {g.segment} | {g.people} | {g.credits_earnable:,.0f} | "
+            f"{g.credits_needed:,.0f} | {g.self_sufficiency} | "
+            f"{'**yes**' if g.must_be_subsidised else 'no'} |\n"
+        )
+    W(
+        "\n**Earning capacity is inversely related to need** -- the Fureai "
+        "Kippu trap. A grant channel is mandatory. See section 15.4.\n\n"
+    )
+
+    W("### Flat rate versus skill premium\n\n")
+    W("| Skill multiplier | Lifetime if trained | If untrained | Net | Rational? |\n")
+    W("|---|---|---|---|---|\n")
+    for tc in training_incentive():
+        W(
+            f"| {tc.skill_multiplier:g}x | {tc.lifetime_if_trained():,.0f} | "
+            f"{tc.lifetime_if_untrained():,.0f} | {tc.net_gain:+,.0f} | "
+            f"{'yes' if tc.rational_to_train else '**no**'} |\n"
+        )
+    be = training_incentive()[0].breakeven_multiplier
+    W(
+        f"\n**Breakeven premium is only {be}x.** Market differentials between "
+        "a doctor and an unskilled worker are commonly 10-50x. The incentive "
+        "function is served at about 1.25x; the remainder is rent.\n\n"
+    )
+
+    W("### What drives the price of care\n\n")
+    chk = equipment_pretext_check()
+    d = cost_decomposition()
+    W("| Input | Share |\n|---|---|\n")
+    W(f"| Labour (practitioner + support) | {float(chk['labour_share']) * 100:.0f}% |\n")
+    W(f"| Consumables and drugs | {float(chk['consumables_share']) * 100:.0f}% |\n")
+    W(f"| Equipment amortisation | {float(chk['equipment_share']) * 100:.0f}% |\n")
+    W(
+        f"\nCapital equipment is **{float(chk['equipment_share']) * 100:.0f}%** "
+        "-- too small to explain prices that bankrupt families. But recurring "
+        "consumables are three times larger and must be imported. "
+        f"**{float(d.credit_share) * 100:.0f}% of care cost could be paid in "
+        f"labour credits; {float(d.goods_share) * 100:.0f}% requires real goods "
+        "or foreign exchange.**\n\n"
+    )
+
+    W("### The backing can emigrate\n\n")
+    pool = CreditPool(outstanding_hours=4000, practitioners=3)
+    W("| Event | Coverage | Holders lose |\n|---|---|---|\n")
+    W(f"| Start (3 practitioners) | {pool.coverage()} | -- |\n")
+    for dep in (1, 2, 3):
+        r = practitioner_departure_shock(pool, dep)
+        W(
+            f"| {dep} leave | {r['coverage_after']} | "
+            f"{float(r['loss_fraction']) * 100:.0f}% |\n"
+        )
+    W(
+        "\nGrain cannot get on a plane. A currency backed by scarce "
+        "professionals is backed by the people most likely to leave.\n\n"
+    )
+
+
 def main() -> None:
     header()
     table_classes()
@@ -416,6 +524,7 @@ def main() -> None:
     table_bundles()
     table_weight()
     table_people()
+    table_services()
 
 
 if __name__ == "__main__":
