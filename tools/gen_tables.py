@@ -147,6 +147,8 @@ from model.rcu.penalties import (  # noqa: E402
     RestitutionAccounting,
 )
 from model.rcu.debt_and_subscriptions import (  # noqa: E402
+    CitizensRestitutionTrust,
+    ContributorRestitutionAccount,
     CostPlusHousingAdvance,
     DecisiveAccessTest,
     ElderCareStipend,
@@ -1466,6 +1468,26 @@ def table_debt_subscriptions() -> None:
     W("| **Sovereign Guild Provisioning** | **YES (Direct care)** | **NO (0% Subs)** | **NO (Medical need only)** | **PASSED (Adopted)** |\n")
     W("| **Physical Commodity Mutual Pool** | **YES (48h rebuild)** | **NO (0% Premiums)** | **NO (Real reserve release)** | **PASSED (Adopted)** |\n")
     W("| **Zero-Interest Resource Advance** | **YES (Physical tools)**| **NO (0.0% Interest)** | **NO (Pause on hardship)** | **PASSED (Adopted)** |\n\n")
+
+    trust = CitizensRestitutionTrust()
+    sample_acc = ContributorRestitutionAccount(
+        citizen_id="CIT-SAMPLE",
+        total_lifetime_premiums_paid_rcu=120_000.0,
+        total_claims_received_rcu=20_000.0,
+        mortgage_or_vehicle_debt_rcu=80_000.0,
+    )
+    offset = sample_acc.apply_instant_debt_cancellation()
+    div = trust.calculate_citizen_monthly_dividend(citizen_net_balance_rcu=offset["remaining_restitution_balance_rcu"])
+
+    W("### Commercial skyscraper float seizure & contributor restitution engine\n\n")
+    W(
+        f"| Restitution parameter | Corporate insurance baseline | Citizens' Restitution Trust (CRT) | Restitution outcome |\n|---|---|---|---|\n"
+        f"| Skyscraper Asset Portfolio | Corporate private equity | **{trust.total_seized_commercial_real_estate_value_rcu:,.0f} RCU vested in trust** | Real physical real estate preserved |\n"
+        f"| Annual Commercial Rent Yield | Retained by executives ({trust.annual_commercial_rental_yield_pct * 100:.1f}%) | **{trust.annual_rental_cashflow_rcu:,.0f} RCU / year** | 100% Cashflow pooled for contributors |\n"
+        f"| Net Contributor Formula | Forfeited on policy lapse | **Total Premiums − Total Claims Paid** | 100% Principal returned to citizen |\n"
+        f"| Instant Mortgage Offset | Foreclosure on default | **{offset['debt_cancelled_rcu']:,.0f} RCU direct debt wipeout** | **Family home owned 100% debt-free** |\n"
+        f"| Residual Monthly Dividend | $0.00 after cancellation | **{div['monthly_dividend_rcu']:,.2f} RCU / month** | Continuous rental cashflow to citizen |\n\n"
+    )
 
 
 def table_clothing_standards() -> None:

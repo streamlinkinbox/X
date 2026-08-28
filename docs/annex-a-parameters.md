@@ -1151,6 +1151,16 @@ Dual-use plants (everyday demand keeps them alive until needed):
 | **Physical Commodity Mutual Pool** | **YES (48h rebuild)** | **NO (0% Premiums)** | **NO (Real reserve release)** | **PASSED (Adopted)** |
 | **Zero-Interest Resource Advance** | **YES (Physical tools)**| **NO (0.0% Interest)** | **NO (Pause on hardship)** | **PASSED (Adopted)** |
 
+### Commercial skyscraper float seizure & contributor restitution engine
+
+| Restitution parameter | Corporate insurance baseline | Citizens' Restitution Trust (CRT) | Restitution outcome |
+|---|---|---|---|
+| Skyscraper Asset Portfolio | Corporate private equity | **5,000,000,000 RCU vested in trust** | Real physical real estate preserved |
+| Annual Commercial Rent Yield | Retained by executives (8.0%) | **400,000,000 RCU / year** | 100% Cashflow pooled for contributors |
+| Net Contributor Formula | Forfeited on policy lapse | **Total Premiums − Total Claims Paid** | 100% Principal returned to citizen |
+| Instant Mortgage Offset | Foreclosure on default | **80,000 RCU direct debt wipeout** | **Family home owned 100% debt-free** |
+| Residual Monthly Dividend | $0.00 after cancellation | **166.67 RCU / month** | Continuous rental cashflow to citizen |
+
 ## A.24 Public Clothing Standards and Exposure Thresholds
 
 ### Graduated spatial zones & bright-line exposure thresholds

@@ -3,6 +3,8 @@
 import pytest
 
 from model.rcu.debt_and_subscriptions import (
+    CitizensRestitutionTrust,
+    ContributorRestitutionAccount,
     CostPlusHousingAdvance,
     DecisiveAccessTest,
     ElderCareStipend,
@@ -114,3 +116,38 @@ def test_decisive_access_test():
         is_backed_by_real_production_or_reserves=True,
     )
     assert sovereign_health.is_socially_defensible is True
+
+
+def test_contributor_restitution_and_debt_cancellation():
+    # Citizen paid 120,000 RCU in life/health/auto insurance over 15 years, claimed only 20,000 RCU
+    account = ContributorRestitutionAccount(
+        citizen_id="CIT-9921",
+        total_lifetime_premiums_paid_rcu=120_000.0,
+        total_claims_received_rcu=20_000.0,
+        mortgage_or_vehicle_debt_rcu=80_000.0,
+    )
+    assert account.net_restitution_balance_rcu == 100_000.0
+
+    # Instant debt offset against home/vehicle loan
+    offset = account.apply_instant_debt_cancellation()
+    assert offset["debt_cancelled_rcu"] == 80_000.0
+    assert offset["remaining_debt_rcu"] == 0.0  # Completely debt-free!
+    assert offset["remaining_restitution_balance_rcu"] == 20_000.0
+
+
+def test_citizens_restitution_trust_monthly_dividend():
+    trust = CitizensRestitutionTrust(
+        total_seized_commercial_real_estate_value_rcu=5_000_000_000.0,
+        annual_commercial_rental_yield_pct=0.08,  # 400M RCU / year
+        total_registered_contributors=1_000_000,
+        total_net_contributed_float_rcu=4_000_000_000.0,
+    )
+    assert trust.annual_rental_cashflow_rcu == 400_000_000.0
+    assert trust.monthly_rental_cashflow_rcu == 400_000_000.0 / 12.0
+
+    # A citizen with a remaining 40,000 RCU net contribution balance
+    div = trust.calculate_citizen_monthly_dividend(citizen_net_balance_rcu=40_000.0)
+    assert div["share_of_portfolio_pct"] == 0.001  # 40k / 4B = 1/100,000th of pool
+    assert div["annual_dividend_rcu"] == 4_000.0
+    assert div["monthly_dividend_rcu"] == round(4_000.0 / 12.0, 2)
+

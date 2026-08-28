@@ -321,3 +321,73 @@ class DecisiveAccessTest:
             and not self.creates_denial_incentive_for_profit
             and self.is_backed_by_real_production_or_reserves
         )
+
+
+# --------------------------------------------------------------------------
+# 7. Float Asset Seizure, Commercial Real Estate & Restitution Engine
+# --------------------------------------------------------------------------
+
+
+@dataclass(frozen=True)
+class ContributorRestitutionAccount:
+    citizen_id: str
+    total_lifetime_premiums_paid_rcu: float
+    total_claims_received_rcu: float
+    mortgage_or_vehicle_debt_rcu: float = 0.0
+
+    @property
+    def net_restitution_balance_rcu(self) -> float:
+        # Net owed back to citizen = what they paid minus what they already spent/claimed
+        return max(0.0, self.total_lifetime_premiums_paid_rcu - self.total_claims_received_rcu)
+
+    def apply_instant_debt_cancellation(self) -> dict[str, float]:
+        net_balance = self.net_restitution_balance_rcu
+        debt = self.mortgage_or_vehicle_debt_rcu
+        debt_cancelled = min(net_balance, debt)
+        remaining_debt = debt - debt_cancelled
+        remaining_restitution_balance = net_balance - debt_cancelled
+
+        return {
+            "initial_net_balance_rcu": net_balance,
+            "initial_debt_rcu": debt,
+            "debt_cancelled_rcu": debt_cancelled,
+            "remaining_debt_rcu": remaining_debt,
+            "remaining_restitution_balance_rcu": remaining_restitution_balance,
+        }
+
+
+@dataclass(frozen=True)
+class CitizensRestitutionTrust:
+    total_seized_commercial_real_estate_value_rcu: float = 5_000_000_000.0  # Skyscraper & mall portfolio
+    annual_commercial_rental_yield_pct: float = 0.08                        # 8% annual net rental income
+    total_registered_contributors: int = 1_000_000
+    total_net_contributed_float_rcu: float = 4_000_000_000.0
+
+    @property
+    def annual_rental_cashflow_rcu(self) -> float:
+        return self.total_seized_commercial_real_estate_value_rcu * self.annual_commercial_rental_yield_pct
+
+    @property
+    def monthly_rental_cashflow_rcu(self) -> float:
+        return self.annual_rental_cashflow_rcu / 12.0
+
+    def calculate_citizen_monthly_dividend(
+        self, citizen_net_balance_rcu: float
+    ) -> dict[str, float]:
+        if self.total_net_contributed_float_rcu <= 0 or citizen_net_balance_rcu <= 0:
+            return {
+                "monthly_dividend_rcu": 0.0,
+                "annual_dividend_rcu": 0.0,
+                "share_of_portfolio_pct": 0.0,
+            }
+
+        share_of_pool = citizen_net_balance_rcu / self.total_net_contributed_float_rcu
+        monthly_dividend = self.monthly_rental_cashflow_rcu * share_of_pool
+        annual_dividend = monthly_dividend * 12.0
+
+        return {
+            "monthly_dividend_rcu": round(monthly_dividend, 2),
+            "annual_dividend_rcu": round(annual_dividend, 2),
+            "share_of_portfolio_pct": round(share_of_pool * 100, 4),
+        }
+
