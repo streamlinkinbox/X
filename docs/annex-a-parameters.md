@@ -678,3 +678,59 @@ Dual-use plants (everyday demand keeps them alive until needed):
 | Cumulative 180 days | $4,500,000,000 | $1,800,000 | 2,500 : 1 |
 | Cumulative 365 days | $9,125,000,000 | $3,650,000 | 2,500 : 1 |
 
+## A.16 Competence Council governance and departmental enforcement
+
+### Functional Leadership Council roles
+
+| Title | Domain | Term | Selection base | Collective body |
+|---|---|---|---|---|
+| The Coordinator | Coordination | 3 + 1 yr prob. | Senior practitioners with cross-fun... | No (Single Steward) |
+| The Deputy Coordinator | Coordination | 3 + 1 yr prob. | Selected by Coordinator from qualif... | No (Single Steward) |
+| The Steward of Reserves | Treasury | 4 + 1 yr prob. | Senior warehouse managers, forensic... | No (Single Steward) |
+| The Steward of Production | Economy | 4 + 1 yr prob. | Senior agricultural masters, fabric... | No (Single Steward) |
+| The Steward of Knowledge | Education | 4 + 1 yr prob. | Senior guild masters from the appre... | No (Single Steward) |
+| The Steward of Health | Health | 4 + 1 yr prob. | Senior medical practitioners (physi... | No (Single Steward) |
+| The Steward of Infrastructure | Works | 4 + 1 yr prob. | Senior builders, civil engineers, w... | No (Single Steward) |
+| The Steward of Security | Security | 3 + 1 yr prob. | Senior security cooperative members... | No (Single Steward) |
+| The War Council | Defense | 5 + 1 yr prob. | Senior militia commanders, tacticia... | **Yes (5–7, min 2 women)** |
+| The Steward of Justice | Justice | 5 + 1 yr prob. | Community elders and legal mediatio... | No (Single Steward) |
+| The Steward of Relations | Diplomacy | 3 + 1 yr prob. | Experienced negotiators with multi-... | No (Single Steward) |
+
+### Selection accuracy: peer consensus vs mass ballot
+
+| Selection method | Evaluator group | Decision threshold | Error rate | Competence advantage |
+|---|---|---|---|---|
+| **Peer Selection** | 20–30 Senior Masters | 75% Consensus | **4.0%** | **1.85× accuracy** |
+| Mass Electoral Ballot | General Population | 50% + 1 Popularity | 48.0% | 1.00× (Baseline) |
+
+### Institutional succession protocols
+
+| Trigger event | Immediate action | Replacement window | Power vacuum |
+|---|---|---|---|
+| Normal Term Expiry | Incoming selected candidate (after ... | 180 days | **0 days** |
+| Death Or Incapacitation | Deputy Coordinator assumes role ins... | 30 days | **0 days** |
+| Removal Incompetence | Deputy assumes role; 75% Council vo... | 30 days | **0 days** |
+| Removal Corruption | Deputy assumes role; corrupt leader... | 30 days | **0 days** |
+| Voluntary Resignation | Deputy assumes role immediately... | 30 days | **0 days** |
+
+### Departmental policing & measurement bureaus
+
+| Department | Enforcement unit | Staff share | Independent measurement unit |
+|---|---|---|---|
+| Defense | **Military Police (Internal Provost)** | 3.5% | Defense Readiness & Inventory Telemetry Bureau |
+| Treasury | **Warehouse Forensic Inspectorate** | 5.0% | Independent Commodity Verification Bureau |
+| Economy | **Production Standards & Material Inspectorate** | 3.0% | Output Metrics & Material Telemetry Bureau |
+| Health | **Medical Ethics & Pharmaceutical Auditor** | 4.0% | Clinical Outcomes & Morbidity Statistics Bureau |
+| Works | **Civil Works & Quality Assurance Bureau** | 3.0% | Infrastructure Performance & Water Telemetry Bureau |
+
+**Measurement units report to the Audit Board, not department heads**, breaking Goodhart's Law and preventing metric falsification.
+
+### Citizen sortition audit & anti-monarchy checks
+
+| Accountability mechanism | Specification | Purpose |
+|---|---|---|
+| Annual sortition jury | 20 citizens chosen randomly | Full subpoena and inspection of all vaults and logs |
+| Detection confidence | 95% confidence | High statistical detection of systemic deviations |
+| Legal immunity | **Zero immunity** | Leaders face identical courts as ordinary citizens |
+| Living conditions | **1.00 : 1.00 ratio** | Leaders receive identical food, housing, and RCU as guild masters |
+

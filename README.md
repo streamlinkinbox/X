@@ -56,6 +56,7 @@ the five model findings that change the original design.
 | [17 Local production](docs/17-local-production-doctrine.md) | **The production ladder — what can be made locally** |
 | [18 Community security](docs/18-community-security.md) | Mediation, fraud forensics, rotation, armoury |
 | [19 Military doctrine](docs/19-military-doctrine.md) | **Citizen militia, asymmetric defense, asset neutralization** |
+| [20 Competence Council](docs/20-competence-council-and-departmental-policing.md) | **Merit governance, departmental policing, measurement bureaus** |
 | [Annex A](docs/annex-a-parameters.md) | **Generated** parameter and stress tables |
 | [Annex B](docs/annex-b-open-problems.md) | Unsolved problems, ranked by severity |
 
@@ -292,6 +293,22 @@ citizen militia** operating on radical asymmetry rather than industrial mirror-c
 Cost ratios against conventional weapons exceed **10,000:1 to 1,000,000:1**,
 yielding a **2,500:1 daily burn rate advantage** ($10k/day vs $25M/day) that
 exhausts any invading superpower. See [§19](docs/19-military-doctrine.md).
+
+## Governance: the Competence Council and departmental enforcement
+
+§20 establishes the macro-governance and administrative hierarchy: **functional
+leadership selected on demonstrated competence rather than politics, voting, or monarchy.**
+
+| Dimension | Governance design | Strategic advantage |
+|---|---|---|
+| **Selection** | 3-stage merit filter (10-yr ledger record $\rightarrow$ 75% peer consensus by 20–30 masters $\rightarrow$ 1-yr probation) | Eliminates political parties, voter ignorance, demagoguery, and mediocracy |
+| **Hierarchy** | 11 functional Stewards (Reserves, Production, Health, Works, etc.) + 5–7 member War Council | Clean division of responsibility; collective defense command with mandatory female seats |
+| **Succession** | Deterministic state machine (Deputy takes over instantly) | Zero power vacuums; institutional continuity |
+| **Enforcement** | **Military Police (Provost) & Bureau Enforcers** | Halts looting, war crimes, arms diversion, and grain hoarding |
+| **Measurement** | **Independent Continuous Measurement Bureaus** | Real-time telemetry reporting directly to Audit Board, eliminating Goodhart's Law |
+| **Accountability**| Annual 20-citizen sortition jury audit + zero legal immunity | Ensures equal living standards (1.0 : 1.0) and prevents oligarchic capture |
+
+See [§20](docs/20-competence-council-and-departmental-policing.md).
 
 ## Honest positioning
 

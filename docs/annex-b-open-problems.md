@@ -442,6 +442,28 @@ not purely military.
 
 ---
 
+## P16. Peer selection cartels and guild conservatism
+
+**Severity: medium-high. Governance vulnerability.**
+
+While peer selection by senior masters (§20.2) eliminates electoral popularity
+contests, it introduces a classic institutional vulnerability: **senior guild
+insularity and mutual protection cartels.** Senior practitioners may favor
+conservative candidates identical to themselves, resist disruptive technical
+innovations, or form quiet non-aggression pacts during peer evaluations.
+
+**Mitigation:**
+- **Objective ledger qualification (Stage 1):** Metrics cannot be bypassed; a
+  candidate must meet hard output tonnage, project completion, and clean record
+  thresholds before peer voting occurs.
+- **Sortition jury oversight (Stage 4):** Annual 20-citizen audits by lottery
+  maintain full subpoena authority over all appointment logs and department
+  telemetry.
+- **1-Year quantitative probation (Stage 3):** If a confirmed crony fails hard
+  KPI targets, replacement is automatic and non-negotiable.
+
+---
+
 ## Summary
 
 | # | Problem | Severity | Status |
@@ -461,6 +483,7 @@ not purely military.
 | P13 | Scarce services cannot be monetised | **High (new)** | Structural; use pooling not credits. FX gap for consumables unsolved |
 | P14 | Irreducible import floor | **High** | Reduced from ~49% to ~40% by §17 production ladder; APIs and vaccines permanent |
 | P15 | Asymmetric defense escalation and adaptation | **High (new)** | Subterranean hardening + Ghost doctrine; political exhaustion is required |
+| P16 | Peer selection cartels and guild conservatism | **Medium-High (new)** | Mitigated by objective ledger filters, 1-yr probation, and sortition juries |
 
 **The three at the top are not reasons to abandon the design.** They are the
 reasons a pilot exists — and a pilot that is not explicitly built to test

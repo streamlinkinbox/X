@@ -61,6 +61,18 @@ from model.rcu.military import (  # noqa: E402
     PersonalKit,
     TransportFleet,
 )
+from model.rcu.governance import (  # noqa: E402
+    COUNCIL_ROLES,
+    DEPARTMENTAL_POLICING_SYSTEM,
+    SUCCESSION_RULES,
+    CandidateRecord,
+    MeasurementBureau,
+    QualificationPool,
+    RoleDomain,
+    SelectionComparison,
+    SortitionAudit,
+    SuccessionTrigger,
+)
 from model.rcu.security import (  # noqa: E402
     ArmouryPolicy,
     audit_effort_curve,
@@ -863,6 +875,59 @@ def table_military() -> None:
     W("\n")
 
 
+def table_governance() -> None:
+    W("## A.16 Competence Council governance and departmental enforcement\n\n")
+
+    W("### Functional Leadership Council roles\n\n")
+    W("| Title | Domain | Term | Selection base | Collective body |\n|---|---|---|---|---|\n")
+    for r in COUNCIL_ROLES:
+        coll = f"**Yes ({r.min_members}–{r.max_members}, min {r.mandatory_female_min} women)**" if r.is_collective_body else "No (Single Steward)"
+        W(
+            f"| {r.title} | {r.domain.value.title()} | {r.term_years} + {r.probation_years} yr prob. | "
+            f"{r.selected_from[:35]}... | {coll} |\n"
+        )
+    W("\n")
+
+    W("### Selection accuracy: peer consensus vs mass ballot\n\n")
+    comp = SelectionComparison()
+    W(
+        f"| Selection method | Evaluator group | Decision threshold | Error rate | Competence advantage |\n|---|---|---|---|---|\n"
+        f"| **Peer Selection** | 20–30 Senior Masters | 75% Consensus | **{comp.peer_error_rate * 100:.1f}%** | **{comp.competence_advantage_ratio}× accuracy** |\n"
+        f"| Mass Electoral Ballot | General Population | 50% + 1 Popularity | {comp.electoral_error_rate * 100:.1f}% | 1.00× (Baseline) |\n\n"
+    )
+
+    W("### Institutional succession protocols\n\n")
+    W("| Trigger event | Immediate action | Replacement window | Power vacuum |\n|---|---|---|---|\n")
+    for trigger, proto in SUCCESSION_RULES.items():
+        W(
+            f"| {trigger.value.replace('_', ' ').title()} | {proto.immediate_successor[:35]}... | "
+            f"{proto.selection_window_days} days | **{proto.power_vacuum_days} days** |\n"
+        )
+    W("\n")
+
+    W("### Departmental policing & measurement bureaus\n\n")
+    W("| Department | Enforcement unit | Staff share | Independent measurement unit |\n|---|---|---|---|\n")
+    for b in DEPARTMENTAL_POLICING_SYSTEM:
+        W(
+            f"| {b.department.value.title()} | **{b.enforcement_unit_name}** | "
+            f"{float(b.staff_percentage) * 100:.1f}% | {b.independent_measurement_unit} |\n"
+        )
+    W(
+        "\n**Measurement units report to the Audit Board, not department heads**, "
+        "breaking Goodhart's Law and preventing metric falsification.\n\n"
+    )
+
+    W("### Citizen sortition audit & anti-monarchy checks\n\n")
+    audit = SortitionAudit()
+    W(
+        f"| Accountability mechanism | Specification | Purpose |\n|---|---|---|\n"
+        f"| Annual sortition jury | {audit.jury_size} citizens chosen randomly | Full subpoena and inspection of all vaults and logs |\n"
+        f"| Detection confidence | {float(audit.confidence_level) * 100:.0f}% confidence | High statistical detection of systemic deviations |\n"
+        f"| Legal immunity | **Zero immunity** | Leaders face identical courts as ordinary citizens |\n"
+        f"| Living conditions | **{audit.living_condition_ratio:.2f} : 1.00 ratio** | Leaders receive identical food, housing, and RCU as guild masters |\n\n"
+    )
+
+
 def main() -> None:
     header()
     table_classes()
@@ -880,6 +945,7 @@ def main() -> None:
     table_production()
     table_security()
     table_military()
+    table_governance()
 
 
 if __name__ == "__main__":

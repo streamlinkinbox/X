@@ -323,6 +323,28 @@ Key findings:
   unsustainable financial burn rate for the invader ($25M/day vs $10k/day),
   ensuring the community survives as an un-swallowable porcupine.
 
+## Governance: the Competence Council and departmental enforcement
+
+§20 establishes the governance architecture for the state: **functional leadership
+selected by peer merit rather than mass voting or hereditary monarchy.**
+
+Key mechanisms:
+- **3-Stage Selection:** Automated qualification via 10-year ledger contribution
+  and apprenticeship $\rightarrow$ Peer selection by 20–30 senior masters with 75%
+  consensus $\rightarrow$ 1-year quantitative probation.
+- **11 Functional Domains:** Single accountable Stewards for reserves, production,
+  health, works, knowledge, security, justice, diplomacy, and coordination, plus
+  a 5–7 member collective War Council with mandatory female representation.
+- **Departmental Policing:** Military Police (preventing looting, atrocities,
+  and black-market arms sales) and civil enforcers across every department
+  (halting grain hoarding and inventory skimming).
+- **Independent Measurement Bureaus:** Dedicated telemetry and recording staff
+  in every department reporting directly to the Audit Board, eliminating metric
+  falsification and Goodhart's Law.
+- **Sortition Audit & Anti-Monarchy Safeguards:** Annual random 20-citizen jury
+  audits with full subpoena power, zero legal immunity, and strictly equal living
+  standards (1.0 : 1.0 ratio).
+
 ## What this system cannot do
 
 Stated plainly, because a blueprint that only lists strengths is marketing:
@@ -368,6 +390,7 @@ Stated plainly, because a blueprint that only lists strengths is marketing:
 | [`17-local-production-doctrine.md`](17-local-production-doctrine.md) | **The production ladder — what can actually be made locally** |
 | [`18-community-security.md`](18-community-security.md) | Mediation, fraud forensics, rotation, armoury, capture resistance |
 | [`19-military-doctrine.md`](19-military-doctrine.md) | **Citizen militia, asymmetric defense, asset neutralization** |
+| [`20-competence-council-and-departmental-policing.md`](20-competence-council-and-departmental-policing.md) | **Competence Council governance, departmental policing, measurement** |
 | [`annex-a-parameters.md`](annex-a-parameters.md) | Generated tables: all parameters and stress results |
 | [`annex-b-open-problems.md`](annex-b-open-problems.md) | Unsolved problems, ranked by how badly they hurt |
 
