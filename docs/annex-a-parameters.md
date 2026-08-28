@@ -1199,3 +1199,35 @@ Dual-use plants (everyday demand keeps them alive until needed):
 | Dignity & Sizing | **Ergonomic, maternity & religious cuts** | Ensures climate-appropriate comfort and high compliance |
 | Sovereign Visual Design | **National idiom & domestic fibers** | Real cultural sovereignty rather than copying foreign braid in reverse |
 
+### Four-tier workforce separation statutory architecture
+
+| Separation tier | Scope of functions | Statutory rule | Waiver / exception policy |
+|---|---|---|---|
+| **Tier 1: Absolute Separation (Zero Discretion)** | Physical searches, medical exams/materni... | Person is attended strictly and exclusiv... | Single narrow exception: immediate life-threa... |
+| **Tier 2: Single-Sex Units Inside Shared Institutions (Default)** | Police stations, hospitals, research ins... | Complete single-sex stations/wings with ... | Standard operational configuration across gen... |
+| **Tier 3: Separated Facilities, Shared Profession** | Administrative campuses, professional he... | Separate entrances, offices, canteens, p... | Standard architectural design requirement for... |
+| **Tier 4: Full Duplication (Capacity-Gated)** | Education sector, specialized academies,... | Completely duplicated institutions only ... | Capacity-gated, never ideology-gated; expandi... |
+
+### Female Guard Service and resourcing parity audit parameters
+
+| Parity safeguard | Statutory standard | Audit enforcement lock |
+|---|---|---|
+| Command Rank Parity | **Service Head equal to male chief** | Autonomous budget line and direct reporting line |
+| Legal Authority | **Full arrest, search & detention powers** | Auxiliary or assistant status prohibited by law |
+| Pay & Pension Parity | **100% Equal pay codified in statute** | Zero promotional ceiling across the full career ladder |
+| Recruitment Buffer | **Target = Minimum + 20% buffer** | Dedicated female academy capacity built prior to mandate |
+| Equipment & Uniform | **Female-cut body armour mandatory** | Integrated quick-release head covering, tailored cut |
+| Retention Support | **On-site childcare at all facilities** | Eliminates mid-career attrition and preserves skill depth |
+| Parity Audit Threshold | **Max allowable divergence: 5.0%** | Breach triggers **personal disqualification (§25)** of minister |
+
+### Workforce separation failure prevention matrix
+
+| Systemic failure mode | Root operational risk | Statutory prevention clause |
+|---|---|---|
+| **Women's institution under-resourced** | Drift into under-resourcing/caste | Statutory equal resourcing, published side-by-side, automatic audit trigger, personal disqualification |
+| **Tier 1 waived for staffing shortages** | Drift into under-resourcing/caste | Facility-by-facility commencement; waiver only for documented life-threat; recurring waiver triggers staffing review |
+| **Female service becomes auxiliary** | Drift into under-resourcing/caste | Identical powers, identical ladder to the top, identical pay in statute |
+| **Retention collapse** | Drift into under-resourcing/caste | Childcare at all stations/academies, maternity provision, real promotion path |
+| **Specialist expertise halved** | Drift into under-resourcing/caste | Tier 2 as default — separate working space, shared depth and specialist equipment |
+| **Uniform procurement capture** | Drift into under-resourcing/caste | Open contracting, domestic manufacture, published contracts, beneficial ownership disclosure |
+

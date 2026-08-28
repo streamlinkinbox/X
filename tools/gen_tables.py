@@ -160,14 +160,20 @@ from model.rcu.debt_and_subscriptions import (  # noqa: E402
 )
 from model.rcu.clothing_standards import (  # noqa: E402
     PUBLIC_SECTOR_DRESS_TIERS,
+    SEPARATION_TIER_SPECS,
     SPATIAL_ZONE_SPECS,
+    WORKFORCE_FAILURE_PREVENTIONS,
     AntiHumiliationPolicy,
     ClothingComplianceSimulation,
     DressTierCategory,
+    EqualResourcingAudit,
+    FemaleGuardServiceSpec,
     PublicSectorDressTier,
+    SeparationTierSpec,
     SovereignMethodology,
     SpatialZone,
     UniformProcurementPolicy,
+    WorkforceSeparationTier,
 )
 from model.rcu.security import (  # noqa: E402
     ArmouryPolicy,
@@ -1504,6 +1510,32 @@ def table_clothing_standards() -> None:
         f"| Dignity & Sizing | **Ergonomic, maternity & religious cuts** | Ensures climate-appropriate comfort and high compliance |\n"
         f"| Sovereign Visual Design | **National idiom & domestic fibers** | Real cultural sovereignty rather than copying foreign braid in reverse |\n\n"
     )
+
+    W("### Four-tier workforce separation statutory architecture\n\n")
+    W("| Separation tier | Scope of functions | Statutory rule | Waiver / exception policy |\n|---|---|---|---|\n")
+    for st in SEPARATION_TIER_SPECS:
+        W(f"| **{st.name}** | {st.scope_of_functions[:40]}... | {st.statutory_rule[:40]}... | {st.waiver_policy[:45]}... |\n")
+    W("\n")
+
+    fgs = FemaleGuardServiceSpec()
+    audit = EqualResourcingAudit()
+    W("### Female Guard Service and resourcing parity audit parameters\n\n")
+    W(
+        f"| Parity safeguard | Statutory standard | Audit enforcement lock |\n|---|---|---|\n"
+        f"| Command Rank Parity | **Service Head equal to male chief** | Autonomous budget line and direct reporting line |\n"
+        f"| Legal Authority | **Full arrest, search & detention powers** | Auxiliary or assistant status prohibited by law |\n"
+        f"| Pay & Pension Parity | **100% Equal pay codified in statute** | Zero promotional ceiling across the full career ladder |\n"
+        f"| Recruitment Buffer | **Target = Minimum + {fgs.attrition_margin_rate * 100:.0f}% buffer** | Dedicated female academy capacity built prior to mandate |\n"
+        f"| Equipment & Uniform | **Female-cut body armour mandatory** | Integrated quick-release head covering, tailored cut |\n"
+        f"| Retention Support | **On-site childcare at all facilities** | Eliminates mid-career attrition and preserves skill depth |\n"
+        f"| Parity Audit Threshold | **Max allowable divergence: {audit.max_divergence_threshold * 100:.1f}%** | Breach triggers **personal disqualification (§25)** of minister |\n\n"
+    )
+
+    W("### Workforce separation failure prevention matrix\n\n")
+    W("| Systemic failure mode | Root operational risk | Statutory prevention clause |\n|---|---|---|\n")
+    for fp in WORKFORCE_FAILURE_PREVENTIONS:
+        W(f"| **{fp.failure_mode}** | Drift into under-resourcing/caste | {fp.prevention_clause} |\n")
+    W("\n")
 
 
 def main() -> None:

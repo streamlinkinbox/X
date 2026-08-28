@@ -7,13 +7,20 @@ from model.rcu.clothing_standards import (
     ClothingComplianceSimulation,
     DressTierCategory,
     EnforcementEncounter,
+    EqualResourcingAudit,
+    FailureModePrevention,
+    FemaleGuardServiceSpec,
     PUBLIC_SECTOR_DRESS_TIERS,
     PublicSectorDressTier,
+    SEPARATION_TIER_SPECS,
+    SeparationTierSpec,
     SovereigntyDesignRule,
     SovereignMethodology,
     SPATIAL_ZONE_SPECS,
     SpatialZone,
     UniformProcurementPolicy,
+    WORKFORCE_FAILURE_PREVENTIONS,
+    WorkforceSeparationTier,
 )
 
 
@@ -135,4 +142,75 @@ def test_uniform_procurement_policy_and_industrial_link():
     assert proc.open_contracting_mandatory is True
     assert proc.dignity_and_fit_specifications is True
     assert proc.sovereign_local_visual_design is True
+
+
+def test_workforce_separation_tiers():
+    assert len(SEPARATION_TIER_SPECS) == 4
+    tier_map = {t.tier: t for t in SEPARATION_TIER_SPECS}
+
+    t1 = tier_map[WorkforceSeparationTier.TIER_1_ABSOLUTE]
+    assert "own sex" in t1.statutory_rule.lower()
+    assert "life-threatening" in t1.waiver_policy.lower()
+
+    t2 = tier_map[WorkforceSeparationTier.TIER_2_UNIT_SEPARATION]
+    assert "single-sex" in t2.statutory_rule.lower()
+
+    t3 = tier_map[WorkforceSeparationTier.TIER_3_FACILITY_SEPARATION]
+    assert "separate entrances" in t3.statutory_rule.lower()
+
+    t4 = tier_map[WorkforceSeparationTier.TIER_4_FULL_DUPLICATION]
+    assert "capacity-gated" in t4.waiver_policy.lower()
+
+
+def test_female_guard_service_parity_and_recruitment():
+    fgs = FemaleGuardServiceSpec()
+    assert fgs.distinct_permanent_service is True
+    assert fgs.equal_rank_command_head is True
+    assert fgs.full_statutory_powers is True
+    assert fgs.identical_pay_and_pension is True
+    assert fgs.no_career_ceiling is True
+    assert fgs.female_cut_body_armor_mandatory is True
+    assert fgs.quick_release_head_covering is True
+
+    # 1,000 minimum posts requires 1,200 recruitment target (+20% attrition buffer)
+    target = fgs.calculate_recruitment_target(statutory_minimum_posts=1000)
+    assert target == 1200
+
+
+def test_equal_resourcing_audit_parity():
+    audit = EqualResourcingAudit(max_divergence_threshold=0.05)
+
+    # Compliant parity
+    res_ok = audit.verify_parity(
+        male_budget_per_officer=10000.0,
+        female_budget_per_officer=10200.0,  # 2% diff <= 5%
+        male_training_days=30.0,
+        female_training_days=31.0,          # 3.3% diff <= 5%
+    )
+    assert res_ok["parity_maintained"] is True
+    assert res_ok["audit_trigger_activated"] is False
+
+    # Drift violation (15% budget gap)
+    res_drift = audit.verify_parity(
+        male_budget_per_officer=10000.0,
+        female_budget_per_officer=8500.0,   # 15% diff > 5%
+        male_training_days=30.0,
+        female_training_days=30.0,
+    )
+    assert res_drift["parity_maintained"] is False
+    assert res_drift["audit_trigger_activated"] is True
+    assert res_drift["disciplinary_action_required"] is True
+
+
+def test_failure_mode_prevention_clauses():
+    assert len(WORKFORCE_FAILURE_PREVENTIONS) == 6
+    preventions = {p.failure_mode: p.prevention_clause for p in WORKFORCE_FAILURE_PREVENTIONS}
+
+    assert "Women's institution under-resourced" in preventions
+    assert "Tier 1 waived for staffing shortages" in preventions
+    assert "Female service becomes auxiliary" in preventions
+    assert "Retention collapse" in preventions
+    assert "Specialist expertise halved" in preventions
+    assert "Uniform procurement capture" in preventions
+
 

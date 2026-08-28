@@ -270,3 +270,140 @@ class UniformProcurementPolicy:
             and self.sovereign_local_visual_design
         )
 
+
+# --------------------------------------------------------------------------
+# 6. Workforce Separation & Female Guard Service Implementation Architecture
+# --------------------------------------------------------------------------
+
+
+class WorkforceSeparationTier(str, Enum):
+    TIER_1_ABSOLUTE = "tier_1_absolute"         # Absolute separation: searches, bodily exposure, custody, sexual offense, shelters, care
+    TIER_2_UNIT_SEPARATION = "tier_2_unit"       # Single-sex units inside shared institutions (Default across state)
+    TIER_3_FACILITY_SEPARATION = "tier_3_facility" # Separated facilities, shared profession (Entrances, canteens, formal contact)
+    TIER_4_FULL_DUPLICATION = "tier_4_duplication" # Full institutional duplication (Capacity-gated only, e.g. education)
+
+
+@dataclass(frozen=True)
+class SeparationTierSpec:
+    tier: WorkforceSeparationTier
+    name: str
+    scope_of_functions: str
+    statutory_rule: str
+    waiver_policy: str
+    enforcement_trigger: str
+
+
+SEPARATION_TIER_SPECS: tuple[SeparationTierSpec, ...] = (
+    SeparationTierSpec(
+        tier=WorkforceSeparationTier.TIER_1_ABSOLUTE,
+        name="Tier 1: Absolute Separation (Zero Discretion)",
+        scope_of_functions="Physical searches, medical exams/maternity/gyn, custody supervision, sexual offense interviews, shelters, dorms, elder/child care",
+        statutory_rule="Person is attended strictly and exclusively by staff of their own sex",
+        waiver_policy="Single narrow exception: immediate life-threatening emergency where no same-sex staff present; mandatory incident report triggers automatic staffing review",
+        enforcement_trigger="Disciplinary offense with personal consequence for the supervisor who permitted cross-sex attendance",
+    ),
+    SeparationTierSpec(
+        tier=WorkforceSeparationTier.TIER_2_UNIT_SEPARATION,
+        name="Tier 2: Single-Sex Units Inside Shared Institutions (Default)",
+        scope_of_functions="Police stations, hospitals, research institutes, municipal departments",
+        statutory_rule="Complete single-sex stations/wings with own commanders; shared specialist depth and expensive capital equipment",
+        waiver_policy="Standard operational configuration across general civil service",
+        enforcement_trigger="Periodic departmental inspection and facility layout certification",
+    ),
+    SeparationTierSpec(
+        tier=WorkforceSeparationTier.TIER_3_FACILITY_SEPARATION,
+        name="Tier 3: Separated Facilities, Shared Profession",
+        scope_of_functions="Administrative campuses, professional headquarters, transport networks",
+        statutory_rule="Separate entrances, offices, canteens, prayer/rest areas; professional contact in formal settings under published conduct rules",
+        waiver_policy="Standard architectural design requirement for all public infrastructure",
+        enforcement_trigger="Building code compliance and sortition workplace audits",
+    ),
+    SeparationTierSpec(
+        tier=WorkforceSeparationTier.TIER_4_FULL_DUPLICATION,
+        name="Tier 4: Full Duplication (Capacity-Gated)",
+        scope_of_functions="Education sector, specialized academies, parallel civic institutions",
+        statutory_rule="Completely duplicated institutions only where professional depth exists equally on both sides",
+        waiver_policy="Capacity-gated, never ideology-gated; expanding ahead of professional pipeline is prohibited",
+        enforcement_trigger="National pipeline readiness certification before chartering duplicate institutions",
+    ),
+)
+
+
+@dataclass(frozen=True)
+class FemaleGuardServiceSpec:
+    distinct_permanent_service: bool = True
+    equal_rank_command_head: bool = True         # Female service head reports at same rank as male counterpart
+    full_statutory_powers: bool = True           # Same arrest, search, detention powers; auxiliary status strictly banned
+    statutory_minimum_staffing_mandate: bool = True # Published minimum staffing per facility; deficit is reportable failure
+    identical_pay_and_pension: bool = True       # Enacted in statute, not administrative policy
+    no_career_ceiling: bool = True               # Ladder runs to the very top rank of the service
+    identical_training_curriculum: bool = True
+    attrition_margin_rate: float = 0.20          # Recruitment target = statutory minimum + 20% attrition buffer
+    childcare_at_all_facilities: bool = True     # Childcare at every training academy and major station for retention
+    female_cut_body_armor_mandatory: bool = True # Ergonomic female body armor; male armor on women banned
+    quick_release_head_covering: bool = True     # Integrated standard-issue uniform head covering
+
+    def calculate_recruitment_target(self, statutory_minimum_posts: int) -> int:
+        return int(statutory_minimum_posts * (1.0 + self.attrition_margin_rate))
+
+
+@dataclass(frozen=True)
+class EqualResourcingAudit:
+    max_divergence_threshold: float = 0.05       # Divergence > 5% in per-officer budget, equipment, or training triggers audit
+    side_by_side_annual_publication: bool = True
+    personal_disqualification_on_breach: bool = True # Officials responsible for resource drift disqualified (§25)
+
+    def verify_parity(
+        self,
+        male_budget_per_officer: float,
+        female_budget_per_officer: float,
+        male_training_days: float,
+        female_training_days: float,
+    ) -> dict[str, str | bool | float]:
+        budget_gap = abs(male_budget_per_officer - female_budget_per_officer) / max(male_budget_per_officer, 1.0)
+        training_gap = abs(male_training_days - female_training_days) / max(male_training_days, 1.0)
+
+        parity_maintained = (budget_gap <= self.max_divergence_threshold) and (training_gap <= self.max_divergence_threshold)
+        return {
+            "parity_maintained": parity_maintained,
+            "budget_divergence_pct": round(budget_gap * 100, 2),
+            "training_divergence_pct": round(training_gap * 100, 2),
+            "audit_trigger_activated": not parity_maintained,
+            "disciplinary_action_required": not parity_maintained,
+        }
+
+
+@dataclass(frozen=True)
+class FailureModePrevention:
+    failure_mode: str
+    prevention_clause: str
+
+
+WORKFORCE_FAILURE_PREVENTIONS: tuple[FailureModePrevention, ...] = (
+    FailureModePrevention(
+        failure_mode="Women's institution under-resourced",
+        prevention_clause="Statutory equal resourcing, published side-by-side, automatic audit trigger, personal disqualification",
+    ),
+    FailureModePrevention(
+        failure_mode="Tier 1 waived for staffing shortages",
+        prevention_clause="Facility-by-facility commencement; waiver only for documented life-threat; recurring waiver triggers staffing review",
+    ),
+    FailureModePrevention(
+        failure_mode="Female service becomes auxiliary",
+        prevention_clause="Identical powers, identical ladder to the top, identical pay in statute",
+    ),
+    FailureModePrevention(
+        failure_mode="Retention collapse",
+        prevention_clause="Childcare at all stations/academies, maternity provision, real promotion path",
+    ),
+    FailureModePrevention(
+        failure_mode="Specialist expertise halved",
+        prevention_clause="Tier 2 as default — separate working space, shared depth and specialist equipment",
+    ),
+    FailureModePrevention(
+        failure_mode="Uniform procurement capture",
+        prevention_clause="Open contracting, domestic manufacture, published contracts, beneficial ownership disclosure",
+    ),
+)
+
+

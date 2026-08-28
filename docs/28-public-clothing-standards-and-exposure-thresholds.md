@@ -273,10 +273,210 @@ sector clothing is governed by five mandatory operational clauses:
 
 ---
 
-## Part VI: The Honest Limit & Institutional Synthesis
+## Part VI: Workforce Separation Implementation Plan & The Female Guard Service
 
-This framework guarantees public space decorum and transparent public service with **near-zero
-friction, zero physical violence, and zero extortion**:
+The institutional deliverability of Tier 1 separation and respectful woman-to-woman public contact
+depends entirely on a dedicated operational force. Without the **Female Guard Service**, statutory
+protections become empty promises waived whenever a precinct is short-staffed.
+
+```
+┌───────────────────────────────────────────────────────────────────────────────────┐
+│              WORKFORCE SEPARATION: FOUR FUNCTIONAL STATUTORY TIERS                │
+├───────────────────────────────┬───────────────────────────────────────────────────┤
+│ TIER                          │ STATUTORY RULE & CORE LEGAL REQUIREMENT           │
+├───────────────────────────────┼───────────────────────────────────────────────────┤
+│ TIER 1: ABSOLUTE SEPARATION   │ ZERO EXCEPTION, ZERO WAIVER, ZERO DISCRETION.     │
+│ (Searches, Medical Exams,     │ Any function touching the body or vulnerable      │
+│  Custody, Sexual Offense      │ persons: Person is attended strictly and          │
+│  Interviews, Shelters, Care)  │ exclusively by staff of their own sex.            │
+├───────────────────────────────┼───────────────────────────────────────────────────┤
+│ TIER 2: SINGLE-SEX UNITS      │ DEFAULT ACROSS THE STATE.                         │
+│ (Police Stations, Hospitals,  │ Complete single-sex stations or wings with own    │
+│  Research Institutes, Civil)  │ female commanders; shared specialist depth and    │
+│                               │ expensive capital equipment; separated workspace. │
+├───────────────────────────────┼───────────────────────────────────────────────────┤
+│ TIER 3: SEPARATED FACILITIES  │ SEPARATED FACILITIES, SHARED PROFESSION.          │
+│ (Campuses, Headquarters,      │ Separate entrances, offices, canteens, prayer &   │
+│  Transit, Administration)     │ rest areas. Formal professional contact only.     │
+├───────────────────────────────┼───────────────────────────────────────────────────┤
+│ TIER 4: FULL DUPLICATION      │ CAPACITY-GATED, NEVER IDEOLOGY-GATED.             │
+│ (Education, Academies, Parallel│ Duplication only where professional depth exists  │
+│  Civic Institutions)          │ equally on both sides. Expanding ahead of the     │
+│                               │ verified training pipeline is prohibited.         │
+└───────────────────────────────┴───────────────────────────────────────────────────┘
+```
+
+### 6.0 Doctrine Carried Forward
+- **No Discretion at the Decision Point:** Rules are defined by clear statutory triggers, not
+  ad-hoc managerial discretion.
+- **Enforcement Designed Before the Rule is Announced:** The personnel pipeline must be staffed
+  and trained before statutory mandates take effect.
+- **Equal Resourcing Audited and Published:** Side-by-side public ledger verification of budget,
+  equipment, and training hours.
+- **Named Individuals Accountable:** Disciplinary liability attaches directly to the supervisor
+  who permits cross-sex attendance.
+- **Anti-Drift Lock:** The primary failure mode is drift into a two-quality system. Every statutory
+  clause is engineered to prevent this degradation.
+
+---
+
+### 6.1 The Four-Tier Separation Structure, Restated as Law
+
+#### Tier 1: Absolute Separation (Zero Exception, Zero Discretion)
+- **Scope:** Physical searches of any kind; medical examination, treatment where the body is exposed,
+  maternity, gynecology; prison and holding-cell custody; sexual offense investigation and victim
+  interviewing; shelters, changing/washing facilities, dormitories; residential care of elderly,
+  disabled, and children.
+- **The Statutory Rule:** The person is attended **strictly and exclusively by staff of their own sex**.
+  Written as an unyielding bright line. A breach is a major disciplinary offense with personal
+  consequences for the supervisor who permitted it, not merely the frontline officer.
+- **Narrow Emergency Exception:** An immediate life-threatening medical emergency where no same-sex
+  staff is present. Every instance must be logged, sworn, and published, triggering an **automatic
+  staffing review** of the facility (because recurring emergencies indicate structural understaffing).
+
+#### Tier 2: Single-Sex Units Inside Shared Institutions (The Default)
+- Standard civil service design across the state.
+- One police service containing complete female stations under female commanders; one hospital
+  containing fully female-staffed wings; research institutes with single-sex laboratories.
+- Preserves shared expensive equipment and specialized depth while maintaining separated physical work environments.
+
+#### Tier 3: Separated Facilities, Shared Profession
+- Separate entrances, office suites, dining canteens, prayer rooms, rest areas, and dedicated transport.
+- Inter-sex professional contact occurs exclusively in formal, scheduled professional settings
+  governed by published conduct codes.
+
+#### Tier 4: Full Institutional Duplication (Capacity-Gated)
+- Complete parallel institutions deployed **only where the nation possesses proven professional depth
+  on both sides** (education and teacher training deployed first).
+- Expanding duplication ahead of the professional pipeline is strictly forbidden, as arithmetic
+  guarantees an understaffed duplicate will become a second-rate institution.
+
+---
+
+### 6.2 The Female Guard Service: The Enabling Institution
+
+Without a dedicated, independent female force, Tier 1 is an unfunded promise that collapses under routine operational pressures.
+
+```
+┌───────────────────────────────────────────────────────────────────────────────────┐
+│                    THE FEMALE GUARD SERVICE ARCHITECTURE                          │
+├───────────────────────────────────────────────────────────────────────────────────┤
+│ 1. PERMANENT INDEPENDENT ESTABLISHMENT: Distinct service, independent budget line,│
+│    autonomous command chain; female Service Head reports at equal rank with male. │
+│ 2. FULL STATUTORY POWERS: Equal powers of arrest, search, detention, and command. │
+│    Auxiliary or "assistant" grading is outlawed by statute.                       │
+│ 3. STATUTORY MINIMUM STAFFING: Every precinct, court, hospital, and port has a    │
+│    published mandatory minimum female guard roster. Deficits trigger sanctions.   │
+│ 4. STATUTORY PAY & RANK PARITY: Identical salary scales, rank ladders, and pension│
+│    rights locked in statute with zero promotional ceiling.                        │
+│ 5. RECRUITMENT PIPELINE BUFFER: Recruitment target = Statutory Minimum + 20%      │
+│    attrition buffer; dedicated female training academies built prior to mandate.  │
+│ 6. CHILDCARE & RETENTION: On-site childcare at every training academy and major   │
+│    station to eliminate mid-career attrition and retain specialist expertise.     │
+└───────────────────────────────────────────────────────────────────────────────────┘
+```
+
+#### 6.2.1 Core Functions
+- Conducting physical searches of women and girls at all security gates, airports, and courts.
+- Custody supervision and transport of female detainees and prisoners.
+- Sensitive interviewing of victims in sexual, domestic, and familial offense investigations.
+- Guarding and securing women's civic facilities, hospital wards, residential shelters, and schools.
+- Executing public clothing threshold first-contact procedures under Part I (the discreet,
+  woman-to-woman offer of a free covering garment).
+
+#### 6.2.2 Career Structure & Anti-Drift Parity Locks
+- **Identical Pay, Ranks, and Pensions:** Codified directly in national statute, immune to
+  administrative erosion.
+- **No Career Ceiling:** The rank ladder extends to the highest general officer grade.
+- **Identical Academy Curriculum:** Same training standard, duration, and tactical qualifications.
+- **Side-by-Side Public Auditing:** Annual publication comparing headcount, per-officer budget,
+  equipment issue grade, promotion velocity, and training days. Any divergence exceeding 5% triggers
+  an automatic independent audit and disciplinary review of the responsible minister (§20, §25).
+
+#### 6.2.3 Three-Year Phased Implementation & Facility-by-Facility Rollout
+- **Year 1 (Academy & Pipeline Construction):** Build dedicated female academy facilities, launch
+  national recruitment with provincial/rural quotas, and open lateral entry routes for qualified
+  women from nursing, teaching, and social work.
+- **Year 2 (Targeted Deployment & Facility-by-Facility Commencement):** Deploy initial graduate
+  cohorts to critical pressure points (custody suites, sexual offense units, courts, shelters).
+  **Tier 1 becomes legally binding only at facilities that have met statutory minimum staffing**,
+  certified on an open public registry.
+- **Year 3 (National Full Compliance):** National minimum staffing thresholds achieved. Tier 1
+  becomes binding nationwide without exception, and Tier 2 departmental restructuring begins.
+
+---
+
+### 6.3 Operational Uniform Specification for the Female Guard Service
+
+Uniforms for the Female Guard Service follow the foundational doctrine: **the uniform is an
+accountability device and operational tool, not a decorative costume**.
+
+```
+┌───────────────────────────────────────────────────────────────────────────────────┐
+│               FEMALE GUARD SERVICE UNIFORM SPECIFICATIONS                         │
+├───────────────────────────────────────────────────────────────────────────────────┤
+│ 1. VISIBLE ACCOUNTABILITY ID: Prominent service ID number, rank, and unit patch;  │
+│    criminal offense to obscure, tape over, or remove.                             │
+│ 2. OPERATIONAL TACTICAL DESIGN: Engineered for running, physical restraint, and   │
+│    rapid vehicle egress; compatible with external tactical load-bearing gear.     │
+│ 3. MODESTY BY TAILORING: Full-coverage tailored cut (never draped or loose enough │
+│    to be seized in a struggle); integrated quick-release tactical head covering.  │
+│ 4. FEMALE-CUT BODY ARMOUR: Mandatory female-pattern ballistic vests designed for  │
+│    female torso anatomy (banning dangerous, ill-fitting male armour issue).       │
+│ 5. MATERNITY & CLIMATE VARIANTS: Standard establishment maternity uniforms and    │
+│    climate-engineered variants (arid summer to montane winter).                   │
+│ 6. COMPLETE STATE FUNDING: 100% state-funded multiple-set issue, free replacement │
+│    cycle, and monthly laundering allowance; zero employee out-of-pocket costs.    │
+└───────────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 6.4 Male Service — Symmetrical Legal Architecture
+The framework is completely symmetrical:
+- Male staff exclusively attend male detainees, male hospital wards, male strip searches, and male prison blocks.
+- Identical minimum staffing schedules, identical equipment allocations, and identical personal
+  disciplinary consequences apply to male commanders and facilities.
+
+---
+
+### 6.5 Failure Modes & Statutory Prevention Matrix
+
+| Failure Mode | Root Cause | Statutory Prevention Clause |
+|---|---|---|
+| **Women's institution under-resourced** | Budgetary neglect and political bias | Mandatory side-by-side budget publication; automatic audit trigger on >5% divergence; personal disqualification (§25) |
+| **Tier 1 waived for staffing shortages** | Premature mandate rollout | Facility-by-facility commencement; narrow life-threat exception only; recurring waiver triggers immediate staffing review |
+| **Female service becomes auxiliary** | Caste drift and grading demotion | Full arrest/detention powers; identical rank ladder to the top; equal pay scales locked in statute |
+| **Retention collapse** | Family-work conflict and burnout | Mandatory on-site childcare at all academies and major stations; maternity leave and tailored career progression |
+| **Specialist expertise halved** | Excessive fragmentation | Tier 2 default preserves shared expensive equipment, labs, and deep specialist collaboration |
+| **Uniform procurement capture** | Closed tenders and supplier graft | 100% domestic textile guild manufacture (§17); open contracts with beneficial ownership disclosure and automated audits |
+
+---
+
+### 6.6 The Two Non-Negotiable Load-Bearing Principles
+
+```
+┌───────────────────────────────────────────────────────────────────────────────────┐
+│                   THE TWO LOAD-BEARING CONSTITUTIONAL PILLARS                     │
+├───────────────────────────────────────────────────────────────────────────────────┤
+│ 1. TIER 4 IS CAPACITY-GATED, NOT IDEOLOGY-GATED: Full duplication of an           │
+│    institution occurs ONLY where proven qualified depth exists on both sides.     │
+│    Forcing duplication ahead of the training pipeline does not produce two equal  │
+│    institutions — it produces one functional service and one failing service, and │
+│    arithmetic guarantees the failing one will be the women's.                     │
+│ 2. THE EQUAL-RESOURCING AUDIT IS THE WHOLE DESIGN: If separation is not paired    │
+│    with strictly audited parity, it ceases to be protection and becomes a         │
+│    mechanism for delivering an inferior service while calling it care. Enforced   │
+│    resourcing parity is the load-bearing wall of the entire system.               │
+└───────────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Part VII: The Honest Limit & Institutional Synthesis
+
+This framework guarantees public space decorum, workforce dignity, and transparent public service
+with **near-zero friction, zero physical violence, and zero extortion**:
 
 ```
 ┌───────────────────────────────────────────────────────────────────────────────────┐
@@ -290,12 +490,16 @@ friction, zero physical violence, and zero extortion**:
 │ • Provides objective, appealable law │ • Law regulates public shared space; it    │
 │ • Enforces officer accountability ID │   does not police private conscience       │
 │ • Solves 90%+ via free loaner wraps  │ • Uniforms identify power; they do not     │
-│ • Restrains ruling class aristocracy │   substitute for ethical culture           │
+│ • Guarantees dignified same-sex care │   substitute for ethical culture           │
+│ • Eliminates under-resourced drift   │ • Full separation requires real training   │
+│   via strict side-by-side audits     │   depth, not administrative decrees        │
 └──────────────────────────────────────┴────────────────────────────────────────────┘
 ```
 
 > **The Essential Takeaway:** *Give the garment before you write the notice. Require the uniform
-> where there is power over the public, because the uniform is an identification badge. Keep desk
-> staff in simple professional dress, and strip ceremonial gold braid from senior officials. State
-> pays for all of it, made domestically by your own textile guilds. That is sovereign statecraft.*
+> where there is power over the public, because the uniform is an identification badge. Protect bodily
+> dignity with absolute Tier 1 same-sex attendance, powered by an independent, fully resourced
+> Female Guard Service. Audit resourcing side by side with personal disqualification for divergence.
+> That is sovereign institutional architecture.*
+
 

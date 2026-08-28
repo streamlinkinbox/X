@@ -544,7 +544,7 @@ Stated plainly, because a blueprint that only lists strengths is marketing:
 | [`25-media-information-integrity-and-social-harm.md`](25-media-information-integrity-and-social-harm.md) | **Media, Information Integrity, and Social Harm** |
 | [`26-penalty-system-and-anti-extortion-enforcement.md`](26-penalty-system-and-anti-extortion-enforcement.md) | **Non-Cash Penalties, Restorative Labor, and Anti-Extortion Enforcement** |
 | [`27-abolishing-debt-and-subscription-systems.md`](27-abolishing-debt-and-subscription-systems.md) | **Abolishing Debt-Based and Subscription-Based Systems** |
-| [`28-public-clothing-standards-and-exposure-thresholds.md`](28-public-clothing-standards-and-exposure-thresholds.md) | **Public Clothing Standards and Exposure Thresholds** |
+| [`28-public-clothing-standards-and-exposure-thresholds.md`](28-public-clothing-standards-and-exposure-thresholds.md) | **Public Clothing Standards, Service Dress, and Workforce Separation** |
 | [`annex-a-parameters.md`](annex-a-parameters.md) | Generated tables: all parameters and stress results |
 | [`annex-b-open-problems.md`](annex-b-open-problems.md) | Unsolved problems, ranked by how badly they hurt |
 

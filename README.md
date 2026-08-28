@@ -426,12 +426,14 @@ See [§27](docs/27-abolishing-debt-and-subscription-systems.md).
 
 ## Public clothing standards & exposure thresholds
 
-§28 establishes an objective statutory framework for shared public spaces and public service dress, eliminating subjective "morality policing" through bright-line anatomical thresholds, remedy-first enforcement, and accountability-driven uniform design:
+§28 establishes an objective statutory framework for shared public spaces, public service dress, and workforce separation, eliminating subjective "morality policing" through bright-line anatomical thresholds, remedy-first enforcement, and accountability-driven service architecture:
 - **Sovereign Purpose-First Principle:** Rejects reactive inversion ("do the opposite of external powers"); decides strictly from local civic purpose.
 - **Bright-Line Spatial Zones:** Three graduated zones (Strict civic/administrative, Standard general thoroughfare, Relaxed recreation/bathing) with enumerated, sex-neutral anatomical coverage standards.
 - **Remedy Before Penalty:** First contact is a free loaner wrap provided on the spot; accepting the wrap closes the encounter immediately with zero fine, zero record, and zero escalation.
 - **Zero Custodial Detentions:** Absolute prohibition on physical touching, arrests, or jail time for dress code violations; unresolved refusals trigger a civil administrative notice, never criminal charges.
 - **Anti-Humiliation Safeguards:** Female citizens approached exclusively by female officers; criminal bans on public photographing/shaming; mandatory bodycam logging; absolute ban on body inspections or comments.
+- **Four-Tier Workforce Separation & Female Guard Service:** Absolute Tier 1 separation for bodily contact/custody/care; independent Female Guard Service with equal rank, pay parity, female-cut body armour, on-site childcare, and facility-by-facility commencement.
+- **Equal-Resourcing Audit (Load-Bearing Wall):** Mandatory annual side-by-side public budget and equipment publication; >5% resource divergence triggers automatic ministerial disqualification (§25). Capacity-gated Tier 4 duplication prevents second-tier degradation.
 - **Tiered Public Sector Dress (Accountability Device):** Mandatory uniforms with prominent visible IDs for frontline authority (police, military, inspectors) so power is traceable; standardized dress codes for desk staff; deliberate plainness at the top (stripping ceremonial braid and visual aristocracy).
 - **100% State-Paid Domestic Procurement:** Uniforms issued and replaced free (no stealth wage cuts), 100% manufactured by domestic textile guilds (§17) via open, audited tenders.
 - **Democratic Sunset & Venue Duty:** Commercial hubs, transit stations, and event venues maintain free loaner supplies; mandatory 5-year legislative sunset with published demographic compliance audits.
