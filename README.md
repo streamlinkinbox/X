@@ -53,6 +53,8 @@ the five model findings that change the original design.
 | [14 People & recruitment](docs/14-people-and-recruitment.md) | Cadre vs. network, screening bias, apprenticeship |
 | [15 Service credits](docs/15-service-credits.md) | Labour-backed currency, health costs, care pooling |
 | [16 External trade](docs/16-external-trade-and-dependency.md) | Import dependency, buffers, substitution, trade window |
+| [17 Local production](docs/17-local-production-doctrine.md) | **The production ladder — what can be made locally** |
+| [18 Community security](docs/18-community-security.md) | Mediation, fraud forensics, rotation, armoury |
 | [Annex A](docs/annex-a-parameters.md) | **Generated** parameter and stress tables |
 | [Annex B](docs/annex-b-open-problems.md) | Unsolved problems, ranked by severity |
 
@@ -242,6 +244,37 @@ promise resilience, not autarky.
 **Never detox abruptly:** cutting a critical import before its substitute
 works is the withdrawal that kills the patient. See
 [§16](docs/16-external-trade-and-dependency.md).
+
+## The production ladder: making it locally
+
+§17 corrects §16's pessimism. Ranked by technical difficulty rather than
+importance — five rungs, **none skippable** — two lethal-category goods are
+locally producible today:
+
+| Product | Capex | Why |
+|---|---|---|
+| **Medical oxygen** (PSA) | ~$105k | Made from **air**; proven in Kenya, Rwanda, Ethiopia at ~$7.34/patient |
+| **Oral rehydration salts** | ~$18k | Sugar, salt, water |
+
+Viability means saving more FX than the plant costs to run — six of sixteen
+candidates fail that test and would leave the community *worse* off. APIs and
+vaccines stay imported forever. Independence rises ~51% → **~60%**.
+
+Prefer **dual-use plants**: everyday demand keeps them maintained until the
+emergency arrives.
+
+## Security: 65% mediation, 21% force
+
+§18 models what community security actually does. Five rotating members
+suffice. Two findings: **inspector collusion**, not instrument accuracy, is
+what defeats fraud detection (93% → 20%), and rotation prevents capture only
+within a narrow band — 9-month tours safe, 24-month tours catastrophic. A
+2-of-5 armoury quorum fails outright if two keyholders collude.
+
+One correction: the claim that police numbers don't affect crime is
+contradicted by modern evidence. The real case for this model —
+accountability, fit-to-task, cost, currency integrity — is stronger without
+it.
 
 ## Honest positioning
 

@@ -39,6 +39,24 @@ from model.rcu.external import (  # noqa: E402
     substitution_ladder,
     uniform_buffer_cost,
 )
+from model.rcu.production import (  # noqa: E402
+    LADDER,
+    Rung,
+    build_programme,
+    by_rung,
+    dual_use_products,
+    ranked_by_sovereignty,
+    viable_projects,
+)
+from model.rcu.security import (  # noqa: E402
+    ArmouryPolicy,
+    audit_effort_curve,
+    collusion_sensitivity,
+    detection,
+    max_safe_rotation,
+    rotation_grid,
+    workload,
+)
 from model.rcu.services import (  # noqa: E402
     CreditPool,
     EarnCapacity,
@@ -604,6 +622,134 @@ def table_external() -> None:
     )
 
 
+def table_production() -> None:
+    W("## A.13 The local production ladder\n\n")
+    W(
+        "Candidates ranked by technical difficulty rather than importance. "
+        "Rungs cannot be skipped: precision synthesis requires the metalwork, "
+        "power and quality systems of every rung below it. See section 17.\n\n"
+    )
+    W("| Rung | Project | Capex | Net saving/yr | Payback | Viable | Lethal |\n")
+    W("|---|---|---|---|---|---|---|\n")
+    for rung, items in by_rung().items():
+        for p in items:
+            pb = p.payback_years()
+            pbs = "never" if pb.is_infinite() else f"{float(pb):.1f} yr"
+            W(
+                f"| {int(rung)} | {p.name} | ${p.capex:,.0f} | "
+                f"${p.net_saving_per_year:+,.0f} | {pbs} | "
+                f"{'yes' if p.viable else '**no**'} | "
+                f"{'**yes**' if p.lethal else ''} |\n"
+            )
+    lethal_viable = [p for p in LADDER if p.lethal and p.viable]
+    W(
+        f"\n**{len(viable_projects())} of {len(LADDER)} are viable, including "
+        f"{len(lethal_viable)} lethal-category goods** -- medical oxygen from "
+        "air and oral rehydration salts from sugar and salt. This corrects "
+        "section 16's conclusion that no lethal import could be localised.\n\n"
+    )
+
+    W("### Sovereignty ranking versus payback ranking\n\n")
+    W("| Rank | Project | Sovereignty value | Lethal |\n|---|---|---|---|\n")
+    for i, p in enumerate(ranked_by_sovereignty()[:5], 1):
+        W(
+            f"| {i} | {p.name} | {p.sovereignty_value} | "
+            f"{'**yes**' if p.lethal else ''} |\n"
+        )
+    a = build_programme(400_000, prioritise_lethal=True)
+    b = build_programme(400_000, prioritise_lethal=False)
+    W(
+        f"\n| $400k programme | Lethal-first | Money-first |\n|---|---|---|\n"
+        f"| Net saving/yr | ${a.total_net_saving:,.0f} | ${b.total_net_saving:,.0f} |\n"
+        f"| Independence gain | {float(a.independence_gain) * 100:.1f}% | "
+        f"{float(b.independence_gain) * 100:.1f}% |\n"
+        f"| Lethal capabilities | **{a.lethal_covered}** | {b.lethal_covered} |\n"
+    )
+    W(
+        f"\n**Prioritising resilience costs "
+        f"${b.total_net_saving - a.total_net_saving:,.0f}/year and buys one "
+        "additional life-critical capability.** Decide this openly.\n\n"
+    )
+    W("Dual-use plants (everyday demand keeps them alive until needed):\n\n")
+    for p in dual_use_products():
+        W(f"- {p.name}\n")
+    W("\n")
+
+
+def table_security() -> None:
+    W("## A.14 Community security: workload, detection, capture\n\n")
+    w = workload(1000)
+    W("### What the work actually is (community of 1,000)\n\n")
+    W("| Category | Hours/year |\n|---|---|\n")
+    for cat, hrs in sorted(w.hours_by_category.items(), key=lambda x: -x[1]):
+        W(f"| {cat.replace('_', ' ')} | {hrs:.0f} |\n")
+    W(
+        f"\n| Function | Share |\n|---|---|\n"
+        f"| Mediation | **{float(w.mediation_share) * 100:.1f}%** |\n"
+        f"| Forensics | {float(w.forensic_share) * 100:.1f}% |\n"
+        f"| Anything involving force | {float(w.force_share) * 100:.1f}% |\n"
+    )
+    W("\n| Population | Hours/yr | Members needed |\n|---|---|---|\n")
+    for pop in (500, 1000, 3000, 20000):
+        ww = workload(pop)
+        W(f"| {pop:,} | {ww.total_hours:,.0f} | {ww.members_needed()} |\n")
+    W(
+        "\n**Coverage, not caseload, sets the roster** -- someone must be on "
+        "call at any hour. Five members is the floor for any community.\n\n"
+    )
+
+    W("### Fraud detection by layer\n\n")
+    d = detection()
+    W(
+        f"| Layer | Caught per 100 attempts |\n|---|---|\n"
+        f"| Dual inspection at deposit | {d.caught_at_deposit:.1f} |\n"
+        f"| Random audit | {d.caught_at_audit:.1f} |\n"
+        f"| Consumer verification | {d.caught_by_consumer:.1f} |\n"
+        f"| **Undetected** | **{d.undetected:.1f}** |\n"
+    )
+    W("\n| Inspector collusion | Detection |\n|---|---|\n")
+    for r, dr in collusion_sensitivity():
+        W(f"| {r * 100:.0f}% | {float(dr) * 100:.1f}% |\n")
+    W(
+        "\n**Collusion, not instrument accuracy, is the binding constraint.** "
+        "Dual inspection is worth exactly the independence of the two "
+        "inspectors. Audit effort by contrast has weak returns:\n\n"
+    )
+    W("| Audit coverage | Detection |\n|---|---|\n")
+    for f, dr in audit_effort_curve():
+        W(f"| {f * 100:.0f}% | {float(dr) * 100:.1f}% |\n")
+
+    W("\n### Rotation and capture resistance\n\n")
+    W("| Tour | Break 12 mo | Break 18 mo |\n|---|---|---|\n")
+    grid = {(t_, b_): (c, pk) for t_, b_, c, pk in rotation_grid()}
+    for tour in (6, 9, 12, 18, 24, 36):
+        cells = []
+        for br in (12, 18):
+            cap, peak = grid[(tour, br)]
+            cells.append(f"{'**CAPTURED**' if cap else 'safe'} ({peak})")
+        W(f"| {tour} mo | {cells[0]} | {cells[1]} |\n")
+    W(
+        f"\n**Maximum safe tour is {max_safe_rotation()} months**, and the "
+        "transition is sharp: 12-month tours are safe, 24-month tours are "
+        "catastrophic. Recommended: 9-month tours, 18-month breaks.\n\n"
+    )
+
+    W("### Armoury quorum\n\n")
+    W("| Keyholders | Quorum | Colluding | Unauthorised release |\n|---|---|---|---|\n")
+    for kh, q, cc in ((5, 2, 2), (5, 3, 2), (7, 3, 2), (7, 4, 3)):
+        a = ArmouryPolicy(keyholders=kh, quorum=q, corrupt_count=cc)
+        p_ = a.unauthorised_release_probability
+        W(
+            f"| {kh} | {q} | {cc} | "
+            f"{'**CERTAIN**' if p_ == 1 else f'{float(p_) * 100:.1f}%'} |\n"
+        )
+    W(
+        "\n**A 2-of-5 rule fails completely if two keyholders collude.** "
+        "Quorum must exceed the plausible number of colluding keyholders: use "
+        "3-of-7.\n\n"
+    )
+
+
 def main() -> None:
     header()
     table_classes()
@@ -618,6 +764,8 @@ def main() -> None:
     table_people()
     table_services()
     table_external()
+    table_production()
+    table_security()
 
 
 if __name__ == "__main__":

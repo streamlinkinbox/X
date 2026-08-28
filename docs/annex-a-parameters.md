@@ -429,3 +429,135 @@ Classified by what happens if supply stops abruptly, not by cost. See section 16
 
 Nothing dramatic happens in any single year. Dependency forms by drift, not by decision -- which is why the ratio must be published quarterly.
 
+## A.13 The local production ladder
+
+Candidates ranked by technical difficulty rather than importance. Rungs cannot be skipped: precision synthesis requires the metalwork, power and quality systems of every rung below it. See section 17.
+
+| Rung | Project | Capex | Net saving/yr | Payback | Viable | Lethal |
+|---|---|---|---|---|---|---|
+| 1 | Food staples (displacing processed imports) | $70,000 | $+42,000 | 1.7 yr | yes |  |
+| 1 | Medicinal plants (artemisinin, aloe, neem) | $25,000 | $-800 | never | **no** |  |
+| 1 | Cotton and fibre for textiles | $80,000 | $+22,500 | 3.6 yr | yes |  |
+| 2 | Biogas (cooking and small generation) | $90,000 | $+16,750 | 5.4 yr | yes |  |
+| 2 | Bioethanol (fuel and disinfectant) | $110,000 | $+1,750 | 62.9 yr | yes |  |
+| 2 | Compost and biochar fertiliser | $120,000 | $+34,000 | 3.5 yr | yes |  |
+| 2 | Soap, disinfectant, basic hygiene | $20,000 | $+9,750 | 2.0 yr | yes |  |
+| 2 | Oral rehydration salts | $18,000 | $+2,300 | 7.8 yr | yes | **yes** |
+| 3 | Medical oxygen (PSA plant) | $105,000 | $+8,000 | 13.1 yr | yes | **yes** |
+| 3 | Solar power and battery systems | $160,000 | $+8,000 | 20.0 yr | yes |  |
+| 3 | Spare parts and tool fabrication | $90,000 | $+8,750 | 10.3 yr | yes |  |
+| 3 | Basic medical consumables (dressings, containers) | $70,000 | $-1,500 | never | **no** |  |
+| 4 | IV fluids and saline | $220,000 | $-12,000 | never | **no** | **yes** |
+| 4 | Formulation of imported APIs into tablets | $400,000 | $-35,000 | never | **no** | **yes** |
+| 5 | Active pharmaceutical ingredient synthesis | $2,000,000 | $-178,000 | never | **no** | **yes** |
+| 5 | Vaccine manufacture | $5,000,000 | $-400,000 | never | **no** | **yes** |
+
+**10 of 16 are viable, including 2 lethal-category goods** -- medical oxygen from air and oral rehydration salts from sugar and salt. This corrects section 16's conclusion that no lethal import could be localised.
+
+### Sovereignty ranking versus payback ranking
+
+| Rank | Project | Sovereignty value | Lethal |
+|---|---|---|---|
+| 1 | Oral rehydration salts | 1.333 | **yes** |
+| 2 | Medical oxygen (PSA plant) | 0.810 | **yes** |
+| 3 | Food staples (displacing processed imports) | 0.771 |  |
+| 4 | Soap, disinfectant, basic hygiene | 0.638 |  |
+| 5 | Cotton and fibre for textiles | 0.469 |  |
+
+| $400k programme | Lethal-first | Money-first |
+|---|---|---|
+| Net saving/yr | $101,300 | $127,300 |
+| Independence gain | 27.6% | 34.4% |
+| Lethal capabilities | **2** | 1 |
+
+**Prioritising resilience costs $26,000/year and buys one additional life-critical capability.** Decide this openly.
+
+Dual-use plants (everyday demand keeps them alive until needed):
+
+- Biogas (cooking and small generation)
+- Bioethanol (fuel and disinfectant)
+- Soap, disinfectant, basic hygiene
+- Medical oxygen (PSA plant)
+
+## A.14 Community security: workload, detection, capture
+
+### What the work actually is (community of 1,000)
+
+| Category | Hours/year |
+|---|---|
+| commercial dispute | 140 |
+| family and neighbour | 121 |
+| land and livestock | 110 |
+| theft | 60 |
+| quality fraud | 59 |
+| assault | 40 |
+| counterfeit or ledger | 22 |
+| serious violent | 20 |
+
+| Function | Share |
+|---|---|
+| Mediation | **64.8%** |
+| Forensics | 14.2% |
+| Anything involving force | 20.9% |
+
+| Population | Hours/yr | Members needed |
+|---|---|---|
+| 500 | 286 | 5 |
+| 1,000 | 573 | 5 |
+| 3,000 | 1,718 | 5 |
+| 20,000 | 11,451 | 13 |
+
+**Coverage, not caseload, sets the roster** -- someone must be on call at any hour. Five members is the floor for any community.
+
+### Fraud detection by layer
+
+| Layer | Caught per 100 attempts |
+|---|---|
+| Dual inspection at deposit | 81.9 |
+| Random audit | 1.6 |
+| Consumer verification | 2.1 |
+| **Undetected** | **14.4** |
+
+| Inspector collusion | Detection |
+|---|---|
+| 0% | 92.8% |
+| 5% | 89.2% |
+| 10% | 85.6% |
+| 25% | 74.7% |
+| 50% | 56.6% |
+| 100% | 20.4% |
+
+**Collusion, not instrument accuracy, is the binding constraint.** Dual inspection is worth exactly the independence of the two inspectors. Audit effort by contrast has weak returns:
+
+| Audit coverage | Detection |
+|---|---|
+| 0% | 84.2% |
+| 5% | 84.9% |
+| 10% | 85.6% |
+| 20% | 87.0% |
+| 40% | 89.9% |
+
+### Rotation and capture resistance
+
+| Tour | Break 12 mo | Break 18 mo |
+|---|---|---|
+| 6 mo | safe (0.067) | safe (0.067) |
+| 9 mo | safe (0.117) | safe (0.08) |
+| 12 mo | safe (0.625) | safe (0.095) |
+| 18 mo | **CAPTURED** (6.737) | safe (0.886) |
+| 24 mo | **CAPTURED** (44.522) | **CAPTURED** (5.274) |
+| 36 mo | **CAPTURED** (238.638) | **CAPTURED** (44.522) |
+
+**Maximum safe tour is 18 months**, and the transition is sharp: 12-month tours are safe, 24-month tours are catastrophic. Recommended: 9-month tours, 18-month breaks.
+
+### Armoury quorum
+
+| Keyholders | Quorum | Colluding | Unauthorised release |
+|---|---|---|---|
+| 5 | 2 | 2 | **CERTAIN** |
+| 5 | 3 | 2 | 5.0% |
+| 7 | 3 | 2 | 5.0% |
+| 7 | 4 | 3 | 5.0% |
+
+**A 2-of-5 rule fails completely if two keyholders collude.** Quorum must exceed the plausible number of colluding keyholders: use 3-of-7.
+

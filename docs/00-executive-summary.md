@@ -261,6 +261,44 @@ The deeper point: RCU's contribution is not eliminating imports. It is that
 when imports fail, **the grain is still in the shed and the notes still work**
 — turning a collapse into a shortage.
 
+## Making it locally: the production ladder
+
+§16 concluded that lethal imports cannot be localised. §17 shows that was
+**too pessimistic**, because it treated "medicine" as one category.
+
+Disaggregated by technical difficulty — a five-rung ladder from *grow* to
+*precision synthesis*, where **rungs cannot be skipped** — two
+lethal-category goods turn out to be locally producible today:
+
+| Product | Capex | Why it works |
+|---|---|---|
+| **Medical oxygen** (PSA plant) | ~$105,000 | Made from **air**; proven at district scale in Kenya, Rwanda and Ethiopia at ~$7.34/patient |
+| **Oral rehydration salts** | ~$18,000 | Sugar, salt, clean water; treats the leading cause of child death from diarrhoea |
+
+**Air cannot be embargoed, sanctioned, or priced in dollars.**
+
+Ten of sixteen candidates are viable — where viable means *saving more FX
+than the plant costs to operate*, a test six candidates fail. APIs and
+vaccines remain permanently out of reach at district scale.
+
+Two design rules: **rank by sovereignty, not payback** (it costs ~$26,000/yr
+and buys a second life-critical capability), and **prefer dual-use plants** —
+the everyday demand is what keeps a facility staffed and maintained until the
+emergency it was built for.
+
+Independence rises from ~51% to **~60%**.
+
+## Security: mostly mediation, not force
+
+§18 quantifies what a community security cooperative actually does: **65%
+mediation, 14% currency-fraud forensics, 21% anything involving force.** Five
+rotating members suffice, since coverage rather than caseload sets the roster.
+
+The binding constraint on fraud detection is **inspector collusion, not
+instrument accuracy** — detection falls from 93% to 20% as collusion rises to
+certainty. Rotation genuinely prevents capture, but only within a narrow
+band: 9-month tours with 18-month breaks are safe, 24-month tours are not.
+
 ## What this system cannot do
 
 Stated plainly, because a blueprint that only lists strengths is marketing:
@@ -303,6 +341,8 @@ Stated plainly, because a blueprint that only lists strengths is marketing:
 | [`14-people-and-recruitment.md`](14-people-and-recruitment.md) | Recruitment, screening, trust, apprenticeship — the human constraint |
 | [`15-service-credits.md`](15-service-credits.md) | Can labour back a currency? Health costs, time banking, care |
 | [`16-external-trade-and-dependency.md`](16-external-trade-and-dependency.md) | Import dependency, buffers, substitution, the trade window |
+| [`17-local-production-doctrine.md`](17-local-production-doctrine.md) | **The production ladder — what can actually be made locally** |
+| [`18-community-security.md`](18-community-security.md) | Mediation, fraud forensics, rotation, armoury, capture resistance |
 | [`annex-a-parameters.md`](annex-a-parameters.md) | Generated tables: all parameters and stress results |
 | [`annex-b-open-problems.md`](annex-b-open-problems.md) | Unsolved problems, ranked by how badly they hurt |
 

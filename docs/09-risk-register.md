@@ -40,6 +40,12 @@ project-threatening and must have an owner and a mitigation before launch.
 | R31 | **Dependency ratchet unnoticed** | 4 | 4 | **16** | Published quarterly self-reliance ratio; alarm below 1.0 (§16.6) | 7 |
 | R32 | **FX spent on discretionary before critical imports** | 3 | 5 | **15** | Constitutional triage at the export window: lethal first, always (§16.4) | 5 |
 | R33 | **Ideological autarky attempted; withdrawal kills** | 2 | 5 | **10** | Taper doctrine is written policy; no critical import cut before substitute is proven | 4 |
+| R34 | **Local plant fails after import discontinued** | 3 | 5 | **15** | 12-month parallel running before any import is cut (§17.7) | 5 |
+| R35 | **Unsafe local medical production** | 3 | 5 | **15** | Rung 4+ requires pharmacist and testing lab; ORS and oxygen only below that (§17.7) | 5 |
+| R36 | **Inspector collusion defeats dual verification** | 3 | 5 | **15** | Federation employment, cross-district rotation, published variance (§18.3) | 6 |
+| R37 | **Security rotation extended under pressure** | 4 | 4 | **16** | Tour length is constitutional: 90-day supermajority to change (§18.4) | 6 |
+| R38 | **Armoury quorum too small; weapons released** | 2 | 5 | **10** | 3-of-7 minimum, time delay, keyholders separate from members (§18.5) | 4 |
+| R39 | **Security body becomes a defence force** | 2 | 5 | **10** | Explicitly out of scope; would void the §8 legal strategy | 4 |
 
 ---
 

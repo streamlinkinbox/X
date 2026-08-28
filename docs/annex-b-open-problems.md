@@ -385,7 +385,20 @@ pharmaceutical ingredients, where Africa imports 95-99% of medicines and close
 to 100% of APIs. Substitution payback for medicines is on the order of **200
 years**; for vaccines it is effectively never.
 
-**Mitigation, not solution:** severity-weighted physical buffers (§16.3),
+**Partially resolved by §17.** The original analysis treated "medicines" as
+one category, which was too coarse. Disaggregated by technical difficulty,
+**two lethal-category goods are locally producible today**: medical oxygen
+from air (PSA plants proven at district scale in Kenya, Rwanda and Ethiopia
+at roughly USD 100-110k and ~USD 7.34 per patient treated) and oral
+rehydration salts from sugar and salt. Achievable independence rises from
+~51% to ~60%.
+
+**What remains irreducible:** active pharmaceutical ingredients, vaccines,
+sterile IV production, and precision equipment. These sit on rung 5 of the
+production ladder and are national or continental projects, not district
+ones.
+
+**Mitigation for the remainder:** severity-weighted physical buffers (§16.3),
 supplier diversification across regions, constitutional FX triage, and
 localising the *easy* categories so that foreign exchange is always available
 for the impossible ones.
@@ -415,7 +428,7 @@ and it has no internal answer.
 | P11 | No common unit of account | **High (new)** | Mitigations untested; Phase 1 must measure |
 | P12 | Recruiting the acceptor network, not just a cadre | **High (new)** | §14.2 gives the arithmetic; no proven playbook at scale |
 | P13 | Scarce services cannot be monetised | **High (new)** | Structural; use pooling not credits. FX gap for consumables unsolved |
-| P14 | Irreducible import floor (~49% of bill) | **High (new)** | Buffers and triage mitigate; export dependence is permanent |
+| P14 | Irreducible import floor | **High** | Reduced from ~49% to ~40% by §17 production ladder; APIs and vaccines permanent |
 
 **The three at the top are not reasons to abandon the design.** They are the
 reasons a pilot exists — and a pilot that is not explicitly built to test
