@@ -3,11 +3,15 @@
 import pytest
 
 from model.rcu.debt_and_subscriptions import (
+    CostPlusHousingAdvance,
     DecisiveAccessTest,
     ElderCareStipend,
+    FAIR_BORROWING_RULES,
+    FairBorrowingRule,
     FinancialSector,
     MechanismComparison,
     SECTOR_COMPARISONS,
+    VehiclePurchaseComparison,
     ZeroInterestAdvance,
 )
 
@@ -24,7 +28,6 @@ def test_sector_comparisons_coverage():
 
 
 def test_zero_interest_advance_vehicle_and_housing():
-    # Vehicle or housing advance of 15,000 RCU
     adv = ZeroInterestAdvance(
         item_description="Essential transport utility vehicle",
         principal_amount_rcu=15000.0,
@@ -36,7 +39,6 @@ def test_zero_interest_advance_vehicle_and_housing():
     assert adv.seizure_of_primary_residence_allowed is False
     assert adv.pause_on_documented_hardship is True
 
-    # Compare with commercial loan at 15% interest over 5 years
     comp = adv.calculate_commercial_loan_comparison(
         commercial_interest_rate_percent=15.0, loan_years=5
     )
@@ -44,6 +46,43 @@ def test_zero_interest_advance_vehicle_and_housing():
     assert comp["zero_interest_total_rcu"] == 15000.0
     assert comp["commercial_loan_total_rcu"] > 21000.0
     assert comp["interest_extraction_eliminated_rcu"] > 6000.0
+
+
+def test_vehicle_purchase_comparison():
+    veh = VehiclePurchaseComparison(cash_price_rcu=200_000.0, predatory_interest_and_fees_rcu=150_000.0)
+    assert veh.fair_total_repayment_rcu == 200_000.0
+    assert veh.predatory_total_repayment_rcu == 350_000.0
+    assert veh.predatory_surcharge_ratio == 1.75
+
+
+def test_cost_plus_housing_advance():
+    housing = CostPlusHousingAdvance(
+        land_preparation_cost_rcu=20_000.0,
+        materials_and_timber_cost_rcu=60_000.0,
+        guild_construction_labor_rcu=40_000.0,
+        infrastructure_connection_rcu=10_000.0,
+        transparent_admin_fee_rcu=2_000.0,
+    )
+    assert housing.total_cost_plus_price_rcu == 132_000.0
+    comp = housing.compare_against_30yr_commercial_mortgage(mortgage_interest_rate_percent=9.0)
+    assert comp["cost_plus_principal_rcu"] == 132_000.0
+    assert comp["commercial_30yr_total_rcu"] > 380_000.0  # More than 2.8x the actual cost!
+    assert comp["cost_multiplier"] > 2.8
+
+
+def test_fair_borrowing_rules():
+    assert len(FAIR_BORROWING_RULES) == 10
+    titles = [r.rule_title for r in FAIR_BORROWING_RULES]
+    assert "One Clear Total Price" in titles
+    assert "No Compound Interest" in titles
+    assert "No Hidden Conditions" in titles
+    assert "No Forced Add-Ons" in titles
+    assert "Fair Hardship Protection" in titles
+    assert "No Essential-Asset Seizure" in titles
+    assert "No Perpetual Repayment" in titles
+    assert "Fresh Start After Honest Failure" in titles
+    assert "Equal Bargaining Power" in titles
+    assert "Absolute Ban on Debt Slavery" in titles
 
 
 def test_elder_care_stipend():
@@ -58,7 +97,6 @@ def test_elder_care_stipend():
 
 
 def test_decisive_access_test():
-    # Commercial Medical Aid: Fails test
     commercial_med = DecisiveAccessTest(
         mechanism_name="Commercial Medical Aid Scheme",
         provides_direct_physical_access=False,
@@ -68,7 +106,6 @@ def test_decisive_access_test():
     )
     assert commercial_med.is_socially_defensible is False
 
-    # Sovereign Direct Guild Health Provision: Passes test
     sovereign_health = DecisiveAccessTest(
         mechanism_name="Direct Public Guild Provisioning",
         provides_direct_physical_access=True,

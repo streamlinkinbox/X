@@ -1099,14 +1099,36 @@ Dual-use plants (everyday demand keeps them alive until needed):
 | **Equipment And Housing** | Compound-Interest Auto Loans & 30-Y... | Zero-Interest Non-Compounding Resou... | Repay exact principal borrowed; zero int... |
 | **Infrastructure Finance** | Sovereign Bond Markets & Structural... | Commodity-Backed Public Development... | Direct issuance against verified materia... |
 
-### Zero-interest advance vs. commercial compound-interest loan
+### Vehicle deferred purchase: predatory financing vs. fair installment
 
-| Financing parameter | Commercial compound-interest loan | Sovereign zero-interest advance | Extraction eliminated |
+| Financing model | Cash price | Total repayment | Surcharge ratio | Terms & repossession |
+|---|---|---|---|---|
+| Predatory Commercial Loan | 200,000 RCU | **350,000 RCU** | **1.75x** | Compounding usury + quick repossession |
+| **Sovereign Fair Installment** | 200,000 RCU | **200,000 RCU** | **1.00x (0% Interest)** | Income-tied payments + hardship protection |
+
+### Housing finance: cost-plus advance vs. 30-year compound mortgage
+
+| Housing financing parameter | 30-Year compound commercial mortgage | Sovereign cost-plus advance | Financial extraction avoided |
 |---|---|---|---|
-| Principal advance | 15,000 RCU | 15,000 RCU | Direct material parity |
-| Interest rate (APR) | 15.0% compounding | **0.0% (Zero interest)** | Compounding interest banned |
-| Total repayment | **21,411 RCU** | **15,000 RCU** | **6,411 RCU saved (1.43x)** |
-| Default consequence | Foreclosure & asset repossession | Hardship pause; restorative labor | Zero primary home foreclosure |
+| Physical construction & land | 132,000 RCU | 132,000 RCU | Real physical asset parity |
+| Interest rate | 9.0% APR compounding | **0.0% (Zero interest)** | Compounding mortgage usury eliminated |
+| Total repayment | **382,357 RCU** | **132,000 RCU** | **250,357 RCU saved (2.90x)** |
+| Default consequence | Foreclosure & family eviction | Hardship pause; sortition mediation | **Zero primary home seizure** |
+
+### The Ten Statutory Rules for Fair Borrowing and Installments
+
+| # | Statutory rule | Core legal requirement | Prohibited abusive practice |
+|---|---|---|---|
+| 1 | **One Clear Total Price** | The buyer must know the exact maximum total a... | Hidden variable interest escalations and... |
+| 2 | **No Compound Interest** | Unpaid balances cannot generate interest upon... | Compounding usury multiplying debt indep... |
+| 3 | **No Hidden Conditions** | Every material clause must be drafted in plai... | Incomprehensible legal boilerplate engin... |
+| 4 | **No Forced Add-Ons** | Buyers cannot be compelled to purchase bundle... | Predatory fee-stuffing inflating the fin... |
+| 5 | **Fair Hardship Protection** | Job loss, illness, crop failure, or disaster ... | Punitive penalty fees and immediate defa... |
+| 6 | **No Essential-Asset Seizure** | Primary family housing, basic transport, and ... | Throwing families onto the street for te... |
+| 7 | **No Perpetual Repayment** | Every advance must have a fixed terminal payo... | Evergreen loans and revolving debt traps... |
+| 8 | **Fresh Start After Honest Failure** | Insolvency procedures allow honest failure to... | Lifelong debt bondage and post-repossess... |
+| 9 | **Equal Bargaining Power** | All standard deferred contracts are publicly ... | Unilateral adhesion contracts imposed by... |
+| 10 | **Absolute Ban on Debt Slavery** | A person's physical labor, bodily autonomy, f... | Indentured servitude, inherited debt, an... |
 
 ### Master-Apprentice elder production compact (Physical commodity security)
 

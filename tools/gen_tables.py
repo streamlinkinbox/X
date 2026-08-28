@@ -147,11 +147,15 @@ from model.rcu.penalties import (  # noqa: E402
     RestitutionAccounting,
 )
 from model.rcu.debt_and_subscriptions import (  # noqa: E402
+    CostPlusHousingAdvance,
     DecisiveAccessTest,
     ElderCareStipend,
+    FAIR_BORROWING_RULES,
+    FairBorrowingRule,
     FinancialSector,
     MechanismComparison,
     SECTOR_COMPARISONS,
+    VehiclePurchaseComparison,
     ZeroInterestAdvance,
 )
 from model.rcu.security import (  # noqa: E402
@@ -1391,20 +1395,30 @@ def table_debt_subscriptions() -> None:
         )
     W("\n")
 
-    adv = ZeroInterestAdvance(
-        item_description="Transport utility vehicle / Housing build",
-        principal_amount_rcu=15000.0,
-        monthly_installment_rcu=250.0,
-    )
-    comp = adv.calculate_commercial_loan_comparison(commercial_interest_rate_percent=15.0, loan_years=5)
-    W("### Zero-interest advance vs. commercial compound-interest loan\n\n")
+    veh = VehiclePurchaseComparison(cash_price_rcu=200000.0, predatory_interest_and_fees_rcu=150000.0)
+    W("### Vehicle deferred purchase: predatory financing vs. fair installment\n\n")
     W(
-        f"| Financing parameter | Commercial compound-interest loan | Sovereign zero-interest advance | Extraction eliminated |\n|---|---|---|---|\n"
-        f"| Principal advance | {comp['principal_rcu']:,.0f} RCU | {comp['principal_rcu']:,.0f} RCU | Direct material parity |\n"
-        f"| Interest rate (APR) | 15.0% compounding | **0.0% (Zero interest)** | Compounding interest banned |\n"
-        f"| Total repayment | **{comp['commercial_loan_total_rcu']:,.0f} RCU** | **{comp['zero_interest_total_rcu']:,.0f} RCU** | **{comp['interest_extraction_eliminated_rcu']:,.0f} RCU saved ({comp['savings_multiplier']:.2f}x)** |\n"
-        f"| Default consequence | Foreclosure & asset repossession | Hardship pause; restorative labor | Zero primary home foreclosure |\n\n"
+        f"| Financing model | Cash price | Total repayment | Surcharge ratio | Terms & repossession |\n|---|---|---|---|---|\n"
+        f"| Predatory Commercial Loan | {veh.cash_price_rcu:,.0f} RCU | **{veh.predatory_total_repayment_rcu:,.0f} RCU** | **{veh.predatory_surcharge_ratio:.2f}x** | Compounding usury + quick repossession |\n"
+        f"| **Sovereign Fair Installment** | {veh.cash_price_rcu:,.0f} RCU | **{veh.fair_total_repayment_rcu:,.0f} RCU** | **1.00x (0% Interest)** | Income-tied payments + hardship protection |\n\n"
     )
+
+    housing = CostPlusHousingAdvance()
+    h_comp = housing.compare_against_30yr_commercial_mortgage(mortgage_interest_rate_percent=9.0)
+    W("### Housing finance: cost-plus advance vs. 30-year compound mortgage\n\n")
+    W(
+        f"| Housing financing parameter | 30-Year compound commercial mortgage | Sovereign cost-plus advance | Financial extraction avoided |\n|---|---|---|---|\n"
+        f"| Physical construction & land | {h_comp['cost_plus_principal_rcu']:,.0f} RCU | {h_comp['cost_plus_principal_rcu']:,.0f} RCU | Real physical asset parity |\n"
+        f"| Interest rate | 9.0% APR compounding | **0.0% (Zero interest)** | Compounding mortgage usury eliminated |\n"
+        f"| Total repayment | **{h_comp['commercial_30yr_total_rcu']:,.0f} RCU** | **{h_comp['cost_plus_principal_rcu']:,.0f} RCU** | **{h_comp['interest_extracted_rcu']:,.0f} RCU saved ({h_comp['cost_multiplier']:.2f}x)** |\n"
+        f"| Default consequence | Foreclosure & family eviction | Hardship pause; sortition mediation | **Zero primary home seizure** |\n\n"
+    )
+
+    W("### The Ten Statutory Rules for Fair Borrowing and Installments\n\n")
+    W("| # | Statutory rule | Core legal requirement | Prohibited abusive practice |\n|---|---|---|---|\n")
+    for r in FAIR_BORROWING_RULES:
+        W(f"| {r.rule_number} | **{r.rule_title}** | {r.statutory_mandate[:45]}... | {r.prohibited_abuse[:40]}... |\n")
+    W("\n")
 
     elder = ElderCareStipend()
     W("### Master-Apprentice elder production compact (Physical commodity security)\n\n")

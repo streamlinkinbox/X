@@ -160,57 +160,206 @@ forcing austerity on schools and hospitals to service past debt.
 
 ---
 
-## 6. Conventional Loans vs. Zero-Interest Resource Advances
+## 6. Revised Position: Loans Are Not the Problem — Predatory Lending Is
 
-### 6.1 The Destructive Nature of Compound-Interest Debt
-Conventional loans enforce compounding interest, predatory collateral forfeiture, and lifelong
-debt bondage. A 30-year housing mortgage forces a family to pay 2.5x to 3.0x the actual value of
-their home, while auto loans trap workers in endless monthly cycles.
-
-### 6.2 The Need for Advance Financing
-A society without advance financing protects established wealth and destroys social mobility.
-A young farmer needs seed and tractor access before harvest; a family needs building materials
-before their house is constructed; an artisan needs tools before opening a workshop.
-
-### 6.3 The Sovereign Solution: Zero-Interest Non-Compounding Advances
+The problem is not that people borrow, purchase on deferred payment plans, or receive goods before
+possessing the full cash amount. Those arrangements are essential for social mobility, enterprise
+creation, and family stability.
 
 ```
 ┌───────────────────────────────────────────────────────────────────────────────────┐
-│              ZERO-INTEREST RESOURCE ADVANCE RULES (HOUSING & VEHICLES)            │
+│                  THE CORE DEFECTS OF PREDATORY LENDING                            │
 ├───────────────────────────────────────────────────────────────────────────────────┤
-│ 1. ZERO INTEREST (0.0%): The borrower repays exactly the principal amount         │
-│    advanced ($P$). Zero compounding interest, zero administrative usury.          │
-│ 2. PAY WHEN YOU EARN: Installments are tied to actual income and harvest cycles.  │
-│ 3. HARDSHIP PAUSE: If crops fail, sickness occurs, or disaster strikes, payments  │
-│    pause automatically without penalty interest or late fees.                     │
-│ 4. ZERO HOME FORECLOSURE: It is constitutionally illegal to seize a family's      │
-│    primary residence or personal tools of trade for advance defaults.             │
-│ 5. ZERO INHERITED DEBT: Advances terminate upon death; debt cannot be passed down.│
+│ 1. Heavy or compounding interest multiplying debt over time.                      │
+│ 2. Decades-long repayment periods designed to maximize interest extraction.       │
+│ 3. Hidden administrative fees, penalty charges, and fine-print exclusions.        │
+│ 4. Contracts engineered exclusively for the creditor's benefit.                   │
+│ 5. Coercive repossession of essential shelter and tools of trade.                 │
+│ 6. Continuing debt obligations even after the borrower has lost the asset.        │
+│ 7. Unequal bargaining power between corporate creditors and ordinary citizens.    │
 └───────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-#### Comparison: Commercial Auto/Housing Loan vs. Zero-Interest Advance
+A fair economic system must permit people to obtain what they need and pay over time — but the
+**total amount owed must be clear, fixed, and proportionate from the beginning**.
 
-| Financing Parameter | Commercial Loan (15% APR, 5 Yrs) | Sovereign Zero-Interest Advance |
-|---|---|---|
-| **Principal Advance** | 15,000 RCU | 15,000 RCU |
-| **Interest Rate** | 15.0% Compounding | **0.0% (Zero Interest)** |
-| **Total Amount Repaid** | **21,412 RCU** | **15,000 RCU** |
-| **Financial Extraction** | **+ 6,412 RCU (42.7% Surcharge)** | **0 RCU (Zero Extraction)** |
-| **Default Consequence** | Asset repossession + ruined credit | Restorative labor / Guild mediation |
+```
+┌───────────────────────────────────────────────────────────────────────────────────┐
+│                          THE CORE BORROWING PRINCIPLE                             │
+├───────────────────────────────────────────────────────────────────────────────────┤
+│    "If a person receives a good or service before paying the full amount, they    │
+│     should repay the agreed price — not an endlessly increasing financial penalty."│
+└───────────────────────────────────────────────────────────────────────────────────┘
+```
+
+This principle applies universally across personal advances, business equipment, vehicles,
+housing, tools, machinery, and medical treatment.
 
 ---
 
-## 7. Replacements for Conventional Financing
+### 6.1 Interest-Free Repayment & Installment Plans
+Under this doctrine, a person purchases an item or receives financing through fixed installments.
+The agreement clearly states:
+- The original cash price;
+- The total amount to be repaid (which equals the cash price plus any transparent cost-recovery admin fee);
+- The repayment schedule;
+- The maximum term;
+- Hardship protections and cancellation rights.
 
-1. **Resource Advances:** Cooperatives advance physical seed, tools, machinery hours, and
-   building timber, repaid in output at harvest or project completion.
-2. **Revenue-Sharing Finance:** Project capital is provided in exchange for a fixed share of
-   actual output. If the venture suffers honest failure, the financier shares the loss.
-3. **Cooperative Equity Ownership:** Productive workshops and factories are owned by the workers,
-   with expansion funded through retained reserves rather than commercial debt.
-4. **Public Grants for Essential Infrastructure:** Projects providing clean water, sanitation,
-   fever clinics, and flood defenses are funded via direct civic allocations, not loans.
+**The total repayment does not increase merely because time passes.**
+
+#### The Vehicle Financing Contrast
+
+```
+┌───────────────────────────────────────────────────────────────────────────────────┐
+│                    COMMERCIAL LOAN VS. FAIR DEFERRED PURCHASE                     │
+├───────────────────────────────┬───────────────────────────────────────────────────┤
+│ Predatory Commercial Contract │ • Cash Price: 200,000 RCU                         │
+│ (The Extractive Model)        │ • Compounding Interest & Fees: 150,000 RCU        │
+│                               │ • Total Repayment: 350,000 RCU (1.75x markup)     │
+│                               │ • Term: 7 Years (84 Months)                       │
+│                               │ • Immediate repossession on missed payment        │
+├───────────────────────────────┼───────────────────────────────────────────────────┤
+│ Fair Deferred-Payment Contract│ • Agreed Price: 200,000 RCU                       │
+│ (The Sovereign Model)         │ • Total Repayment: 200,000 RCU (0.0% Interest)    │
+│                               │ • Repayment Schedule: Tied to real income ability │
+│                               │ • Zero compounding interest, zero hidden fees     │
+│                               │ • Reasonable hardship protection                  │
+└───────────────────────────────┴───────────────────────────────────────────────────┘
+```
+
+The buyer pays the agreed purchase value, not an arbitrary financial penalty for needing time.
+
+---
+
+### 6.2 "Pay When You Have the Money": Flexible Income-Tied Installments
+A rigid monthly repayment schedule penalizes:
+- Seasonal farmers (whose revenue arrives after harvest);
+- Casual and commission workers;
+- Small artisans and independent guild masters;
+- Enterprises experiencing cyclical supply shocks.
+
+Instead of demanding a rigid monthly payment, sovereign advances use:
+1. **Income-Percentage Installments:** Payments calculated as a reasonable percentage of verified revenue.
+2. **Seasonal Agricultural Payments:** Installments aligned with harvest windows.
+3. **Hardship Freezes:** Automatic pause during documented illness, crop failure, or emergency,
+   with **zero penalty interest accumulating during the pause**.
+4. **Defined Maximum Horizons:** To ensure fairness to suppliers, agreements include clear review
+   points without interest escalation.
+
+---
+
+### 6.3 Cars and Durable Transport Goods
+Automobiles and transport equipment must not be turned into multi-decade debt traps:
+- **Direct Installment Purchase:** Fixed total price; ownership transfers progressively or upon completion.
+- **Cooperative Vehicle Ownership:** Transport cooperatives purchase utility trucks and tractors,
+  leasing them to members at transparent maintenance cost.
+- **Prohibited Practices:** Ban on forced bundled tracking fees, compulsory unwanted add-on
+  warranties, and post-repossession phantom debt claims.
+
+---
+
+### 6.4 Housing: Escaping the 30-Year Mortgage Trap
+Housing requires land, materials, infrastructure, and guild labor. Those real costs are genuine,
+but forcing families to pay 2.5x to 3.0x the construction cost via compound interest is usury.
+
+```
+┌───────────────────────────────────────────────────────────────────────────────────┐
+│                         SOVEREIGN HOUSING ALTERNATIVES                            │
+├───────────────────────────┬───────────────────────────────────────────────────────┤
+│ 1. Cost-Plus Installment  │ Buyer pays actual land prep, materials, guild labor,  │
+│    Housing                │ infrastructure, and transparent admin cost. Zero usury│
+├───────────────────────────┼───────────────────────────────────────────────────────┤
+│ 2. Cooperative Housing    │ Residents collectively own the community development; │
+│                           │ payments fund construction, not bank dividends.       │
+├───────────────────────────┼───────────────────────────────────────────────────────┤
+│ 3. Public Housing Finance │ Public housing provided at cost, with payments tied   │
+│                           │ to income and paused during unemployment.             │
+├───────────────────────────┼───────────────────────────────────────────────────────┤
+│ 4. Protected Rent-to-Own  │ Fixed payments where a defined share builds equity;   │
+│                           │ contract terms cannot be altered arbitrarily.         │
+└───────────────────────────┴───────────────────────────────────────────────────────┘
+```
+
+**Non-Negotiable Housing Protections:**
+- Absolute ban on eviction or foreclosure of a family's primary residence after a single crisis;
+- Zero forfeiture of past equity payments during temporary distress;
+- Automatic mediation through sortition juries (§20, §26).
+
+---
+
+### 6.5 Business and Productive Loans
+Financing for workshop machinery, tractors, grain mills, and tools is socially beneficial when
+structured fairly:
+- **Fixed-Price Repayments:** Borrow 100,000 RCU for a milling machine $\rightarrow$ repay 100,000 RCU.
+- **Shared-Risk Revenue Finance:** The financier receives an agreed share of actual grain milled;
+  if equipment breaks or crops fail honestly, the loss is shared.
+- **Insolvency Protections:** Honest business failure triggers restructuring and a fresh start,
+  never lifelong debt servitude.
+
+---
+
+### 6.6 Covering Legitimate Administrative Costs Without Usury
+Removing interest does not make lending costless. Real institutions incur administrative overhead,
+auditing costs, and loss buffers.
+
+```
+┌───────────────────────────────────────────────────────────────────────────────────┐
+│                   FAIR COST RECOVERY VS. PREDATORY USURY                          │
+├───────────────────────────────────────────────────────────────────────────────────┤
+│ PERMITTED (Transparent Cost Recovery):                                            │
+│ • Fixed, publicly registered administrative fees reflecting actual labor costs.   │
+│ • Public and cooperative credit pools absorbing shared default risk.              │
+│ • Non-compounding loss recovery buffers.                                          │
+├───────────────────────────────────────────────────────────────────────────────────┤
+│ STRICTLY PROHIBITED (Predatory Usury):                                            │
+│ • Compounding interest clocks multiplying balances with the passage of time.      │
+│ • Variable rate hikes and penalty interest surcharges.                            │
+│ • Profiting from a borrower's prolonged vulnerability or misfortune.              │
+└───────────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 7. The Ten Statutory Rules for Fair Borrowing and Installments
+
+```
+┌───────────────────────────────────────────────────────────────────────────────────┐
+│               THE TEN STATUTORY RULES FOR FAIR BORROWING                          │
+├─────┬──────────────────────────┬──────────────────────────────────────────────────┤
+│ #   │ Statutory Rule           │ Core Legal Requirement                           │
+├─────┼──────────────────────────┼──────────────────────────────────────────────────┤
+│ 1   │ One Clear Total Price    │ The buyer knows the exact maximum total payoff   │
+│     │                          │ amount from day one.                             │
+├─────┼──────────────────────────┼──────────────────────────────────────────────────┤
+│ 2   │ No Compound Interest     │ Unpaid balances cannot generate interest upon    │
+│     │                          │ interest or grow merely because time passes.     │
+├─────┼──────────────────────────┼──────────────────────────────────────────────────┤
+│ 3   │ No Hidden Conditions     │ All terms written in plain, unambiguous language │
+│     │                          │ with zero fine-print exclusions.                 │
+├─────┼──────────────────────────┼──────────────────────────────────────────────────┤
+│ 4   │ No Forced Add-Ons        │ Prohibits compulsory tracking, memberships, or   │
+│     │                          │ unwanted bundled insurance.                      │
+├─────┼──────────────────────────┼──────────────────────────────────────────────────┤
+│ 5   │ Fair Hardship Protection │ Job loss, illness, or disaster automatically     │
+│     │                          │ pauses installment schedules without penalties.  │
+├─────┼──────────────────────────┼──────────────────────────────────────────────────┤
+│ 6   │ No Essential Seizure     │ Primary family shelter, basic transport, and guild│
+│     │                          │ tools of trade cannot be seized on default.      │
+├─────┼──────────────────────────┼──────────────────────────────────────────────────┤
+│ 7   │ No Perpetual Repayment   │ Every advance has a fixed terminal end date or   │
+│     │                          │ clear statutory settlement ceiling.              │
+├─────┼──────────────────────────┼──────────────────────────────────────────────────┤
+│ 8   │ Fresh Start Guarantee    │ Honest failure is discharged through mediation;  │
+│     │                          │ no lifelong debt bondage.                        │
+├─────┼──────────────────────────┼──────────────────────────────────────────────────┤
+│ 9   │ Equal Bargaining Power   │ All standard deferred-purchase contracts are     │
+│     │                          │ publicly registered and sortition-audited (§20). │
+├─────┼──────────────────────────┼──────────────────────────────────────────────────┤
+│ 10  │ Absolute Ban on Debt     │ A person's labor, movement, family, or basic     │
+│     │ Slavery                  │ survival can never be pledged to a creditor.     │
+└─────┴──────────────────────────┴──────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -222,7 +371,8 @@ before their house is constructed; an artisan needs tools before opening a works
 | **Disaster & Crops** | Private insurance policies | Physical Commodity Reserve Pools | Timber, stone, and seed mobilized within 48 hours (§02, §23) |
 | **Elder Care** | Compulsory private pension funds | Master-Apprentice Guild Compact | Guaranteed monthly commodity rations (grains, oil, fuel, housing) |
 | **Legal Aid** | Commercial retainer subscriptions | Sortition Advocates & Mediation | Free assigned mediators; 3-citizen random juries (§06, §20, §26) |
-| **Vehicles & Housing** | Compound-interest loans / mortgages | Zero-Interest Non-Compounding Advance | Repay principal only; pause on hardship; zero home foreclosure |
+| **Vehicles & Tools** | Compound-interest auto loans | Zero-Interest Deferred Purchase | Repay agreed cash price ($P$); pause on hardship; no forced add-ons |
+| **Housing** | 30-Year compound mortgages | Cost-Plus Installment / Co-op | Pay real construction cost; zero usury; zero primary home eviction |
 | **Infrastructure** | Sovereign bond markets & debt | Commodity-Backed Development Budgets | Direct issuance against verified materials and labor capacity |
 
 ---
@@ -242,10 +392,11 @@ arrangement:
 └───────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-- **Systems that fail this test** (commercial medical aid cartels, predatory insurance middlemen,
+- **Systems that fail this test** (commercial medical schemes, predatory insurance middlemen,
   compound-interest usury, speculative pension fees) are **completely abolished**.
-- **Systems that perform a vital social coordination function** (risk pooling, resource advances,
-  elder care, infrastructure funding) are **redesigned around physical commodities, mutual aid,
+- **Systems that perform a vital social coordination function** (deferred purchases, resource advances,
+  elder care, infrastructure funding) are **anchored in real physical commodities, mutual aid,
   and transparent guild production**.
 
-**Destroy the parasitic paper layer. Anchor human security in real physical production.**
+**Loans and deferred payments are tools of human cooperation. What we destroy is the predatory
+financial machine that turns time, necessity, and human vulnerability into infinite debt.**
