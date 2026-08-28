@@ -10,9 +10,11 @@ problem Annex B rated **potentially fatal**.
 Prices are quoted as **baskets of commodity claims**, not as a single
 fungible amount:
 
-> **House, 3 rooms, Kigoma:** 100 iron + 500 wood + 40 plastic
+> **House, 3 rooms, Kigoma:** 100 kg iron + 500 kg wood + 40 kg plastic
 
-Not "640 units." The seller says *which real goods* they want. They are
+Not "640 units." Under weight denomination (§13) the bundle is literally a
+list of physical quantities, which makes the barter framing exact rather than
+metaphorical. The seller says *which real goods* they want. They are
 building a house extension, so they want timber; they need roofing sheets,
 so they want iron.
 
@@ -100,6 +102,16 @@ bundle. **Aggregate markup tells you that you are being overcharged;
 per-class markup tells you where.**
 
 ### Where the reference price comes from
+
+> **REVISED BY §13.6.** Under weight denomination there is no committee
+> assessment. For commodity-to-commodity trades the reference is replaced by
+> the **observed trade book**: what other people actually exchanged, with a
+> confidence grade and the observed range. This is strictly stronger, because
+> an observation can only be faked by really moving goods, whereas an
+> assessment can be captured by capturing the assessor. The discussion below
+> still applies to **unique goods** — houses, land, custom work — where no
+> trade book can exist.
+
 
 This is the hard part, and it is the system's existing open problem P4
 (price discovery in thin markets) wearing a new hat.

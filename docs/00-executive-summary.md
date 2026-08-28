@@ -126,6 +126,35 @@ most. **Issuance must be pooled across commodities with differently-timed
 harvests**, or the currency will fail at exactly the moment it is most
 needed.
 
+## The change that simplifies everything: weight denomination
+
+**A note is a claim on matter, not on value.** It says "100 kg maize, Grade
+A", not "100 units backed by maize". 1 kg of iron is 1 metal unit — it was
+last year and will be next year.
+
+This deletes the system's most capturable institution. There is no longer a
+committee deciding what a tonne of maize is worth, because issuance is a
+weighing operation: **the scale decides how much currency a deposit creates,
+and the buyer and seller decide prices between themselves.** Those are now
+separate questions, and only the first is the system's business.
+
+It also collapses the haircut. A note claiming 1 kg of iron is not impaired
+by a fall in the iron price — the iron is still there. Haircuts therefore
+cover only physics, falling from an average of **29.5% to 6.9%**. A producer
+receives ~92 kg-units per 100 kg of Grade A maize instead of 70 units of
+contested value.
+
+Two corrections keep this honest: deposits are normalised to **dry-matter
+equivalent** (water is not the commodity — green timber can be 60% moisture)
+and to **standard-grade equivalent** (Grade C maize is still maize, but not
+a kilogram of Grade A).
+
+**The cost is real and is stated in §13.6:** without a value unit there is no
+common measure, so a 20-good market has 190 bilateral exchange rates instead
+of 20 prices. The mitigation is that a reference good emerges spontaneously —
+iron scores best — plus app and printed rate boards. This is now open problem
+P11 and Phase 1 must measure whether it is usable.
+
 ## The refinement that solves the worst problem
 
 Prices are quoted as **bundles of specific commodity classes** — "100 iron +
@@ -189,6 +218,7 @@ Stated plainly, because a blueprint that only lists strengths is marketing:
 | [`10-implementation-roadmap.md`](10-implementation-roadmap.md) | Phased plan with falsifiable gates |
 | [`11-prior-art.md`](11-prior-art.md) | Graham, Gesell, Wörgl, Sarafu, WRS — what each teaches |
 | [`12-bundle-pricing-and-receipts.md`](12-bundle-pricing-and-receipts.md) | Bundle prices, dual-price receipts, the hoarding question |
+| [`13-weight-denomination.md`](13-weight-denomination.md) | **Weight-denominated units, grading, provenance — supersedes §1.1** |
 | [`annex-a-parameters.md`](annex-a-parameters.md) | Generated tables: all parameters and stress results |
 | [`annex-b-open-problems.md`](annex-b-open-problems.md) | Unsolved problems, ranked by how badly they hurt |
 

@@ -122,7 +122,27 @@ action available.
 
 ## P4. Price discovery without a market
 
-**Severity: high. Solvable with effort.**
+**Severity: was high (raised). LARGELY DISSOLVED by weight denomination
+(§13). Survives only for unique goods.**
+
+> **Resolution.** The problem existed because issuance required somebody to
+> decide what a tonne of maize was worth, and in a thin market that somebody
+> was either a capturable committee or the very buyers whose market power the
+> system exists to counteract.
+>
+> Weight denomination removes the question. A note claims 100 kg of maize,
+> not 100 units of value, so **issuance requires a scale rather than a
+> price.** Prices are left entirely to buyer and seller, and the system
+> publishes observed trade rates rather than assessments.
+>
+> What survives: unique goods (houses, land, custom work) still have no
+> reliable reference, so the confidence grading in §12.2 remains necessary
+> there. And grading — "is this Grade A or B?" — remains a human judgement,
+> though a far more constrained one than pricing.
+>
+> The original analysis is retained below.
+
+**Original severity: high. Solvable with effort.**
 
 Issuance requires knowing what a tonne of maize is worth. In a thin rural
 market, that price is whatever the two or three local buyers say it is —
@@ -265,6 +285,38 @@ only credible route.
 
 ---
 
+## P11. No common unit of account
+
+**Severity: high. Introduced by weight denomination (§13.6). Untested.**
+
+Weight denomination removes the price committee, and with it the common
+measure. An economy of 20 goods has **190 bilateral exchange rates** instead
+of 20 prices. This is the textbook argument for money, and the design has
+deliberately walked back into it.
+
+Three mitigations, none proven:
+
+1. **A numéraire will emerge spontaneously.** Markets converge on a reference
+   good without being told to. Iron scores best for a rural East African
+   market: stable, wanted by everyone, cheap to store, divisible, verifiable
+   with a scale and a magnet.
+2. **The app carries the load**, showing observed trade ranges for any pair.
+3. **Printed rate boards** at the market for those without phones.
+
+**The unresolved risk is usability.** A currency that needs a smartphone to
+answer "how much maize for a hoe?" excludes the people it is for. It is
+entirely possible that weight denomination is monetarily elegant and
+practically unusable.
+
+**Phase 1 must test this directly:** time a typical negotiation against the
+shilling equivalent, and watch whether traders spontaneously adopt a
+reference good. If the market insists on a single number, the fallback is to
+let iron units serve openly as the accounting unit — preserving the
+anti-capture property, since nobody sets iron's value, it is just 1 kg of
+iron.
+
+---
+
 ## Summary
 
 | # | Problem | Severity | Status |
@@ -272,13 +324,14 @@ only credible route.
 | P1 | Demurrage arbitrage | ~~Potentially fatal~~ | **Solved** by bundle pricing (§12.3), if adoption is near-universal |
 | P2 | Seasonal money supply | Potentially fatal | Partial, untested |
 | P3 | Adoption bootstrap | Most likely killer | Playbook exists |
-| P4 | Price discovery | **Raised: high** | Solvable; now load-bearing for receipts |
+| P4 | Price discovery | ~~High~~ | **Largely dissolved** by weight denomination (§13); survives for unique goods |
 | P5 | Cost of carry vs. value density | High | Needs modelling |
 | P6 | Cooperative failure | High | Underspecified |
 | P7 | Offline limit enforcement | Medium | Bounded, needs sizing |
 | P8 | Livestock instrument | Medium | Needs separate design |
 | P9 | No positive yield | Medium | Possibly inherent |
 | P10 | Impact measurement | Medium | Methodologically hard |
+| P11 | No common unit of account | **High (new)** | Mitigations untested; Phase 1 must measure |
 
 **The three at the top are not reasons to abandon the design.** They are the
 reasons a pilot exists — and a pilot that is not explicitly built to test

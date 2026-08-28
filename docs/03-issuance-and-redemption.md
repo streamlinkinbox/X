@@ -38,19 +38,25 @@ differ by more than one step, a third inspector is called and the **lowest**
 of the three stands. Conservative by design: the cost of over-grading is
 systemic insolvency, the cost of under-grading is one unhappy depositor.
 
-**3. Pricing.** Valued at the **weekly committee reference price**, not a
-spot price. Committee prices are set every Monday from three sources: local
-market survey, nearest commodity exchange quote, and the previous week's
-actual redemption transactions. Published before deposits open.
+**3. Quantification (replaces pricing).** Under weight denomination (§13)
+there is no pricing step and no committee. The deposit is weighed, its
+moisture measured, and its grade assessed against the illustrated manual.
+Gross weight is normalised to **dry-matter, standard-grade equivalent**.
 
-Using a weekly fixed price rather than live pricing prevents intra-week
-arbitrage against the cooperative and gives depositors a predictable number.
+This is the single largest simplification in the design: the most capturable
+institution in the original architecture — the body that decided what a
+tonne of maize was worth — no longer exists.
 
-**4. Discounting.** `notes = market value × grade factor × (1 − haircut)`
+**4. Discounting.** `units = dry-matter equivalent × (1 − physical haircut)`
+
+The haircut covers weighing error, moisture variation and shrinkage between
+inspections only — typically 4–12% rather than the 20–50% required when it
+also had to absorb price risk.
 
 **5. Ceiling check.** The ledger enforces that a cooperative's total
-outstanding issuance never exceeds its last verified collateral, valued at
-current committee prices, net of haircuts. **This check happens on the
+outstanding issuance never exceeds its last verified collateral **measured in
+physical units**, net of haircuts. Because both sides of the comparison are
+now weights rather than values, the check is exact and needs no revaluation. **This check happens on the
 ledger, not in the signing device.** It is the control that makes key
 compromise insufficient to inflate the currency.
 
@@ -113,8 +119,10 @@ independent investigation, not as routine operation.
 
 ### The right that makes the currency real
 
-Any holder may present notes at the issuing cooperative and receive physical
-commodity at the current committee reference price. **This right is what
+Any holder may present notes at the issuing cooperative and receive the
+physical commodity **the note names**. Under weight denomination (§13) this
+is exact and requires no pricing: 100 kg-units returns 100 kg of standard
+grade, less any decay already applied. **This right is what
 distinguishes this system from scrip.** If it is ever suspended without a
 published rule, the currency becomes a promise, and promises are what the
 system was built to escape.

@@ -2,6 +2,16 @@
 
 ## 1.1 The unit of account
 
+> **SUPERSEDED BY §13.** This section described a basket-based value unit,
+> which required a committee to price deposits. The system is now
+> **weight-denominated**: a note is a claim on a physical quantity ("100 kg
+> maize, Grade A"), prices are whatever buyer and seller agree, and no
+> institution sets value. The material below is retained because the
+> reasoning about pegs and basket construction still applies if a value unit
+> is ever reintroduced, and because §13.6 explains what is lost by dropping
+> it.
+
+
 The Real Commodity Unit (RCU) is defined as **the value of a fixed reference
 basket of locally-produced goods**, fixed at launch and revised only by
 supermajority of the issuing federation.
@@ -208,6 +218,13 @@ don't say" is fatal.
 ---
 
 ## 1.4 The haircut: the real solvency control
+
+> **REVISED BY §13.2.** Under weight denomination the haircut no longer
+> carries price risk: a note claiming 1 kg of iron is not impaired by a fall
+> in the iron price. Haircuts fall from an average of ~29.5% to **~6.9%**,
+> covering only weighing error, moisture and shrinkage. The analysis below
+> explains why price-risk haircuts had to be so large, which is the clearest
+> argument for abandoning value denomination.
 
 Currency is issued against **assessed value minus a haircut**, never against
 full assessed value:

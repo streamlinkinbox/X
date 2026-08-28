@@ -2,6 +2,12 @@
 
 ## 4.1 Design principles
 
+> **REVISED BY §13.** The note is denominated in **physical quantity**, not
+> value. The denomination reads "100 kg maize, Grade A", and the back carries
+> the certificate of origin. A buyer scanning the note sees what matter it
+> claims, when that matter was harvested, and where it is stored.
+
+
 1. **Readable by someone who cannot read.** Colour, icon, shape and size
    must convey class and value without text.
 2. **Never state a value that will become false.** The face value of a Tier A
@@ -20,16 +26,17 @@
 ```
 ┌──────────────────────────────────────────────────────────┐
 │  ╔════╗                                     ╔══════════╗ │
-│  ║ 🌾 ║  GRAINS & CEREALS            [GR]   ║  1 0 0   ║ │
-│  ╚════╝  Nafaka                             ╚══════════╝ │
+│  ║ 🌾 ║  GRAINS & CEREALS            [GR]   ║ 100 kg   ║ │
+│  ╚════╝  Nafaka — Grade A, 13.5% moisture   ╚══════════╝ │
 │                                                          │
-│   ●●●●●  ← five dots = 100 unit denomination             │
+│   ●●●●●  ← five dots = 100 kg denomination               │
 │                                                          │
 │   VALUE FALLS 2% EACH MONTH AFTER 6 MONTHS               │
 │   Thamani hupungua 2% kila mwezi baada ya miezi 6        │
 │                                                          │
 │   ┌────────────────────────────────────────────┐         │
-│   │ ISSUED   2027-03-14      EXPIRES 2029-03-14│         │
+│   │ HARVESTED 2027-01-15  <- decay clock start │         │
+│   │ ISSUED   2027-03-14      EXPIRES 2029-01-15│         │
 │   │ ████████████░░░░░░░░  value bar            │         │
 │   └────────────────────────────────────────────┘         │
 │                                                          │
@@ -48,6 +55,8 @@
 | Class icon, embossed | Tactile identification for the blind and the illiterate |
 | Colour field | Instant class recognition across a market stall |
 | Dot denomination | Countable without reading numerals |
+| Physical claim | The denomination **is** the quantity: 100 kg, not 100 units |
+| Harvest date | Decay runs from the physical event, not from issuance (§13.5) |
 | Decay statement | Bilingual, in the largest type on the note after the value |
 | Value bar | Printed graphic showing the decay schedule shape |
 | Issue and expiry dates | Both, always, in ISO format |
@@ -78,8 +87,9 @@ one, and 8% of men have colour vision deficiency.
 ```
 ┌──────────────────────────────────────────────────────────┐
 │  ┌───────────────┐   THIS NOTE REPRESENTS                │
-│  │               │   50 kg Grade A maize                 │
+│  │               │   100 kg Grade A maize                │
 │  │   QR  CODE    │   Warehouse 12, Kigoma                │
+│  │               │   Harvested 2027-01-15 · P-04471      │
 │  │               │                                       │
 │  │               │   CHECK BEFORE YOU ACCEPT             │
 │  └───────────────┘   Scan this code, or dial *384*77#    │

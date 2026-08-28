@@ -214,3 +214,53 @@ Two agents with identical holdings and identical payment demands over 24 months.
 
 Strict bundle pricing equalises the burden across every demand mix tested. See section 12.3 for the partial-adoption result, which is non-monotonic and is the binding operational constraint.
 
+## A.9 Weight denomination: haircuts and units
+
+Under weight denomination a note claims a physical quantity, so the haircut no longer has to absorb price risk -- only weighing error, moisture and shrinkage. See section 13.
+
+| Code | Class | Unit basis | Reference unit | Price haircut | Physical haircut |
+|------|-------|-----------|----------------|---------------|------------------|
+| `GR` | Grains & Cereals | weight | 1 kg maize, Grade A, 13.5% moisture | 30% | 8% |
+| `FP` | Fresh Produce | none | — | 50% | **not monetisable** |
+| `LV` | Meat & Livestock | count | 1 head, standard weight band | 35% | 12% |
+| `DA` | Dairy & Animal Products | weight | 1 kg shelf-stable equivalent | 40% | 10% |
+| `WT` | Water | volume | 1 m3 delivered | 40% | 10% |
+| `WD` | Wood & Timber | weight | 1 kg air-dry, 15% moisture, species band | 25% | 10% |
+| `TX` | Textiles & Fibers | weight | 1 kg lint, standard staple | 25% | 6% |
+| `PL` | Plastics & Polymers | weight | 1 kg pellet, single polymer | 30% | 4% |
+| `BF` | Biofuels & Energy | energy | 1 kg briquette, stated calorific value | 30% | 8% |
+| `MH` | Medicinal & Herbal | weight | 1 kg dried | 45% | 10% |
+| `FE` | Iron & Steel | weight | 1 kg iron/steel | 20% | 4% |
+| `CU` | Copper & Aluminium | weight | 1 kg copper or aluminium, stated | 20% | 4% |
+| `CM` | Construction Materials | weight | 1 kg aggregate | 30% | 5% |
+| `PM` | Precious Metals | weight | 1 g fine metal, stated fineness | 10% | 1% |
+| `SM` | Strategic Minerals | weight | 1 kg, stated assay | 35% | 6% |
+| `CG` | Ceramics & Glass | count | 1 standard piece | 35% | 8% |
+| `SC` | Salt & Chemicals | weight | 1 kg | 30% | 8% |
+| `ST` | Stone & Marble | weight | 1 kg dressed stone | 40% | 3% |
+| `RB` | Processed Rubber | weight | 1 kg dry rubber content | 30% | 5% |
+| `EN` | Energy Credits | energy | 1 kWh delivered | 25% | 5% |
+
+**Average across monetisable classes: 30.3% -> 6.7%**, freeing roughly 24 percentage points of collateral back to depositors. A producer receives about 92 kg-units per 100 kg of Grade A maize, instead of 70 units of contested value.
+
+### Cost: exchange rates without a common unit
+
+| Goods in market | Bilateral rates | With a numeraire | Ratio |
+|---|---|---|---|
+| 4 | 6 | 3 | 2x |
+| 10 | 45 | 9 | 5x |
+| 20 | 190 | 19 | 10x |
+| 50 | 1225 | 49 | 25x |
+
+### Which class is likely to become the reference good
+
+| Rank | Class | Score |
+|---|---|---|
+| 1 | Precious Metals (`PM`) | 0.9900 |
+| 2 | Iron & Steel (`FE`) | 0.8820 |
+| 3 | Copper & Aluminium (`CU`) | 0.8730 |
+| 4 | Construction Materials (`CM`) | 0.6860 |
+| 5 | Salt & Chemicals (`SC`) | 0.5700 |
+
+Iron is the realistic winner for a rural market: stable, universally wanted, cheap to store, divisible, and verifiable with a scale and a magnet. Precious metals scores higher but is too valuable per gram for daily use. The system should not mandate a numeraire -- that would recreate the price-setting authority weight denomination abolishes -- but should ensure the likely winner is exceptionally well run.
+

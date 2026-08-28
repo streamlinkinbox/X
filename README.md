@@ -49,6 +49,7 @@ the five model findings that change the original design.
 | [10 Roadmap](docs/10-implementation-roadmap.md) | Phased plan with falsifiable gates |
 | [11 Prior art](docs/11-prior-art.md) | Graham, Gesell, Wörgl, Sarafu, WRS |
 | [12 Bundle pricing & receipts](docs/12-bundle-pricing-and-receipts.md) | Bundle prices, dual-price receipts, hoarding |
+| [13 Weight denomination](docs/13-weight-denomination.md) | **Physical units, grading, provenance — supersedes §1.1** |
 | [Annex A](docs/annex-a-parameters.md) | **Generated** parameter and stress tables |
 | [Annex B](docs/annex-b-open-problems.md) | Unsolved problems, ranked by severity |
 
@@ -84,6 +85,32 @@ Produced by the model in `model/rcu/`, not by opinion.
 Full detail, including three findings the original concept missed entirely
 (demurrage arbitrage, the stigma trap, and the success-to-capture pipeline),
 is in [Annex B](docs/annex-b-open-problems.md).
+
+## Weight denomination: the note is a claim on matter
+
+A note says **"100 kg maize, Grade A"**, not "100 units". 1 kg of iron is 1
+metal unit. Issuance is a weighing operation, so **there is no price
+committee** — the system's most capturable institution simply does not exist.
+Prices are whatever buyer and seller agree.
+
+Because a note claiming 1 kg of iron is not impaired by a fall in the iron
+price, haircuts cover only physics — weighing error, moisture, shrinkage:
+
+| | Value-denominated | Weight-denominated |
+|---|---|---|
+| Average haircut | 29.5% | **6.9%** |
+| Grade A maize, 1,000 kg | ~700 units | **920 kg-units** |
+| Issuance needs | A price | **A scale** |
+
+Deposits are normalised to dry-matter and standard-grade equivalent (green
+timber can be 60% water), and the decay clock runs from **harvest, not
+deposit** — so storing grain privately for seven months no longer buys a
+fresh grace period.
+
+**The honest cost:** no common unit of account means a 20-good market has 190
+bilateral rates instead of 20 prices. Iron is the likely spontaneous
+reference good. Tracked as open problem P11; Phase 1 must measure whether it
+is usable. See [§13](docs/13-weight-denomination.md).
 
 ## Bundle pricing: the fix for the worst flaw
 

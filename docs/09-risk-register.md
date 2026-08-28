@@ -26,6 +26,8 @@ project-threatening and must have an owner and a mitigation before launch.
 | R17 | **Currency of the poor stigma** | 3 | 4 | 12 | Elite participation early; accepted for prestige goods | 8 |
 | R18 | **Conflict-mineral / sanctions exposure** | 2 | 5 | 10 | Exclude artisanal gold and strategic minerals in Ph1–2 | 4 |
 | R19 | **Partial bundle-pricing adoption** | 3 | 4 | 12 | Universal launch default; anchor acceptors commit; app quotes bundles by default | 6 |
+| R20 | **No numéraire → cognitive load → users prefer shillings** | 4 | 4 | **16** | Let iron emerge as reference; app + printed rate boards; measure negotiation time in Ph1 | 9 |
+| R21 | **Grading is now the sole discretionary input** | 3 | 4 | 12 | Rotation, published variance, illustrated manuals | 6 |
 
 ---
 
@@ -143,6 +145,7 @@ conditions never stop.
 | Month 12 | Collateral coverage ≥1.15× every month | Stop issuance; audit |
 | Month 12 | Zero unresolved series impairments | Stop; investigate |
 | Month 12 | ≥50% of quotes as bundles | **Halt bundle rollout** — below this it worsens arbitrage |
+| Month 12 | Median negotiation time ≤2× the shilling equivalent | Adopt iron as an open accounting unit (§13.6) |
 | Month 18 | Median note velocity ≥4 turns/year | Redesign demurrage |
 | Month 18 | Inspector variance within 1.5× peer band | Replace inspection regime |
 | Month 24 | Regulatory status resolved or credibly in progress | Wind down orderly |

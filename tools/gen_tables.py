@@ -17,6 +17,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from model.rcu.classes import REGISTER, TIER_A, TIER_B, Tier  # noqa: E402
 from model.rcu.hoarding import simulate  # noqa: E402
+from model.rcu.units import (  # noqa: E402
+    PHYSICAL_HAIRCUT,
+    UNIT_DEFINITION,
+    UnitBasis,
+    numeraire_saving,
+    ranked_numeraires,
+)
 from model.rcu.stress import (  # noqa: E402
     LIQUIDITY_DEPTH,
     harvest_cycle,
@@ -265,6 +272,56 @@ def table_bundles() -> None:
     )
 
 
+def table_weight() -> None:
+    W("## A.9 Weight denomination: haircuts and units\n\n")
+    W(
+        "Under weight denomination a note claims a physical quantity, so the "
+        "haircut no longer has to absorb price risk -- only weighing error, "
+        "moisture and shrinkage. See section 13.\n\n"
+    )
+    W("| Code | Class | Unit basis | Reference unit | Price haircut | Physical haircut |\n")
+    W("|------|-------|-----------|----------------|---------------|------------------|\n")
+    mon = []
+    for c in REGISTER:
+        basis, ref = UNIT_DEFINITION[c.code]
+        ph = PHYSICAL_HAIRCUT.get(c.code)
+        if ph is None:
+            phs = "**not monetisable**"
+        else:
+            phs = pct(float(ph), 0)
+            mon.append((float(c.haircut), float(ph)))
+        W(
+            f"| `{c.code}` | {c.name} | {basis} | {ref} | {pct(c.haircut, 0)} | {phs} |\n"
+        )
+    old = sum(a for a, _ in mon) / len(mon)
+    new = sum(b for _, b in mon) / len(mon)
+    W(
+        f"\n**Average across monetisable classes: {pct(old)} -> {pct(new)}**, "
+        f"freeing roughly {(old - new) * 100:.0f} percentage points of collateral "
+        "back to depositors. A producer receives about 92 kg-units per 100 kg of "
+        "Grade A maize, instead of 70 units of contested value.\n\n"
+    )
+
+    W("### Cost: exchange rates without a common unit\n\n")
+    W("| Goods in market | Bilateral rates | With a numeraire | Ratio |\n")
+    W("|---|---|---|---|\n")
+    for n in (4, 10, 20, 50):
+        w, m, r = numeraire_saving(n)
+        W(f"| {n} | {w} | {m} | {r:.0f}x |\n")
+    W("\n### Which class is likely to become the reference good\n\n")
+    W("| Rank | Class | Score |\n|---|---|---|\n")
+    for i, (c, s) in enumerate(ranked_numeraires()[:5], 1):
+        W(f"| {i} | {c.name} (`{c.code}`) | {s} |\n")
+    W(
+        "\nIron is the realistic winner for a rural market: stable, universally "
+        "wanted, cheap to store, divisible, and verifiable with a scale and a "
+        "magnet. Precious metals scores higher but is too valuable per gram for "
+        "daily use. The system should not mandate a numeraire -- that would "
+        "recreate the price-setting authority weight denomination abolishes -- "
+        "but should ensure the likely winner is exceptionally well run.\n\n"
+    )
+
+
 def main() -> None:
     header()
     table_classes()
@@ -275,6 +332,7 @@ def main() -> None:
     table_schedule()
     table_harvest()
     table_bundles()
+    table_weight()
 
 
 if __name__ == "__main__":
